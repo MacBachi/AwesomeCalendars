@@ -1,0 +1,157 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AwesomeCalendars//Patchdays, Releases & Conferences//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Konferenzen · IT-Security
+X-WR-CALDESC:Kuratierte Auswahl großer Security-Konferenzen. Kein Anspruch
+  auf Vollständigkeit — jeder Termin trägt Quelle und Konfidenz.
+REFRESH-INTERVAL;VALUE=DURATION:P7D
+X-PUBLISHED-TTL:P7D
+BEGIN:VEVENT
+UID:conferences-security-it-sa-expo-congress-2026-20261027@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261030
+SUMMARY:it-sa Expo & Congress 2026
+DESCRIPTION:Größte IT-Security-Fachmesse im deutschsprachigen Raum.\n\nKo
+ nfidenz: bestätigt (Primärquelle)\nQuelle: https://www.itsa365.de/en/it-
+ sa-expo-congress/exhibition-info
+URL:https://www.itsa365.de/en/it-sa-expo-congress/exhibition-info
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Messezentrum Nürnberg\, Deutschland
+CATEGORIES:Konferenz\,Security\,DACH
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:it-sa Expo & Congress 2026
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-security-40c3-chaos-communication-congress-20261227@awesome
+ calendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20261227
+DTEND;VALUE=DATE:20261231
+SUMMARY:40C3 — Chaos Communication Congress
+DESCRIPTION:40. Chaos Communication Congress des CCC.\nDer Congress liegt t
+ raditionell fest auf dem 27.–30. Dezember\; die Ausgabe 2026 war zum Rec
+ hercheschluss noch nicht auf events.ccc.de final angekündigt.\n\nKonfiden
+ z: wahrscheinlich (Sekundärquelle\, nicht am Hersteller verifiziert)\nQue
+ lle: https://events.ccc.de/en/congress/
+URL:https://events.ccc.de/en/congress/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Hamburg Messe\, Deutschland
+CATEGORIES:Konferenz\,Security\,DACH
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:40C3 — Chaos Communication Congress
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-security-fosdem-2027-20270206@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270208
+SUMMARY:FOSDEM 2027
+DESCRIPTION:Free and Open Source Software Developers' European Meeting.\nDa
+ tum aus dem festen Muster abgeleitet (erstes Februar-Wochenende) — fosde
+ m.org hatte zum Rechercheschluss noch keine 2027-Termine. Vor Reisebuchung
+  prüfen.\n\nKonfidenz: abgeleitet (aus dem historischen Muster\, nicht of
+ fiziell angekündigt)\nQuelle: https://fosdem.org/
+URL:https://fosdem.org/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:ULB Solbosch\, Brüssel\, Belgien
+CATEGORIES:Konferenz\,Open Source
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:FOSDEM 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-security-rsac-conference-2027-20270405@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20270405
+DTEND;VALUE=DATE:20270409
+SUMMARY:RSAC Conference 2027
+DESCRIPTION:Größte kommerzielle Cybersecurity-Konferenz weltweit.\n\nKonf
+ idenz: wahrscheinlich (Sekundärquelle\, nicht am Hersteller verifiziert)\
+ nQuelle: https://www.rsaconference.com/
+URL:https://www.rsaconference.com/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Moscone Center\, San Francisco\, USA
+CATEGORIES:Konferenz\,Security
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:RSAC Conference 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-security-troopers-2027-20270621@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20270621
+DTEND;VALUE=DATE:20270626
+SUMMARY:TROOPERS 2027
+DESCRIPTION:Technische IT-Security-Konferenz von ERNW\, inkl. Trainings-Tag
+ en zu Beginn der Woche.\n\nKonfidenz: wahrscheinlich (Sekundärquelle\, ni
+ cht am Hersteller verifiziert)\nQuelle: https://troopers.de/
+URL:https://troopers.de/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Heidelberg\, Deutschland
+CATEGORIES:Konferenz\,Security\,DACH
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:TROOPERS 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-security-black-hat-usa-2027-20270731@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20270731
+DTEND;VALUE=DATE:20270806
+SUMMARY:Black Hat USA 2027
+DESCRIPTION:Trainings und Briefings. Die Briefings bilden traditionell die 
+ letzten beiden Tage.\nblackhat.com war beim automatisierten Abruf nicht er
+ reichbar (403) — Termin stammt aus Sekundärquellen.\n\nKonfidenz: wahrs
+ cheinlich (Sekundärquelle\, nicht am Hersteller verifiziert)\nQuelle: htt
+ ps://blackhat.com/upcoming.html
+URL:https://blackhat.com/upcoming.html
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Mandalay Bay Convention Center\, Las Vegas\, USA
+CATEGORIES:Konferenz\,Security
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Black Hat USA 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-security-def-con-35-20270805@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20270805
+DTEND;VALUE=DATE:20270809
+SUMMARY:DEF CON 35
+DESCRIPTION:Direkt im Anschluss an die Black Hat USA Briefings.\n\nKonfiden
+ z: bestätigt (Primärquelle)\nQuelle: https://defcon.org/
+URL:https://defcon.org/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Las Vegas Convention Center West Hall\, Las Vegas\, USA
+CATEGORIES:Konferenz\,Security
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:DEF CON 35
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AwesomeCalendars — Patchdays, Releases &amp; Konferenzen als ICS</title>
+<meta name="description" content="Abonnierbare ICS-Kalender für IT-Patchdays, Software-Releases und Konferenzen. Patchdays regelbasiert und damit unbegrenzt gültig.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbfbfa;
+    --panel: #ffffff;
+    --line: #e3e1dc;
+    --ink: #1a1917;
+    --muted: #6b6862;
+    --accent: #9a4a1f;
+    --accent-soft: #f4ece5;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161513;
+      --panel: #1e1d1a;
+      --line: #322f2a;
+      --ink: #eceae5;
+      --muted: #9a958c;
+      --accent: #e0925f;
+      --accent-soft: #2b241d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 60rem; margin: 0 auto; padding: 3.5rem 1.25rem 5rem; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 2rem; margin-bottom: 2.5rem; }
+  h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin: 0 0 .6rem; letter-spacing: -.02em; }
+  .lede { color: var(--muted); max-width: 46rem; margin: 0; }
+  h2 {
+    font-size: .78rem; text-transform: uppercase; letter-spacing: .1em;
+    color: var(--muted); margin: 2.75rem 0 .35rem; font-weight: 600;
+  }
+  h2:first-of-type { margin-top: 0; }
+  .sub { color: var(--muted); font-size: .875rem; margin: 0 0 1rem; }
+
+  .cal {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: .35rem 1rem;
+    align-items: center;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: .95rem 1.1rem;
+    margin-bottom: .5rem;
+  }
+  .cal .name { font-weight: 600; }
+  .cal .meta {
+    grid-column: 1; font-size: .8125rem; color: var(--muted);
+    font-family: var(--mono);
+  }
+  .actions { grid-column: 2; grid-row: 1 / span 2; display: flex; gap: .4rem; }
+  a.btn, button.btn {
+    font: 500 .8125rem/1 inherit;
+    padding: .5rem .7rem; border-radius: 7px; cursor: pointer;
+    border: 1px solid var(--line); background: transparent; color: var(--ink);
+    text-decoration: none; white-space: nowrap;
+  }
+  a.btn.primary {
+    background: var(--accent-soft); border-color: transparent; color: var(--accent);
+    font-weight: 600;
+  }
+  a.btn:hover, button.btn:hover { border-color: var(--accent); color: var(--accent); }
+  button.btn.done { color: var(--accent); border-color: var(--accent); }
+
+  .note {
+    background: var(--panel); border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px; padding: 1rem 1.15rem; margin: 2.5rem 0 0;
+    font-size: .9375rem;
+  }
+  .note p { margin: 0 0 .6rem; }
+  .note p:last-child { margin-bottom: 0; }
+  code {
+    font-family: var(--mono); font-size: .85em;
+    background: var(--accent-soft); padding: .12em .38em; border-radius: 4px;
+  }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: .875rem;
+  }
+  a { color: var(--accent); }
+  @media (max-width: 34rem) {
+    .cal { grid-template-columns: 1fr; }
+    .actions { grid-column: 1; grid-row: auto; margin-top: .6rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>AwesomeCalendars</h1>
+  <p class="lede">
+    Abonnierbare ICS-Kalender für IT-Patchdays, Software-Releases und Konferenzen.
+    Die Patchdays stecken als Wiederholungsregel (<code>RRULE</code>) in der Datei
+    statt als vorausberechnete Einzeltermine — sie laufen damit unbegrenzt weiter
+    und veralten nie. Jeder Termin trägt Quelle und Konfidenzstufe in der Beschreibung.
+  </p>
+</header>
+
+<h2>Patchdays</h2>
+<p class="sub">Regelbasiert, unbegrenzt gültig. Einmal abonnieren, nie wieder anfassen.</p>
+
+<div class="cal" data-file="patchday-all.ics">
+  <span class="name">Alle Hersteller</span>
+  <span class="meta">Microsoft · Adobe · SAP · Oracle · Android · Cisco</span>
+</div>
+<div class="cal" data-file="patchday-microsoft.ics">
+  <span class="name">Microsoft Patch Tuesday</span>
+  <span class="meta">2. Dienstag/Monat · 10:00 PT = 19:00 MEZ/MESZ</span>
+</div>
+<div class="cal" data-file="patchday-adobe.ics">
+  <span class="name">Adobe Security Bulletins</span>
+  <span class="meta">2. Dienstag/Monat</span>
+</div>
+<div class="cal" data-file="patchday-sap.ics">
+  <span class="name">SAP Security Patch Day</span>
+  <span class="meta">2. Dienstag/Monat</span>
+</div>
+<div class="cal" data-file="patchday-oracle.ics">
+  <span class="name">Oracle CPU + CSPU</span>
+  <span class="meta">3. Dienstag · quartalsweise + monatlich seit Mai 2026</span>
+</div>
+<div class="cal" data-file="patchday-android.ics">
+  <span class="name">Android Security Bulletin</span>
+  <span class="meta">1. Montag/Monat</span>
+</div>
+<div class="cal" data-file="patchday-cisco.ics">
+  <span class="name">Cisco IOS / IOS XE Bundle</span>
+  <span class="meta">4. Mittwoch im März + September</span>
+</div>
+
+<h2>Termine mit festem Datum</h2>
+<p class="sub">Brauchen Nachpflege — Reichweite steht jeweils dabei.</p>
+
+<div class="cal" data-file="releases-software.ics">
+  <span class="name">Software-Releases</span>
+  <span class="meta">Chrome 152–163 · Firefox 154–164 · Ubuntu 26.10 — bis Feb 2027</span>
+</div>
+<div class="cal" data-file="conferences-security.ics">
+  <span class="name">Konferenzen · IT-Security</span>
+  <span class="meta">it-sa · 40C3 · FOSDEM · RSAC · TROOPERS · Black Hat · DEF CON</span>
+</div>
+<div class="cal" data-file="conferences-cloud.ics">
+  <span class="name">Konferenzen · Cloud Native</span>
+  <span class="meta">KubeCon Europe + North America 2027</span>
+</div>
+
+<h2>Alles in einem</h2>
+<p class="sub">Für alle, die nur ein einziges Abo wollen.</p>
+
+<div class="cal" data-file="everything.ics">
+  <span class="name">AwesomeCalendars komplett</span>
+  <span class="meta">40 Events — Patchdays, Releases und Konferenzen</span>
+</div>
+
+<div class="note">
+  <p><strong>Abonnieren statt importieren.</strong> „Abonnieren“ öffnet
+  <code>webcal://</code> und legt ein Abo an — Korrekturen kommen dann automatisch
+  nach. Ein Download ist eine einmalige Kopie und bleibt auf dem Stand von heute.</p>
+  <p>Funktioniert der <code>webcal://</code>-Klick nicht, kopiere die URL und füge
+  sie im Kalender-Client unter „Kalenderabonnement hinzufügen“ ein. In Google
+  Calendar: <em>Andere Kalender › Per URL</em>.</p>
+</div>
+
+<div class="note">
+  <p><strong>Nicht nachgebaut, weil es Besseres gibt.</strong> EOL- und
+  Release-Daten pro Produkt liefert
+  <a href="https://endoflife.date/">endoflife.date</a> als echtes Abo
+  (<code>webcal://endoflife.date/calendar/php.ics</code>, Produktnamen im Pfad
+  tauschen). CTFs gibt es beim
+  <a href="https://ctftime.org/">CTFtime</a>-Kalender.</p>
+</div>
+
+<footer>
+  Quellen, Herleitung jeder Regel und bekannte Grenzen stehen in
+  <a href="https://github.com/MacBachi/AwesomeCalendars/blob/main/CONTEXT.md">CONTEXT.md</a>.
+  Generator und Rohdaten:
+  <a href="https://github.com/MacBachi/AwesomeCalendars">github.com/MacBachi/AwesomeCalendars</a>.
+</footer>
+
+</div>
+
+<script>
+(function () {
+  var base = location.href.replace(/[^/]*$/, '') + 'calendars/';
+
+  document.querySelectorAll('.cal').forEach(function (row) {
+    var url = base + row.dataset.file;
+
+    var actions = document.createElement('span');
+    actions.className = 'actions';
+
+    var sub = document.createElement('a');
+    sub.className = 'btn primary';
+    sub.href = url.replace(/^https?:/, 'webcal:');
+    sub.textContent = 'Abonnieren';
+
+    var copy = document.createElement('button');
+    copy.className = 'btn';
+    copy.type = 'button';
+    copy.textContent = 'URL kopieren';
+    copy.addEventListener('click', function () {
+      navigator.clipboard.writeText(url).then(function () {
+        copy.textContent = 'Kopiert';
+        copy.classList.add('done');
+        setTimeout(function () {
+          copy.textContent = 'URL kopieren';
+          copy.classList.remove('done');
+        }, 1600);
+      });
+    });
+
+    var dl = document.createElement('a');
+    dl.className = 'btn';
+    dl.href = url;
+    dl.setAttribute('download', '');
+    dl.textContent = 'Download';
+
+    actions.append(sub, copy, dl);
+    row.append(actions);
+  });
+})();
+</script>
+</body>
+</html>

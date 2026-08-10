@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AwesomeCalendars//Patchdays, Releases & Conferences//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Patchday · Android
+X-WR-CALDESC:Planmäßige Security-Release-Termine von Android.
+REFRESH-INTERVAL;VALUE=DURATION:P30D
+X-PUBLISHED-TTL:P30D
+BEGIN:VEVENT
+UID:patchday-android-android-security-bulletin@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20260803
+DTEND;VALUE=DATE:20260804
+RRULE:FREQ=MONTHLY;BYDAY=1MO
+SUMMARY:Android Security Bulletin
+DESCRIPTION:Monatliches Android Security Bulletin (AOSP) samt Pixel Update 
+ Bulletin.\nRegel: erster Montag jedes Monats.\nAusnahme\, die eine RRULE n
+ icht abbilden kann: Fällt der erste Montag auf einen US-Feiertag\, ersche
+ int das Bulletin am folgenden Werktag.\n\nKonfidenz: bestätigt (Primärqu
+ elle)\nQuelle: https://source.android.com/docs/security/bulletin/asb-overv
+ iew
+URL:https://source.android.com/docs/security/bulletin/asb-overview
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Patchday\,Android\,Google
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Android Security Bulletin
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

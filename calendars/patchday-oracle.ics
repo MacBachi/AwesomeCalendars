@@ -1,0 +1,62 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AwesomeCalendars//Patchdays, Releases & Conferences//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Patchday · Oracle
+X-WR-CALDESC:Planmäßige Security-Release-Termine von Oracle.
+REFRESH-INTERVAL;VALUE=DURATION:P30D
+X-PUBLISHED-TTL:P30D
+BEGIN:VEVENT
+UID:patchday-oracle-oracle-critical-patch-update-cpu@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+RRULE:FREQ=YEARLY;BYMONTH=1,4,7,10;BYDAY=3TU
+SUMMARY:Oracle Critical Patch Update (CPU)
+DESCRIPTION:Vierteljährliches Oracle Critical Patch Update — der große\
+ , produktübergreifende Sammel-Release (Database\, Java SE\, Fusion Middle
+ ware\, E-Business Suite\, MySQL …).\nRegel: dritter Dienstag im Januar\,
+  April\, Juli und Oktober.\nHinweis: Oracle formuliert die Regel historisc
+ h als 'Dienstag\, der dem 17. am nächsten liegt'. Die tatsächlich angek
+ ündigten Termine (21.07.2026\, 20.10.2026\, 19.01.2027\, 20.04.2027) folg
+ en dem dritten Dienstag\; danach ist dieser Kalender gebaut.\n\nKonfidenz:
+  bestätigt (Primärquelle)\nQuelle: https://www.oracle.com/security-alert
+ s/
+URL:https://www.oracle.com/security-alerts/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Patchday\,Oracle
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oracle Critical Patch Update (CPU)
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:patchday-oracle-oracle-critical-security-patch-update-cspu@awesomecalen
+ dars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20260818
+DTEND;VALUE=DATE:20260819
+RRULE:FREQ=YEARLY;BYMONTH=2,3,5,6,8,9,11,12;BYDAY=3TU
+SUMMARY:Oracle Critical Security Patch Update (CSPU)
+DESCRIPTION:Seit Mai 2026 liefert Oracle zusätzlich in den Monaten ohne CP
+ U einen monatlichen Critical Security Patch Update.\nRegel: dritter Dienst
+ ag in den acht Nicht-CPU-Monaten.\nAchtung: Der Auftakt-Release am 28.05.2
+ 026 lag außerhalb dieser Kadenz. Die Regel ist aus der Ankündigung abgel
+ eitet und noch nicht über mehrere Monate empirisch bestätigt — vor Cha
+ nge-Freeze bitte gegenprüfen.\n\nKonfidenz: abgeleitet (aus dem historisc
+ hen Muster\, nicht offiziell angekündigt)\nQuelle: https://www.oracle.com
+ /security-alerts/
+URL:https://www.oracle.com/security-alerts/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Patchday\,Oracle
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oracle Critical Security Patch Update (CSPU)
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

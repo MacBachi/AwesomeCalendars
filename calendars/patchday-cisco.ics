@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AwesomeCalendars//Patchdays, Releases & Conferences//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Patchday · Cisco
+X-WR-CALDESC:Planmäßige Security-Release-Termine von Cisco.
+REFRESH-INTERVAL;VALUE=DURATION:P30D
+X-PUBLISHED-TTL:P30D
+BEGIN:VEVENT
+UID:patchday-cisco-cisco-ios-ios-xe-bundled-publication@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260924
+RRULE:FREQ=YEARLY;BYMONTH=3,9;BYDAY=4WE
+SUMMARY:Cisco IOS / IOS XE Bundled Publication
+DESCRIPTION:Halbjährliche gebündelte Security-Advisory-Veröffentlichung 
+ für Cisco IOS und IOS XE Software.\nRegel: vierter Mittwoch im März und 
+ September.\nNicht enthalten: die separate ASA/FMC/FTD-Bundle-Veröffentlic
+ hung — deren Termine wandern und lassen sich nicht verlässlich als Rege
+ l ausdrücken. Siehe sources.md.\n\nKonfidenz: bestätigt (Primärquelle)\
+ nQuelle: https://sec.cloudapps.cisco.com/security/center/publicationListin
+ g.x
+URL:https://sec.cloudapps.cisco.com/security/center/publicationListing.x
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Patchday\,Cisco
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Cisco IOS / IOS XE Bundled Publication
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

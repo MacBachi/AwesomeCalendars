@@ -1,0 +1,54 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AwesomeCalendars//Patchdays, Releases & Conferences//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Konferenzen · Cloud Native
+X-WR-CALDESC:Kuratierte Auswahl großer Cloud-Native- und Kubernetes-Konfer
+ enzen.
+REFRESH-INTERVAL;VALUE=DURATION:P7D
+X-PUBLISHED-TTL:P7D
+BEGIN:VEVENT
+UID:conferences-cloud-kubecon-cloudnativecon-europe-2027-20270315@awesomeca
+ lendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270319
+SUMMARY:KubeCon + CloudNativeCon Europe 2027
+DESCRIPTION:Flaggschiff-Konferenz der CNCF für Europa.\n\nKonfidenz: best
+ ätigt (Primärquelle)\nQuelle: https://events.linuxfoundation.org/kubecon
+ -cloudnativecon-europe-2027/
+URL:https://events.linuxfoundation.org/kubecon-cloudnativecon-europe-2027/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Barcelona\, Spanien
+CATEGORIES:Konferenz\,Cloud Native\,Kubernetes
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:KubeCon + CloudNativeCon Europe 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-cloud-kubecon-cloudnativecon-north-america-2027-20271108@aw
+ esomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20271108
+DTEND;VALUE=DATE:20271112
+SUMMARY:KubeCon + CloudNativeCon North America 2027
+DESCRIPTION:Flaggschiff-Konferenz der CNCF für Nordamerika.\n\nKonfidenz: 
+ bestätigt (Primärquelle)\nQuelle: https://events.linuxfoundation.org/kub
+ econ-cloudnativecon-north-america/
+URL:https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america
+ /
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:New Orleans\, Louisiana\, USA
+CATEGORIES:Konferenz\,Cloud Native\,Kubernetes
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:KubeCon + CloudNativeCon North America 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

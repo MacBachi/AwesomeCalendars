@@ -1,0 +1,842 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AwesomeCalendars//Patchdays, Releases & Conferences//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AwesomeCalendars · alles
+X-WR-CALDESC:Patchdays\, Software-Releases und Konferenzen in einem Kalende
+ r — für alle\, die nur ein Abo wollen.
+REFRESH-INTERVAL;VALUE=DURATION:P7D
+X-PUBLISHED-TTL:P7D
+BEGIN:VEVENT
+UID:everything-microsoft-patch-tuesday@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20260811
+DTEND;VALUE=DATE:20260812
+RRULE:FREQ=MONTHLY;BYDAY=2TU
+SUMMARY:Microsoft Patch Tuesday
+DESCRIPTION:Monatlicher Security-Update-Release von Microsoft (Windows\, Of
+ fice\, Exchange\, SQL Server\, Edge …).\nVeröffentlichung gegen 10:00 U
+ hr Pacific Time — das entspricht 19:00 MESZ bzw. 19:00 MEZ am selben Tag
+ .\nRegel: zweiter Dienstag jedes Monats.\n\nKonfidenz: bestätigt (Primär
+ quelle)\nQuelle: https://msrc.microsoft.com/update-guide/releaseNote/
+URL:https://msrc.microsoft.com/update-guide/releaseNote/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Patchday\,Microsoft
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Microsoft Patch Tuesday
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-adobe-security-bulletins@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20260811
+DTEND;VALUE=DATE:20260812
+RRULE:FREQ=MONTHLY;BYDAY=2TU
+SUMMARY:Adobe Security Bulletins
+DESCRIPTION:Adobe veröffentlicht seine planmäßigen Security Bulletins ge
+ bündelt am Microsoft Patch Tuesday (Acrobat/Reader\, Commerce\, Experienc
+ e Manager …).\nAußerplanmäßige Out-of-Band-Bulletins kommen zusätzli
+ ch und sind hier naturgemäß nicht enthalten.\nRegel: zweiter Dienstag je
+ des Monats.\n\nKonfidenz: wahrscheinlich (Sekundärquelle\, nicht am Herst
+ eller verifiziert)\nQuelle: https://helpx.adobe.com/security/security-bull
+ etin.html
+URL:https://helpx.adobe.com/security/security-bulletin.html
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Patchday\,Adobe
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Adobe Security Bulletins
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-sap-security-patch-day@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20260811
+DTEND;VALUE=DATE:20260812
+RRULE:FREQ=MONTHLY;BYDAY=2TU
+SUMMARY:SAP Security Patch Day
+DESCRIPTION:SAP veröffentlicht die monatlichen SAP Security Notes.\nRegel:
+  zweiter Dienstag jedes Monats.\n\nKonfidenz: bestätigt (Primärquelle)\n
+ Quelle: https://support.sap.com/en/my-support/knowledge-base/security-note
+ s-news.html
+URL:https://support.sap.com/en/my-support/knowledge-base/security-notes-new
+ s.html
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Patchday\,SAP
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SAP Security Patch Day
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-oracle-critical-patch-update-cpu@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+RRULE:FREQ=YEARLY;BYMONTH=1,4,7,10;BYDAY=3TU
+SUMMARY:Oracle Critical Patch Update (CPU)
+DESCRIPTION:Vierteljährliches Oracle Critical Patch Update — der große\
+ , produktübergreifende Sammel-Release (Database\, Java SE\, Fusion Middle
+ ware\, E-Business Suite\, MySQL …).\nRegel: dritter Dienstag im Januar\,
+  April\, Juli und Oktober.\nHinweis: Oracle formuliert die Regel historisc
+ h als 'Dienstag\, der dem 17. am nächsten liegt'. Die tatsächlich angek
+ ündigten Termine (21.07.2026\, 20.10.2026\, 19.01.2027\, 20.04.2027) folg
+ en dem dritten Dienstag\; danach ist dieser Kalender gebaut.\n\nKonfidenz:
+  bestätigt (Primärquelle)\nQuelle: https://www.oracle.com/security-alert
+ s/
+URL:https://www.oracle.com/security-alerts/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Patchday\,Oracle
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oracle Critical Patch Update (CPU)
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-oracle-critical-security-patch-update-cspu@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20260818
+DTEND;VALUE=DATE:20260819
+RRULE:FREQ=YEARLY;BYMONTH=2,3,5,6,8,9,11,12;BYDAY=3TU
+SUMMARY:Oracle Critical Security Patch Update (CSPU)
+DESCRIPTION:Seit Mai 2026 liefert Oracle zusätzlich in den Monaten ohne CP
+ U einen monatlichen Critical Security Patch Update.\nRegel: dritter Dienst
+ ag in den acht Nicht-CPU-Monaten.\nAchtung: Der Auftakt-Release am 28.05.2
+ 026 lag außerhalb dieser Kadenz. Die Regel ist aus der Ankündigung abgel
+ eitet und noch nicht über mehrere Monate empirisch bestätigt — vor Cha
+ nge-Freeze bitte gegenprüfen.\n\nKonfidenz: abgeleitet (aus dem historisc
+ hen Muster\, nicht offiziell angekündigt)\nQuelle: https://www.oracle.com
+ /security-alerts/
+URL:https://www.oracle.com/security-alerts/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Patchday\,Oracle
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oracle Critical Security Patch Update (CSPU)
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-android-security-bulletin@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20260803
+DTEND;VALUE=DATE:20260804
+RRULE:FREQ=MONTHLY;BYDAY=1MO
+SUMMARY:Android Security Bulletin
+DESCRIPTION:Monatliches Android Security Bulletin (AOSP) samt Pixel Update 
+ Bulletin.\nRegel: erster Montag jedes Monats.\nAusnahme\, die eine RRULE n
+ icht abbilden kann: Fällt der erste Montag auf einen US-Feiertag\, ersche
+ int das Bulletin am folgenden Werktag.\n\nKonfidenz: bestätigt (Primärqu
+ elle)\nQuelle: https://source.android.com/docs/security/bulletin/asb-overv
+ iew
+URL:https://source.android.com/docs/security/bulletin/asb-overview
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Patchday\,Android\,Google
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Android Security Bulletin
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-cisco-ios-ios-xe-bundled-publication@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260924
+RRULE:FREQ=YEARLY;BYMONTH=3,9;BYDAY=4WE
+SUMMARY:Cisco IOS / IOS XE Bundled Publication
+DESCRIPTION:Halbjährliche gebündelte Security-Advisory-Veröffentlichung 
+ für Cisco IOS und IOS XE Software.\nRegel: vierter Mittwoch im März und 
+ September.\nNicht enthalten: die separate ASA/FMC/FTD-Bundle-Veröffentlic
+ hung — deren Termine wandern und lassen sich nicht verlässlich als Rege
+ l ausdrücken. Siehe sources.md.\n\nKonfidenz: bestätigt (Primärquelle)\
+ nQuelle: https://sec.cloudapps.cisco.com/security/center/publicationListin
+ g.x
+URL:https://sec.cloudapps.cisco.com/security/center/publicationListing.x
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Patchday\,Cisco
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Cisco IOS / IOS XE Bundled Publication
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-firefox-154-20260818@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20260818
+DTEND;VALUE=DATE:20260819
+SUMMARY:Firefox 154
+DESCRIPTION:Mozilla Firefox 154 Release.\n\nKonfidenz: bestätigt (Primärq
+ uelle)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 154
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-chrome-152-stable-20260825@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:Chrome 152 Stable
+DESCRIPTION:Google Chrome 152 erreicht den Stable-Channel.\n\nKonfidenz: be
+ stätigt (Primärquelle)\nQuelle: https://chromiumdash.appspot.com/schedul
+ e
+URL:https://chromiumdash.appspot.com/schedule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Chrome
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chrome 152 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-firefox-155-20260901@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:Firefox 155
+DESCRIPTION:Mozilla Firefox 155 Release.\nAb Firefox 155 testet Mozilla ein
+ en Zwei-Wochen-Release-Takt. Mozilla bezeichnet das ausdrücklich als Expe
+ riment — der Plan kann sich ändern.\n\nKonfidenz: bestätigt (Primärqu
+ elle)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 155
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-chrome-153-stable-20260908@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260909
+SUMMARY:Chrome 153 Stable
+DESCRIPTION:Google Chrome 153 erreicht den Stable-Channel.\nAb Chrome 153 s
+ tellt Google auf einen Zwei-Wochen-Takt um (vorher vier Wochen).\n\nKonfid
+ enz: bestätigt (Primärquelle)\nQuelle: https://chromiumdash.appspot.com/
+ schedule
+URL:https://chromiumdash.appspot.com/schedule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Chrome
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chrome 153 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-firefox-156-20260915@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260916
+SUMMARY:Firefox 156
+DESCRIPTION:Mozilla Firefox 156 Release.\nAb Firefox 155 testet Mozilla ein
+ en Zwei-Wochen-Release-Takt. Mozilla bezeichnet das ausdrücklich als Expe
+ riment — der Plan kann sich ändern.\n\nKonfidenz: bestätigt (Primärqu
+ elle)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 156
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-chrome-154-stable-20260922@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20260923
+SUMMARY:Chrome 154 Stable
+DESCRIPTION:Google Chrome 154 erreicht den Stable-Channel.\nAb Chrome 153 s
+ tellt Google auf einen Zwei-Wochen-Takt um (vorher vier Wochen).\n\nKonfid
+ enz: bestätigt (Primärquelle)\nQuelle: https://chromiumdash.appspot.com/
+ schedule
+URL:https://chromiumdash.appspot.com/schedule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Chrome
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chrome 154 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-firefox-157-20260929@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20260929
+DTEND;VALUE=DATE:20260930
+SUMMARY:Firefox 157
+DESCRIPTION:Mozilla Firefox 157 Release.\nAb Firefox 155 testet Mozilla ein
+ en Zwei-Wochen-Release-Takt. Mozilla bezeichnet das ausdrücklich als Expe
+ riment — der Plan kann sich ändern.\n\nKonfidenz: bestätigt (Primärqu
+ elle)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 157
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-chrome-155-stable-20261006@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20261006
+DTEND;VALUE=DATE:20261007
+SUMMARY:Chrome 155 Stable
+DESCRIPTION:Google Chrome 155 erreicht den Stable-Channel.\nAb Chrome 153 s
+ tellt Google auf einen Zwei-Wochen-Takt um (vorher vier Wochen).\n\nKonfid
+ enz: bestätigt (Primärquelle)\nQuelle: https://chromiumdash.appspot.com/
+ schedule
+URL:https://chromiumdash.appspot.com/schedule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Chrome
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chrome 155 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-firefox-158-20261013@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:Firefox 158
+DESCRIPTION:Mozilla Firefox 158 Release.\nAb Firefox 155 testet Mozilla ein
+ en Zwei-Wochen-Release-Takt. Mozilla bezeichnet das ausdrücklich als Expe
+ riment — der Plan kann sich ändern.\n\nKonfidenz: bestätigt (Primärqu
+ elle)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 158
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-ubuntu-26-10-stonking-stingray-release-20261015@awesomecalen
+ dars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:Ubuntu 26.10 „Stonking Stingray“ Release
+DESCRIPTION:Interim-Release mit neun Monaten Support (bis Juli 2027).\nVorg
+ elagerte Meilensteine: Beta 24.09.2026\, Kernel Freeze 01.10.2026\, Final 
+ Freeze 08.10.2026.\n\nKonfidenz: bestätigt (Primärquelle)\nQuelle: https
+ ://documentation.ubuntu.com/release-notes/26.10/schedule/
+URL:https://documentation.ubuntu.com/release-notes/26.10/schedule/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Linux\,Ubuntu
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Ubuntu 26.10 „Stonking Stingray“ Release
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-chrome-156-stable-20261020@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:Chrome 156 Stable
+DESCRIPTION:Google Chrome 156 erreicht den Stable-Channel.\nAb Chrome 153 s
+ tellt Google auf einen Zwei-Wochen-Takt um (vorher vier Wochen).\n\nKonfid
+ enz: bestätigt (Primärquelle)\nQuelle: https://chromiumdash.appspot.com/
+ schedule
+URL:https://chromiumdash.appspot.com/schedule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Chrome
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chrome 156 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-firefox-159-20261027@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:Firefox 159
+DESCRIPTION:Mozilla Firefox 159 Release.\nAb Firefox 155 testet Mozilla ein
+ en Zwei-Wochen-Release-Takt. Mozilla bezeichnet das ausdrücklich als Expe
+ riment — der Plan kann sich ändern.\n\nKonfidenz: bestätigt (Primärqu
+ elle)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 159
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-chrome-157-stable-20261103@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Chrome 157 Stable
+DESCRIPTION:Google Chrome 157 erreicht den Stable-Channel.\nAb Chrome 153 s
+ tellt Google auf einen Zwei-Wochen-Takt um (vorher vier Wochen).\n\nKonfid
+ enz: bestätigt (Primärquelle)\nQuelle: https://chromiumdash.appspot.com/
+ schedule
+URL:https://chromiumdash.appspot.com/schedule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Chrome
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chrome 157 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-firefox-160-20261110@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:Firefox 160
+DESCRIPTION:Mozilla Firefox 160 Release.\nAb Firefox 155 testet Mozilla ein
+ en Zwei-Wochen-Release-Takt. Mozilla bezeichnet das ausdrücklich als Expe
+ riment — der Plan kann sich ändern.\n\nKonfidenz: bestätigt (Primärqu
+ elle)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 160
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-chrome-158-stable-20261117@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:Chrome 158 Stable
+DESCRIPTION:Google Chrome 158 erreicht den Stable-Channel.\nAb Chrome 153 s
+ tellt Google auf einen Zwei-Wochen-Takt um (vorher vier Wochen).\n\nKonfid
+ enz: bestätigt (Primärquelle)\nQuelle: https://chromiumdash.appspot.com/
+ schedule
+URL:https://chromiumdash.appspot.com/schedule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Chrome
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chrome 158 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-firefox-161-20261124@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:Firefox 161
+DESCRIPTION:Mozilla Firefox 161 Release.\nAb Firefox 155 testet Mozilla ein
+ en Zwei-Wochen-Release-Takt. Mozilla bezeichnet das ausdrücklich als Expe
+ riment — der Plan kann sich ändern.\n\nKonfidenz: bestätigt (Primärqu
+ elle)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 161
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-chrome-159-stable-20261208@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Chrome 159 Stable
+DESCRIPTION:Google Chrome 159 erreicht den Stable-Channel.\nAb Chrome 153 s
+ tellt Google auf einen Zwei-Wochen-Takt um (vorher vier Wochen).\n\nKonfid
+ enz: bestätigt (Primärquelle)\nQuelle: https://chromiumdash.appspot.com/
+ schedule
+URL:https://chromiumdash.appspot.com/schedule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Chrome
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chrome 159 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-firefox-162-20261208@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Firefox 162
+DESCRIPTION:Mozilla Firefox 162 Release.\nAb Firefox 155 testet Mozilla ein
+ en Zwei-Wochen-Release-Takt. Mozilla bezeichnet das ausdrücklich als Expe
+ riment — der Plan kann sich ändern.\n\nKonfidenz: bestätigt (Primärqu
+ elle)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 162
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-chrome-160-stable-20270105@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20270105
+DTEND;VALUE=DATE:20270106
+SUMMARY:Chrome 160 Stable
+DESCRIPTION:Google Chrome 160 erreicht den Stable-Channel.\nAb Chrome 153 s
+ tellt Google auf einen Zwei-Wochen-Takt um (vorher vier Wochen).\n\nKonfid
+ enz: bestätigt (Primärquelle)\nQuelle: https://chromiumdash.appspot.com/
+ schedule
+URL:https://chromiumdash.appspot.com/schedule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Chrome
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chrome 160 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-firefox-163-20270112@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+SUMMARY:Firefox 163
+DESCRIPTION:Mozilla Firefox 163 Release.\nAb Firefox 155 testet Mozilla ein
+ en Zwei-Wochen-Release-Takt. Mozilla bezeichnet das ausdrücklich als Expe
+ riment — der Plan kann sich ändern.\n\nKonfidenz: bestätigt (Primärqu
+ elle)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 163
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-chrome-161-stable-20270119@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20270119
+DTEND;VALUE=DATE:20270120
+SUMMARY:Chrome 161 Stable
+DESCRIPTION:Google Chrome 161 erreicht den Stable-Channel.\nAb Chrome 153 s
+ tellt Google auf einen Zwei-Wochen-Takt um (vorher vier Wochen).\n\nKonfid
+ enz: bestätigt (Primärquelle)\nQuelle: https://chromiumdash.appspot.com/
+ schedule
+URL:https://chromiumdash.appspot.com/schedule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Chrome
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chrome 161 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-firefox-164-20270126@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20270126
+DTEND;VALUE=DATE:20270127
+SUMMARY:Firefox 164
+DESCRIPTION:Mozilla Firefox 164 Release.\nAb Firefox 155 testet Mozilla ein
+ en Zwei-Wochen-Release-Takt. Mozilla bezeichnet das ausdrücklich als Expe
+ riment — der Plan kann sich ändern.\n\nKonfidenz: bestätigt (Primärqu
+ elle)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 164
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-chrome-162-stable-20270202@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20270202
+DTEND;VALUE=DATE:20270203
+SUMMARY:Chrome 162 Stable
+DESCRIPTION:Google Chrome 162 erreicht den Stable-Channel.\nAb Chrome 153 s
+ tellt Google auf einen Zwei-Wochen-Takt um (vorher vier Wochen).\n\nKonfid
+ enz: bestätigt (Primärquelle)\nQuelle: https://chromiumdash.appspot.com/
+ schedule
+URL:https://chromiumdash.appspot.com/schedule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Chrome
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chrome 162 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-chrome-163-stable-20270216@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20270216
+DTEND;VALUE=DATE:20270217
+SUMMARY:Chrome 163 Stable
+DESCRIPTION:Google Chrome 163 erreicht den Stable-Channel.\nAb Chrome 153 s
+ tellt Google auf einen Zwei-Wochen-Takt um (vorher vier Wochen).\n\nKonfid
+ enz: bestätigt (Primärquelle)\nQuelle: https://chromiumdash.appspot.com/
+ schedule
+URL:https://chromiumdash.appspot.com/schedule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Chrome
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chrome 163 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-it-sa-expo-congress-2026-20261027@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261030
+SUMMARY:it-sa Expo & Congress 2026
+DESCRIPTION:Größte IT-Security-Fachmesse im deutschsprachigen Raum.\n\nKo
+ nfidenz: bestätigt (Primärquelle)\nQuelle: https://www.itsa365.de/en/it-
+ sa-expo-congress/exhibition-info
+URL:https://www.itsa365.de/en/it-sa-expo-congress/exhibition-info
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Messezentrum Nürnberg\, Deutschland
+CATEGORIES:Konferenz\,Security\,DACH
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:it-sa Expo & Congress 2026
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-40c3-chaos-communication-congress-20261227@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20261227
+DTEND;VALUE=DATE:20261231
+SUMMARY:40C3 — Chaos Communication Congress
+DESCRIPTION:40. Chaos Communication Congress des CCC.\nDer Congress liegt t
+ raditionell fest auf dem 27.–30. Dezember\; die Ausgabe 2026 war zum Rec
+ hercheschluss noch nicht auf events.ccc.de final angekündigt.\n\nKonfiden
+ z: wahrscheinlich (Sekundärquelle\, nicht am Hersteller verifiziert)\nQue
+ lle: https://events.ccc.de/en/congress/
+URL:https://events.ccc.de/en/congress/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Hamburg Messe\, Deutschland
+CATEGORIES:Konferenz\,Security\,DACH
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:40C3 — Chaos Communication Congress
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-fosdem-2027-20270206@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270208
+SUMMARY:FOSDEM 2027
+DESCRIPTION:Free and Open Source Software Developers' European Meeting.\nDa
+ tum aus dem festen Muster abgeleitet (erstes Februar-Wochenende) — fosde
+ m.org hatte zum Rechercheschluss noch keine 2027-Termine. Vor Reisebuchung
+  prüfen.\n\nKonfidenz: abgeleitet (aus dem historischen Muster\, nicht of
+ fiziell angekündigt)\nQuelle: https://fosdem.org/
+URL:https://fosdem.org/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:ULB Solbosch\, Brüssel\, Belgien
+CATEGORIES:Konferenz\,Open Source
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:FOSDEM 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-rsac-conference-2027-20270405@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20270405
+DTEND;VALUE=DATE:20270409
+SUMMARY:RSAC Conference 2027
+DESCRIPTION:Größte kommerzielle Cybersecurity-Konferenz weltweit.\n\nKonf
+ idenz: wahrscheinlich (Sekundärquelle\, nicht am Hersteller verifiziert)\
+ nQuelle: https://www.rsaconference.com/
+URL:https://www.rsaconference.com/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Moscone Center\, San Francisco\, USA
+CATEGORIES:Konferenz\,Security
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:RSAC Conference 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-troopers-2027-20270621@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20270621
+DTEND;VALUE=DATE:20270626
+SUMMARY:TROOPERS 2027
+DESCRIPTION:Technische IT-Security-Konferenz von ERNW\, inkl. Trainings-Tag
+ en zu Beginn der Woche.\n\nKonfidenz: wahrscheinlich (Sekundärquelle\, ni
+ cht am Hersteller verifiziert)\nQuelle: https://troopers.de/
+URL:https://troopers.de/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Heidelberg\, Deutschland
+CATEGORIES:Konferenz\,Security\,DACH
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:TROOPERS 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-black-hat-usa-2027-20270731@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20270731
+DTEND;VALUE=DATE:20270806
+SUMMARY:Black Hat USA 2027
+DESCRIPTION:Trainings und Briefings. Die Briefings bilden traditionell die 
+ letzten beiden Tage.\nblackhat.com war beim automatisierten Abruf nicht er
+ reichbar (403) — Termin stammt aus Sekundärquellen.\n\nKonfidenz: wahrs
+ cheinlich (Sekundärquelle\, nicht am Hersteller verifiziert)\nQuelle: htt
+ ps://blackhat.com/upcoming.html
+URL:https://blackhat.com/upcoming.html
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Mandalay Bay Convention Center\, Las Vegas\, USA
+CATEGORIES:Konferenz\,Security
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Black Hat USA 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-def-con-35-20270805@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20270805
+DTEND;VALUE=DATE:20270809
+SUMMARY:DEF CON 35
+DESCRIPTION:Direkt im Anschluss an die Black Hat USA Briefings.\n\nKonfiden
+ z: bestätigt (Primärquelle)\nQuelle: https://defcon.org/
+URL:https://defcon.org/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Las Vegas Convention Center West Hall\, Las Vegas\, USA
+CATEGORIES:Konferenz\,Security
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:DEF CON 35
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-kubecon-cloudnativecon-europe-2027-20270315@awesomecalendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270319
+SUMMARY:KubeCon + CloudNativeCon Europe 2027
+DESCRIPTION:Flaggschiff-Konferenz der CNCF für Europa.\n\nKonfidenz: best
+ ätigt (Primärquelle)\nQuelle: https://events.linuxfoundation.org/kubecon
+ -cloudnativecon-europe-2027/
+URL:https://events.linuxfoundation.org/kubecon-cloudnativecon-europe-2027/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Barcelona\, Spanien
+CATEGORIES:Konferenz\,Cloud Native\,Kubernetes
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:KubeCon + CloudNativeCon Europe 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-kubecon-cloudnativecon-north-america-2027-20271108@awesomeca
+ lendars
+DTSTAMP:20260810T000000Z
+DTSTART;VALUE=DATE:20271108
+DTEND;VALUE=DATE:20271112
+SUMMARY:KubeCon + CloudNativeCon North America 2027
+DESCRIPTION:Flaggschiff-Konferenz der CNCF für Nordamerika.\n\nKonfidenz: 
+ bestätigt (Primärquelle)\nQuelle: https://events.linuxfoundation.org/kub
+ econ-cloudnativecon-north-america/
+URL:https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america
+ /
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:New Orleans\, Louisiana\, USA
+CATEGORIES:Konferenz\,Cloud Native\,Kubernetes
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:KubeCon + CloudNativeCon North America 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

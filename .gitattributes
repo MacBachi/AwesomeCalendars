@@ -1,0 +1,2 @@
+# ICS verlangt CRLF (RFC 5545 §3.1). Git darf die Zeilenenden nicht normalisieren.
+*.ics -text
