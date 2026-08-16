@@ -30,7 +30,7 @@ _epoch = os.environ.get("SOURCE_DATE_EPOCH")
 BUILD_STAMP = (
     dt.datetime.fromtimestamp(int(_epoch), dt.timezone.utc)
     if _epoch
-    else dt.datetime(2026, 8, 10, 0, 0, 0, tzinfo=dt.timezone.utc)
+    else dt.datetime(2026, 8, 16, 0, 0, 0, tzinfo=dt.timezone.utc)
 )
 ANCHOR = BUILD_STAMP.date().replace(day=1)  # erste Wiederholung ab diesem Monat
 
@@ -326,12 +326,13 @@ ORACLE_CSPU = Recurring(
         "Seit Mai 2026 liefert Oracle zusätzlich in den Monaten ohne CPU einen "
         "monatlichen Critical Security Patch Update.\n"
         "Regel: dritter Dienstag in den acht Nicht-CPU-Monaten.\n"
-        "Achtung: Der Auftakt-Release am 28.05.2026 lag außerhalb dieser Kadenz. "
-        "Die Regel ist aus der Ankündigung abgeleitet und noch nicht über mehrere "
-        "Monate empirisch bestätigt — vor Change-Freeze bitte gegenprüfen."
+        "Bestätigt durch die tatsächlichen Releases im Juni (16.06.2026) und "
+        "August 2026 (18.08.2026) — beide dritter Dienstag.\n"
+        "Einmalige Ausnahme: Der Auftakt-Release am 28.05.2026 lag außerhalb "
+        "dieser Kadenz."
     ),
     url="https://www.oracle.com/security-alerts/",
-    confidence="abgeleitet",
+    confidence="bestaetigt",
     categories=["Patchday", "Oracle"],
 )
 
@@ -379,6 +380,8 @@ CHROME_STABLE = {
     158: dt.date(2026, 11, 17), 159: dt.date(2026, 12, 8),
     160: dt.date(2027, 1, 5), 161: dt.date(2027, 1, 19),
     162: dt.date(2027, 2, 2), 163: dt.date(2027, 2, 16),
+    164: dt.date(2027, 3, 2), 165: dt.date(2027, 3, 16),
+    166: dt.date(2027, 3, 30), 167: dt.date(2027, 4, 13),
 }
 
 FIREFOX_RELEASES = {
@@ -397,8 +400,11 @@ def release_events() -> list[Dated]:
     for milestone, day in CHROME_STABLE.items():
         note = ""
         if milestone >= 153:
-            note = ("\nAb Chrome 153 stellt Google auf einen Zwei-Wochen-Takt um "
-                    "(vorher vier Wochen).")
+            note = ("\nAb Chrome 153 gilt der Zwei-Wochen-Takt (vorher vier Wochen), "
+                    "auf allen Plattformen inkl. Android und iOS.\n"
+                    "Für Unternehmen wichtig: Der Extended-Stable-Kanal "
+                    "(Windows/Mac, per Policy) bleibt beim Acht-Wochen-Rhythmus "
+                    "und ist von der Umstellung nicht betroffen.")
         events.append(Dated(
             summary=f"Chrome {milestone} Stable",
             start=day, end=day,

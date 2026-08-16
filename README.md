@@ -26,13 +26,13 @@ Herleitung jeder Regel.
 
 | Datei | Inhalt | Reicht bis |
 |---|---|---|
-| [`releases-software.ics`](calendars/releases-software.ics) | Chrome 152–163, Firefox 154–164, Ubuntu 26.10 | Feb 2027 |
+| [`releases-software.ics`](calendars/releases-software.ics) | Chrome 152–167, Firefox 154–164, Ubuntu 26.10 | Apr 2027 |
 | [`conferences-security.ics`](calendars/conferences-security.ics) | it-sa, 40C3, FOSDEM, RSAC, TROOPERS, Black Hat, DEF CON | Aug 2027 |
 | [`conferences-cloud.ics`](calendars/conferences-cloud.ics) | KubeCon EU + NA 2027 | Nov 2027 |
 
 ### Alles in einem
 
-[`everything.ics`](calendars/everything.ics) — 40 Events, für alle, die nur ein Abo wollen.
+[`everything.ics`](calendars/everything.ics) — 44 Events, für alle, die nur ein Abo wollen.
 
 ## Import
 

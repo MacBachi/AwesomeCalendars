@@ -1,7 +1,7 @@
 # CONTEXT — AwesomeCalendars
 
 Domain-Wissen hinter den generierten Kalendern: welche Regel gilt, woher sie stammt,
-und wie sicher sie ist. Stand der Recherche: **10.08.2026**.
+und wie sicher sie ist. Stand der Recherche: **16.08.2026**.
 
 ## Grundentscheidung: Regel statt Feed
 
@@ -59,16 +59,30 @@ Dienstag**, nicht der 17.-Regel (die für Juli 2026 den 14. ergeben hätte). Die
 Kalender folgt den tatsächlichen Terminen.
 Quelle: <https://www.oracle.com/security-alerts/>
 
-### Oracle CSPU — `abgeleitet` ⚠️
+### Oracle CSPU — `bestaetigt`
 Neu seit Mai 2026: Oracle liefert in den acht Monaten ohne CPU zusätzlich einen
-monatlichen Critical Security Patch Update. Der Auftakt am **28.05.2026** (ein
-Donnerstag) lag außerhalb jeder Kadenz. Für die Folgemonate wird der dritte
-Dienstag berichtet, ließ sich aber nicht an Oracles eigener Seite verifizieren —
-`oracle.com` und `blogs.oracle.com` liefern beim automatisierten Abruf HTTP 403.
+monatlichen Critical Security Patch Update. Dritter Dienstag.
 
-**Das ist die schwächste Regel im ganzen Repo.** Vor einem Change-Freeze bitte
-gegenprüfen.
-Quellen: <https://www.oracle.com/security-alerts/> ·
+Die Regel war zunächst nur abgeleitet und ist inzwischen an den tatsächlichen
+Releases belegt:
+
+| Release | Datum | Dritter Dienstag? |
+|---|---|---|
+| CSPU Mai 2026 (Auftakt) | 28.05.2026, Donnerstag | nein — einmalige Ausnahme |
+| CSPU Juni 2026 | 16.06.2026 | ✅ |
+| *Juli 2026* | *CPU-Monat, kein CSPU* | — |
+| CSPU August 2026 | 18.08.2026 | ✅ |
+
+Zwei aufeinanderfolgende Zyklen treffen die Regel, und die Advisory-URLs folgen
+dem Schema `cspu<mon><jahr>.html` — Juli fehlt darin erwartungsgemäß, weil es ein
+CPU-Monat ist. Damit ist auch das Modell „CSPU nur in den Nicht-CPU-Monaten"
+bestätigt.
+
+Einschränkung, die bleibt: `oracle.com` und `blogs.oracle.com` liefern beim
+automatisierten Abruf HTTP 403. Die Einzeltermine stammen aus Sekundärquellen
+(Tenable, SecurityWeek), decken sich aber untereinander und mit der Regel.
+Quellen: <https://www.oracle.com/security-alerts/cspujun2026.html> ·
+<https://www.oracle.com/security-alerts/cspuaug2026.html> ·
 <https://blogs.oracle.com/security/update-monthly-critical-security-patch-updates-cspus-begin-may-28-2026>
 
 ### Android Security Bulletin — `bestaetigt`
@@ -94,12 +108,32 @@ Beide Browser stellen im September 2026 von vier auf zwei Wochen um. Damit ist d
 Kadenz im Umbruch und eine `RRULE` wäre falsch — hier stehen feste Daten aus den
 Release-Dashboards.
 
-- **Chrome** 152–163 (25.08.2026 – 16.02.2027), Quelle: <https://chromiumdash.appspot.com/schedule>
+- **Chrome** 152–167 (25.08.2026 – 13.04.2027), Quelle: <https://chromiumdash.appspot.com/schedule>
 - **Firefox** 154–164 (18.08.2026 – 26.01.2027), Quelle: <https://whattrainisitnow.com/calendar/>
   Mozilla nennt den Zwei-Wochen-Takt ausdrücklich ein Experiment. Firefox 153 ist
   die nächste ESR-Basis (Support bis Ende 2027).
 - **Ubuntu 26.10** „Stonking Stingray", 15.10.2026, neun Monate Support bis Juli 2027.
   Quelle: <https://documentation.ubuntu.com/release-notes/26.10/schedule/>
+
+### Chrome-Umstellung im Detail
+
+Angekündigt am 03.03.2026, wirksam ab **Chrome 153 am 08.09.2026**: vier Wochen
+werden zwei, auf allen Plattformen inklusive Android und iOS. Beta erscheint dann
+drei Wochen vor Stable.
+
+**Extended Stable bleibt bei acht Wochen.** Der Kanal für Unternehmen (nur
+Windows und macOS, per Enterprise Policy) ist von der Umstellung ausdrücklich
+nicht betroffen. Konkrete Extended-Stable-Termine für die Zeit nach der
+Umstellung publiziert Google bislang nicht — unter dem alten Takt war es jedes
+zweite Milestone, unter dem neuen wäre es jedes vierte, das ist aber nicht
+dokumentiert. Deshalb steht Extended Stable **nicht** im Kalender; raten wäre
+hier schlimmer als eine Lücke.
+
+Nebenbefund aus dem Chromium-Dashboard: Milestone 160 (05.01.2027) trägt
+LTC- und LTR-Daten (13.01.2027 bzw. 31.03.2027). Das betrifft den
+**ChromeOS**-LTS-Kanal, nicht den Chrome-Browser, und ist deshalb hier nicht
+aufgenommen.
+Quelle: <https://developer.chrome.com/blog/chrome-two-week-release>
 
 ## Konferenzen
 
@@ -131,7 +165,10 @@ regeneriert.
 
 | Wann | Was |
 |---|---|
-| monatlich | Oracle CSPU — ist der dritte Dienstag die tatsächliche Kadenz? |
-| quartalsweise | Chrome-/Firefox-Termine nachziehen, das Fenster läuft im Februar 2027 aus |
+| quartalsweise | Firefox-Termine nachziehen (Fenster endet 26.01.2027), Chrome (13.04.2027) |
 | jährlich | Konferenztermine des Folgejahres bestätigen, `abgeleitet` → `bestaetigt` hochstufen |
 | bei Bedarf | Cisco ASA/FTD — falls Cisco doch eine feste Regel dokumentiert, aufnehmen |
+| bei Bedarf | Chrome Extended Stable — sobald Google Termine für den neuen Takt nennt |
+
+Erledigt: Oracle CSPU ist seit dem 16.08.2026 bestätigt und braucht keine
+monatliche Kontrolle mehr.

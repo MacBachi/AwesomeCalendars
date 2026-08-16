@@ -10,7 +10,7 @@ REFRESH-INTERVAL;VALUE=DURATION:P7D
 X-PUBLISHED-TTL:P7D
 BEGIN:VEVENT
 UID:everything-microsoft-patch-tuesday@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20260811
 DTEND;VALUE=DATE:20260812
 RRULE:FREQ=MONTHLY;BYDAY=2TU
@@ -32,7 +32,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-adobe-security-bulletins@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20260811
 DTEND;VALUE=DATE:20260812
 RRULE:FREQ=MONTHLY;BYDAY=2TU
@@ -56,7 +56,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-sap-security-patch-day@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20260811
 DTEND;VALUE=DATE:20260812
 RRULE:FREQ=MONTHLY;BYDAY=2TU
@@ -78,7 +78,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-oracle-critical-patch-update-cpu@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 RRULE:FREQ=YEARLY;BYMONTH=1,4,7,10;BYDAY=3TU
@@ -104,19 +104,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-oracle-critical-security-patch-update-cspu@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20260818
 DTEND;VALUE=DATE:20260819
 RRULE:FREQ=YEARLY;BYMONTH=2,3,5,6,8,9,11,12;BYDAY=3TU
 SUMMARY:Oracle Critical Security Patch Update (CSPU)
 DESCRIPTION:Seit Mai 2026 liefert Oracle zusätzlich in den Monaten ohne CP
  U einen monatlichen Critical Security Patch Update.\nRegel: dritter Dienst
- ag in den acht Nicht-CPU-Monaten.\nAchtung: Der Auftakt-Release am 28.05.2
- 026 lag außerhalb dieser Kadenz. Die Regel ist aus der Ankündigung abgel
- eitet und noch nicht über mehrere Monate empirisch bestätigt — vor Cha
- nge-Freeze bitte gegenprüfen.\n\nKonfidenz: abgeleitet (aus dem historisc
- hen Muster\, nicht offiziell angekündigt)\nQuelle: https://www.oracle.com
- /security-alerts/
+ ag in den acht Nicht-CPU-Monaten.\nBestätigt durch die tatsächlichen Rel
+ eases im Juni (16.06.2026) und August 2026 (18.08.2026) — beide dritter 
+ Dienstag.\nEinmalige Ausnahme: Der Auftakt-Release am 28.05.2026 lag auße
+ rhalb dieser Kadenz.\n\nKonfidenz: bestätigt (Primärquelle)\nQuelle: htt
+ ps://www.oracle.com/security-alerts/
 URL:https://www.oracle.com/security-alerts/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -129,7 +128,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-android-security-bulletin@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20260803
 DTEND;VALUE=DATE:20260804
 RRULE:FREQ=MONTHLY;BYDAY=1MO
@@ -152,7 +151,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-cisco-ios-ios-xe-bundled-publication@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20260923
 DTEND;VALUE=DATE:20260924
 RRULE:FREQ=YEARLY;BYMONTH=3,9;BYDAY=4WE
@@ -176,7 +175,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-firefox-154-20260818@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20260818
 DTEND;VALUE=DATE:20260819
 SUMMARY:Firefox 154
@@ -194,7 +193,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-chrome-152-stable-20260825@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20260825
 DTEND;VALUE=DATE:20260826
 SUMMARY:Chrome 152 Stable
@@ -213,7 +212,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-firefox-155-20260901@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20260901
 DTEND;VALUE=DATE:20260902
 SUMMARY:Firefox 155
@@ -233,14 +232,16 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-chrome-153-stable-20260908@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20260908
 DTEND;VALUE=DATE:20260909
 SUMMARY:Chrome 153 Stable
-DESCRIPTION:Google Chrome 153 erreicht den Stable-Channel.\nAb Chrome 153 s
- tellt Google auf einen Zwei-Wochen-Takt um (vorher vier Wochen).\n\nKonfid
- enz: bestätigt (Primärquelle)\nQuelle: https://chromiumdash.appspot.com/
- schedule
+DESCRIPTION:Google Chrome 153 erreicht den Stable-Channel.\nAb Chrome 153 g
+ ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
+ . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
+ indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
+ Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
+ le: https://chromiumdash.appspot.com/schedule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -253,7 +254,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-firefox-156-20260915@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20260915
 DTEND;VALUE=DATE:20260916
 SUMMARY:Firefox 156
@@ -273,14 +274,16 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-chrome-154-stable-20260922@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20260922
 DTEND;VALUE=DATE:20260923
 SUMMARY:Chrome 154 Stable
-DESCRIPTION:Google Chrome 154 erreicht den Stable-Channel.\nAb Chrome 153 s
- tellt Google auf einen Zwei-Wochen-Takt um (vorher vier Wochen).\n\nKonfid
- enz: bestätigt (Primärquelle)\nQuelle: https://chromiumdash.appspot.com/
- schedule
+DESCRIPTION:Google Chrome 154 erreicht den Stable-Channel.\nAb Chrome 153 g
+ ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
+ . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
+ indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
+ Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
+ le: https://chromiumdash.appspot.com/schedule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -293,7 +296,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-firefox-157-20260929@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20260929
 DTEND;VALUE=DATE:20260930
 SUMMARY:Firefox 157
@@ -313,14 +316,16 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-chrome-155-stable-20261006@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20261006
 DTEND;VALUE=DATE:20261007
 SUMMARY:Chrome 155 Stable
-DESCRIPTION:Google Chrome 155 erreicht den Stable-Channel.\nAb Chrome 153 s
- tellt Google auf einen Zwei-Wochen-Takt um (vorher vier Wochen).\n\nKonfid
- enz: bestätigt (Primärquelle)\nQuelle: https://chromiumdash.appspot.com/
- schedule
+DESCRIPTION:Google Chrome 155 erreicht den Stable-Channel.\nAb Chrome 153 g
+ ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
+ . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
+ indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
+ Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
+ le: https://chromiumdash.appspot.com/schedule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -333,7 +338,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-firefox-158-20261013@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261014
 SUMMARY:Firefox 158
@@ -354,7 +359,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:everything-ubuntu-26-10-stonking-stingray-release-20261015@awesomecalen
  dars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
 SUMMARY:Ubuntu 26.10 „Stonking Stingray“ Release
@@ -374,14 +379,16 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-chrome-156-stable-20261020@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Chrome 156 Stable
-DESCRIPTION:Google Chrome 156 erreicht den Stable-Channel.\nAb Chrome 153 s
- tellt Google auf einen Zwei-Wochen-Takt um (vorher vier Wochen).\n\nKonfid
- enz: bestätigt (Primärquelle)\nQuelle: https://chromiumdash.appspot.com/
- schedule
+DESCRIPTION:Google Chrome 156 erreicht den Stable-Channel.\nAb Chrome 153 g
+ ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
+ . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
+ indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
+ Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
+ le: https://chromiumdash.appspot.com/schedule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -394,7 +401,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-firefox-159-20261027@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:Firefox 159
@@ -414,14 +421,16 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-chrome-157-stable-20261103@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Chrome 157 Stable
-DESCRIPTION:Google Chrome 157 erreicht den Stable-Channel.\nAb Chrome 153 s
- tellt Google auf einen Zwei-Wochen-Takt um (vorher vier Wochen).\n\nKonfid
- enz: bestätigt (Primärquelle)\nQuelle: https://chromiumdash.appspot.com/
- schedule
+DESCRIPTION:Google Chrome 157 erreicht den Stable-Channel.\nAb Chrome 153 g
+ ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
+ . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
+ indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
+ Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
+ le: https://chromiumdash.appspot.com/schedule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -434,7 +443,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-firefox-160-20261110@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Firefox 160
@@ -454,14 +463,16 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-chrome-158-stable-20261117@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20261118
 SUMMARY:Chrome 158 Stable
-DESCRIPTION:Google Chrome 158 erreicht den Stable-Channel.\nAb Chrome 153 s
- tellt Google auf einen Zwei-Wochen-Takt um (vorher vier Wochen).\n\nKonfid
- enz: bestätigt (Primärquelle)\nQuelle: https://chromiumdash.appspot.com/
- schedule
+DESCRIPTION:Google Chrome 158 erreicht den Stable-Channel.\nAb Chrome 153 g
+ ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
+ . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
+ indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
+ Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
+ le: https://chromiumdash.appspot.com/schedule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -474,7 +485,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-firefox-161-20261124@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261125
 SUMMARY:Firefox 161
@@ -494,14 +505,16 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-chrome-159-stable-20261208@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20261208
 DTEND;VALUE=DATE:20261209
 SUMMARY:Chrome 159 Stable
-DESCRIPTION:Google Chrome 159 erreicht den Stable-Channel.\nAb Chrome 153 s
- tellt Google auf einen Zwei-Wochen-Takt um (vorher vier Wochen).\n\nKonfid
- enz: bestätigt (Primärquelle)\nQuelle: https://chromiumdash.appspot.com/
- schedule
+DESCRIPTION:Google Chrome 159 erreicht den Stable-Channel.\nAb Chrome 153 g
+ ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
+ . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
+ indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
+ Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
+ le: https://chromiumdash.appspot.com/schedule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -514,7 +527,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-firefox-162-20261208@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20261208
 DTEND;VALUE=DATE:20261209
 SUMMARY:Firefox 162
@@ -534,14 +547,16 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-chrome-160-stable-20270105@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20270105
 DTEND;VALUE=DATE:20270106
 SUMMARY:Chrome 160 Stable
-DESCRIPTION:Google Chrome 160 erreicht den Stable-Channel.\nAb Chrome 153 s
- tellt Google auf einen Zwei-Wochen-Takt um (vorher vier Wochen).\n\nKonfid
- enz: bestätigt (Primärquelle)\nQuelle: https://chromiumdash.appspot.com/
- schedule
+DESCRIPTION:Google Chrome 160 erreicht den Stable-Channel.\nAb Chrome 153 g
+ ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
+ . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
+ indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
+ Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
+ le: https://chromiumdash.appspot.com/schedule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -554,7 +569,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-firefox-163-20270112@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20270112
 DTEND;VALUE=DATE:20270113
 SUMMARY:Firefox 163
@@ -574,14 +589,16 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-chrome-161-stable-20270119@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20270119
 DTEND;VALUE=DATE:20270120
 SUMMARY:Chrome 161 Stable
-DESCRIPTION:Google Chrome 161 erreicht den Stable-Channel.\nAb Chrome 153 s
- tellt Google auf einen Zwei-Wochen-Takt um (vorher vier Wochen).\n\nKonfid
- enz: bestätigt (Primärquelle)\nQuelle: https://chromiumdash.appspot.com/
- schedule
+DESCRIPTION:Google Chrome 161 erreicht den Stable-Channel.\nAb Chrome 153 g
+ ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
+ . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
+ indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
+ Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
+ le: https://chromiumdash.appspot.com/schedule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -594,7 +611,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-firefox-164-20270126@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20270126
 DTEND;VALUE=DATE:20270127
 SUMMARY:Firefox 164
@@ -614,14 +631,16 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-chrome-162-stable-20270202@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20270202
 DTEND;VALUE=DATE:20270203
 SUMMARY:Chrome 162 Stable
-DESCRIPTION:Google Chrome 162 erreicht den Stable-Channel.\nAb Chrome 153 s
- tellt Google auf einen Zwei-Wochen-Takt um (vorher vier Wochen).\n\nKonfid
- enz: bestätigt (Primärquelle)\nQuelle: https://chromiumdash.appspot.com/
- schedule
+DESCRIPTION:Google Chrome 162 erreicht den Stable-Channel.\nAb Chrome 153 g
+ ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
+ . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
+ indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
+ Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
+ le: https://chromiumdash.appspot.com/schedule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -634,14 +653,16 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-chrome-163-stable-20270216@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20270216
 DTEND;VALUE=DATE:20270217
 SUMMARY:Chrome 163 Stable
-DESCRIPTION:Google Chrome 163 erreicht den Stable-Channel.\nAb Chrome 153 s
- tellt Google auf einen Zwei-Wochen-Takt um (vorher vier Wochen).\n\nKonfid
- enz: bestätigt (Primärquelle)\nQuelle: https://chromiumdash.appspot.com/
- schedule
+DESCRIPTION:Google Chrome 163 erreicht den Stable-Channel.\nAb Chrome 153 g
+ ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
+ . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
+ indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
+ Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
+ le: https://chromiumdash.appspot.com/schedule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -653,8 +674,96 @@ TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:everything-chrome-164-stable-20270302@awesomecalendars
+DTSTAMP:20260816T000000Z
+DTSTART;VALUE=DATE:20270302
+DTEND;VALUE=DATE:20270303
+SUMMARY:Chrome 164 Stable
+DESCRIPTION:Google Chrome 164 erreicht den Stable-Channel.\nAb Chrome 153 g
+ ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
+ . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
+ indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
+ Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
+ le: https://chromiumdash.appspot.com/schedule
+URL:https://chromiumdash.appspot.com/schedule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Chrome
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chrome 164 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-chrome-165-stable-20270316@awesomecalendars
+DTSTAMP:20260816T000000Z
+DTSTART;VALUE=DATE:20270316
+DTEND;VALUE=DATE:20270317
+SUMMARY:Chrome 165 Stable
+DESCRIPTION:Google Chrome 165 erreicht den Stable-Channel.\nAb Chrome 153 g
+ ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
+ . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
+ indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
+ Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
+ le: https://chromiumdash.appspot.com/schedule
+URL:https://chromiumdash.appspot.com/schedule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Chrome
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chrome 165 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-chrome-166-stable-20270330@awesomecalendars
+DTSTAMP:20260816T000000Z
+DTSTART;VALUE=DATE:20270330
+DTEND;VALUE=DATE:20270331
+SUMMARY:Chrome 166 Stable
+DESCRIPTION:Google Chrome 166 erreicht den Stable-Channel.\nAb Chrome 153 g
+ ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
+ . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
+ indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
+ Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
+ le: https://chromiumdash.appspot.com/schedule
+URL:https://chromiumdash.appspot.com/schedule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Chrome
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chrome 166 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-chrome-167-stable-20270413@awesomecalendars
+DTSTAMP:20260816T000000Z
+DTSTART;VALUE=DATE:20270413
+DTEND;VALUE=DATE:20270414
+SUMMARY:Chrome 167 Stable
+DESCRIPTION:Google Chrome 167 erreicht den Stable-Channel.\nAb Chrome 153 g
+ ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
+ . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
+ indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
+ Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
+ le: https://chromiumdash.appspot.com/schedule
+URL:https://chromiumdash.appspot.com/schedule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Chrome
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chrome 167 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:everything-it-sa-expo-congress-2026-20261027@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261030
 SUMMARY:it-sa Expo & Congress 2026
@@ -674,7 +783,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-40c3-chaos-communication-congress-20261227@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20261227
 DTEND;VALUE=DATE:20261231
 SUMMARY:40C3 — Chaos Communication Congress
@@ -696,7 +805,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-fosdem-2027-20270206@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20270206
 DTEND;VALUE=DATE:20270208
 SUMMARY:FOSDEM 2027
@@ -718,7 +827,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-rsac-conference-2027-20270405@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20270405
 DTEND;VALUE=DATE:20270409
 SUMMARY:RSAC Conference 2027
@@ -738,7 +847,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-troopers-2027-20270621@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20270621
 DTEND;VALUE=DATE:20270626
 SUMMARY:TROOPERS 2027
@@ -758,7 +867,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-black-hat-usa-2027-20270731@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20270731
 DTEND;VALUE=DATE:20270806
 SUMMARY:Black Hat USA 2027
@@ -780,7 +889,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-def-con-35-20270805@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20270805
 DTEND;VALUE=DATE:20270809
 SUMMARY:DEF CON 35
@@ -799,7 +908,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:everything-kubecon-cloudnativecon-europe-2027-20270315@awesomecalendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20270315
 DTEND;VALUE=DATE:20270319
 SUMMARY:KubeCon + CloudNativeCon Europe 2027
@@ -820,7 +929,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:everything-kubecon-cloudnativecon-north-america-2027-20271108@awesomeca
  lendars
-DTSTAMP:20260810T000000Z
+DTSTAMP:20260816T000000Z
 DTSTART;VALUE=DATE:20271108
 DTEND;VALUE=DATE:20271112
 SUMMARY:KubeCon + CloudNativeCon North America 2027
