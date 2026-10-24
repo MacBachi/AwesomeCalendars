@@ -8,26 +8,59 @@ X-WR-CALDESC:Planmäßige Security-Release-Termine von Cisco.
 REFRESH-INTERVAL;VALUE=DURATION:P30D
 X-PUBLISHED-TTL:P30D
 BEGIN:VEVENT
-UID:patchday-cisco-cisco-ios-ios-xe-bundled-publication@awesomecalendars
-DTSTAMP:20260816T000000Z
-DTSTART;VALUE=DATE:20260923
-DTEND;VALUE=DATE:20260924
-RRULE:FREQ=YEARLY;BYMONTH=3,9;BYDAY=4WE
-SUMMARY:Cisco IOS / IOS XE Bundled Publication
-DESCRIPTION:Halbjährliche gebündelte Security-Advisory-Veröffentlichung 
- für Cisco IOS und IOS XE Software.\nRegel: vierter Mittwoch im März und 
- September.\nNicht enthalten: die separate ASA/FMC/FTD-Bundle-Veröffentlic
- hung — deren Termine wandern und lassen sich nicht verlässlich als Rege
- l ausdrücken. Siehe sources.md.\n\nKonfidenz: bestätigt (Primärquelle)\
- nQuelle: https://sec.cloudapps.cisco.com/security/center/publicationListin
- g.x
-URL:https://sec.cloudapps.cisco.com/security/center/publicationListing.x
+UID:patchday-cisco-cisco-security-advisories@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260702
+RRULE:FREQ=MONTHLY;BYDAY=1WE,3WE
+SUMMARY:Cisco Security Advisories
+DESCRIPTION:Seit Juli 2026 bündelt Cisco Security Advisories und „Securi
+ ty Hardening Releases“ auf den ersten und dritten Mittwoch\, 16:00 UTC (
+ 17:00 Uhr MEZ\, 18:00 Uhr MESZ).\nDie Kern-Betriebssysteme (IOS XE\, IOS X
+ R\, NX-OS\, ASA/FTD\, SD-WAN) kommen quartalsweise und gestaffelt dran\, n
+ ie zwei am selben Termin. Bisher: IOS XE und SD-WAN am 05.08.2026\, IOS XR
+  am 02.09.2026\, ASA/FMC/FTD am 16.09.2026\, NX-OS am 07.10.2026. Am 21.10
+ .2026 folgten Unified Communications\, Expressway und Snort 3.\nWelche Pro
+ dukte betroffen sind\, kündigt Cisco sieben Tage vorher an — auch wenn 
+ an einem Termin gar nichts kommt.\nDie alten Halbjahres-Bundles (IOS/IOS X
+ E im März und September\, FXOS/NX-OS\, IOS XR\, ASA/FTD) sind damit abgel
+ öst. Die letzten erschienen im Februar und März 2026.\n\nKonfidenz: best
+ ätigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit de
+ r Regel)\nQuelle: https://sec.cloudapps.cisco.com/security/center/resource
+ s/risk-based-disclosure
+URL:https://sec.cloudapps.cisco.com/security/center/resources/risk-based-di
+ sclosure
+CATEGORIES:Patchday\,Cisco
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
-CATEGORIES:Patchday\,Cisco
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Cisco IOS / IOS XE Bundled Publication
+DESCRIPTION:Cisco Security Advisories
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:patchday-cisco-cisco-vorankuendigung-advisories-in-7-tagen@awesomecalen
+ dars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260624
+DTEND;VALUE=DATE:20260625
+RRULE:FREQ=MONTHLY;BYDAY=2WE,-1WE
+SUMMARY:Cisco Vorankündigung (Advisories in 7 Tagen)
+DESCRIPTION:Sieben Tage vor jedem Veröffentlichungstermin listet Cisco\, w
+ elche Produkte und Plattformen drankommen. Das ist der eigentliche Planung
+ stermin für Changes.\nRegel: zweiter und letzter Mittwoch jedes Monats 
+ — jeweils eine Woche vor dem dritten bzw. dem nächsten ersten Mittwoch.
+ \n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine
+  decken sich mit der Regel)\nQuelle: https://sec.cloudapps.cisco.com/secur
+ ity/center/publicationListing.x
+URL:https://sec.cloudapps.cisco.com/security/center/publicationListing.x
+CATEGORIES:Patchday\,Cisco
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Cisco Vorankündigung (Advisories in 7 Tagen)
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT

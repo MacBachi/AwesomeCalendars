@@ -4,18 +4,19 @@ PRODID:-//AwesomeCalendars//Patchdays, Releases & Conferences//DE
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:Software-Releases
-X-WR-CALDESC:Geplante Release-Termine für Chrome\, Firefox und Ubuntu. Fes
- te Daten — dieser Kalender braucht regelmäßige Aktualisierung.
+X-WR-CALDESC:Chrome\, Edge\, Firefox und Ubuntu. Feste Daten — dieser Kal
+ ender wird regelmäßig nachgezogen.
 REFRESH-INTERVAL;VALUE=DURATION:P7D
 X-PUBLISHED-TTL:P7D
 BEGIN:VEVENT
 UID:releases-software-firefox-154-20260818@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20260818
 DTEND;VALUE=DATE:20260819
 SUMMARY:Firefox 154
 DESCRIPTION:Mozilla Firefox 154 Release.\n\nKonfidenz: bestätigt (Primärq
- uelle)\nQuelle: https://whattrainisitnow.com/calendar/
+ uelle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle
+ : https://whattrainisitnow.com/calendar/
 URL:https://whattrainisitnow.com/calendar/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -28,13 +29,13 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:releases-software-chrome-152-stable-20260825@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20260825
 DTEND;VALUE=DATE:20260826
 SUMMARY:Chrome 152 Stable
-DESCRIPTION:Google Chrome 152 erreicht den Stable-Channel.\n\nKonfidenz: be
- stätigt (Primärquelle)\nQuelle: https://chromiumdash.appspot.com/schedul
- e
+DESCRIPTION:Google Chrome 152 erreicht den Stable-Kanal.\n\nKonfidenz: best
+ ätigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit de
+ r Regel)\nQuelle: https://chromiumdash.appspot.com/schedule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -46,15 +47,62 @@ TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:releases-software-edge-152-stable-20260827@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260827
+DTEND;VALUE=DATE:20260828
+SUMMARY:Edge 152 Stable
+DESCRIPTION:Microsoft Edge 152: Beginn des progressiven Rollouts im Stable-
+ Kanal\, typischerweise zwei Tage nach Chrome.\nSeit Edge 152 (27.08.2026) 
+ im Zwei-Wochen-Takt. Künftige Termine nennt Microsoft als Release-Woche u
+ nd als ungefähr — Edge 159 hat Microsoft im Oktober 2026 bereits um ein
+ e Woche auf den 10.12. verschoben.\n\nKonfidenz: bestätigt (Primärquelle
+ \, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: htt
+ ps://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-schedule
+URL:https://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-sch
+ edule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Edge
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Edge 152 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-edge-152-extended-stable-20260827@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260827
+DTEND;VALUE=DATE:20260828
+SUMMARY:Edge 152 → Extended Stable
+DESCRIPTION:Edge 152 wird Extended Stable. Der Kanal folgt einem Acht-Woche
+ n-Zyklus und nimmt jedes vierte Release (152\, 156\, 160\, 164 …). Nur f
+ ür verwaltete Umgebungen.\n\nKonfidenz: bestätigt (Primärquelle\, oder 
+ die tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://lea
+ rn.microsoft.com/en-us/deployedge/microsoft-edge-release-schedule
+URL:https://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-sch
+ edule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Edge\,Enterprise
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Edge 152 → Extended Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:releases-software-firefox-155-20260901@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20260901
 DTEND;VALUE=DATE:20260902
 SUMMARY:Firefox 155
-DESCRIPTION:Mozilla Firefox 155 Release.\nAb Firefox 155 testet Mozilla ein
- en Zwei-Wochen-Release-Takt. Mozilla bezeichnet das ausdrücklich als Expe
- riment — der Plan kann sich ändern.\n\nKonfidenz: bestätigt (Primärqu
- elle)\nQuelle: https://whattrainisitnow.com/calendar/
+DESCRIPTION:Mozilla Firefox 155 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
 URL:https://whattrainisitnow.com/calendar/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -67,16 +115,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:releases-software-chrome-153-stable-20260908@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20260908
 DTEND;VALUE=DATE:20260909
 SUMMARY:Chrome 153 Stable
-DESCRIPTION:Google Chrome 153 erreicht den Stable-Channel.\nAb Chrome 153 g
- ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
- . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
- indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
- Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
- le: https://chromiumdash.appspot.com/schedule
+DESCRIPTION:Google Chrome 153 erreicht den Stable-Kanal.\nSeit Chrome 153 (
+ 08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
+ oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
+ chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
+ pot.com/schedule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -88,15 +135,40 @@ TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:releases-software-edge-153-stable-20260910@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:Edge 153 Stable
+DESCRIPTION:Microsoft Edge 153: Beginn des progressiven Rollouts im Stable-
+ Kanal\, typischerweise zwei Tage nach Chrome.\nSeit Edge 152 (27.08.2026) 
+ im Zwei-Wochen-Takt. Künftige Termine nennt Microsoft als Release-Woche u
+ nd als ungefähr — Edge 159 hat Microsoft im Oktober 2026 bereits um ein
+ e Woche auf den 10.12. verschoben.\n\nKonfidenz: bestätigt (Primärquelle
+ \, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: htt
+ ps://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-schedule
+URL:https://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-sch
+ edule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Edge
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Edge 153 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:releases-software-firefox-156-20260915@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20260915
 DTEND;VALUE=DATE:20260916
 SUMMARY:Firefox 156
-DESCRIPTION:Mozilla Firefox 156 Release.\nAb Firefox 155 testet Mozilla ein
- en Zwei-Wochen-Release-Takt. Mozilla bezeichnet das ausdrücklich als Expe
- riment — der Plan kann sich ändern.\n\nKonfidenz: bestätigt (Primärqu
- elle)\nQuelle: https://whattrainisitnow.com/calendar/
+DESCRIPTION:Mozilla Firefox 156 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
 URL:https://whattrainisitnow.com/calendar/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -109,16 +181,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:releases-software-chrome-154-stable-20260922@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20260922
 DTEND;VALUE=DATE:20260923
 SUMMARY:Chrome 154 Stable
-DESCRIPTION:Google Chrome 154 erreicht den Stable-Channel.\nAb Chrome 153 g
- ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
- . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
- indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
- Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
- le: https://chromiumdash.appspot.com/schedule
+DESCRIPTION:Google Chrome 154 erreicht den Stable-Kanal.\nSeit Chrome 153 (
+ 08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
+ oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
+ chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
+ pot.com/schedule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -130,15 +201,40 @@ TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:releases-software-edge-154-stable-20260924@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20260925
+SUMMARY:Edge 154 Stable
+DESCRIPTION:Microsoft Edge 154: Beginn des progressiven Rollouts im Stable-
+ Kanal\, typischerweise zwei Tage nach Chrome.\nSeit Edge 152 (27.08.2026) 
+ im Zwei-Wochen-Takt. Künftige Termine nennt Microsoft als Release-Woche u
+ nd als ungefähr — Edge 159 hat Microsoft im Oktober 2026 bereits um ein
+ e Woche auf den 10.12. verschoben.\n\nKonfidenz: bestätigt (Primärquelle
+ \, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: htt
+ ps://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-schedule
+URL:https://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-sch
+ edule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Edge
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Edge 154 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:releases-software-firefox-157-20260929@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20260929
 DTEND;VALUE=DATE:20260930
 SUMMARY:Firefox 157
-DESCRIPTION:Mozilla Firefox 157 Release.\nAb Firefox 155 testet Mozilla ein
- en Zwei-Wochen-Release-Takt. Mozilla bezeichnet das ausdrücklich als Expe
- riment — der Plan kann sich ändern.\n\nKonfidenz: bestätigt (Primärqu
- elle)\nQuelle: https://whattrainisitnow.com/calendar/
+DESCRIPTION:Mozilla Firefox 157 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
 URL:https://whattrainisitnow.com/calendar/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -151,16 +247,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:releases-software-chrome-155-stable-20261006@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20261006
 DTEND;VALUE=DATE:20261007
 SUMMARY:Chrome 155 Stable
-DESCRIPTION:Google Chrome 155 erreicht den Stable-Channel.\nAb Chrome 153 g
- ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
- . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
- indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
- Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
- le: https://chromiumdash.appspot.com/schedule
+DESCRIPTION:Google Chrome 155 erreicht den Stable-Kanal.\nSeit Chrome 153 (
+ 08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
+ oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
+ chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
+ pot.com/schedule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -172,15 +267,40 @@ TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:releases-software-edge-155-stable-20261008@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261009
+SUMMARY:Edge 155 Stable
+DESCRIPTION:Microsoft Edge 155: Beginn des progressiven Rollouts im Stable-
+ Kanal\, typischerweise zwei Tage nach Chrome.\nSeit Edge 152 (27.08.2026) 
+ im Zwei-Wochen-Takt. Künftige Termine nennt Microsoft als Release-Woche u
+ nd als ungefähr — Edge 159 hat Microsoft im Oktober 2026 bereits um ein
+ e Woche auf den 10.12. verschoben.\n\nKonfidenz: bestätigt (Primärquelle
+ \, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: htt
+ ps://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-schedule
+URL:https://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-sch
+ edule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Edge
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Edge 155 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:releases-software-firefox-158-20261013@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261014
 SUMMARY:Firefox 158
-DESCRIPTION:Mozilla Firefox 158 Release.\nAb Firefox 155 testet Mozilla ein
- en Zwei-Wochen-Release-Takt. Mozilla bezeichnet das ausdrücklich als Expe
- riment — der Plan kann sich ändern.\n\nKonfidenz: bestätigt (Primärqu
- elle)\nQuelle: https://whattrainisitnow.com/calendar/
+DESCRIPTION:Mozilla Firefox 158 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
 URL:https://whattrainisitnow.com/calendar/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -194,14 +314,15 @@ END:VEVENT
 BEGIN:VEVENT
 UID:releases-software-ubuntu-26-10-stonking-stingray-release-20261015@aweso
  mecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
 SUMMARY:Ubuntu 26.10 „Stonking Stingray“ Release
-DESCRIPTION:Interim-Release mit neun Monaten Support (bis Juli 2027).\nVorg
- elagerte Meilensteine: Beta 24.09.2026\, Kernel Freeze 01.10.2026\, Final 
- Freeze 08.10.2026.\n\nKonfidenz: bestätigt (Primärquelle)\nQuelle: https
- ://documentation.ubuntu.com/release-notes/26.10/schedule/
+DESCRIPTION:Interim-Release mit neun Monaten Support (bis Juli 2027).\nLetz
+ te Meilensteine: Kernel Freeze 01.10.2026\, Final Freeze und Release Candi
+ date 08.10.2026.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsä
+ chlichen Termine decken sich mit der Regel)\nQuelle: https://documentation
+ .ubuntu.com/release-notes/26.10/schedule/
 URL:https://documentation.ubuntu.com/release-notes/26.10/schedule/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -214,16 +335,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:releases-software-chrome-156-stable-20261020@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Chrome 156 Stable
-DESCRIPTION:Google Chrome 156 erreicht den Stable-Channel.\nAb Chrome 153 g
- ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
- . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
- indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
- Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
- le: https://chromiumdash.appspot.com/schedule
+DESCRIPTION:Google Chrome 156 erreicht den Stable-Kanal.\nSeit Chrome 153 (
+ 08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
+ oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
+ chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
+ pot.com/schedule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -235,15 +355,116 @@ TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:releases-software-chrome-156-extended-stable-20261020@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:Chrome 156 → Extended Stable
+DESCRIPTION:Chrome 156 wird Extended Stable und bleibt dort acht Wochen. De
+ r Kanal ist für verwaltete Windows- und macOS-Umgebungen gedacht und wird
+  per Policy aktiviert. Er ist von der Umstellung auf zwei Wochen nicht bet
+ roffen und springt jeweils um vier Milestones.\nGoogle selbst veröffentli
+ cht keine Extended-Stable-Termine\; 156 und 160 sind berichtet\, die folge
+ nden sind aus dem Muster abgeleitet. Microsoft bestätigt für Edge offizi
+ ell dasselbe Muster (152\, 156\, 160\, 164).\n\nKonfidenz: wahrscheinlich 
+ (Sekundärquelle\, nicht am Hersteller verifiziert)\nQuelle: https://suppo
+ rt.google.com/chrome/a/answer/16942104
+URL:https://support.google.com/chrome/a/answer/16942104
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+CATEGORIES:Release\,Browser\,Chrome\,Enterprise
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chrome 156 → Extended Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-edge-156-stable-20261022@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:Edge 156 Stable
+DESCRIPTION:Microsoft Edge 156: Beginn des progressiven Rollouts im Stable-
+ Kanal\, typischerweise zwei Tage nach Chrome.\nSeit Edge 152 (27.08.2026) 
+ im Zwei-Wochen-Takt. Künftige Termine nennt Microsoft als Release-Woche u
+ nd als ungefähr — Edge 159 hat Microsoft im Oktober 2026 bereits um ein
+ e Woche auf den 10.12. verschoben.\n\nKonfidenz: bestätigt (Primärquelle
+ \, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: htt
+ ps://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-schedule
+URL:https://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-sch
+ edule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Edge
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Edge 156 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-edge-156-extended-stable-20261022@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:Edge 156 → Extended Stable
+DESCRIPTION:Edge 156 wird Extended Stable. Der Kanal folgt einem Acht-Woche
+ n-Zyklus und nimmt jedes vierte Release (152\, 156\, 160\, 164 …). Nur f
+ ür verwaltete Umgebungen.\n\nKonfidenz: bestätigt (Primärquelle\, oder 
+ die tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://lea
+ rn.microsoft.com/en-us/deployedge/microsoft-edge-release-schedule
+URL:https://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-sch
+ edule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Edge\,Enterprise
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Edge 156 → Extended Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-ubuntu-kernel-ab-jetzt-woechentliche-releases-2026102
+ 6@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:Ubuntu-Kernel: ab jetzt wöchentliche Releases
+DESCRIPTION:Canonical ersetzt den bisherigen 4/2-Rhythmus (alle vier Wochen
+  ein reguläres Kernel-Update\, Notfall-Updates nach zwei Wochen) durch ü
+ berlappende Zwei-Wochen-Zyklen. Effektiv erscheint ab hier jede Woche ein 
+ neuer Kernel. Übergangszyklen starteten am 28.09. und 12.10.2026.\nGrund 
+ ist die CVE-Flut im Kernel\, nach Canonical stark durch KI-gestützte Fehl
+ ersuche getrieben: Linux 7.2 behob über 1.500 CVEs\, frühere Versionen r
+ und 500.\nWer Kernel-Updates manuell einspielt\, braucht damit ein wöchen
+ tliches Wartungsfenster oder Livepatch.\n\nKonfidenz: wahrscheinlich (Seku
+ ndärquelle\, nicht am Hersteller verifiziert)\nQuelle: https://canonical.
+ com/blog/accelerating-delivery-of-cve-fixes-with-a-new-kernel-release-stra
+ tegy
+URL:https://canonical.com/blog/accelerating-delivery-of-cve-fixes-with-a-ne
+ w-kernel-release-strategy
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+CATEGORIES:Release\,Linux\,Ubuntu\,Kernel
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Ubuntu-Kernel: ab jetzt wöchentliche Releases
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:releases-software-firefox-159-20261027@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:Firefox 159
-DESCRIPTION:Mozilla Firefox 159 Release.\nAb Firefox 155 testet Mozilla ein
- en Zwei-Wochen-Release-Takt. Mozilla bezeichnet das ausdrücklich als Expe
- riment — der Plan kann sich ändern.\n\nKonfidenz: bestätigt (Primärqu
- elle)\nQuelle: https://whattrainisitnow.com/calendar/
+DESCRIPTION:Mozilla Firefox 159 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
 URL:https://whattrainisitnow.com/calendar/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -256,16 +477,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:releases-software-chrome-157-stable-20261103@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Chrome 157 Stable
-DESCRIPTION:Google Chrome 157 erreicht den Stable-Channel.\nAb Chrome 153 g
- ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
- . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
- indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
- Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
- le: https://chromiumdash.appspot.com/schedule
+DESCRIPTION:Google Chrome 157 erreicht den Stable-Kanal.\nSeit Chrome 153 (
+ 08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
+ oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
+ chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
+ pot.com/schedule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -277,15 +497,40 @@ TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:releases-software-edge-157-stable-20261105@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:Edge 157 Stable
+DESCRIPTION:Microsoft Edge 157: Beginn des progressiven Rollouts im Stable-
+ Kanal\, typischerweise zwei Tage nach Chrome.\nSeit Edge 152 (27.08.2026) 
+ im Zwei-Wochen-Takt. Künftige Termine nennt Microsoft als Release-Woche u
+ nd als ungefähr — Edge 159 hat Microsoft im Oktober 2026 bereits um ein
+ e Woche auf den 10.12. verschoben.\n\nKonfidenz: bestätigt (Primärquelle
+ \, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: htt
+ ps://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-schedule
+URL:https://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-sch
+ edule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Edge
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Edge 157 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:releases-software-firefox-160-20261110@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Firefox 160
-DESCRIPTION:Mozilla Firefox 160 Release.\nAb Firefox 155 testet Mozilla ein
- en Zwei-Wochen-Release-Takt. Mozilla bezeichnet das ausdrücklich als Expe
- riment — der Plan kann sich ändern.\n\nKonfidenz: bestätigt (Primärqu
- elle)\nQuelle: https://whattrainisitnow.com/calendar/
+DESCRIPTION:Mozilla Firefox 160 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
 URL:https://whattrainisitnow.com/calendar/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -298,16 +543,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:releases-software-chrome-158-stable-20261117@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20261118
 SUMMARY:Chrome 158 Stable
-DESCRIPTION:Google Chrome 158 erreicht den Stable-Channel.\nAb Chrome 153 g
- ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
- . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
- indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
- Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
- le: https://chromiumdash.appspot.com/schedule
+DESCRIPTION:Google Chrome 158 erreicht den Stable-Kanal.\nSeit Chrome 153 (
+ 08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
+ oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
+ chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
+ pot.com/schedule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -319,15 +563,40 @@ TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:releases-software-edge-158-stable-20261119@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Edge 158 Stable
+DESCRIPTION:Microsoft Edge 158: Beginn des progressiven Rollouts im Stable-
+ Kanal\, typischerweise zwei Tage nach Chrome.\nSeit Edge 152 (27.08.2026) 
+ im Zwei-Wochen-Takt. Künftige Termine nennt Microsoft als Release-Woche u
+ nd als ungefähr — Edge 159 hat Microsoft im Oktober 2026 bereits um ein
+ e Woche auf den 10.12. verschoben.\n\nKonfidenz: bestätigt (Primärquelle
+ \, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: htt
+ ps://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-schedule
+URL:https://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-sch
+ edule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Edge
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Edge 158 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:releases-software-firefox-161-20261124@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261125
 SUMMARY:Firefox 161
-DESCRIPTION:Mozilla Firefox 161 Release.\nAb Firefox 155 testet Mozilla ein
- en Zwei-Wochen-Release-Takt. Mozilla bezeichnet das ausdrücklich als Expe
- riment — der Plan kann sich ändern.\n\nKonfidenz: bestätigt (Primärqu
- elle)\nQuelle: https://whattrainisitnow.com/calendar/
+DESCRIPTION:Mozilla Firefox 161 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
 URL:https://whattrainisitnow.com/calendar/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -340,16 +609,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:releases-software-chrome-159-stable-20261208@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20261208
 DTEND;VALUE=DATE:20261209
 SUMMARY:Chrome 159 Stable
-DESCRIPTION:Google Chrome 159 erreicht den Stable-Channel.\nAb Chrome 153 g
- ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
- . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
- indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
- Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
- le: https://chromiumdash.appspot.com/schedule
+DESCRIPTION:Google Chrome 159 erreicht den Stable-Kanal.\nSeit Chrome 153 (
+ 08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
+ oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
+ chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
+ pot.com/schedule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -362,14 +630,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:releases-software-firefox-162-20261208@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20261208
 DTEND;VALUE=DATE:20261209
 SUMMARY:Firefox 162
-DESCRIPTION:Mozilla Firefox 162 Release.\nAb Firefox 155 testet Mozilla ein
- en Zwei-Wochen-Release-Takt. Mozilla bezeichnet das ausdrücklich als Expe
- riment — der Plan kann sich ändern.\n\nKonfidenz: bestätigt (Primärqu
- elle)\nQuelle: https://whattrainisitnow.com/calendar/
+DESCRIPTION:Mozilla Firefox 162 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
 URL:https://whattrainisitnow.com/calendar/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -381,17 +650,40 @@ TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:releases-software-edge-159-stable-20261210@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:Edge 159 Stable
+DESCRIPTION:Microsoft Edge 159: Beginn des progressiven Rollouts im Stable-
+ Kanal\, typischerweise zwei Tage nach Chrome.\nSeit Edge 152 (27.08.2026) 
+ im Zwei-Wochen-Takt. Künftige Termine nennt Microsoft als Release-Woche u
+ nd als ungefähr — Edge 159 hat Microsoft im Oktober 2026 bereits um ein
+ e Woche auf den 10.12. verschoben.\n\nKonfidenz: bestätigt (Primärquelle
+ \, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: htt
+ ps://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-schedule
+URL:https://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-sch
+ edule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Edge
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Edge 159 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:releases-software-chrome-160-stable-20270105@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20270105
 DTEND;VALUE=DATE:20270106
 SUMMARY:Chrome 160 Stable
-DESCRIPTION:Google Chrome 160 erreicht den Stable-Channel.\nAb Chrome 153 g
- ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
- . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
- indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
- Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
- le: https://chromiumdash.appspot.com/schedule
+DESCRIPTION:Google Chrome 160 erreicht den Stable-Kanal.\nSeit Chrome 153 (
+ 08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
+ oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
+ chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
+ pot.com/schedule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -403,15 +695,87 @@ TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:releases-software-chrome-160-extended-stable-20270105@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270105
+DTEND;VALUE=DATE:20270106
+SUMMARY:Chrome 160 → Extended Stable
+DESCRIPTION:Chrome 160 wird Extended Stable und bleibt dort acht Wochen. De
+ r Kanal ist für verwaltete Windows- und macOS-Umgebungen gedacht und wird
+  per Policy aktiviert. Er ist von der Umstellung auf zwei Wochen nicht bet
+ roffen und springt jeweils um vier Milestones.\nGoogle selbst veröffentli
+ cht keine Extended-Stable-Termine\; 156 und 160 sind berichtet\, die folge
+ nden sind aus dem Muster abgeleitet. Microsoft bestätigt für Edge offizi
+ ell dasselbe Muster (152\, 156\, 160\, 164).\n\nKonfidenz: wahrscheinlich 
+ (Sekundärquelle\, nicht am Hersteller verifiziert)\nQuelle: https://suppo
+ rt.google.com/chrome/a/answer/16942104
+URL:https://support.google.com/chrome/a/answer/16942104
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+CATEGORIES:Release\,Browser\,Chrome\,Enterprise
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chrome 160 → Extended Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-edge-160-stable-20270107@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270107
+DTEND;VALUE=DATE:20270108
+SUMMARY:Edge 160 Stable
+DESCRIPTION:Microsoft Edge 160: Beginn des progressiven Rollouts im Stable-
+ Kanal\, typischerweise zwei Tage nach Chrome.\nSeit Edge 152 (27.08.2026) 
+ im Zwei-Wochen-Takt. Künftige Termine nennt Microsoft als Release-Woche u
+ nd als ungefähr — Edge 159 hat Microsoft im Oktober 2026 bereits um ein
+ e Woche auf den 10.12. verschoben.\n\nKonfidenz: bestätigt (Primärquelle
+ \, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: htt
+ ps://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-schedule
+URL:https://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-sch
+ edule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Edge
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Edge 160 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-edge-160-extended-stable-20270107@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270107
+DTEND;VALUE=DATE:20270108
+SUMMARY:Edge 160 → Extended Stable
+DESCRIPTION:Edge 160 wird Extended Stable. Der Kanal folgt einem Acht-Woche
+ n-Zyklus und nimmt jedes vierte Release (152\, 156\, 160\, 164 …). Nur f
+ ür verwaltete Umgebungen.\n\nKonfidenz: bestätigt (Primärquelle\, oder 
+ die tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://lea
+ rn.microsoft.com/en-us/deployedge/microsoft-edge-release-schedule
+URL:https://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-sch
+ edule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Edge\,Enterprise
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Edge 160 → Extended Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:releases-software-firefox-163-20270112@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20270112
 DTEND;VALUE=DATE:20270113
 SUMMARY:Firefox 163
-DESCRIPTION:Mozilla Firefox 163 Release.\nAb Firefox 155 testet Mozilla ein
- en Zwei-Wochen-Release-Takt. Mozilla bezeichnet das ausdrücklich als Expe
- riment — der Plan kann sich ändern.\n\nKonfidenz: bestätigt (Primärqu
- elle)\nQuelle: https://whattrainisitnow.com/calendar/
+DESCRIPTION:Mozilla Firefox 163 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
 URL:https://whattrainisitnow.com/calendar/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -424,16 +788,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:releases-software-chrome-161-stable-20270119@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20270119
 DTEND;VALUE=DATE:20270120
 SUMMARY:Chrome 161 Stable
-DESCRIPTION:Google Chrome 161 erreicht den Stable-Channel.\nAb Chrome 153 g
- ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
- . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
- indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
- Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
- le: https://chromiumdash.appspot.com/schedule
+DESCRIPTION:Google Chrome 161 erreicht den Stable-Kanal.\nSeit Chrome 153 (
+ 08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
+ oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
+ chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
+ pot.com/schedule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -445,15 +808,40 @@ TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:releases-software-edge-161-stable-20270121@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270121
+DTEND;VALUE=DATE:20270122
+SUMMARY:Edge 161 Stable
+DESCRIPTION:Microsoft Edge 161: Beginn des progressiven Rollouts im Stable-
+ Kanal\, typischerweise zwei Tage nach Chrome.\nSeit Edge 152 (27.08.2026) 
+ im Zwei-Wochen-Takt. Künftige Termine nennt Microsoft als Release-Woche u
+ nd als ungefähr — Edge 159 hat Microsoft im Oktober 2026 bereits um ein
+ e Woche auf den 10.12. verschoben.\n\nKonfidenz: bestätigt (Primärquelle
+ \, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: htt
+ ps://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-schedule
+URL:https://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-sch
+ edule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Edge
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Edge 161 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:releases-software-firefox-164-20270126@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20270126
 DTEND;VALUE=DATE:20270127
 SUMMARY:Firefox 164
-DESCRIPTION:Mozilla Firefox 164 Release.\nAb Firefox 155 testet Mozilla ein
- en Zwei-Wochen-Release-Takt. Mozilla bezeichnet das ausdrücklich als Expe
- riment — der Plan kann sich ändern.\n\nKonfidenz: bestätigt (Primärqu
- elle)\nQuelle: https://whattrainisitnow.com/calendar/
+DESCRIPTION:Mozilla Firefox 164 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
 URL:https://whattrainisitnow.com/calendar/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -466,16 +854,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:releases-software-chrome-162-stable-20270202@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20270202
 DTEND;VALUE=DATE:20270203
 SUMMARY:Chrome 162 Stable
-DESCRIPTION:Google Chrome 162 erreicht den Stable-Channel.\nAb Chrome 153 g
- ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
- . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
- indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
- Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
- le: https://chromiumdash.appspot.com/schedule
+DESCRIPTION:Google Chrome 162 erreicht den Stable-Kanal.\nSeit Chrome 153 (
+ 08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
+ oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
+ chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
+ pot.com/schedule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -487,17 +874,61 @@ TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:releases-software-edge-162-stable-20270204@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270204
+DTEND;VALUE=DATE:20270205
+SUMMARY:Edge 162 Stable
+DESCRIPTION:Microsoft Edge 162: Beginn des progressiven Rollouts im Stable-
+ Kanal\, typischerweise zwei Tage nach Chrome.\nSeit Edge 152 (27.08.2026) 
+ im Zwei-Wochen-Takt. Künftige Termine nennt Microsoft als Release-Woche u
+ nd als ungefähr — Edge 159 hat Microsoft im Oktober 2026 bereits um ein
+ e Woche auf den 10.12. verschoben.\n\nKonfidenz: bestätigt (Primärquelle
+ \, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: htt
+ ps://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-schedule
+URL:https://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-sch
+ edule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Edge
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Edge 162 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-firefox-165-20270209@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270209
+DTEND;VALUE=DATE:20270210
+SUMMARY:Firefox 165
+DESCRIPTION:Mozilla Firefox 165 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 165
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:releases-software-chrome-163-stable-20270216@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20270216
 DTEND;VALUE=DATE:20270217
 SUMMARY:Chrome 163 Stable
-DESCRIPTION:Google Chrome 163 erreicht den Stable-Channel.\nAb Chrome 153 g
- ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
- . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
- indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
- Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
- le: https://chromiumdash.appspot.com/schedule
+DESCRIPTION:Google Chrome 163 erreicht den Stable-Kanal.\nSeit Chrome 153 (
+ 08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
+ oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
+ chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
+ pot.com/schedule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -509,17 +940,61 @@ TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:releases-software-edge-163-stable-20270218@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270218
+DTEND;VALUE=DATE:20270219
+SUMMARY:Edge 163 Stable
+DESCRIPTION:Microsoft Edge 163: Beginn des progressiven Rollouts im Stable-
+ Kanal\, typischerweise zwei Tage nach Chrome.\nSeit Edge 152 (27.08.2026) 
+ im Zwei-Wochen-Takt. Künftige Termine nennt Microsoft als Release-Woche u
+ nd als ungefähr — Edge 159 hat Microsoft im Oktober 2026 bereits um ein
+ e Woche auf den 10.12. verschoben.\n\nKonfidenz: bestätigt (Primärquelle
+ \, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: htt
+ ps://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-schedule
+URL:https://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-sch
+ edule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Edge
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Edge 163 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-firefox-166-20270223@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270223
+DTEND;VALUE=DATE:20270224
+SUMMARY:Firefox 166
+DESCRIPTION:Mozilla Firefox 166 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 166
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:releases-software-chrome-164-stable-20270302@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20270302
 DTEND;VALUE=DATE:20270303
 SUMMARY:Chrome 164 Stable
-DESCRIPTION:Google Chrome 164 erreicht den Stable-Channel.\nAb Chrome 153 g
- ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
- . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
- indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
- Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
- le: https://chromiumdash.appspot.com/schedule
+DESCRIPTION:Google Chrome 164 erreicht den Stable-Kanal.\nSeit Chrome 153 (
+ 08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
+ oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
+ chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
+ pot.com/schedule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -531,17 +1006,108 @@ TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:releases-software-chrome-164-extended-stable-20270302@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270302
+DTEND;VALUE=DATE:20270303
+SUMMARY:Chrome 164 → Extended Stable
+DESCRIPTION:Chrome 164 wird Extended Stable und bleibt dort acht Wochen. De
+ r Kanal ist für verwaltete Windows- und macOS-Umgebungen gedacht und wird
+  per Policy aktiviert. Er ist von der Umstellung auf zwei Wochen nicht bet
+ roffen und springt jeweils um vier Milestones.\nGoogle selbst veröffentli
+ cht keine Extended-Stable-Termine\; 156 und 160 sind berichtet\, die folge
+ nden sind aus dem Muster abgeleitet. Microsoft bestätigt für Edge offizi
+ ell dasselbe Muster (152\, 156\, 160\, 164).\n\nKonfidenz: abgeleitet (aus
+  dem Muster geschlossen\, nicht offiziell angekündigt)\nQuelle: https://s
+ upport.google.com/chrome/a/answer/16942104
+URL:https://support.google.com/chrome/a/answer/16942104
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+CATEGORIES:Release\,Browser\,Chrome\,Enterprise
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chrome 164 → Extended Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-edge-164-stable-20270304@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270304
+DTEND;VALUE=DATE:20270305
+SUMMARY:Edge 164 Stable
+DESCRIPTION:Microsoft Edge 164: Beginn des progressiven Rollouts im Stable-
+ Kanal\, typischerweise zwei Tage nach Chrome.\nSeit Edge 152 (27.08.2026) 
+ im Zwei-Wochen-Takt. Künftige Termine nennt Microsoft als Release-Woche u
+ nd als ungefähr — Edge 159 hat Microsoft im Oktober 2026 bereits um ein
+ e Woche auf den 10.12. verschoben.\n\nKonfidenz: bestätigt (Primärquelle
+ \, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: htt
+ ps://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-schedule
+URL:https://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-sch
+ edule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Edge
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Edge 164 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-edge-164-extended-stable-20270304@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270304
+DTEND;VALUE=DATE:20270305
+SUMMARY:Edge 164 → Extended Stable
+DESCRIPTION:Edge 164 wird Extended Stable. Der Kanal folgt einem Acht-Woche
+ n-Zyklus und nimmt jedes vierte Release (152\, 156\, 160\, 164 …). Nur f
+ ür verwaltete Umgebungen.\n\nKonfidenz: bestätigt (Primärquelle\, oder 
+ die tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://lea
+ rn.microsoft.com/en-us/deployedge/microsoft-edge-release-schedule
+URL:https://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-sch
+ edule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Edge\,Enterprise
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Edge 164 → Extended Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-firefox-167-20270309@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270309
+DTEND;VALUE=DATE:20270310
+SUMMARY:Firefox 167
+DESCRIPTION:Mozilla Firefox 167 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 167
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:releases-software-chrome-165-stable-20270316@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20270316
 DTEND;VALUE=DATE:20270317
 SUMMARY:Chrome 165 Stable
-DESCRIPTION:Google Chrome 165 erreicht den Stable-Channel.\nAb Chrome 153 g
- ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
- . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
- indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
- Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
- le: https://chromiumdash.appspot.com/schedule
+DESCRIPTION:Google Chrome 165 erreicht den Stable-Kanal.\nSeit Chrome 153 (
+ 08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
+ oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
+ chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
+ pot.com/schedule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -553,17 +1119,64 @@ TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:releases-software-edge-165-stable-20270318@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270318
+DTEND;VALUE=DATE:20270319
+SUMMARY:Edge 165 Stable
+DESCRIPTION:Microsoft Edge 165: Beginn des progressiven Rollouts im Stable-
+ Kanal\, typischerweise zwei Tage nach Chrome.\nSeit Edge 152 (27.08.2026) 
+ im Zwei-Wochen-Takt. Künftige Termine nennt Microsoft als Release-Woche u
+ nd als ungefähr — Edge 159 hat Microsoft im Oktober 2026 bereits um ein
+ e Woche auf den 10.12. verschoben.\n\nKonfidenz: bestätigt (Primärquelle
+ \, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: htt
+ ps://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-schedule
+URL:https://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-sch
+ edule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Edge
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Edge 165 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-firefox-168-20270323@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270323
+DTEND;VALUE=DATE:20270324
+SUMMARY:Firefox 168
+DESCRIPTION:Mozilla Firefox 168 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\nMit diesem Release 
+ erscheint laut Mozilla-Kalender das letzte Update für ESR 115 (115.53) 
+ — die Linie\, die als letzte noch Windows 7\, 8 und 8.1 sowie ältere ma
+ cOS-Versionen unterstützt.\n\nKonfidenz: bestätigt (Primärquelle\, oder
+  die tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://wh
+ attrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 168
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:releases-software-chrome-166-stable-20270330@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20270330
 DTEND;VALUE=DATE:20270331
 SUMMARY:Chrome 166 Stable
-DESCRIPTION:Google Chrome 166 erreicht den Stable-Channel.\nAb Chrome 153 g
- ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
- . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
- indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
- Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
- le: https://chromiumdash.appspot.com/schedule
+DESCRIPTION:Google Chrome 166 erreicht den Stable-Kanal.\nSeit Chrome 153 (
+ 08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
+ oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
+ chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
+ pot.com/schedule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -575,17 +1188,61 @@ TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:releases-software-edge-166-stable-20270401@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:Edge 166 Stable
+DESCRIPTION:Microsoft Edge 166: Beginn des progressiven Rollouts im Stable-
+ Kanal\, typischerweise zwei Tage nach Chrome.\nSeit Edge 152 (27.08.2026) 
+ im Zwei-Wochen-Takt. Künftige Termine nennt Microsoft als Release-Woche u
+ nd als ungefähr — Edge 159 hat Microsoft im Oktober 2026 bereits um ein
+ e Woche auf den 10.12. verschoben.\n\nKonfidenz: bestätigt (Primärquelle
+ \, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: htt
+ ps://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-schedule
+URL:https://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-sch
+ edule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Edge
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Edge 166 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-firefox-169-20270406@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270406
+DTEND;VALUE=DATE:20270407
+SUMMARY:Firefox 169
+DESCRIPTION:Mozilla Firefox 169 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 169
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:releases-software-chrome-167-stable-20270413@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20270413
 DTEND;VALUE=DATE:20270414
 SUMMARY:Chrome 167 Stable
-DESCRIPTION:Google Chrome 167 erreicht den Stable-Channel.\nAb Chrome 153 g
- ilt der Zwei-Wochen-Takt (vorher vier Wochen)\, auf allen Plattformen inkl
- . Android und iOS.\nFür Unternehmen wichtig: Der Extended-Stable-Kanal (W
- indows/Mac\, per Policy) bleibt beim Acht-Wochen-Rhythmus und ist von der 
- Umstellung nicht betroffen.\n\nKonfidenz: bestätigt (Primärquelle)\nQuel
- le: https://chromiumdash.appspot.com/schedule
+DESCRIPTION:Google Chrome 167 erreicht den Stable-Kanal.\nSeit Chrome 153 (
+ 08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
+ oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
+ chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
+ pot.com/schedule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -593,6 +1250,650 @@ CATEGORIES:Release\,Browser\,Chrome
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Chrome 167 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-firefox-170-20270420@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270420
+DTEND;VALUE=DATE:20270421
+SUMMARY:Firefox 170
+DESCRIPTION:Mozilla Firefox 170 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 170
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-ubuntu-27-04-release-20270422@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270422
+DTEND;VALUE=DATE:20270423
+SUMMARY:Ubuntu 27.04 Release
+DESCRIPTION:Interim-Release mit neun Monaten Support. Der Codename ist noch
+  nicht vergeben\, Canonical führt es als „T T“.\nMeilensteine: Featur
+ e Freeze 25.02.2027\, Beta 01.04.2027\, Kernel Freeze 08.04.2027\, Final F
+ reeze und Release Candidate 15.04.2027.\n\nKonfidenz: bestätigt (Primärq
+ uelle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle
+ : https://documentation.ubuntu.com/release-notes/27.04/schedule/
+URL:https://documentation.ubuntu.com/release-notes/27.04/schedule/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Linux\,Ubuntu
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Ubuntu 27.04 Release
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-chrome-168-stable-20270427@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270427
+DTEND;VALUE=DATE:20270428
+SUMMARY:Chrome 168 Stable
+DESCRIPTION:Google Chrome 168 erreicht den Stable-Kanal.\nSeit Chrome 153 (
+ 08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
+ oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
+ chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
+ pot.com/schedule
+URL:https://chromiumdash.appspot.com/schedule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Chrome
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chrome 168 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-chrome-168-extended-stable-20270427@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270427
+DTEND;VALUE=DATE:20270428
+SUMMARY:Chrome 168 → Extended Stable
+DESCRIPTION:Chrome 168 wird Extended Stable und bleibt dort acht Wochen. De
+ r Kanal ist für verwaltete Windows- und macOS-Umgebungen gedacht und wird
+  per Policy aktiviert. Er ist von der Umstellung auf zwei Wochen nicht bet
+ roffen und springt jeweils um vier Milestones.\nGoogle selbst veröffentli
+ cht keine Extended-Stable-Termine\; 156 und 160 sind berichtet\, die folge
+ nden sind aus dem Muster abgeleitet. Microsoft bestätigt für Edge offizi
+ ell dasselbe Muster (152\, 156\, 160\, 164).\n\nKonfidenz: abgeleitet (aus
+  dem Muster geschlossen\, nicht offiziell angekündigt)\nQuelle: https://s
+ upport.google.com/chrome/a/answer/16942104
+URL:https://support.google.com/chrome/a/answer/16942104
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+CATEGORIES:Release\,Browser\,Chrome\,Enterprise
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chrome 168 → Extended Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-firefox-171-20270504@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270504
+DTEND;VALUE=DATE:20270505
+SUMMARY:Firefox 171
+DESCRIPTION:Mozilla Firefox 171 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 171
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-chrome-169-stable-20270511@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270511
+DTEND;VALUE=DATE:20270512
+SUMMARY:Chrome 169 Stable
+DESCRIPTION:Google Chrome 169 erreicht den Stable-Kanal.\nSeit Chrome 153 (
+ 08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
+ oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
+ chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
+ pot.com/schedule
+URL:https://chromiumdash.appspot.com/schedule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Chrome
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chrome 169 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-firefox-172-20270518@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270518
+DTEND;VALUE=DATE:20270519
+SUMMARY:Firefox 172
+DESCRIPTION:Mozilla Firefox 172 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 172
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-chrome-170-stable-20270525@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270525
+DTEND;VALUE=DATE:20270526
+SUMMARY:Chrome 170 Stable
+DESCRIPTION:Google Chrome 170 erreicht den Stable-Kanal.\nSeit Chrome 153 (
+ 08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
+ oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
+ chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
+ pot.com/schedule
+URL:https://chromiumdash.appspot.com/schedule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Chrome
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chrome 170 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-firefox-173-20270601@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270601
+DTEND;VALUE=DATE:20270602
+SUMMARY:Firefox 173
+DESCRIPTION:Mozilla Firefox 173 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 173
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-chrome-171-stable-20270608@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270608
+DTEND;VALUE=DATE:20270609
+SUMMARY:Chrome 171 Stable
+DESCRIPTION:Google Chrome 171 erreicht den Stable-Kanal.\nSeit Chrome 153 (
+ 08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
+ oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
+ chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
+ pot.com/schedule
+URL:https://chromiumdash.appspot.com/schedule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Chrome
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chrome 171 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-firefox-174-20270615@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270615
+DTEND;VALUE=DATE:20270616
+SUMMARY:Firefox 174
+DESCRIPTION:Mozilla Firefox 174 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 174
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-chrome-172-stable-20270622@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270622
+DTEND;VALUE=DATE:20270623
+SUMMARY:Chrome 172 Stable
+DESCRIPTION:Google Chrome 172 erreicht den Stable-Kanal.\nSeit Chrome 153 (
+ 08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
+ oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
+ chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
+ pot.com/schedule
+URL:https://chromiumdash.appspot.com/schedule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Chrome
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chrome 172 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-chrome-172-extended-stable-20270622@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270622
+DTEND;VALUE=DATE:20270623
+SUMMARY:Chrome 172 → Extended Stable
+DESCRIPTION:Chrome 172 wird Extended Stable und bleibt dort acht Wochen. De
+ r Kanal ist für verwaltete Windows- und macOS-Umgebungen gedacht und wird
+  per Policy aktiviert. Er ist von der Umstellung auf zwei Wochen nicht bet
+ roffen und springt jeweils um vier Milestones.\nGoogle selbst veröffentli
+ cht keine Extended-Stable-Termine\; 156 und 160 sind berichtet\, die folge
+ nden sind aus dem Muster abgeleitet. Microsoft bestätigt für Edge offizi
+ ell dasselbe Muster (152\, 156\, 160\, 164).\n\nKonfidenz: abgeleitet (aus
+  dem Muster geschlossen\, nicht offiziell angekündigt)\nQuelle: https://s
+ upport.google.com/chrome/a/answer/16942104
+URL:https://support.google.com/chrome/a/answer/16942104
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+CATEGORIES:Release\,Browser\,Chrome\,Enterprise
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chrome 172 → Extended Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-firefox-175-20270629@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270629
+DTEND;VALUE=DATE:20270630
+SUMMARY:Firefox 175
+DESCRIPTION:Mozilla Firefox 175 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\nNeue ESR-Basis: Zus
+ ammen mit Firefox 175 erscheint ESR 175.0. Bis September 2027 laufen ESR 1
+ 53 und ESR 175 parallel — Zeit für den Umstieg in verwalteten Umgebunge
+ n.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termi
+ ne decken sich mit der Regel)\nQuelle: https://whattrainisitnow.com/calend
+ ar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 175
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-chrome-173-stable-20270706@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270706
+DTEND;VALUE=DATE:20270707
+SUMMARY:Chrome 173 Stable
+DESCRIPTION:Google Chrome 173 erreicht den Stable-Kanal.\nSeit Chrome 153 (
+ 08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
+ oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
+ chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
+ pot.com/schedule
+URL:https://chromiumdash.appspot.com/schedule
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Chrome
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chrome 173 Stable
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-firefox-176-20270713@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270713
+DTEND;VALUE=DATE:20270714
+SUMMARY:Firefox 176
+DESCRIPTION:Mozilla Firefox 176 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 176
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-firefox-177-20270727@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270727
+DTEND;VALUE=DATE:20270728
+SUMMARY:Firefox 177
+DESCRIPTION:Mozilla Firefox 177 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 177
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-firefox-178-20270810@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270810
+DTEND;VALUE=DATE:20270811
+SUMMARY:Firefox 178
+DESCRIPTION:Mozilla Firefox 178 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 178
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-firefox-179-20270824@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270824
+DTEND;VALUE=DATE:20270825
+SUMMARY:Firefox 179
+DESCRIPTION:Mozilla Firefox 179 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 179
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-firefox-180-20270907@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270907
+DTEND;VALUE=DATE:20270908
+SUMMARY:Firefox 180
+DESCRIPTION:Mozilla Firefox 180 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\nMit diesem Release 
+ erscheint laut Mozilla-Kalender das letzte Update für ESR 153 (153.27). D
+ anach ist ESR 175 die einzige ESR-Linie.\n\nKonfidenz: bestätigt (Primär
+ quelle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuell
+ e: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 180
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-firefox-181-20270921@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270921
+DTEND;VALUE=DATE:20270922
+SUMMARY:Firefox 181
+DESCRIPTION:Mozilla Firefox 181 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 181
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-firefox-182-20271005@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20271005
+DTEND;VALUE=DATE:20271006
+SUMMARY:Firefox 182
+DESCRIPTION:Mozilla Firefox 182 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 182
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-firefox-183-20271019@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20271019
+DTEND;VALUE=DATE:20271020
+SUMMARY:Firefox 183
+DESCRIPTION:Mozilla Firefox 183 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 183
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-firefox-184-20271102@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20271102
+DTEND;VALUE=DATE:20271103
+SUMMARY:Firefox 184
+DESCRIPTION:Mozilla Firefox 184 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 184
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-firefox-185-20271116@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20271116
+DTEND;VALUE=DATE:20271117
+SUMMARY:Firefox 185
+DESCRIPTION:Mozilla Firefox 185 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 185
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-firefox-186-20271130@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20271130
+DTEND;VALUE=DATE:20271201
+SUMMARY:Firefox 186
+DESCRIPTION:Mozilla Firefox 186 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 186
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-firefox-187-20271214@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20271214
+DTEND;VALUE=DATE:20271215
+SUMMARY:Firefox 187
+DESCRIPTION:Mozilla Firefox 187 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 187
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-firefox-188-20280111@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20280111
+DTEND;VALUE=DATE:20280112
+SUMMARY:Firefox 188
+DESCRIPTION:Mozilla Firefox 188 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 188
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-firefox-189-20280125@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20280125
+DTEND;VALUE=DATE:20280126
+SUMMARY:Firefox 189
+DESCRIPTION:Mozilla Firefox 189 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 189
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-software-firefox-190-20280208@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20280208
+DTEND;VALUE=DATE:20280209
+SUMMARY:Firefox 190
+DESCRIPTION:Mozilla Firefox 190 Release.\nSeit Firefox 155 (01.09.2026) im 
+ Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
+ net. Sicherheits-Zwischenreleases kommen zusätzlich.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://whattrainisitnow.com/calendar/
+URL:https://whattrainisitnow.com/calendar/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Browser\,Firefox
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Firefox 190
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT

@@ -9,23 +9,58 @@ REFRESH-INTERVAL;VALUE=DURATION:P30D
 X-PUBLISHED-TTL:P30D
 BEGIN:VEVENT
 UID:patchday-microsoft-microsoft-patch-tuesday@awesomecalendars
-DTSTAMP:20260816T000000Z
-DTSTART;VALUE=DATE:20260811
-DTEND;VALUE=DATE:20260812
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260113
+DTEND;VALUE=DATE:20260114
 RRULE:FREQ=MONTHLY;BYDAY=2TU
 SUMMARY:Microsoft Patch Tuesday
 DESCRIPTION:Monatlicher Security-Update-Release von Microsoft (Windows\, Of
  fice\, Exchange\, SQL Server\, Edge …).\nVeröffentlichung gegen 10:00 U
- hr Pacific Time — das entspricht 19:00 MESZ bzw. 19:00 MEZ am selben Tag
- .\nRegel: zweiter Dienstag jedes Monats.\n\nKonfidenz: bestätigt (Primär
- quelle)\nQuelle: https://msrc.microsoft.com/update-guide/releaseNote/
+ hr Pacific Time — in Mitteleuropa 19:00 Uhr am selben Tag. Liegt der Ter
+ min im März zwischen der US-Umstellung auf Sommerzeit (zweiter Sonntag) u
+ nd der europäischen (letzter Sonntag)\, ist es 18:00 Uhr — das betrifft
+  die meisten\, aber nicht alle Jahre.\nSeit 28.07.2026 sammelt Windows 11 
+ alle neustartpflichtigen Updates und installiert sie zusammen mit diesem R
+ elease — ein Neustart im Monat\, und zwar hier.\nRegel: zweiter Dienstag
+  jedes Monats.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsäch
+ lichen Termine decken sich mit der Regel)\nQuelle: https://msrc.microsoft.
+ com/update-guide/releaseNote/
 URL:https://msrc.microsoft.com/update-guide/releaseNote/
+CATEGORIES:Patchday\,Microsoft
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
-CATEGORIES:Patchday\,Microsoft
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Microsoft Patch Tuesday
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:patchday-microsoft-windows-hotpatch-baseline-monat-neustart@awesomecale
+ ndars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260113
+DTEND;VALUE=DATE:20260114
+RRULE:FREQ=YEARLY;BYMONTH=1,4,7,10;BYDAY=2TU
+SUMMARY:Windows Hotpatch: Baseline-Monat (Neustart)
+DESCRIPTION:Für Windows 11 Enterprise und Windows Server mit Hotpatch: In 
+ diesen Monaten kommt das reguläre kumulative Update\, die Geräte müssen
+  neu starten. In den beiden Folgemonaten kommen Hotpatches ohne Neustart.\
+ nRegel: Patch Tuesday im Januar\, April\, Juli und Oktober.\n2026 wich Mic
+ rosoft davon ab: zusätzliche Baseline im Juni\, und der September-Release
+  kam als Standard-Update mit Neustartpflicht. Der nächste neustartfreie Z
+ yklus beginnt laut Microsoft im November 2026.\n\nKonfidenz: bestätigt (P
+ rimärquelle\, oder die tatsächlichen Termine decken sich mit der Regel)\
+ nQuelle: https://techcommunity.microsoft.com/blog/windows-itpro-blog/hotpa
+ tch-for-client-frequently-asked-questions/4413582
+URL:https://techcommunity.microsoft.com/blog/windows-itpro-blog/hotpatch-fo
+ r-client-frequently-asked-questions/4413582
+CATEGORIES:Patchday\,Microsoft
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Windows Hotpatch: Baseline-Monat (Neustart)
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT

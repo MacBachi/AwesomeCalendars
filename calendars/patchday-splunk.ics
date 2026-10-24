@@ -1,0 +1,57 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AwesomeCalendars//Patchdays, Releases & Conferences//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Patchday · Splunk
+X-WR-CALDESC:Planmäßige Security-Release-Termine von Splunk.
+REFRESH-INTERVAL;VALUE=DURATION:P30D
+X-PUBLISHED-TTL:P30D
+BEGIN:VEVENT
+UID:patchday-splunk-splunk-security-advisories@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260121
+DTEND;VALUE=DATE:20260122
+RRULE:FREQ=MONTHLY;BYDAY=3WE
+SUMMARY:Splunk Security Advisories
+DESCRIPTION:Splunk veröffentlicht Advisories laut eigener FAQ „in der Re
+ gel“ am dritten Mittwoch\, einige Wochen nachdem die Fixes bereitstehen.
+ \nDer dritte Mittwoch ist zugleich ein Cisco-Termin\; Splunk gehört zu Ci
+ sco. Belegt 2026: 15.04.\, 15.07.\, 19.08. und 21.10.\nEinmalige Abweichun
+ g: Die für den 16.09.2026 geplanten Advisories kamen verschoben am 07.10.
+ 2026.\nRegel: dritter Mittwoch jedes Monats.\n\nKonfidenz: bestätigt (Pri
+ märquelle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQ
+ uelle: https://advisory.splunk.com/faqs
+URL:https://advisory.splunk.com/faqs
+CATEGORIES:Patchday\,Splunk
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Splunk Security Advisories
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:patchday-splunk-splunk-security-advisories-verschoben-20261007@awesomec
+ alendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261007
+DTEND;VALUE=DATE:20261008
+SUMMARY:Splunk Security Advisories (verschoben)
+DESCRIPTION:Die ursprünglich für den 16.09.2026 geplanten Advisories für
+  Splunk Enterprise\, Universal Forwarder\, Add-on for AWS und Splunk MCP S
+ erver.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen T
+ ermine decken sich mit der Regel)\nQuelle: https://advisory.splunk.com/adv
+ isories/SVD-2026-0901
+URL:https://advisory.splunk.com/advisories/SVD-2026-0901
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Patchday\,Splunk
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Splunk Security Advisories (verschoben)
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

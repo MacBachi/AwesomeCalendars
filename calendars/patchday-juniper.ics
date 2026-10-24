@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AwesomeCalendars//Patchdays, Releases & Conferences//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Patchday · Juniper
+X-WR-CALDESC:Planmäßige Security-Release-Termine von Juniper.
+REFRESH-INTERVAL;VALUE=DURATION:P30D
+X-PUBLISHED-TTL:P30D
+BEGIN:VEVENT
+UID:patchday-juniper-juniper-security-advisories-quartal@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260114
+DTEND;VALUE=DATE:20260115
+RRULE:FREQ=YEARLY;BYMONTH=1,4,7,10;BYDAY=2WE
+SUMMARY:Juniper Security Advisories (Quartal)
+DESCRIPTION:Juniper SIRT veröffentlicht nicht dringende Advisories für al
+ le Juniper-Produkte gebündelt viermal im Jahr.\nAußer der Reihe nur bei 
+ aktiver Ausnutzung oder koordinierten Multi-Vendor-Themen.\nRegel: zweiter
+  Mittwoch im Januar\, April\, Juli und Oktober.\n\nKonfidenz: bestätigt (
+ Primärquelle\, oder die tatsächlichen Termine decken sich mit der Regel)
+ \nQuelle: https://www.juniper.net/documentation/us/en/software/juniper-rou
+ ting-director2.8.0/user-guide/topics/concept/sirt-advisories-overview.html
+URL:https://www.juniper.net/documentation/us/en/software/juniper-routing-di
+ rector2.8.0/user-guide/topics/concept/sirt-advisories-overview.html
+CATEGORIES:Patchday\,Juniper
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Juniper Security Advisories (Quartal)
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

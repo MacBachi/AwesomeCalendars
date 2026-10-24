@@ -10,13 +10,14 @@ REFRESH-INTERVAL;VALUE=DURATION:P7D
 X-PUBLISHED-TTL:P7D
 BEGIN:VEVENT
 UID:conferences-security-it-sa-expo-congress-2026-20261027@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261030
 SUMMARY:it-sa Expo & Congress 2026
 DESCRIPTION:Größte IT-Security-Fachmesse im deutschsprachigen Raum.\n\nKo
- nfidenz: bestätigt (Primärquelle)\nQuelle: https://www.itsa365.de/en/it-
- sa-expo-congress/exhibition-info
+ nfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine decke
+ n sich mit der Regel)\nQuelle: https://www.itsa365.de/en/it-sa-expo-congre
+ ss/exhibition-info
 URL:https://www.itsa365.de/en/it-sa-expo-congress/exhibition-info
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -29,20 +30,63 @@ TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:conferences-security-deepsec-2026-20261117@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261121
+SUMMARY:DeepSec 2026
+DESCRIPTION:DeepSec In-Depth Security Conference in Wien\, technisch und he
+ rstellerneutral. Trainings am 17. und 18.11.\, Konferenz am 19. und 20.11.
+ \n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine
+  decken sich mit der Regel)\nQuelle: https://deepsec.net/
+URL:https://deepsec.net/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Renaissance Hotel\, Wien\, Österreich
+CATEGORIES:Konferenz\,Security\,DACH
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:DeepSec 2026
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-security-black-hat-europe-2026-20261207@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261211
+SUMMARY:Black Hat Europe 2026
+DESCRIPTION:Trainings ab 07.12.\, Briefings\, Arsenal und Business Hall am 
+ 09. und 10.12.\nblackhat.com war beim automatisierten Abruf nicht erreichb
+ ar (403) — Termin stammt aus übereinstimmenden Sekundärquellen.\n\nKon
+ fidenz: wahrscheinlich (Sekundärquelle\, nicht am Hersteller verifiziert)
+ \nQuelle: https://blackhat.com/europe/
+URL:https://blackhat.com/europe/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:ExCeL London\, Großbritannien
+CATEGORIES:Konferenz\,Security
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Black Hat Europe 2026
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:conferences-security-40c3-chaos-communication-congress-20261227@awesome
  calendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20261227
 DTEND;VALUE=DATE:20261231
 SUMMARY:40C3 — Chaos Communication Congress
-DESCRIPTION:40. Chaos Communication Congress des CCC.\nDer Congress liegt t
- raditionell fest auf dem 27.–30. Dezember\; die Ausgabe 2026 war zum Rec
- hercheschluss noch nicht auf events.ccc.de final angekündigt.\n\nKonfiden
- z: wahrscheinlich (Sekundärquelle\, nicht am Hersteller verifiziert)\nQue
- lle: https://events.ccc.de/en/congress/
-URL:https://events.ccc.de/en/congress/
+DESCRIPTION:40. Chaos Communication Congress\, Motto „Model Citizens“. 
+ Zum Jubiläum erstmals in den Hallen der Hamburg Messe statt im CCH.\nEinr
+ eichungsschluss für Beiträge: 09.10.2026.\n\nKonfidenz: bestätigt (Prim
+ ärquelle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQu
+ elle: https://www.ccc.de/en/updates/2026/40c3-model-citizens
+URL:https://www.ccc.de/en/updates/2026/40c3-model-citizens
 TRANSP:TRANSPARENT
-STATUS:TENTATIVE
+STATUS:CONFIRMED
 LOCATION:Hamburg Messe\, Deutschland
 CATEGORIES:Konferenz\,Security\,DACH
 BEGIN:VALARM
@@ -52,19 +96,18 @@ TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:conferences-security-fosdem-2027-20270206@awesomecalendars
-DTSTAMP:20260816T000000Z
-DTSTART;VALUE=DATE:20270206
-DTEND;VALUE=DATE:20270208
+UID:conferences-security-fosdem-2027-20270130@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270130
+DTEND;VALUE=DATE:20270201
 SUMMARY:FOSDEM 2027
-DESCRIPTION:Free and Open Source Software Developers' European Meeting.\nDa
- tum aus dem festen Muster abgeleitet (erstes Februar-Wochenende) — fosde
- m.org hatte zum Rechercheschluss noch keine 2027-Termine. Vor Reisebuchung
-  prüfen.\n\nKonfidenz: abgeleitet (aus dem historischen Muster\, nicht of
- fiziell angekündigt)\nQuelle: https://fosdem.org/
-URL:https://fosdem.org/
+DESCRIPTION:Free and Open Source Software Developers' European Meeting. Ein
+ tritt frei\, keine Registrierung.\n\nKonfidenz: bestätigt (Primärquelle\
+ , oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: http
+ s://fosdem.org/2027/news/fosdem-2027-dates/
+URL:https://fosdem.org/2027/news/fosdem-2027-dates/
 TRANSP:TRANSPARENT
-STATUS:TENTATIVE
+STATUS:CONFIRMED
 LOCATION:ULB Solbosch\, Brüssel\, Belgien
 CATEGORIES:Konferenz\,Open Source
 BEGIN:VALARM
@@ -74,17 +117,61 @@ TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:conferences-security-black-hat-asia-2027-20270228@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270304
+SUMMARY:Black Hat Asia 2027
+DESCRIPTION:Trainings am 28.02. und 01.03.\, Briefings am 02. und 03.03.\nb
+ lackhat.com war beim automatisierten Abruf nicht erreichbar (403) — Term
+ in stammt aus übereinstimmenden Sekundärquellen.\n\nKonfidenz: wahrschei
+ nlich (Sekundärquelle\, nicht am Hersteller verifiziert)\nQuelle: https:/
+ /blackhat.com/asia/
+URL:https://blackhat.com/asia/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Marina Bay Sands\, Singapur
+CATEGORIES:Konferenz\,Security
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Black Hat Asia 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-security-secit-by-heise-2027-20270309@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270309
+DTEND;VALUE=DATE:20270312
+SUMMARY:secIT by heise 2027
+DESCRIPTION:IT-Security-Konferenz und Fachausstellung von heise. 09.03. Wor
+ kshops\, 10. und 11.03. Konferenz und Ausstellung.\n\nKonfidenz: wahrschei
+ nlich (Sekundärquelle\, nicht am Hersteller verifiziert)\nQuelle: https:/
+ /secit-heise.de/
+URL:https://secit-heise.de/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Hannover Congress Centrum\, Deutschland
+CATEGORIES:Konferenz\,Security\,DACH
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:secIT by heise 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:conferences-security-rsac-conference-2027-20270405@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20270405
 DTEND;VALUE=DATE:20270409
 SUMMARY:RSAC Conference 2027
 DESCRIPTION:Größte kommerzielle Cybersecurity-Konferenz weltweit.\n\nKonf
- idenz: wahrscheinlich (Sekundärquelle\, nicht am Hersteller verifiziert)\
- nQuelle: https://www.rsaconference.com/
-URL:https://www.rsaconference.com/
+ idenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine decken 
+ sich mit der Regel)\nQuelle: https://www.moscone.com/events/rsac-2027-conf
+ erence
+URL:https://www.moscone.com/events/rsac-2027-conference
 TRANSP:TRANSPARENT
-STATUS:TENTATIVE
+STATUS:CONFIRMED
 LOCATION:Moscone Center\, San Francisco\, USA
 CATEGORIES:Konferenz\,Security
 BEGIN:VALARM
@@ -94,17 +181,40 @@ TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:conferences-security-security-forum-hagenberg-2027-20270519@awesomecale
+ ndars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270519
+DTEND;VALUE=DATE:20270521
+SUMMARY:Security Forum Hagenberg 2027
+DESCRIPTION:Etablierte österreichische Fachkonferenz für Informationssich
+ erheit\, organisiert von Studierenden der FH Oberösterreich.\n\nKonfidenz
+ : bestätigt (Primärquelle\, oder die tatsächlichen Termine decken sich 
+ mit der Regel)\nQuelle: https://www.securityforum.at/
+URL:https://www.securityforum.at/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:FH Oberösterreich\, Campus Hagenberg\, Österreich
+CATEGORIES:Konferenz\,Security\,DACH
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Security Forum Hagenberg 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:conferences-security-troopers-2027-20270621@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20270621
 DTEND;VALUE=DATE:20270626
 SUMMARY:TROOPERS 2027
-DESCRIPTION:Technische IT-Security-Konferenz von ERNW\, inkl. Trainings-Tag
- en zu Beginn der Woche.\n\nKonfidenz: wahrscheinlich (Sekundärquelle\, ni
- cht am Hersteller verifiziert)\nQuelle: https://troopers.de/
+DESCRIPTION:Technische IT-Security-Konferenz von ERNW. Trainings am 21. und
+  22.06.\, Konferenz vom 23. bis 25.06.\n\nKonfidenz: bestätigt (Primärqu
+ elle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle:
+  https://troopers.de/
 URL:https://troopers.de/
 TRANSP:TRANSPARENT
-STATUS:TENTATIVE
+STATUS:CONFIRMED
 LOCATION:Heidelberg\, Deutschland
 CATEGORIES:Konferenz\,Security\,DACH
 BEGIN:VALARM
@@ -115,15 +225,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:conferences-security-black-hat-usa-2027-20270731@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20270731
 DTEND;VALUE=DATE:20270806
 SUMMARY:Black Hat USA 2027
 DESCRIPTION:Trainings und Briefings. Die Briefings bilden traditionell die 
  letzten beiden Tage.\nblackhat.com war beim automatisierten Abruf nicht er
- reichbar (403) — Termin stammt aus Sekundärquellen.\n\nKonfidenz: wahrs
- cheinlich (Sekundärquelle\, nicht am Hersteller verifiziert)\nQuelle: htt
- ps://blackhat.com/upcoming.html
+ reichbar (403) — Termin stammt aus übereinstimmenden Sekundärquellen.\
+ n\nKonfidenz: wahrscheinlich (Sekundärquelle\, nicht am Hersteller verifi
+ ziert)\nQuelle: https://blackhat.com/upcoming.html
 URL:https://blackhat.com/upcoming.html
 TRANSP:TRANSPARENT
 STATUS:TENTATIVE
@@ -137,12 +247,13 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:conferences-security-def-con-35-20270805@awesomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20270805
 DTEND;VALUE=DATE:20270809
 SUMMARY:DEF CON 35
 DESCRIPTION:Direkt im Anschluss an die Black Hat USA Briefings.\n\nKonfiden
- z: bestätigt (Primärquelle)\nQuelle: https://defcon.org/
+ z: bestätigt (Primärquelle\, oder die tatsächlichen Termine decken sich
+  mit der Regel)\nQuelle: https://defcon.org/
 URL:https://defcon.org/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -151,6 +262,28 @@ CATEGORIES:Konferenz\,Security
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:DEF CON 35
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-security-it-sa-expo-congress-2027-20271005@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20271005
+DTEND;VALUE=DATE:20271008
+SUMMARY:it-sa Expo & Congress 2027
+DESCRIPTION:Größte IT-Security-Fachmesse im deutschsprachigen Raum.\n\nKo
+ nfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine decke
+ n sich mit der Regel)\nQuelle: https://www.pressebox.de/events/nuernbergme
+ sse-gmbh/it-sa-2027/eventid/62575
+URL:https://www.pressebox.de/events/nuernbergmesse-gmbh/it-sa-2027/eventid/
+ 62575
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Messezentrum Nürnberg\, Deutschland
+CATEGORIES:Konferenz\,Security\,DACH
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:it-sa Expo & Congress 2027
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT

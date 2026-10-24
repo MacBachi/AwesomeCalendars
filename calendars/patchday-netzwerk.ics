@@ -1,0 +1,201 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AwesomeCalendars//Patchdays, Releases & Conferences//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Patchdays · Netzwerk & Security-Appliances
+X-WR-CALDESC:Cisco\, Fortinet\, Palo Alto Networks\, Juniper und Ivanti.
+REFRESH-INTERVAL;VALUE=DURATION:P30D
+X-PUBLISHED-TTL:P30D
+BEGIN:VEVENT
+UID:patchday-netzwerk-cisco-security-advisories@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260702
+RRULE:FREQ=MONTHLY;BYDAY=1WE,3WE
+SUMMARY:Cisco Security Advisories
+DESCRIPTION:Seit Juli 2026 bündelt Cisco Security Advisories und „Securi
+ ty Hardening Releases“ auf den ersten und dritten Mittwoch\, 16:00 UTC (
+ 17:00 Uhr MEZ\, 18:00 Uhr MESZ).\nDie Kern-Betriebssysteme (IOS XE\, IOS X
+ R\, NX-OS\, ASA/FTD\, SD-WAN) kommen quartalsweise und gestaffelt dran\, n
+ ie zwei am selben Termin. Bisher: IOS XE und SD-WAN am 05.08.2026\, IOS XR
+  am 02.09.2026\, ASA/FMC/FTD am 16.09.2026\, NX-OS am 07.10.2026. Am 21.10
+ .2026 folgten Unified Communications\, Expressway und Snort 3.\nWelche Pro
+ dukte betroffen sind\, kündigt Cisco sieben Tage vorher an — auch wenn 
+ an einem Termin gar nichts kommt.\nDie alten Halbjahres-Bundles (IOS/IOS X
+ E im März und September\, FXOS/NX-OS\, IOS XR\, ASA/FTD) sind damit abgel
+ öst. Die letzten erschienen im Februar und März 2026.\n\nKonfidenz: best
+ ätigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit de
+ r Regel)\nQuelle: https://sec.cloudapps.cisco.com/security/center/resource
+ s/risk-based-disclosure
+URL:https://sec.cloudapps.cisco.com/security/center/resources/risk-based-di
+ sclosure
+CATEGORIES:Patchday\,Cisco
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Cisco Security Advisories
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:patchday-netzwerk-cisco-vorankuendigung-advisories-in-7-tagen@awesomeca
+ lendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260624
+DTEND;VALUE=DATE:20260625
+RRULE:FREQ=MONTHLY;BYDAY=2WE,-1WE
+SUMMARY:Cisco Vorankündigung (Advisories in 7 Tagen)
+DESCRIPTION:Sieben Tage vor jedem Veröffentlichungstermin listet Cisco\, w
+ elche Produkte und Plattformen drankommen. Das ist der eigentliche Planung
+ stermin für Changes.\nRegel: zweiter und letzter Mittwoch jedes Monats 
+ — jeweils eine Woche vor dem dritten bzw. dem nächsten ersten Mittwoch.
+ \n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine
+  decken sich mit der Regel)\nQuelle: https://sec.cloudapps.cisco.com/secur
+ ity/center/publicationListing.x
+URL:https://sec.cloudapps.cisco.com/security/center/publicationListing.x
+CATEGORIES:Patchday\,Cisco
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Cisco Vorankündigung (Advisories in 7 Tagen)
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:patchday-netzwerk-fortinet-psirt-advisories@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260113
+DTEND;VALUE=DATE:20260114
+RRULE:FREQ=MONTHLY;BYDAY=2TU
+SUMMARY:Fortinet PSIRT Advisories
+DESCRIPTION:Fortinet bündelt alle Advisories bis einschließlich Schweregr
+ ad „High“ auf den zweiten Dienstag\, veröffentlicht während der Gesc
+ häftszeit an der US-Westküste — in Mitteleuropa also am Abend.\nKritis
+ che Lücken kommen außer der Reihe (Out-of-Cycle) und stehen nicht hier. 
+ Bei FortiOS war das in der Vergangenheit häufig der Fall.\nNeu seit Oktob
+ er 2026: Fortinet liefert Fixes aus eigener KI-gestützter Prüfung zuerst
+  als „Security Hardening Release“ aus und veröffentlicht die Advisori
+ es erst am nächsten zweiten Dienstag. Fortinet kündigt an\, so weiterzua
+ rbeiten\, nennt aber keinen festen Termin für die Releases selbst. Die ge
+ fixten Versionen können also vor diesem Termin da sein.\nRegel: zweiter D
+ ienstag jedes Monats.\n\nKonfidenz: bestätigt (Primärquelle\, oder die t
+ atsächlichen Termine decken sich mit der Regel)\nQuelle: https://www.fort
+ iguard.com/psirt_policy
+URL:https://www.fortiguard.com/psirt_policy
+CATEGORIES:Patchday\,Fortinet
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Fortinet PSIRT Advisories
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:patchday-netzwerk-palo-alto-networks-security-advisories@awesomecalenda
+ rs
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260114
+DTEND;VALUE=DATE:20260115
+RRULE:FREQ=MONTHLY;BYDAY=2WE
+SUMMARY:Palo Alto Networks Security Advisories
+DESCRIPTION:Advisories erscheinen am zweiten Mittwoch um 09:00 Uhr Pacific 
+ Time — 18:00 Uhr in Mitteleuropa. Liegt der Termin im März zwischen der
+  US- und der europäischen Sommerzeitumstellung\, ist es 17:00 Uhr.\nVerö
+ ffentlicht wird erst\, wenn Fixes für alle unterstützten Versionen berei
+ tstehen. Ausnahme: kritische\, aktiv ausgenutzte Lücken.\nRegel: zweiter 
+ Mittwoch jedes Monats.\n\nKonfidenz: bestätigt (Primärquelle\, oder die 
+ tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://www.pal
+ oaltonetworks.com/product-security-assurance
+URL:https://www.paloaltonetworks.com/product-security-assurance
+CATEGORIES:Patchday\,Palo Alto Networks
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Palo Alto Networks Security Advisories
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:patchday-netzwerk-juniper-security-advisories-quartal@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260114
+DTEND;VALUE=DATE:20260115
+RRULE:FREQ=YEARLY;BYMONTH=1,4,7,10;BYDAY=2WE
+SUMMARY:Juniper Security Advisories (Quartal)
+DESCRIPTION:Juniper SIRT veröffentlicht nicht dringende Advisories für al
+ le Juniper-Produkte gebündelt viermal im Jahr.\nAußer der Reihe nur bei 
+ aktiver Ausnutzung oder koordinierten Multi-Vendor-Themen.\nRegel: zweiter
+  Mittwoch im Januar\, April\, Juli und Oktober.\n\nKonfidenz: bestätigt (
+ Primärquelle\, oder die tatsächlichen Termine decken sich mit der Regel)
+ \nQuelle: https://www.juniper.net/documentation/us/en/software/juniper-rou
+ ting-director2.8.0/user-guide/topics/concept/sirt-advisories-overview.html
+URL:https://www.juniper.net/documentation/us/en/software/juniper-routing-di
+ rector2.8.0/user-guide/topics/concept/sirt-advisories-overview.html
+CATEGORIES:Patchday\,Juniper
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Juniper Security Advisories (Quartal)
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:patchday-netzwerk-ivanti-security-advisories@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260113
+DTEND;VALUE=DATE:20260114
+RRULE:FREQ=MONTHLY;BYDAY=2TU
+SUMMARY:Ivanti Security Advisories
+DESCRIPTION:Ivanti veröffentlicht planmäßige Security-Updates (u. a. Con
+ nect Secure\, Policy Secure\, EPMM\, Endpoint Manager) am Microsoft Patch 
+ Tuesday.\nKritische\, aktiv ausgenutzte Lücken kommen außer der Reihe.\n
+ Regel: zweiter Dienstag jedes Monats.\n\nKonfidenz: wahrscheinlich (Sekund
+ ärquelle\, nicht am Hersteller verifiziert)\nQuelle: https://www.ivanti.c
+ om/blog/september-2026-security-update
+URL:https://www.ivanti.com/blog/september-2026-security-update
+CATEGORIES:Patchday\,Ivanti
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Ivanti Security Advisories
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:patchday-netzwerk-fortinet-advisories-zum-security-hardening-release-20
+ 261110@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:Fortinet: Advisories zum Security Hardening Release
+DESCRIPTION:Am 21.10.2026 hat Fortinet ein Security Hardening Release mit k
+ ritischen und hochgradigen Fixes angekündigt. Die Versionen sind seit 22.
+ 10.2026 verfügbar\, CVEs und Advisories folgen erst an diesem Patch Tuesd
+ ay.\nGefixte Versionen: FortiOS 8.0.2\, 7.6.8\, 7.4.13\, 7.2.14 · FortiMa
+ nager und FortiAnalyzer 8.0.2\, 7.6.8\, 7.4.12\, 7.2.13 · FortiMail 8.0.2
+ \, 7.6.7\, 7.4.9 (7.2 muss auf 7.4 oder neuer) · FortiAuthenticator 8.0.4
+ \, 6.6.11.\nFortinet rät\, internetseitige Geräte zuerst und vor diesem 
+ Termin zu aktualisieren — ab der Veröffentlichung sind die Details öff
+ entlich.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen
+  Termine decken sich mit der Regel)\nQuelle: https://www.fortinet.com/blog
+ /ciso-collective/fortinet-releases-security-hardening-release-for-multiple
+ -products
+URL:https://www.fortinet.com/blog/ciso-collective/fortinet-releases-securit
+ y-hardening-release-for-multiple-products
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Patchday\,Fortinet
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Fortinet: Advisories zum Security Hardening Release
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

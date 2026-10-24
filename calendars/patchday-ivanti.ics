@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AwesomeCalendars//Patchdays, Releases & Conferences//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Patchday · Ivanti
+X-WR-CALDESC:Planmäßige Security-Release-Termine von Ivanti.
+REFRESH-INTERVAL;VALUE=DURATION:P30D
+X-PUBLISHED-TTL:P30D
+BEGIN:VEVENT
+UID:patchday-ivanti-ivanti-security-advisories@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260113
+DTEND;VALUE=DATE:20260114
+RRULE:FREQ=MONTHLY;BYDAY=2TU
+SUMMARY:Ivanti Security Advisories
+DESCRIPTION:Ivanti veröffentlicht planmäßige Security-Updates (u. a. Con
+ nect Secure\, Policy Secure\, EPMM\, Endpoint Manager) am Microsoft Patch 
+ Tuesday.\nKritische\, aktiv ausgenutzte Lücken kommen außer der Reihe.\n
+ Regel: zweiter Dienstag jedes Monats.\n\nKonfidenz: wahrscheinlich (Sekund
+ ärquelle\, nicht am Hersteller verifiziert)\nQuelle: https://www.ivanti.c
+ om/blog/september-2026-security-update
+URL:https://www.ivanti.com/blog/september-2026-security-update
+CATEGORIES:Patchday\,Ivanti
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Ivanti Security Advisories
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

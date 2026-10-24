@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AwesomeCalendars//Patchdays, Releases & Conferences//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Patchday · Palo Alto Networks
+X-WR-CALDESC:Planmäßige Security-Release-Termine von Palo Alto Networks.
+REFRESH-INTERVAL;VALUE=DURATION:P30D
+X-PUBLISHED-TTL:P30D
+BEGIN:VEVENT
+UID:patchday-paloalto-palo-alto-networks-security-advisories@awesomecalenda
+ rs
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260114
+DTEND;VALUE=DATE:20260115
+RRULE:FREQ=MONTHLY;BYDAY=2WE
+SUMMARY:Palo Alto Networks Security Advisories
+DESCRIPTION:Advisories erscheinen am zweiten Mittwoch um 09:00 Uhr Pacific 
+ Time — 18:00 Uhr in Mitteleuropa. Liegt der Termin im März zwischen der
+  US- und der europäischen Sommerzeitumstellung\, ist es 17:00 Uhr.\nVerö
+ ffentlicht wird erst\, wenn Fixes für alle unterstützten Versionen berei
+ tstehen. Ausnahme: kritische\, aktiv ausgenutzte Lücken.\nRegel: zweiter 
+ Mittwoch jedes Monats.\n\nKonfidenz: bestätigt (Primärquelle\, oder die 
+ tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://www.pal
+ oaltonetworks.com/product-security-assurance
+URL:https://www.paloaltonetworks.com/product-security-assurance
+CATEGORIES:Patchday\,Palo Alto Networks
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Palo Alto Networks Security Advisories
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

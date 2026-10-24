@@ -4,26 +4,33 @@ PRODID:-//AwesomeCalendars//Patchdays, Releases & Conferences//DE
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:Patchdays · alle Hersteller
-X-WR-CALDESC:Microsoft\, Adobe\, SAP\, Oracle\, Android und Cisco in einem 
- Kalender. Alle Termine regelbasiert (RRULE) und damit unbegrenzt gültig.
+X-WR-CALDESC:Planmäßige Security-Releases von 14 Herstellern in einem Kal
+ ender\, regelbasiert und damit unbegrenzt gültig. Hersteller-Details wie 
+ Ciscos Vorankündigungen stehen nur in den Einzelkalendern.
 REFRESH-INTERVAL;VALUE=DURATION:P30D
 X-PUBLISHED-TTL:P30D
 BEGIN:VEVENT
 UID:patchday-all-microsoft-patch-tuesday@awesomecalendars
-DTSTAMP:20260816T000000Z
-DTSTART;VALUE=DATE:20260811
-DTEND;VALUE=DATE:20260812
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260113
+DTEND;VALUE=DATE:20260114
 RRULE:FREQ=MONTHLY;BYDAY=2TU
 SUMMARY:Microsoft Patch Tuesday
 DESCRIPTION:Monatlicher Security-Update-Release von Microsoft (Windows\, Of
  fice\, Exchange\, SQL Server\, Edge …).\nVeröffentlichung gegen 10:00 U
- hr Pacific Time — das entspricht 19:00 MESZ bzw. 19:00 MEZ am selben Tag
- .\nRegel: zweiter Dienstag jedes Monats.\n\nKonfidenz: bestätigt (Primär
- quelle)\nQuelle: https://msrc.microsoft.com/update-guide/releaseNote/
+ hr Pacific Time — in Mitteleuropa 19:00 Uhr am selben Tag. Liegt der Ter
+ min im März zwischen der US-Umstellung auf Sommerzeit (zweiter Sonntag) u
+ nd der europäischen (letzter Sonntag)\, ist es 18:00 Uhr — das betrifft
+  die meisten\, aber nicht alle Jahre.\nSeit 28.07.2026 sammelt Windows 11 
+ alle neustartpflichtigen Updates und installiert sie zusammen mit diesem R
+ elease — ein Neustart im Monat\, und zwar hier.\nRegel: zweiter Dienstag
+  jedes Monats.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsäch
+ lichen Termine decken sich mit der Regel)\nQuelle: https://msrc.microsoft.
+ com/update-guide/releaseNote/
 URL:https://msrc.microsoft.com/update-guide/releaseNote/
+CATEGORIES:Patchday\,Microsoft
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
-CATEGORIES:Patchday\,Microsoft
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Microsoft Patch Tuesday
@@ -32,22 +39,27 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:patchday-all-adobe-security-bulletins@awesomecalendars
-DTSTAMP:20260816T000000Z
-DTSTART;VALUE=DATE:20260811
-DTEND;VALUE=DATE:20260812
-RRULE:FREQ=MONTHLY;BYDAY=2TU
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260714
+DTEND;VALUE=DATE:20260715
+RRULE:FREQ=MONTHLY;BYDAY=2TU,4TU
 SUMMARY:Adobe Security Bulletins
-DESCRIPTION:Adobe veröffentlicht seine planmäßigen Security Bulletins ge
- bündelt am Microsoft Patch Tuesday (Acrobat/Reader\, Commerce\, Experienc
- e Manager …).\nAußerplanmäßige Out-of-Band-Bulletins kommen zusätzli
- ch und sind hier naturgemäß nicht enthalten.\nRegel: zweiter Dienstag je
- des Monats.\n\nKonfidenz: wahrscheinlich (Sekundärquelle\, nicht am Herst
- eller verifiziert)\nQuelle: https://helpx.adobe.com/security/security-bull
- etin.html
-URL:https://helpx.adobe.com/security/security-bulletin.html
+DESCRIPTION:Seit 14.07.2026 veröffentlicht Adobe Security Bulletins und Ad
+ visories zweimal im Monat statt einmal. Der zweite Dienstag fällt weiter 
+ auf den Microsoft Patch Tuesday\, der vierte Dienstag ist neu.\nBegründun
+ g von Adobe: KI beschleunigt das Finden von Schwachstellen\, die Zeit zwis
+ chen Veröffentlichung und Ausnutzung schrumpft von Tagen auf Stunden.\nAk
+ tiv ausgenutzte Lücken und Zero-Days kommen weiterhin außer der Reihe un
+ d stehen naturgemäß nicht hier.\nRegel: zweiter und vierter Dienstag jed
+ es Monats.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlich
+ en Termine decken sich mit der Regel)\nQuelle: https://blog.adobe.com/secu
+ rity/protecting-customers-faster-how-adobe-is-responding-to-ai-accelerated
+ -vulnerability-discovery
+URL:https://blog.adobe.com/security/protecting-customers-faster-how-adobe-i
+ s-responding-to-ai-accelerated-vulnerability-discovery
+CATEGORIES:Patchday\,Adobe
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
-CATEGORIES:Patchday\,Adobe
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Adobe Security Bulletins
@@ -56,20 +68,20 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:patchday-all-sap-security-patch-day@awesomecalendars
-DTSTAMP:20260816T000000Z
-DTSTART;VALUE=DATE:20260811
-DTEND;VALUE=DATE:20260812
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260113
+DTEND;VALUE=DATE:20260114
 RRULE:FREQ=MONTHLY;BYDAY=2TU
 SUMMARY:SAP Security Patch Day
 DESCRIPTION:SAP veröffentlicht die monatlichen SAP Security Notes.\nRegel:
-  zweiter Dienstag jedes Monats.\n\nKonfidenz: bestätigt (Primärquelle)\n
- Quelle: https://support.sap.com/en/my-support/knowledge-base/security-note
- s-news.html
+  zweiter Dienstag jedes Monats.\n\nKonfidenz: bestätigt (Primärquelle\, 
+ oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: https:
+ //support.sap.com/en/my-support/knowledge-base/security-notes-news.html
 URL:https://support.sap.com/en/my-support/knowledge-base/security-notes-new
  s.html
+CATEGORIES:Patchday\,SAP
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
-CATEGORIES:Patchday\,SAP
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:SAP Security Patch Day
@@ -78,9 +90,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:patchday-all-oracle-critical-patch-update-cpu@awesomecalendars
-DTSTAMP:20260816T000000Z
-DTSTART;VALUE=DATE:20261020
-DTEND;VALUE=DATE:20261021
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260120
+DTEND;VALUE=DATE:20260121
 RRULE:FREQ=YEARLY;BYMONTH=1,4,7,10;BYDAY=3TU
 SUMMARY:Oracle Critical Patch Update (CPU)
 DESCRIPTION:Vierteljährliches Oracle Critical Patch Update — der große\
@@ -90,12 +102,12 @@ DESCRIPTION:Vierteljährliches Oracle Critical Patch Update — der große\
  h als 'Dienstag\, der dem 17. am nächsten liegt'. Die tatsächlich angek
  ündigten Termine (21.07.2026\, 20.10.2026\, 19.01.2027\, 20.04.2027) folg
  en dem dritten Dienstag\; danach ist dieser Kalender gebaut.\n\nKonfidenz:
-  bestätigt (Primärquelle)\nQuelle: https://www.oracle.com/security-alert
- s/
+  bestätigt (Primärquelle\, oder die tatsächlichen Termine decken sich m
+ it der Regel)\nQuelle: https://www.oracle.com/security-alerts/
 URL:https://www.oracle.com/security-alerts/
+CATEGORIES:Patchday\,Oracle
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
-CATEGORIES:Patchday\,Oracle
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Oracle Critical Patch Update (CPU)
@@ -105,22 +117,25 @@ END:VEVENT
 BEGIN:VEVENT
 UID:patchday-all-oracle-critical-security-patch-update-cspu@awesomecalendar
  s
-DTSTAMP:20260816T000000Z
-DTSTART;VALUE=DATE:20260818
-DTEND;VALUE=DATE:20260819
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260616
+DTEND;VALUE=DATE:20260617
 RRULE:FREQ=YEARLY;BYMONTH=2,3,5,6,8,9,11,12;BYDAY=3TU
 SUMMARY:Oracle Critical Security Patch Update (CSPU)
-DESCRIPTION:Seit Mai 2026 liefert Oracle zusätzlich in den Monaten ohne CP
- U einen monatlichen Critical Security Patch Update.\nRegel: dritter Dienst
- ag in den acht Nicht-CPU-Monaten.\nBestätigt durch die tatsächlichen Rel
- eases im Juni (16.06.2026) und August 2026 (18.08.2026) — beide dritter 
- Dienstag.\nEinmalige Ausnahme: Der Auftakt-Release am 28.05.2026 lag auße
- rhalb dieser Kadenz.\n\nKonfidenz: bestätigt (Primärquelle)\nQuelle: htt
- ps://www.oracle.com/security-alerts/
+DESCRIPTION:Seit Mai 2026 liefert Oracle in den acht Monaten ohne CPU einen
+  monatlichen Critical Security Patch Update.\nRegel: dritter Dienstag in d
+ en Nicht-CPU-Monaten. Bestätigt durch Juni (16.06.)\, August (18.08.) und
+  September 2026 (15.09.)\; die nächsten beiden hat Oracle für den 17.11.
+  und 15.12.2026 angekündigt. Einmalige Ausnahme war der Auftakt am 28.05.
+ 2026.\nJava SE: Oracle zieht auch Java in den Monatsrhythmus. Bestätigt i
+ st ein Java-Update am 18.08.2026\, angekündigt ist der 17.11.2026\; für 
+ 2027 plant Oracle mehrere monatliche Java-Updates.\n\nKonfidenz: bestätig
+ t (Primärquelle\, oder die tatsächlichen Termine decken sich mit der Reg
+ el)\nQuelle: https://www.oracle.com/security-alerts/
 URL:https://www.oracle.com/security-alerts/
+CATEGORIES:Patchday\,Oracle
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
-CATEGORIES:Patchday\,Oracle
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Oracle Critical Security Patch Update (CSPU)
@@ -128,49 +143,360 @@ TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:patchday-all-android-security-bulletin@awesomecalendars
-DTSTAMP:20260816T000000Z
-DTSTART;VALUE=DATE:20260803
-DTEND;VALUE=DATE:20260804
-RRULE:FREQ=MONTHLY;BYDAY=1MO
-SUMMARY:Android Security Bulletin
-DESCRIPTION:Monatliches Android Security Bulletin (AOSP) samt Pixel Update 
- Bulletin.\nRegel: erster Montag jedes Monats.\nAusnahme\, die eine RRULE n
- icht abbilden kann: Fällt der erste Montag auf einen US-Feiertag\, ersche
- int das Bulletin am folgenden Werktag.\n\nKonfidenz: bestätigt (Primärqu
- elle)\nQuelle: https://source.android.com/docs/security/bulletin/asb-overv
- iew
+UID:patchday-all-android-security-bulletin-monat@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260105
+DTEND;VALUE=DATE:20260106
+RRULE:FREQ=YEARLY;BYMONTH=1,2,4,5,7,8,10,11;BYDAY=1MO
+SUMMARY:Android Security Bulletin (Monat)
+DESCRIPTION:Monatliches Android Security Bulletin. Seit Googles Umstellung 
+ auf risikobasierte Updates enthalten die Monate zwischen den Quartals-Rele
+ ases nur noch Hochrisiko-Lücken — aktiv ausgenutzt oder Teil einer beka
+ nnten Exploit-Kette. Manche Bulletins enthalten null Fixes.\nRegel: erster
+  Montag. Fällt er auf einen US-Feiertag\, erscheint das Bulletin am folge
+ nden Werktag.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächl
+ ichen Termine decken sich mit der Regel)\nQuelle: https://source.android.c
+ om/docs/security/bulletin/asb-overview
 URL:https://source.android.com/docs/security/bulletin/asb-overview
+CATEGORIES:Patchday\,Android
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
-CATEGORIES:Patchday\,Android\,Google
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Android Security Bulletin
+DESCRIPTION:Android Security Bulletin (Monat)
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:patchday-all-cisco-ios-ios-xe-bundled-publication@awesomecalendars
-DTSTAMP:20260816T000000Z
-DTSTART;VALUE=DATE:20260923
-DTEND;VALUE=DATE:20260924
-RRULE:FREQ=YEARLY;BYMONTH=3,9;BYDAY=4WE
-SUMMARY:Cisco IOS / IOS XE Bundled Publication
-DESCRIPTION:Halbjährliche gebündelte Security-Advisory-Veröffentlichung 
- für Cisco IOS und IOS XE Software.\nRegel: vierter Mittwoch im März und 
- September.\nNicht enthalten: die separate ASA/FMC/FTD-Bundle-Veröffentlic
- hung — deren Termine wandern und lassen sich nicht verlässlich als Rege
- l ausdrücken. Siehe sources.md.\n\nKonfidenz: bestätigt (Primärquelle)\
- nQuelle: https://sec.cloudapps.cisco.com/security/center/publicationListin
- g.x
-URL:https://sec.cloudapps.cisco.com/security/center/publicationListing.x
+UID:patchday-all-android-security-bulletin-quartal-gross@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260302
+DTEND;VALUE=DATE:20260303
+RRULE:FREQ=YEARLY;BYMONTH=3,6,12;BYDAY=1MO
+SUMMARY:Android Security Bulletin (Quartal\, groß)
+DESCRIPTION:Großes Quartals-Bulletin\, abgestimmt auf Androids Quartals-Re
+ lease-Plan. Hier landet der Großteil der Fixes (September 2026: 180 CVEs)
+ .\nRegel: erster Montag im März\, Juni und Dezember. September steht als 
+ eigener Termin im Kalender\, weil dort immer Labor Day dazwischenliegt.\n\
+ nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine de
+ cken sich mit der Regel)\nQuelle: https://source.android.com/docs/security
+ /bulletin/asb-overview
+URL:https://source.android.com/docs/security/bulletin/asb-overview
+CATEGORIES:Patchday\,Android
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
-CATEGORIES:Patchday\,Cisco
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Cisco IOS / IOS XE Bundled Publication
+DESCRIPTION:Android Security Bulletin (Quartal\, groß)
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:patchday-all-android-security-bulletin-quartal-september@awesomecalenda
+ rs
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260909
+RRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=TU;BYMONTHDAY=2,3,4,5,6,7,8
+SUMMARY:Android Security Bulletin (Quartal\, groß)
+DESCRIPTION:Großes Quartals-Bulletin im September (2026: 180 CVEs).\nDer e
+ rste Montag im September ist immer Labor Day\, ein US-Feiertag. Nach Googl
+ es eigener Regel erscheint das Bulletin dann am folgenden Werktag.\nRegel:
+  der Dienstag zwischen dem 2. und 8. September.\n\nKonfidenz: bestätigt (
+ Primärquelle\, oder die tatsächlichen Termine decken sich mit der Regel)
+ \nQuelle: https://source.android.com/docs/security/bulletin/asb-overview
+URL:https://source.android.com/docs/security/bulletin/asb-overview
+CATEGORIES:Patchday\,Android
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Android Security Bulletin (Quartal\, groß)
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:patchday-all-cisco-security-advisories@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260702
+RRULE:FREQ=MONTHLY;BYDAY=1WE,3WE
+SUMMARY:Cisco Security Advisories
+DESCRIPTION:Seit Juli 2026 bündelt Cisco Security Advisories und „Securi
+ ty Hardening Releases“ auf den ersten und dritten Mittwoch\, 16:00 UTC (
+ 17:00 Uhr MEZ\, 18:00 Uhr MESZ).\nDie Kern-Betriebssysteme (IOS XE\, IOS X
+ R\, NX-OS\, ASA/FTD\, SD-WAN) kommen quartalsweise und gestaffelt dran\, n
+ ie zwei am selben Termin. Bisher: IOS XE und SD-WAN am 05.08.2026\, IOS XR
+  am 02.09.2026\, ASA/FMC/FTD am 16.09.2026\, NX-OS am 07.10.2026. Am 21.10
+ .2026 folgten Unified Communications\, Expressway und Snort 3.\nWelche Pro
+ dukte betroffen sind\, kündigt Cisco sieben Tage vorher an — auch wenn 
+ an einem Termin gar nichts kommt.\nDie alten Halbjahres-Bundles (IOS/IOS X
+ E im März und September\, FXOS/NX-OS\, IOS XR\, ASA/FTD) sind damit abgel
+ öst. Die letzten erschienen im Februar und März 2026.\n\nKonfidenz: best
+ ätigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit de
+ r Regel)\nQuelle: https://sec.cloudapps.cisco.com/security/center/resource
+ s/risk-based-disclosure
+URL:https://sec.cloudapps.cisco.com/security/center/resources/risk-based-di
+ sclosure
+CATEGORIES:Patchday\,Cisco
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Cisco Security Advisories
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:patchday-all-fortinet-psirt-advisories@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260113
+DTEND;VALUE=DATE:20260114
+RRULE:FREQ=MONTHLY;BYDAY=2TU
+SUMMARY:Fortinet PSIRT Advisories
+DESCRIPTION:Fortinet bündelt alle Advisories bis einschließlich Schweregr
+ ad „High“ auf den zweiten Dienstag\, veröffentlicht während der Gesc
+ häftszeit an der US-Westküste — in Mitteleuropa also am Abend.\nKritis
+ che Lücken kommen außer der Reihe (Out-of-Cycle) und stehen nicht hier. 
+ Bei FortiOS war das in der Vergangenheit häufig der Fall.\nNeu seit Oktob
+ er 2026: Fortinet liefert Fixes aus eigener KI-gestützter Prüfung zuerst
+  als „Security Hardening Release“ aus und veröffentlicht die Advisori
+ es erst am nächsten zweiten Dienstag. Fortinet kündigt an\, so weiterzua
+ rbeiten\, nennt aber keinen festen Termin für die Releases selbst. Die ge
+ fixten Versionen können also vor diesem Termin da sein.\nRegel: zweiter D
+ ienstag jedes Monats.\n\nKonfidenz: bestätigt (Primärquelle\, oder die t
+ atsächlichen Termine decken sich mit der Regel)\nQuelle: https://www.fort
+ iguard.com/psirt_policy
+URL:https://www.fortiguard.com/psirt_policy
+CATEGORIES:Patchday\,Fortinet
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Fortinet PSIRT Advisories
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:patchday-all-palo-alto-networks-security-advisories@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260114
+DTEND;VALUE=DATE:20260115
+RRULE:FREQ=MONTHLY;BYDAY=2WE
+SUMMARY:Palo Alto Networks Security Advisories
+DESCRIPTION:Advisories erscheinen am zweiten Mittwoch um 09:00 Uhr Pacific 
+ Time — 18:00 Uhr in Mitteleuropa. Liegt der Termin im März zwischen der
+  US- und der europäischen Sommerzeitumstellung\, ist es 17:00 Uhr.\nVerö
+ ffentlicht wird erst\, wenn Fixes für alle unterstützten Versionen berei
+ tstehen. Ausnahme: kritische\, aktiv ausgenutzte Lücken.\nRegel: zweiter 
+ Mittwoch jedes Monats.\n\nKonfidenz: bestätigt (Primärquelle\, oder die 
+ tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://www.pal
+ oaltonetworks.com/product-security-assurance
+URL:https://www.paloaltonetworks.com/product-security-assurance
+CATEGORIES:Patchday\,Palo Alto Networks
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Palo Alto Networks Security Advisories
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:patchday-all-juniper-security-advisories-quartal@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260114
+DTEND;VALUE=DATE:20260115
+RRULE:FREQ=YEARLY;BYMONTH=1,4,7,10;BYDAY=2WE
+SUMMARY:Juniper Security Advisories (Quartal)
+DESCRIPTION:Juniper SIRT veröffentlicht nicht dringende Advisories für al
+ le Juniper-Produkte gebündelt viermal im Jahr.\nAußer der Reihe nur bei 
+ aktiver Ausnutzung oder koordinierten Multi-Vendor-Themen.\nRegel: zweiter
+  Mittwoch im Januar\, April\, Juli und Oktober.\n\nKonfidenz: bestätigt (
+ Primärquelle\, oder die tatsächlichen Termine decken sich mit der Regel)
+ \nQuelle: https://www.juniper.net/documentation/us/en/software/juniper-rou
+ ting-director2.8.0/user-guide/topics/concept/sirt-advisories-overview.html
+URL:https://www.juniper.net/documentation/us/en/software/juniper-routing-di
+ rector2.8.0/user-guide/topics/concept/sirt-advisories-overview.html
+CATEGORIES:Patchday\,Juniper
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Juniper Security Advisories (Quartal)
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:patchday-all-ivanti-security-advisories@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260113
+DTEND;VALUE=DATE:20260114
+RRULE:FREQ=MONTHLY;BYDAY=2TU
+SUMMARY:Ivanti Security Advisories
+DESCRIPTION:Ivanti veröffentlicht planmäßige Security-Updates (u. a. Con
+ nect Secure\, Policy Secure\, EPMM\, Endpoint Manager) am Microsoft Patch 
+ Tuesday.\nKritische\, aktiv ausgenutzte Lücken kommen außer der Reihe.\n
+ Regel: zweiter Dienstag jedes Monats.\n\nKonfidenz: wahrscheinlich (Sekund
+ ärquelle\, nicht am Hersteller verifiziert)\nQuelle: https://www.ivanti.c
+ om/blog/september-2026-security-update
+URL:https://www.ivanti.com/blog/september-2026-security-update
+CATEGORIES:Patchday\,Ivanti
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Ivanti Security Advisories
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:patchday-all-siemens-productcert-advisories@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260113
+DTEND;VALUE=DATE:20260114
+RRULE:FREQ=MONTHLY;BYDAY=2TU
+SUMMARY:Siemens ProductCERT Advisories
+DESCRIPTION:Siemens veröffentlicht Security Advisories für Industrie- und
+  Automatisierungsprodukte gebündelt am zweiten Dienstag\, dem sogenannten
+  ICS Patch Tuesday.\nRegel: zweiter Dienstag jedes Monats.\n\nKonfidenz: w
+ ahrscheinlich (Sekundärquelle\, nicht am Hersteller verifiziert)\nQuelle:
+  https://www.securityweek.com/ics-patch-tuesday-security-advisories-releas
+ ed-by-siemens-schneider-cisa-others/
+URL:https://www.securityweek.com/ics-patch-tuesday-security-advisories-rele
+ ased-by-siemens-schneider-cisa-others/
+CATEGORIES:Patchday\,Siemens
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Siemens ProductCERT Advisories
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:patchday-all-schneider-electric-security-notifications@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260113
+DTEND;VALUE=DATE:20260114
+RRULE:FREQ=MONTHLY;BYDAY=2TU
+SUMMARY:Schneider Electric Security Notifications
+DESCRIPTION:Schneider Electric veröffentlicht Security Notifications einma
+ l im Monat am zweiten Dienstag\, damit Kunden Patches einplanen können.\n
+ Regel: zweiter Dienstag jedes Monats.\n\nKonfidenz: bestätigt (Primärque
+ lle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: 
+ https://www.se.com/ww/en/work/support/cybersecurity/vulnerability-policy/
+URL:https://www.se.com/ww/en/work/support/cybersecurity/vulnerability-polic
+ y/
+CATEGORIES:Patchday\,Schneider Electric
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Schneider Electric Security Notifications
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:patchday-all-atlassian-security-bulletin@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260120
+DTEND;VALUE=DATE:20260121
+RRULE:FREQ=MONTHLY;BYDAY=3TU
+SUMMARY:Atlassian Security Bulletin
+DESCRIPTION:Monatliches Security Bulletin für Jira\, Confluence\, Bitbucke
+ t & Co. Enthält nur Lücken\, die Atlassian als nicht kritisch einstuft.\
+ nKritische Lücken kommen als separate Critical Security Advisory außer d
+ er Reihe.\nRegel: dritter Dienstag jedes Monats — 2026 von Januar bis Se
+ ptember ausnahmslos eingehalten.\n\nKonfidenz: bestätigt (Primärquelle\,
+  oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: https
+ ://confluence.atlassian.com/security/security-advisories-bulletins-1236937
+ 381.html
+URL:https://confluence.atlassian.com/security/security-advisories-bulletins
+ -1236937381.html
+CATEGORIES:Patchday\,Atlassian
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Atlassian Security Bulletin
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:patchday-all-splunk-security-advisories@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260121
+DTEND;VALUE=DATE:20260122
+RRULE:FREQ=MONTHLY;BYDAY=3WE
+SUMMARY:Splunk Security Advisories
+DESCRIPTION:Splunk veröffentlicht Advisories laut eigener FAQ „in der Re
+ gel“ am dritten Mittwoch\, einige Wochen nachdem die Fixes bereitstehen.
+ \nDer dritte Mittwoch ist zugleich ein Cisco-Termin\; Splunk gehört zu Ci
+ sco. Belegt 2026: 15.04.\, 15.07.\, 19.08. und 21.10.\nEinmalige Abweichun
+ g: Die für den 16.09.2026 geplanten Advisories kamen verschoben am 07.10.
+ 2026.\nRegel: dritter Mittwoch jedes Monats.\n\nKonfidenz: bestätigt (Pri
+ märquelle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQ
+ uelle: https://advisory.splunk.com/faqs
+URL:https://advisory.splunk.com/faqs
+CATEGORIES:Patchday\,Splunk
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Splunk Security Advisories
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:patchday-all-fortinet-advisories-zum-security-hardening-release-2026111
+ 0@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:Fortinet: Advisories zum Security Hardening Release
+DESCRIPTION:Am 21.10.2026 hat Fortinet ein Security Hardening Release mit k
+ ritischen und hochgradigen Fixes angekündigt. Die Versionen sind seit 22.
+ 10.2026 verfügbar\, CVEs und Advisories folgen erst an diesem Patch Tuesd
+ ay.\nGefixte Versionen: FortiOS 8.0.2\, 7.6.8\, 7.4.13\, 7.2.14 · FortiMa
+ nager und FortiAnalyzer 8.0.2\, 7.6.8\, 7.4.12\, 7.2.13 · FortiMail 8.0.2
+ \, 7.6.7\, 7.4.9 (7.2 muss auf 7.4 oder neuer) · FortiAuthenticator 8.0.4
+ \, 6.6.11.\nFortinet rät\, internetseitige Geräte zuerst und vor diesem 
+ Termin zu aktualisieren — ab der Veröffentlichung sind die Details öff
+ entlich.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen
+  Termine decken sich mit der Regel)\nQuelle: https://www.fortinet.com/blog
+ /ciso-collective/fortinet-releases-security-hardening-release-for-multiple
+ -products
+URL:https://www.fortinet.com/blog/ciso-collective/fortinet-releases-securit
+ y-hardening-release-for-multiple-products
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Patchday\,Fortinet
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Fortinet: Advisories zum Security Hardening Release
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:patchday-all-splunk-security-advisories-verschoben-20261007@awesomecale
+ ndars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261007
+DTEND;VALUE=DATE:20261008
+SUMMARY:Splunk Security Advisories (verschoben)
+DESCRIPTION:Die ursprünglich für den 16.09.2026 geplanten Advisories für
+  Splunk Enterprise\, Universal Forwarder\, Add-on for AWS und Splunk MCP S
+ erver.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen T
+ ermine decken sich mit der Regel)\nQuelle: https://advisory.splunk.com/adv
+ isories/SVD-2026-0901
+URL:https://advisory.splunk.com/advisories/SVD-2026-0901
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Patchday\,Splunk
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Splunk Security Advisories (verschoben)
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT

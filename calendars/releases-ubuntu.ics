@@ -1,0 +1,83 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AwesomeCalendars//Patchdays, Releases & Conferences//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Releases · Ubuntu
+X-WR-CALDESC:Ubuntu-Releases und Änderungen am Kernel-Update-Rhythmus.
+REFRESH-INTERVAL;VALUE=DURATION:P7D
+X-PUBLISHED-TTL:P7D
+BEGIN:VEVENT
+UID:releases-ubuntu-ubuntu-26-10-stonking-stingray-release-20261015@awesome
+ calendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:Ubuntu 26.10 „Stonking Stingray“ Release
+DESCRIPTION:Interim-Release mit neun Monaten Support (bis Juli 2027).\nLetz
+ te Meilensteine: Kernel Freeze 01.10.2026\, Final Freeze und Release Candi
+ date 08.10.2026.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsä
+ chlichen Termine decken sich mit der Regel)\nQuelle: https://documentation
+ .ubuntu.com/release-notes/26.10/schedule/
+URL:https://documentation.ubuntu.com/release-notes/26.10/schedule/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Linux\,Ubuntu
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Ubuntu 26.10 „Stonking Stingray“ Release
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-ubuntu-ubuntu-kernel-ab-jetzt-woechentliche-releases-20261026@
+ awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:Ubuntu-Kernel: ab jetzt wöchentliche Releases
+DESCRIPTION:Canonical ersetzt den bisherigen 4/2-Rhythmus (alle vier Wochen
+  ein reguläres Kernel-Update\, Notfall-Updates nach zwei Wochen) durch ü
+ berlappende Zwei-Wochen-Zyklen. Effektiv erscheint ab hier jede Woche ein 
+ neuer Kernel. Übergangszyklen starteten am 28.09. und 12.10.2026.\nGrund 
+ ist die CVE-Flut im Kernel\, nach Canonical stark durch KI-gestützte Fehl
+ ersuche getrieben: Linux 7.2 behob über 1.500 CVEs\, frühere Versionen r
+ und 500.\nWer Kernel-Updates manuell einspielt\, braucht damit ein wöchen
+ tliches Wartungsfenster oder Livepatch.\n\nKonfidenz: wahrscheinlich (Seku
+ ndärquelle\, nicht am Hersteller verifiziert)\nQuelle: https://canonical.
+ com/blog/accelerating-delivery-of-cve-fixes-with-a-new-kernel-release-stra
+ tegy
+URL:https://canonical.com/blog/accelerating-delivery-of-cve-fixes-with-a-ne
+ w-kernel-release-strategy
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+CATEGORIES:Release\,Linux\,Ubuntu\,Kernel
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Ubuntu-Kernel: ab jetzt wöchentliche Releases
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:releases-ubuntu-ubuntu-27-04-release-20270422@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270422
+DTEND;VALUE=DATE:20270423
+SUMMARY:Ubuntu 27.04 Release
+DESCRIPTION:Interim-Release mit neun Monaten Support. Der Codename ist noch
+  nicht vergeben\, Canonical führt es als „T T“.\nMeilensteine: Featur
+ e Freeze 25.02.2027\, Beta 01.04.2027\, Kernel Freeze 08.04.2027\, Final F
+ reeze und Release Candidate 15.04.2027.\n\nKonfidenz: bestätigt (Primärq
+ uelle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle
+ : https://documentation.ubuntu.com/release-notes/27.04/schedule/
+URL:https://documentation.ubuntu.com/release-notes/27.04/schedule/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Release\,Linux\,Ubuntu
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Ubuntu 27.04 Release
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

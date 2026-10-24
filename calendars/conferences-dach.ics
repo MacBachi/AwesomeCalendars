@@ -1,0 +1,161 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AwesomeCalendars//Patchdays, Releases & Conferences//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Konferenzen · DACH
+X-WR-CALDESC:Security-Konferenzen in Deutschland und Österreich.
+REFRESH-INTERVAL;VALUE=DURATION:P7D
+X-PUBLISHED-TTL:P7D
+BEGIN:VEVENT
+UID:conferences-dach-it-sa-expo-congress-2026-20261027@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261030
+SUMMARY:it-sa Expo & Congress 2026
+DESCRIPTION:Größte IT-Security-Fachmesse im deutschsprachigen Raum.\n\nKo
+ nfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine decke
+ n sich mit der Regel)\nQuelle: https://www.itsa365.de/en/it-sa-expo-congre
+ ss/exhibition-info
+URL:https://www.itsa365.de/en/it-sa-expo-congress/exhibition-info
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Messezentrum Nürnberg\, Deutschland
+CATEGORIES:Konferenz\,Security\,DACH
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:it-sa Expo & Congress 2026
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-deepsec-2026-20261117@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261121
+SUMMARY:DeepSec 2026
+DESCRIPTION:DeepSec In-Depth Security Conference in Wien\, technisch und he
+ rstellerneutral. Trainings am 17. und 18.11.\, Konferenz am 19. und 20.11.
+ \n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine
+  decken sich mit der Regel)\nQuelle: https://deepsec.net/
+URL:https://deepsec.net/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Renaissance Hotel\, Wien\, Österreich
+CATEGORIES:Konferenz\,Security\,DACH
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:DeepSec 2026
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-40c3-chaos-communication-congress-20261227@awesomecale
+ ndars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261227
+DTEND;VALUE=DATE:20261231
+SUMMARY:40C3 — Chaos Communication Congress
+DESCRIPTION:40. Chaos Communication Congress\, Motto „Model Citizens“. 
+ Zum Jubiläum erstmals in den Hallen der Hamburg Messe statt im CCH.\nEinr
+ eichungsschluss für Beiträge: 09.10.2026.\n\nKonfidenz: bestätigt (Prim
+ ärquelle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQu
+ elle: https://www.ccc.de/en/updates/2026/40c3-model-citizens
+URL:https://www.ccc.de/en/updates/2026/40c3-model-citizens
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Hamburg Messe\, Deutschland
+CATEGORIES:Konferenz\,Security\,DACH
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:40C3 — Chaos Communication Congress
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-secit-by-heise-2027-20270309@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270309
+DTEND;VALUE=DATE:20270312
+SUMMARY:secIT by heise 2027
+DESCRIPTION:IT-Security-Konferenz und Fachausstellung von heise. 09.03. Wor
+ kshops\, 10. und 11.03. Konferenz und Ausstellung.\n\nKonfidenz: wahrschei
+ nlich (Sekundärquelle\, nicht am Hersteller verifiziert)\nQuelle: https:/
+ /secit-heise.de/
+URL:https://secit-heise.de/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Hannover Congress Centrum\, Deutschland
+CATEGORIES:Konferenz\,Security\,DACH
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:secIT by heise 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-security-forum-hagenberg-2027-20270519@awesomecalendar
+ s
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270519
+DTEND;VALUE=DATE:20270521
+SUMMARY:Security Forum Hagenberg 2027
+DESCRIPTION:Etablierte österreichische Fachkonferenz für Informationssich
+ erheit\, organisiert von Studierenden der FH Oberösterreich.\n\nKonfidenz
+ : bestätigt (Primärquelle\, oder die tatsächlichen Termine decken sich 
+ mit der Regel)\nQuelle: https://www.securityforum.at/
+URL:https://www.securityforum.at/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:FH Oberösterreich\, Campus Hagenberg\, Österreich
+CATEGORIES:Konferenz\,Security\,DACH
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Security Forum Hagenberg 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-troopers-2027-20270621@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270621
+DTEND;VALUE=DATE:20270626
+SUMMARY:TROOPERS 2027
+DESCRIPTION:Technische IT-Security-Konferenz von ERNW. Trainings am 21. und
+  22.06.\, Konferenz vom 23. bis 25.06.\n\nKonfidenz: bestätigt (Primärqu
+ elle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle:
+  https://troopers.de/
+URL:https://troopers.de/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Heidelberg\, Deutschland
+CATEGORIES:Konferenz\,Security\,DACH
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:TROOPERS 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-it-sa-expo-congress-2027-20271005@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20271005
+DTEND;VALUE=DATE:20271008
+SUMMARY:it-sa Expo & Congress 2027
+DESCRIPTION:Größte IT-Security-Fachmesse im deutschsprachigen Raum.\n\nKo
+ nfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine decke
+ n sich mit der Regel)\nQuelle: https://www.pressebox.de/events/nuernbergme
+ sse-gmbh/it-sa-2027/eventid/62575
+URL:https://www.pressebox.de/events/nuernbergmesse-gmbh/it-sa-2027/eventid/
+ 62575
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Messezentrum Nürnberg\, Deutschland
+CATEGORIES:Konferenz\,Security\,DACH
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:it-sa Expo & Congress 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

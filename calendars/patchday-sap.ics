@@ -9,20 +9,20 @@ REFRESH-INTERVAL;VALUE=DURATION:P30D
 X-PUBLISHED-TTL:P30D
 BEGIN:VEVENT
 UID:patchday-sap-sap-security-patch-day@awesomecalendars
-DTSTAMP:20260816T000000Z
-DTSTART;VALUE=DATE:20260811
-DTEND;VALUE=DATE:20260812
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260113
+DTEND;VALUE=DATE:20260114
 RRULE:FREQ=MONTHLY;BYDAY=2TU
 SUMMARY:SAP Security Patch Day
 DESCRIPTION:SAP veröffentlicht die monatlichen SAP Security Notes.\nRegel:
-  zweiter Dienstag jedes Monats.\n\nKonfidenz: bestätigt (Primärquelle)\n
- Quelle: https://support.sap.com/en/my-support/knowledge-base/security-note
- s-news.html
+  zweiter Dienstag jedes Monats.\n\nKonfidenz: bestätigt (Primärquelle\, 
+ oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: https:
+ //support.sap.com/en/my-support/knowledge-base/security-notes-news.html
 URL:https://support.sap.com/en/my-support/knowledge-base/security-notes-new
  s.html
+CATEGORIES:Patchday\,SAP
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
-CATEGORIES:Patchday\,SAP
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:SAP Security Patch Day

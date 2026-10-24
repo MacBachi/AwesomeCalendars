@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AwesomeCalendars//Patchdays, Releases & Conferences//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Patchday · Atlassian
+X-WR-CALDESC:Planmäßige Security-Release-Termine von Atlassian.
+REFRESH-INTERVAL;VALUE=DURATION:P30D
+X-PUBLISHED-TTL:P30D
+BEGIN:VEVENT
+UID:patchday-atlassian-atlassian-security-bulletin@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260120
+DTEND;VALUE=DATE:20260121
+RRULE:FREQ=MONTHLY;BYDAY=3TU
+SUMMARY:Atlassian Security Bulletin
+DESCRIPTION:Monatliches Security Bulletin für Jira\, Confluence\, Bitbucke
+ t & Co. Enthält nur Lücken\, die Atlassian als nicht kritisch einstuft.\
+ nKritische Lücken kommen als separate Critical Security Advisory außer d
+ er Reihe.\nRegel: dritter Dienstag jedes Monats — 2026 von Januar bis Se
+ ptember ausnahmslos eingehalten.\n\nKonfidenz: bestätigt (Primärquelle\,
+  oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: https
+ ://confluence.atlassian.com/security/security-advisories-bulletins-1236937
+ 381.html
+URL:https://confluence.atlassian.com/security/security-advisories-bulletins
+ -1236937381.html
+CATEGORIES:Patchday\,Atlassian
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Atlassian Security Bulletin
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

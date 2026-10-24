@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AwesomeCalendars//Patchdays, Releases & Conferences//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Patchday · Schneider Electric
+X-WR-CALDESC:Planmäßige Security-Release-Termine von Schneider Electric.
+REFRESH-INTERVAL;VALUE=DURATION:P30D
+X-PUBLISHED-TTL:P30D
+BEGIN:VEVENT
+UID:patchday-schneider-schneider-electric-security-notifications@awesomecal
+ endars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260113
+DTEND;VALUE=DATE:20260114
+RRULE:FREQ=MONTHLY;BYDAY=2TU
+SUMMARY:Schneider Electric Security Notifications
+DESCRIPTION:Schneider Electric veröffentlicht Security Notifications einma
+ l im Monat am zweiten Dienstag\, damit Kunden Patches einplanen können.\n
+ Regel: zweiter Dienstag jedes Monats.\n\nKonfidenz: bestätigt (Primärque
+ lle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: 
+ https://www.se.com/ww/en/work/support/cybersecurity/vulnerability-policy/
+URL:https://www.se.com/ww/en/work/support/cybersecurity/vulnerability-polic
+ y/
+CATEGORIES:Patchday\,Schneider Electric
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Schneider Electric Security Notifications
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -9,15 +9,40 @@ X-WR-CALDESC:Kuratierte Auswahl großer Cloud-Native- und Kubernetes-Konfer
 REFRESH-INTERVAL;VALUE=DURATION:P7D
 X-PUBLISHED-TTL:P7D
 BEGIN:VEVENT
+UID:conferences-cloud-kubecon-cloudnativecon-north-america-2026-20261109@aw
+ esomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261113
+SUMMARY:KubeCon + CloudNativeCon North America 2026
+DESCRIPTION:Flaggschiff-Konferenz der CNCF für Nordamerika. Co-located Eve
+ nts am 09.11.\, darunter ArgoCon\, BackstageCon und CiliumCon.\n\nKonfiden
+ z: bestätigt (Primärquelle\, oder die tatsächlichen Termine decken sich
+  mit der Regel)\nQuelle: https://events.linuxfoundation.org/kubecon-cloudn
+ ativecon-north-america/
+URL:https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america
+ /
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Salt Palace Convention Center\, Salt Lake City\, USA
+CATEGORIES:Konferenz\,Cloud Native\,Kubernetes
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:KubeCon + CloudNativeCon North America 2026
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:conferences-cloud-kubecon-cloudnativecon-europe-2027-20270315@awesomeca
  lendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20270315
 DTEND;VALUE=DATE:20270319
 SUMMARY:KubeCon + CloudNativeCon Europe 2027
 DESCRIPTION:Flaggschiff-Konferenz der CNCF für Europa.\n\nKonfidenz: best
- ätigt (Primärquelle)\nQuelle: https://events.linuxfoundation.org/kubecon
- -cloudnativecon-europe-2027/
+ ätigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit de
+ r Regel)\nQuelle: https://events.linuxfoundation.org/kubecon-cloudnativeco
+ n-europe-2027/
 URL:https://events.linuxfoundation.org/kubecon-cloudnativecon-europe-2027/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -30,15 +55,37 @@ TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:conferences-cloud-kubecon-cloudnativecon-japan-2027-20270825@awesomecal
+ endars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270825
+DTEND;VALUE=DATE:20270827
+SUMMARY:KubeCon + CloudNativeCon Japan 2027
+DESCRIPTION:Regionale CNCF-Konferenz für Japan.\n\nKonfidenz: bestätigt (
+ Primärquelle\, oder die tatsächlichen Termine decken sich mit der Regel)
+ \nQuelle: https://events.linuxfoundation.org/kubecon-cloudnativecon-japan/
+URL:https://events.linuxfoundation.org/kubecon-cloudnativecon-japan/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Yokohama\, Japan
+CATEGORIES:Konferenz\,Cloud Native\,Kubernetes
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:KubeCon + CloudNativeCon Japan 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:conferences-cloud-kubecon-cloudnativecon-north-america-2027-20271108@aw
  esomecalendars
-DTSTAMP:20260816T000000Z
+DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20271108
 DTEND;VALUE=DATE:20271112
 SUMMARY:KubeCon + CloudNativeCon North America 2027
 DESCRIPTION:Flaggschiff-Konferenz der CNCF für Nordamerika.\n\nKonfidenz: 
- bestätigt (Primärquelle)\nQuelle: https://events.linuxfoundation.org/kub
- econ-cloudnativecon-north-america/
+ bestätigt (Primärquelle\, oder die tatsächlichen Termine decken sich mi
+ t der Regel)\nQuelle: https://events.linuxfoundation.org/kubecon-cloudnati
+ vecon-north-america/
 URL:https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america
  /
 TRANSP:TRANSPARENT

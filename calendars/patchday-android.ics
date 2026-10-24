@@ -8,25 +8,76 @@ X-WR-CALDESC:Planmäßige Security-Release-Termine von Android.
 REFRESH-INTERVAL;VALUE=DURATION:P30D
 X-PUBLISHED-TTL:P30D
 BEGIN:VEVENT
-UID:patchday-android-android-security-bulletin@awesomecalendars
-DTSTAMP:20260816T000000Z
-DTSTART;VALUE=DATE:20260803
-DTEND;VALUE=DATE:20260804
-RRULE:FREQ=MONTHLY;BYDAY=1MO
-SUMMARY:Android Security Bulletin
-DESCRIPTION:Monatliches Android Security Bulletin (AOSP) samt Pixel Update 
- Bulletin.\nRegel: erster Montag jedes Monats.\nAusnahme\, die eine RRULE n
- icht abbilden kann: Fällt der erste Montag auf einen US-Feiertag\, ersche
- int das Bulletin am folgenden Werktag.\n\nKonfidenz: bestätigt (Primärqu
- elle)\nQuelle: https://source.android.com/docs/security/bulletin/asb-overv
- iew
+UID:patchday-android-android-security-bulletin-monat@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260105
+DTEND;VALUE=DATE:20260106
+RRULE:FREQ=YEARLY;BYMONTH=1,2,4,5,7,8,10,11;BYDAY=1MO
+SUMMARY:Android Security Bulletin (Monat)
+DESCRIPTION:Monatliches Android Security Bulletin. Seit Googles Umstellung 
+ auf risikobasierte Updates enthalten die Monate zwischen den Quartals-Rele
+ ases nur noch Hochrisiko-Lücken — aktiv ausgenutzt oder Teil einer beka
+ nnten Exploit-Kette. Manche Bulletins enthalten null Fixes.\nRegel: erster
+  Montag. Fällt er auf einen US-Feiertag\, erscheint das Bulletin am folge
+ nden Werktag.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächl
+ ichen Termine decken sich mit der Regel)\nQuelle: https://source.android.c
+ om/docs/security/bulletin/asb-overview
 URL:https://source.android.com/docs/security/bulletin/asb-overview
+CATEGORIES:Patchday\,Android
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
-CATEGORIES:Patchday\,Android\,Google
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Android Security Bulletin
+DESCRIPTION:Android Security Bulletin (Monat)
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:patchday-android-android-security-bulletin-quartal-gross@awesomecalenda
+ rs
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260302
+DTEND;VALUE=DATE:20260303
+RRULE:FREQ=YEARLY;BYMONTH=3,6,12;BYDAY=1MO
+SUMMARY:Android Security Bulletin (Quartal\, groß)
+DESCRIPTION:Großes Quartals-Bulletin\, abgestimmt auf Androids Quartals-Re
+ lease-Plan. Hier landet der Großteil der Fixes (September 2026: 180 CVEs)
+ .\nRegel: erster Montag im März\, Juni und Dezember. September steht als 
+ eigener Termin im Kalender\, weil dort immer Labor Day dazwischenliegt.\n\
+ nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine de
+ cken sich mit der Regel)\nQuelle: https://source.android.com/docs/security
+ /bulletin/asb-overview
+URL:https://source.android.com/docs/security/bulletin/asb-overview
+CATEGORIES:Patchday\,Android
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Android Security Bulletin (Quartal\, groß)
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:patchday-android-android-security-bulletin-quartal-september@awesomecal
+ endars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260909
+RRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=TU;BYMONTHDAY=2,3,4,5,6,7,8
+SUMMARY:Android Security Bulletin (Quartal\, groß)
+DESCRIPTION:Großes Quartals-Bulletin im September (2026: 180 CVEs).\nDer e
+ rste Montag im September ist immer Labor Day\, ein US-Feiertag. Nach Googl
+ es eigener Regel erscheint das Bulletin dann am folgenden Werktag.\nRegel:
+  der Dienstag zwischen dem 2. und 8. September.\n\nKonfidenz: bestätigt (
+ Primärquelle\, oder die tatsächlichen Termine decken sich mit der Regel)
+ \nQuelle: https://source.android.com/docs/security/bulletin/asb-overview
+URL:https://source.android.com/docs/security/bulletin/asb-overview
+CATEGORIES:Patchday\,Android
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Android Security Bulletin (Quartal\, groß)
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT

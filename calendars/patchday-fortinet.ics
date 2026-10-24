@@ -1,0 +1,70 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AwesomeCalendars//Patchdays, Releases & Conferences//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Patchday · Fortinet
+X-WR-CALDESC:Planmäßige Security-Release-Termine von Fortinet.
+REFRESH-INTERVAL;VALUE=DURATION:P30D
+X-PUBLISHED-TTL:P30D
+BEGIN:VEVENT
+UID:patchday-fortinet-fortinet-psirt-advisories@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260113
+DTEND;VALUE=DATE:20260114
+RRULE:FREQ=MONTHLY;BYDAY=2TU
+SUMMARY:Fortinet PSIRT Advisories
+DESCRIPTION:Fortinet bündelt alle Advisories bis einschließlich Schweregr
+ ad „High“ auf den zweiten Dienstag\, veröffentlicht während der Gesc
+ häftszeit an der US-Westküste — in Mitteleuropa also am Abend.\nKritis
+ che Lücken kommen außer der Reihe (Out-of-Cycle) und stehen nicht hier. 
+ Bei FortiOS war das in der Vergangenheit häufig der Fall.\nNeu seit Oktob
+ er 2026: Fortinet liefert Fixes aus eigener KI-gestützter Prüfung zuerst
+  als „Security Hardening Release“ aus und veröffentlicht die Advisori
+ es erst am nächsten zweiten Dienstag. Fortinet kündigt an\, so weiterzua
+ rbeiten\, nennt aber keinen festen Termin für die Releases selbst. Die ge
+ fixten Versionen können also vor diesem Termin da sein.\nRegel: zweiter D
+ ienstag jedes Monats.\n\nKonfidenz: bestätigt (Primärquelle\, oder die t
+ atsächlichen Termine decken sich mit der Regel)\nQuelle: https://www.fort
+ iguard.com/psirt_policy
+URL:https://www.fortiguard.com/psirt_policy
+CATEGORIES:Patchday\,Fortinet
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Fortinet PSIRT Advisories
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:patchday-fortinet-fortinet-advisories-zum-security-hardening-release-20
+ 261110@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:Fortinet: Advisories zum Security Hardening Release
+DESCRIPTION:Am 21.10.2026 hat Fortinet ein Security Hardening Release mit k
+ ritischen und hochgradigen Fixes angekündigt. Die Versionen sind seit 22.
+ 10.2026 verfügbar\, CVEs und Advisories folgen erst an diesem Patch Tuesd
+ ay.\nGefixte Versionen: FortiOS 8.0.2\, 7.6.8\, 7.4.13\, 7.2.14 · FortiMa
+ nager und FortiAnalyzer 8.0.2\, 7.6.8\, 7.4.12\, 7.2.13 · FortiMail 8.0.2
+ \, 7.6.7\, 7.4.9 (7.2 muss auf 7.4 oder neuer) · FortiAuthenticator 8.0.4
+ \, 6.6.11.\nFortinet rät\, internetseitige Geräte zuerst und vor diesem 
+ Termin zu aktualisieren — ab der Veröffentlichung sind die Details öff
+ entlich.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen
+  Termine decken sich mit der Regel)\nQuelle: https://www.fortinet.com/blog
+ /ciso-collective/fortinet-releases-security-hardening-release-for-multiple
+ -products
+URL:https://www.fortinet.com/blog/ciso-collective/fortinet-releases-securit
+ y-hardening-release-for-multiple-products
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Patchday\,Fortinet
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Fortinet: Advisories zum Security Hardening Release
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

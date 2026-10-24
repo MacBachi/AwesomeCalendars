@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AwesomeCalendars — Patchdays, Releases &amp; Konferenzen als ICS</title>
-<meta name="description" content="Abonnierbare ICS-Kalender für IT-Patchdays, Software-Releases und Konferenzen. Patchdays regelbasiert und damit unbegrenzt gültig.">
+<meta name="description" content="Abonnierbare ICS-Kalender für IT-Patchdays von 14 Herstellern, Browser- und Ubuntu-Releases und Security-Konferenzen. Patchdays regelbasiert und damit unbegrenzt gültig.">
 <style>
   :root {
     color-scheme: light dark;
@@ -36,15 +36,16 @@
     font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
-  .wrap { max-width: 60rem; margin: 0 auto; padding: 3.5rem 1.25rem 5rem; }
+  .wrap { max-width: 60rem; margin: 0 auto; padding: 3.5rem 1rem 5rem; }
   header { border-bottom: 1px solid var(--line); padding-bottom: 2rem; margin-bottom: 2.5rem; }
   h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin: 0 0 .6rem; letter-spacing: -.02em; }
   .lede { color: var(--muted); max-width: 46rem; margin: 0; }
+  .stamp { color: var(--muted); font-size: .8125rem; font-family: var(--mono); margin-top: .9rem; }
   h2 {
     font-size: .78rem; text-transform: uppercase; letter-spacing: .1em;
     color: var(--muted); margin: 2.75rem 0 .35rem; font-weight: 600;
   }
-  h2:first-of-type { margin-top: 0; }
+  #calendars h2:first-child { margin-top: 0; }
   .sub { color: var(--muted); font-size: .875rem; margin: 0 0 1rem; }
 
   .cal {
@@ -88,6 +89,7 @@
   code {
     font-family: var(--mono); font-size: .85em;
     background: var(--accent-soft); padding: .12em .38em; border-radius: 4px;
+    overflow-wrap: anywhere;
   }
   footer {
     margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line);
@@ -96,7 +98,7 @@
   a { color: var(--accent); }
   @media (max-width: 34rem) {
     .cal { grid-template-columns: 1fr; }
-    .actions { grid-column: 1; grid-row: auto; margin-top: .6rem; }
+    .actions { grid-column: 1; grid-row: auto; margin-top: .6rem; flex-wrap: wrap; }
   }
 </style>
 </head>
@@ -111,62 +113,14 @@
     statt als vorausberechnete Einzeltermine — sie laufen damit unbegrenzt weiter
     und veralten nie. Jeder Termin trägt Quelle und Konfidenzstufe in der Beschreibung.
   </p>
+  <p class="stamp" id="stamp"></p>
 </header>
 
-<h2>Patchdays</h2>
-<p class="sub">Regelbasiert, unbegrenzt gültig. Einmal abonnieren, nie wieder anfassen.</p>
-
-<div class="cal" data-file="patchday-all.ics">
-  <span class="name">Alle Hersteller</span>
-  <span class="meta">Microsoft · Adobe · SAP · Oracle · Android · Cisco</span>
-</div>
-<div class="cal" data-file="patchday-microsoft.ics">
-  <span class="name">Microsoft Patch Tuesday</span>
-  <span class="meta">2. Dienstag/Monat · 10:00 PT = 19:00 MEZ/MESZ</span>
-</div>
-<div class="cal" data-file="patchday-adobe.ics">
-  <span class="name">Adobe Security Bulletins</span>
-  <span class="meta">2. Dienstag/Monat</span>
-</div>
-<div class="cal" data-file="patchday-sap.ics">
-  <span class="name">SAP Security Patch Day</span>
-  <span class="meta">2. Dienstag/Monat</span>
-</div>
-<div class="cal" data-file="patchday-oracle.ics">
-  <span class="name">Oracle CPU + CSPU</span>
-  <span class="meta">3. Dienstag · quartalsweise + monatlich seit Mai 2026</span>
-</div>
-<div class="cal" data-file="patchday-android.ics">
-  <span class="name">Android Security Bulletin</span>
-  <span class="meta">1. Montag/Monat</span>
-</div>
-<div class="cal" data-file="patchday-cisco.ics">
-  <span class="name">Cisco IOS / IOS XE Bundle</span>
-  <span class="meta">4. Mittwoch im März + September</span>
-</div>
-
-<h2>Termine mit festem Datum</h2>
-<p class="sub">Brauchen Nachpflege — Reichweite steht jeweils dabei.</p>
-
-<div class="cal" data-file="releases-software.ics">
-  <span class="name">Software-Releases</span>
-  <span class="meta">Chrome 152–167 · Firefox 154–164 · Ubuntu 26.10 — bis Apr 2027</span>
-</div>
-<div class="cal" data-file="conferences-security.ics">
-  <span class="name">Konferenzen · IT-Security</span>
-  <span class="meta">it-sa · 40C3 · FOSDEM · RSAC · TROOPERS · Black Hat · DEF CON</span>
-</div>
-<div class="cal" data-file="conferences-cloud.ics">
-  <span class="name">Konferenzen · Cloud Native</span>
-  <span class="meta">KubeCon Europe + North America 2027</span>
-</div>
-
-<h2>Alles in einem</h2>
-<p class="sub">Für alle, die nur ein einziges Abo wollen.</p>
-
-<div class="cal" data-file="everything.ics">
-  <span class="name">AwesomeCalendars komplett</span>
-  <span class="meta">44 Events — Patchdays, Releases und Konferenzen</span>
+<div id="calendars">
+  <noscript>
+    <p>Die Kalenderliste braucht JavaScript. Alle Dateien und Abo-URLs stehen auch im
+    <a href="https://github.com/MacBachi/AwesomeCalendars#readme">README</a>.</p>
+  </noscript>
 </div>
 
 <div class="note">
@@ -176,6 +130,13 @@
   <p>Funktioniert der <code>webcal://</code>-Klick nicht, kopiere die URL und füge
   sie im Kalender-Client unter „Kalenderabonnement hinzufügen“ ein. In Google
   Calendar: <em>Andere Kalender › Per URL</em>.</p>
+</div>
+
+<div class="note">
+  <p><strong>Was diese Kalender nicht können.</strong> Sie zeigen die
+  <em>planmäßigen</em> Termine. Kritische, aktiv ausgenutzte Lücken patchen
+  Fortinet, Ivanti, Cisco, Adobe und andere außer der Reihe — die kommen nie
+  angekündigt. Für die braucht es Advisory-Feeds oder die CISA-KEV-Liste.</p>
 </div>
 
 <div class="note">
@@ -198,23 +159,39 @@
 
 <script>
 (function () {
-  var base = location.href.replace(/[^/]*$/, '') + 'calendars/';
+  var base = location.href.replace(/[#?].*$/, '').replace(/[^/]*$/, '') + 'calendars/';
 
-  document.querySelectorAll('.cal').forEach(function (row) {
-    var url = base + row.dataset.file;
+  var subtitles = {
+    'Patchdays · Sammelkalender':
+      'Regelbasiert, unbegrenzt gültig. Einmal abonnieren, nie wieder anfassen.',
+    'Patchdays · einzelne Hersteller':
+      'Nur die Hersteller, die dich betreffen — inklusive Details wie Ciscos Vorankündigungen oder Windows-Hotpatch-Baselines.',
+    'Software-Releases':
+      'Feste Termine aus den Release-Dashboards. Werden regelmäßig nachgezogen.',
+    'Konferenzen':
+      'Kuratiert, nicht vollständig. Unsichere Termine sind als vorläufig markiert.',
+    'Alles in einem':
+      'Für alle, die nur ein einziges Abo wollen.'
+  };
 
-    var actions = document.createElement('span');
-    actions.className = 'actions';
+  function el(tag, cls, text) {
+    var node = document.createElement(tag);
+    if (cls) node.className = cls;
+    if (text) node.textContent = text;
+    return node;
+  }
 
-    var sub = document.createElement('a');
-    sub.className = 'btn primary';
+  function row(cal) {
+    var url = base + cal.file;
+    var card = el('div', 'cal');
+    card.append(el('span', 'name', cal.name), el('span', 'meta', cal.meta));
+
+    var actions = el('span', 'actions');
+    var sub = el('a', 'btn primary', 'Abonnieren');
     sub.href = url.replace(/^https?:/, 'webcal:');
-    sub.textContent = 'Abonnieren';
 
-    var copy = document.createElement('button');
-    copy.className = 'btn';
+    var copy = el('button', 'btn', 'URL kopieren');
     copy.type = 'button';
-    copy.textContent = 'URL kopieren';
     copy.addEventListener('click', function () {
       navigator.clipboard.writeText(url).then(function () {
         copy.textContent = 'Kopiert';
@@ -226,15 +203,38 @@
       });
     });
 
-    var dl = document.createElement('a');
-    dl.className = 'btn';
+    var dl = el('a', 'btn', 'Download');
     dl.href = url;
     dl.setAttribute('download', '');
-    dl.textContent = 'Download';
 
     actions.append(sub, copy, dl);
-    row.append(actions);
-  });
+    card.append(actions);
+    return card;
+  }
+
+  fetch(base + 'catalog.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var root = document.getElementById('calendars');
+      var seen = {};
+      data.calendars.forEach(function (cal) {
+        if (!seen[cal.group]) {
+          seen[cal.group] = true;
+          root.append(el('h2', null, cal.group));
+          if (subtitles[cal.group]) root.append(el('p', 'sub', subtitles[cal.group]));
+        }
+        root.append(row(cal));
+      });
+      var d = data.updated.split('-');
+      document.getElementById('stamp').textContent =
+        'Stand der Recherche: ' + d[2] + '.' + d[1] + '.' + d[0] +
+        ' · ' + data.calendars.length + ' Kalender';
+    })
+    .catch(function () {
+      document.getElementById('calendars').innerHTML =
+        '<p>Die Kalenderliste konnte nicht geladen werden. Alle Abo-URLs stehen im ' +
+        '<a href="https://github.com/MacBachi/AwesomeCalendars#readme">README</a>.</p>';
+    });
 })();
 </script>
 </body>

@@ -9,9 +9,9 @@ REFRESH-INTERVAL;VALUE=DURATION:P30D
 X-PUBLISHED-TTL:P30D
 BEGIN:VEVENT
 UID:patchday-oracle-oracle-critical-patch-update-cpu@awesomecalendars
-DTSTAMP:20260816T000000Z
-DTSTART;VALUE=DATE:20261020
-DTEND;VALUE=DATE:20261021
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260120
+DTEND;VALUE=DATE:20260121
 RRULE:FREQ=YEARLY;BYMONTH=1,4,7,10;BYDAY=3TU
 SUMMARY:Oracle Critical Patch Update (CPU)
 DESCRIPTION:Vierteljährliches Oracle Critical Patch Update — der große\
@@ -21,12 +21,12 @@ DESCRIPTION:Vierteljährliches Oracle Critical Patch Update — der große\
  h als 'Dienstag\, der dem 17. am nächsten liegt'. Die tatsächlich angek
  ündigten Termine (21.07.2026\, 20.10.2026\, 19.01.2027\, 20.04.2027) folg
  en dem dritten Dienstag\; danach ist dieser Kalender gebaut.\n\nKonfidenz:
-  bestätigt (Primärquelle)\nQuelle: https://www.oracle.com/security-alert
- s/
+  bestätigt (Primärquelle\, oder die tatsächlichen Termine decken sich m
+ it der Regel)\nQuelle: https://www.oracle.com/security-alerts/
 URL:https://www.oracle.com/security-alerts/
+CATEGORIES:Patchday\,Oracle
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
-CATEGORIES:Patchday\,Oracle
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Oracle Critical Patch Update (CPU)
@@ -36,22 +36,25 @@ END:VEVENT
 BEGIN:VEVENT
 UID:patchday-oracle-oracle-critical-security-patch-update-cspu@awesomecalen
  dars
-DTSTAMP:20260816T000000Z
-DTSTART;VALUE=DATE:20260818
-DTEND;VALUE=DATE:20260819
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20260616
+DTEND;VALUE=DATE:20260617
 RRULE:FREQ=YEARLY;BYMONTH=2,3,5,6,8,9,11,12;BYDAY=3TU
 SUMMARY:Oracle Critical Security Patch Update (CSPU)
-DESCRIPTION:Seit Mai 2026 liefert Oracle zusätzlich in den Monaten ohne CP
- U einen monatlichen Critical Security Patch Update.\nRegel: dritter Dienst
- ag in den acht Nicht-CPU-Monaten.\nBestätigt durch die tatsächlichen Rel
- eases im Juni (16.06.2026) und August 2026 (18.08.2026) — beide dritter 
- Dienstag.\nEinmalige Ausnahme: Der Auftakt-Release am 28.05.2026 lag auße
- rhalb dieser Kadenz.\n\nKonfidenz: bestätigt (Primärquelle)\nQuelle: htt
- ps://www.oracle.com/security-alerts/
+DESCRIPTION:Seit Mai 2026 liefert Oracle in den acht Monaten ohne CPU einen
+  monatlichen Critical Security Patch Update.\nRegel: dritter Dienstag in d
+ en Nicht-CPU-Monaten. Bestätigt durch Juni (16.06.)\, August (18.08.) und
+  September 2026 (15.09.)\; die nächsten beiden hat Oracle für den 17.11.
+  und 15.12.2026 angekündigt. Einmalige Ausnahme war der Auftakt am 28.05.
+ 2026.\nJava SE: Oracle zieht auch Java in den Monatsrhythmus. Bestätigt i
+ st ein Java-Update am 18.08.2026\, angekündigt ist der 17.11.2026\; für 
+ 2027 plant Oracle mehrere monatliche Java-Updates.\n\nKonfidenz: bestätig
+ t (Primärquelle\, oder die tatsächlichen Termine decken sich mit der Reg
+ el)\nQuelle: https://www.oracle.com/security-alerts/
 URL:https://www.oracle.com/security-alerts/
+CATEGORIES:Patchday\,Oracle
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
-CATEGORIES:Patchday\,Oracle
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Oracle Critical Security Patch Update (CSPU)
