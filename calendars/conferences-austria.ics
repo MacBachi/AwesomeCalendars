@@ -1,0 +1,367 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AwesomeCalendars//Patchdays, Releases & Conferences//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Konferenzen · Österreich
+X-WR-CALDESC:Alle Konferenzen und Chaos-Events in Österreich.
+REFRESH-INTERVAL;VALUE=DURATION:P7D
+X-PUBLISHED-TTL:P7D
+BEGIN:VEVENT
+UID:conferences-austria-lsz-cyber-crime-forum-linz-20261110@awesomecalendar
+ s
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:LSZ Cyber Crime Forum Linz
+DESCRIPTION:Regionales Forum zu IT-Security und Cyber Crime für Verantwort
+ liche aus Unternehmen.\n\nKonfidenz: bestätigt (Primärquelle\, oder die 
+ tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://lsz.at/
+ cyber-crime-linz\nGeprüft am 25.10.2026
+URL:https://lsz.at/cyber-crime-linz
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Courtyard by Marriott\, Linz\, Österreich
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LSZ Cyber Crime Forum Linz
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-austria-deepsec-2026-20261117@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261121
+SUMMARY:DeepSec 2026
+DESCRIPTION:DeepSec In-Depth Security Conference\, technisch und hersteller
+ neutral. Trainings am 17. und 18.11.\, Konferenz am 19. und 20.11.\n\nKonf
+ idenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine decken 
+ sich mit der Regel)\nQuelle: https://deepsec.net/register.html\nGeprüft a
+ m 25.10.2026
+URL:https://deepsec.net/register.html
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Renaissance Wien Hotel\, Linke Wienzeile/Ullmannstraße 71\, 1150 
+ Wien
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:DeepSec 2026
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-austria-ocg-nisg-2026-umsetzung-fuer-betroffene-20261118@aw
+ esomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:OCG: NISG 2026 – Umsetzung für Betroffene
+DESCRIPTION:Expertenpanel der Österreichischen Computer Gesellschaft zur U
+ msetzung des NIS-2-Gesetzes\, ab 16:00 Uhr\, mit Fragerunde und Networking
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://www.ocg.at/veranstaltungen/n
+ isg-2026-umsetzung-fuer-betroffene\nGeprüft am 25.10.2026
+URL:https://www.ocg.at/veranstaltungen/nisg-2026-umsetzung-fuer-betroffene
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:OCG\, Wollzeile 1\, 1010 Wien
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:OCG: NISG 2026 – Umsetzung für Betroffene
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-austria-lsz-cyber-crime-forum-salzburg-20261124@awesomecale
+ ndars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:LSZ Cyber Crime Forum Salzburg
+DESCRIPTION:Regionales Forum zu IT-Security und Cyber Crime für Verantwort
+ liche aus Unternehmen.\n\nKonfidenz: bestätigt (Primärquelle\, oder die 
+ tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://lsz.at/
+ forum/cyber-crime-salzburg\nGeprüft am 25.10.2026
+URL:https://lsz.at/forum/cyber-crime-salzburg
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Kavalierhaus Klessheim\, Salzburg\, Österreich
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LSZ Cyber Crime Forum Salzburg
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-austria-bsides-tirol-2027-20270225@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270225
+DTEND;VALUE=DATE:20270226
+SUMMARY:BSides Tirol 2027
+DESCRIPTION:Community-Konferenz für Cybersecurity in den Alpen: offensive 
+ und defensive Security\, Forschung und Praxis\, dazu ein Art-Programm. Ein
+ tritt frei\, Anmeldung nötig. Call for Papers bis 15.11.2026.\n\nKonfiden
+ z: bestätigt (Primärquelle\, oder die tatsächlichen Termine decken sich
+  mit der Regel)\nQuelle: https://www.bsides.tirol/\nGeprüft am 25.10.2026
+URL:https://www.bsides.tirol/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Innsbruck\, Österreich
+CATEGORIES:Konferenz\,Security\,BSides\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BSides Tirol 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-austria-lsz-cyber-crime-forum-wien-20270311@awesomecalendar
+ s
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270311
+DTEND;VALUE=DATE:20270312
+SUMMARY:LSZ Cyber Crime Forum Wien
+DESCRIPTION:Regionales Forum zu IT-Security und Cyber Crime für Verantwort
+ liche aus Unternehmen.\n\nKonfidenz: bestätigt (Primärquelle\, oder die 
+ tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://lsz.at/
+ forum/cyber-crime-wien\nGeprüft am 25.10.2026
+URL:https://lsz.at/forum/cyber-crime-wien
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Wien\, Österreich (Ort noch nicht bekannt gegeben)
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LSZ Cyber Crime Forum Wien
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-austria-easterhegg-2027-20270326@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270326
+DTEND;VALUE=DATE:20270330
+SUMMARY:Easterhegg 2027
+DESCRIPTION:Das Oster-Treffen des CCC — Easterhegg #24 findet in Wien sta
+ tt.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Term
+ ine decken sich mit der Regel)\nQuelle: https://www.easterhegg.eu/\nGeprü
+ ft am 25.10.2026
+URL:https://www.easterhegg.eu/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Wien\, Österreich
+CATEGORIES:Konferenz\,Chaos\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Easterhegg 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-austria-grazer-linuxtage-2027-20270402@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270402
+DTEND;VALUE=DATE:20270404
+SUMMARY:Grazer Linuxtage 2027
+DESCRIPTION:Größte freie Open-Source-Konferenz Österreichs. Teilnahme ko
+ stenlos und ohne Anmeldung.\n\nKonfidenz: bestätigt (Primärquelle\, oder
+  die tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://ww
+ w.linuxtage.at/de/\nGeprüft am 25.10.2026
+URL:https://www.linuxtage.at/de/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:TU Graz\, Campus Inffeldgasse\, Graz
+CATEGORIES:Konferenz\,Open Source\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Grazer Linuxtage 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-austria-lsz-security-risk-management-kongress-2027-20270419
+ @awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270419
+DTEND;VALUE=DATE:20270422
+SUMMARY:LSZ Security & Risk Management Kongress 2027
+DESCRIPTION:Zweitägiger Kongress zu IT-Security und Risk Management am 20.
+  und 21.04.\, am 19.04. Anreise mit Pre-Night-Dinner. Zielgruppe CISOs\, S
+ ecurity-Verantwortliche\, Risk & Compliance.\n\nKonfidenz: bestätigt (Pri
+ märquelle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQ
+ uelle: https://lsz.at/kongress/it-security-risk-management-kitzbuehel\nGep
+ rüft am 25.10.2026
+URL:https://lsz.at/kongress/it-security-risk-management-kitzbuehel
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:K3 KitzKongress\, Kitzbühel\, Österreich
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LSZ Security & Risk Management Kongress 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-austria-security-forum-hagenberg-2027-20270519@awesomecalen
+ dars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270519
+DTEND;VALUE=DATE:20270521
+SUMMARY:Security Forum Hagenberg 2027
+DESCRIPTION:Etablierte österreichische Fachkonferenz für Informationssich
+ erheit\, organisiert von Studierenden der FH Oberösterreich.\n\nKonfidenz
+ : bestätigt (Primärquelle\, oder die tatsächlichen Termine decken sich 
+ mit der Regel)\nQuelle: https://www.securityforum.at/\nGeprüft am 25.10.2
+ 026
+URL:https://www.securityforum.at/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:FH Oberösterreich\, Campus Hagenberg\, Softwarepark 11\, 4232 Hag
+ enberg
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Security Forum Hagenberg 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-austria-lsz-cyber-crime-forum-west-20270602@awesomecalendar
+ s
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270602
+DTEND;VALUE=DATE:20270603
+SUMMARY:LSZ Cyber Crime Forum West
+DESCRIPTION:Regionales Forum zu IT-Security und Cyber Crime für Verantwort
+ liche aus Unternehmen in Westösterreich.\n\nKonfidenz: bestätigt (Primä
+ rquelle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuel
+ le: https://lsz.at/summit/it-security-cyber-crime-west-rankweil\nGeprüft 
+ am 25.10.2026
+URL:https://lsz.at/summit/it-security-cyber-crime-west-rankweil
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Firmament\, Rankweil\, Österreich
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LSZ Cyber Crime Forum West
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-austria-owasp-global-appsec-eu-2027-20270621@awesomecalenda
+ rs
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270621
+DTEND;VALUE=DATE:20270626
+SUMMARY:OWASP Global AppSec EU 2027
+DESCRIPTION:Europäische Hauptkonferenz der OWASP Foundation zu Application
+  Security. Laut OWASP finden auch die Ausgaben 2026 und 2028 in Wien statt
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://owasp.github.io/events/\nGep
+ rüft am 25.10.2026
+URL:https://owasp.github.io/events/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Wien\, Österreich
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:OWASP Global AppSec EU 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-austria-bsides-vienna-2027-20270626@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270626
+DTEND;VALUE=DATE:20270627
+SUMMARY:BSides Vienna 2027
+DESCRIPTION:Community-organisierte Security-Konferenz mit Talks\, Workshops
+  und viel „Hallway Track“. Eintritt frei\, Tickets über tickets.bside
+ svienna.at.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlic
+ hen Termine decken sich mit der Regel)\nQuelle: https://bsidesvienna.at/\n
+ Geprüft am 25.10.2026
+URL:https://bsidesvienna.at/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Urania Dachsaal\, Uraniastraße 1\, 1010 Wien
+CATEGORIES:Konferenz\,Security\,BSides\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BSides Vienna 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-austria-lsz-cyber-crime-forum-graz-20270915@awesomecalendar
+ s
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270915
+DTEND;VALUE=DATE:20270916
+SUMMARY:LSZ Cyber Crime Forum Graz
+DESCRIPTION:Regionales Forum zu IT-Security und Cyber Crime für Verantwort
+ liche aus Unternehmen.\n\nKonfidenz: bestätigt (Primärquelle\, oder die 
+ tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://lsz.at/
+ forum/cyber-crime-graz\nGeprüft am 25.10.2026
+URL:https://lsz.at/forum/cyber-crime-graz
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Graz\, Österreich (Ort noch nicht bekannt gegeben)
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LSZ Cyber Crime Forum Graz
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-austria-lsz-it-security-herbst-2027-20270921@awesomecalenda
+ rs
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270921
+DTEND;VALUE=DATE:20270922
+SUMMARY:LSZ IT Security Herbst 2027
+DESCRIPTION:Eintägige IT-Security-Konferenz in Wien.\n\nKonfidenz: bestät
+ igt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der R
+ egel)\nQuelle: https://lsz.at/konferenz/it-security-herbst-wien\nGeprüft 
+ am 25.10.2026
+URL:https://lsz.at/konferenz/it-security-herbst-wien
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Wien\, Österreich (Ort noch nicht bekannt gegeben)
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LSZ IT Security Herbst 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-austria-it-secx-2027-20271015@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20271015
+DTEND;VALUE=DATE:20271016
+SUMMARY:IT-SECX 2027
+DESCRIPTION:IT Security Community Exchange der USTP — 20. Ausgabe. 14:00 
+ bis 22:00 Uhr.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsäch
+ lichen Termine decken sich mit der Regel)\nQuelle: https://itsecx.ustp.at/
+ \nGeprüft am 25.10.2026
+URL:https://itsecx.ustp.at/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Campus St. Pölten\, Österreich
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:IT-SECX 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

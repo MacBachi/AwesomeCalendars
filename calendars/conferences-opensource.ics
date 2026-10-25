@@ -1,0 +1,74 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AwesomeCalendars//Patchdays, Releases & Conferences//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Konferenzen · Open Source
+X-WR-CALDESC:Große Community-Konferenzen zu Linux und Open Source.
+REFRESH-INTERVAL;VALUE=DURATION:P7D
+X-PUBLISHED-TTL:P7D
+BEGIN:VEVENT
+UID:conferences-opensource-fosdem-2027-20270130@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270130
+DTEND;VALUE=DATE:20270201
+SUMMARY:FOSDEM 2027
+DESCRIPTION:Free and Open Source Software Developers' European Meeting. Ein
+ tritt frei\, keine Registrierung.\n\nKonfidenz: bestätigt (Primärquelle\
+ , oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: http
+ s://fosdem.org/2027/news/fosdem-2027-dates/\nGeprüft am 25.10.2026
+URL:https://fosdem.org/2027/news/fosdem-2027-dates/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:ULB Solbosch\, Brüssel\, Belgien
+CATEGORIES:Konferenz\,Open Source
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:FOSDEM 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-opensource-chemnitzer-linux-tage-2027-20270320@awesomecalen
+ dars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270322
+SUMMARY:Chemnitzer Linux-Tage 2027
+DESCRIPTION:Große Community-Konferenz zu Linux und Open Source. Steht im E
+ ventkalender des CCC.\n\nKonfidenz: bestätigt (Primärquelle\, oder die t
+ atsächlichen Termine decken sich mit der Regel)\nQuelle: https://chemnitz
+ er.linux-tage.de/2027\nGeprüft am 25.10.2026
+URL:https://chemnitzer.linux-tage.de/2027
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:TU Chemnitz\, Reichenhainer Straße 90\, 09126 Chemnitz
+CATEGORIES:Konferenz\,Open Source\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chemnitzer Linux-Tage 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-opensource-grazer-linuxtage-2027-20270402@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270402
+DTEND;VALUE=DATE:20270404
+SUMMARY:Grazer Linuxtage 2027
+DESCRIPTION:Größte freie Open-Source-Konferenz Österreichs. Teilnahme ko
+ stenlos und ohne Anmeldung.\n\nKonfidenz: bestätigt (Primärquelle\, oder
+  die tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://ww
+ w.linuxtage.at/de/\nGeprüft am 25.10.2026
+URL:https://www.linuxtage.at/de/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:TU Graz\, Campus Inffeldgasse\, Graz
+CATEGORIES:Konferenz\,Open Source\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Grazer Linuxtage 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

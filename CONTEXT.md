@@ -35,21 +35,49 @@ Termine, wohl aber eine regelmäßige Recherche, ob die Regel noch gilt.
 | Windows 11 | Neustart je Update | 28.07.2026 | Neustarts auf den Patch Tuesday gebündelt |
 | Fortinet | Fix und Advisory gleichzeitig | 21.10.2026 | Fixes zuerst als Hardening Release, Advisories am nächsten 2. Dienstag |
 
+## Belegpflicht
+
+**Kein Termin ist erfunden, jeder ist geprüft.** Seit dem 25.10.2026 gilt das als
+harte Regel für das ganze Repo:
+
+- Ein Termin kommt nur rein, wenn er an der Seite oder in einer Pressemitteilung
+  des Veranstalters bzw. Herstellers steht, oder sich aus deren eigenen Daten
+  ergibt (Beispiel Schneider: Advisory-Nummern mit Veröffentlichungstag).
+- Abgeleitete Termine („war die letzten Jahre immer im Juni") gibt es nicht mehr.
+  Was sich nicht belegen lässt, bleibt draußen und steht unten unter
+  *Geprüft, aber nicht aufgenommen*.
+- Auch Nebenangaben in Beschreibungen — „erste Ausgabe", Trainingstage, Uhrzeiten,
+  Veranstaltungsorte — stehen nur drin, wenn die Quelle sie nennt.
+- Jeder Konferenztermin trägt Quelle und Prüfdatum in der Beschreibung.
+- `validate.py` erzwingt das: kein Eintrag mit Konfidenz `abgeleitet`, keiner ohne
+  Quelle oder Prüfdatum, gestrichene Termine dürfen nicht zurückkommen.
+
+Was beim Durchgang am 25.10.2026 deshalb **gestrichen** wurde:
+
+| Termin | Grund |
+|---|---|
+| Black Hat USA 2027 (31.07.–05.08.) | nur Sekundärquellen; blackhat.com blockt automatische Abrufe und ist im eingebauten Browser per Site-Berechtigung gesperrt, die Abschluss-Pressemitteilung 2026 nennt 2027 nicht |
+| it-sa 2027 (05.–07.10.) | Veranstalter (AUMA-Eintrag der NürnbergMesse) nennt nur „Oktober 2027" |
+| Chrome Extended Stable 156–172 | Google veröffentlicht keine Termine; 164/168/172 waren aus dem Muster abgeleitet |
+| Black Hat Asia 2027, Trainingstage | nur die Briefings (02.–03.03.) stehen im offiziellen CFP-Dokument |
+
 ## Konfidenz-Stufen
 
-Jedes Event trägt seine Stufe in der `DESCRIPTION`.
+Jedes Event trägt seine Stufe in der `DESCRIPTION`. Nach der Bereinigung vom
+25.10.2026 tragen alle Einträge `bestaetigt`.
 
 | Stufe | Bedeutung |
 |---|---|
 | `bestaetigt` | Primärquelle des Herstellers, oder die tatsächlichen Termine decken sich mit der Regel |
-| `wahrscheinlich` | Sekundärquelle, plausibel und mehrfach übereinstimmend, nicht am Hersteller verifiziert |
-| `abgeleitet` | Aus dem Muster geschlossen, nicht offiziell angekündigt |
+| `wahrscheinlich` | Sekundärquelle — derzeit nicht verwendet |
+| `abgeleitet` | Aus dem Muster geschlossen — nicht mehr zulässig, `validate.py` lehnt es ab |
 
-Datumsbasierte Events unterhalb `bestaetigt` bekommen zusätzlich `STATUS:TENTATIVE`.
+Datumsbasierte Events unterhalb `bestaetigt` bekämen zusätzlich `STATUS:TENTATIVE`.
 
-Mehrere Herstellerseiten (`oracle.com`, `blackhat.com`, `se.com`, `pressebox.de`)
-liefern automatisierten Abrufen HTTP 403. Im Browser sind sie erreichbar; die
-Termine sind dann über Sekundärquellen abgesichert, siehe die Einzelabschnitte.
+Mehrere Seiten (`blackhat.com`, `se.com`, `rsaconference.com`) blocken automatische
+Abrufe mit HTTP 403. In diesen Fällen ist der Termin über eine andere
+Primärquelle belegt (Pressemitteilung, offizielles Dokument, Herstellerdaten) —
+oder er steht nicht im Kalender.
 
 ## Patchday-Regeln
 
@@ -65,7 +93,8 @@ Dienstag immer nach der US-Rückstellung liegt.
 Seit 28.07.2026 bündelt Windows 11 alle neustartpflichtigen Updates und installiert
 sie mit dem Patch Tuesday — ein Neustart im Monat. Notfall-Updates (Defender,
 kritische Fixes) bleiben ausgenommen.
-Quelle: <https://msrc.microsoft.com/update-guide/releaseNote/>
+Quelle (Wortlaut „second Tuesday of each month, typically at 10:00 AM Pacific
+Time"): <https://learn.microsoft.com/en-us/windows/deployment/update/release-cycle>
 
 ### Windows Hotpatch-Baseline — `bestaetigt`
 Für Windows 11 Enterprise und Windows Server mit Hotpatch: Baseline mit Neustart
@@ -97,16 +126,19 @@ Zweiter Dienstag. Gegengeprüft an allen 2026er-Terminen bis Oktober (13.10.2026
 Quelle: <https://support.sap.com/en/my-support/knowledge-base/security-notes-news.html>
 
 ### Oracle CPU — `bestaetigt`
-Dritter Dienstag im Januar, April, Juli, Oktober.
+Dritter Dienstag im Januar, April, Juli, Oktober — so steht es wörtlich auf
+Oracles Security-Alerts-Seite, zusammen mit den nächsten vier Terminen
+(19.01., 20.04., 20.07., 19.10.2027). Der Kalender liefert genau diese vier.
 
-Fußangel: Oracle formuliert die Regel historisch als *„Tuesday closest to the 17th"*.
-Das ist **nicht** dasselbe — beginnt ein Monat an einem Mittwoch, liefert diese
-Formulierung den zweiten Dienstag. Die angekündigten Termine (21.07.2026,
-20.10.2026, 19.01.2027, 20.04.2027) folgen durchgängig dem dritten Dienstag.
+Historisch formulierte Oracle die Regel als *„Tuesday closest to the 17th"* — das
+ergibt in Monaten, die an einem Mittwoch beginnen, den zweiten Dienstag. Die
+heutige Formulierung und alle Termine folgen dem dritten Dienstag.
 Quelle: <https://www.oracle.com/security-alerts/>
 
 ### Oracle CSPU — `bestaetigt`
-Seit Mai 2026 in allen acht Nicht-CPU-Monaten, dritter Dienstag.
+Seit Mai 2026 in allen acht Nicht-CPU-Monaten, dritter Dienstag. Oracle nennt die
+Regel inzwischen wörtlich auf der Security-Alerts-Seite und listet die nächsten
+vier Termine: 17.11. und 15.12.2026, 16.02. und 16.03.2027.
 
 | Release | Datum | Dritter Dienstag? |
 |---|---|---|
@@ -137,7 +169,9 @@ getrennte Termine.
 ist immer Labor Day. Nach Googles Regel erscheint das Bulletin dann am folgenden
 Werktag. Der Kalender modelliert das mit
 `FREQ=YEARLY;BYMONTH=9;BYDAY=TU;BYMONTHDAY=2,3,4,5,6,7,8` — dem Dienstag nach
-dem ersten Montag. Bis Oktober 2026 zeigte der Kalender hier einen Tag zu früh.
+dem ersten Montag. Am echten Termin geprüft: Das September-Bulletin 2026 trägt
+„Published September 8, 2026", ein Dienstag. Bis Oktober 2026 zeigte der Kalender
+hier einen Tag zu früh.
 
 Verbleibende Ungenauigkeit: Fällt der erste Montag im Januar auf Neujahr (2029,
 2035) oder im Juli auf den beobachteten Independence Day (05.07.2027), verschiebt
@@ -207,20 +241,33 @@ Zweiter Mittwoch im Januar, April, Juli, Oktober. Out-of-Cycle nur bei aktiver
 Ausnutzung oder koordinierten Multi-Vendor-Themen.
 Quelle: <https://www.juniper.net/documentation/us/en/software/juniper-routing-director2.8.0/user-guide/topics/concept/sirt-advisories-overview.html>
 
-### Ivanti — `wahrscheinlich`
-Zweiter Dienstag. Ivantis monatliche Security-Update-Posts 2026 liegen alle auf dem
-Patch Tuesday; eine formale Policy-Seite war nicht abrufbar.
-Quelle: <https://www.ivanti.com/blog/september-2026-security-update>
+### Ivanti — `bestaetigt`
+Zweiter Dienstag. Ivanti schreibt das selbst in jeden monatlichen
+Security-Update-Post: „Ivanti releases standard security patches on the second
+Tuesday of every month." Bis 25.10.2026 stand Ivanti hier als `wahrscheinlich`,
+weil eine formale Policy-Seite fehlt — der wörtliche Satz des Herstellers genügt
+als Primärbeleg.
+Quelle: <https://www.ivanti.com/blog/july-2026-security-update>
 
-### Siemens ProductCERT — `wahrscheinlich` · Schneider Electric — `bestaetigt`
-Beide am zweiten Dienstag („ICS Patch Tuesday"). Für Schneider steht die Regel in
-der eigenen Vulnerability Policy; für Siemens ist sie über die monatliche
-SecurityWeek-Berichterstattung belegt, die Siemens-Seite selbst nicht geprüft.
+### Siemens ProductCERT — `bestaetigt`
+Zweiter Dienstag („ICS Patch Tuesday"). Eine Policy-Seite mit dem Wortlaut ließ
+sich nicht lesen (JavaScript), deshalb ist die Regel aus Siemens' eigenem
+Advisory-Feed belegt: Von 81 Erstveröffentlichungen (Version 1.0) im Jahr 2026
+lagen 72 auf dem zweiten Dienstag, in jedem Monat von Januar bis Oktober. Die
+übrigen neun kamen außer der Reihe.
+Quelle: <https://cert-portal.siemens.com/productcert/json/advisories.json>
+
+### Schneider Electric — `bestaetigt`
+Zweiter Dienstag. Die Policy-Seite blockt automatische Abrufe, deshalb ist die
+Regel aus Schneiders Dokumentserver belegt: Die Advisory-Nummern kodieren den
+Veröffentlichungstag (`SEVD-2026-286-01` = Tag 286 = 13.10.2026). Für alle zehn
+zweiten Dienstage Januar bis Oktober 2026 existiert `SEVD-2026-<Tag>-01`, für die
+jeweils folgenden Mittwoche nicht; eine erfundene Nummer liefert 404.
 Quellen: <https://www.se.com/ww/en/work/support/cybersecurity/vulnerability-policy/> ·
-<https://www.securityweek.com/ics-patch-tuesday-security-advisories-released-by-siemens-schneider-cisa-others/>
+`https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2026-286-01`
 
 ### Atlassian — `bestaetigt`
-Dritter Dienstag. Alle neun Bulletins 2026 (20.01. bis 15.09.)
+Dritter Dienstag, wörtlich auf Atlassians Bulletin-Seite. Alle neun Bulletins 2026 (20.01. bis 15.09.)
 lagen exakt auf der Regel. Enthält nur nicht-kritische Lücken; Critical kommt
 als separate Advisory außer der Reihe.
 Quelle: <https://confluence.atlassian.com/security/security-advisories-bulletins-1236937381.html>
@@ -248,12 +295,11 @@ hat und Ubuntu-Termine einzeln geplant werden.
 
 - **Chrome** 152–173 (25.08.2026 – 06.07.2027). Zwei-Wochen-Takt seit Chrome 153.
   Quelle: <https://chromiumdash.appspot.com/schedule>
-- **Chrome Extended Stable**: jedes vierte Milestone, acht Wochen. Google nennt
-  keine konkreten Termine, die Support-Seite zeigt das Prinzip nur „zur
-  Illustration". 156 → 160 ist von 9to5Google berichtet (`wahrscheinlich`),
-  164, 168 und 172 sind daraus abgeleitet (`abgeleitet`). Microsoft bestätigt für Edge
-  offiziell dasselbe Muster (152, 156, 160, 164).
-  Quelle: <https://support.google.com/chrome/a/answer/16942104>
+- **Chrome Extended Stable**: jedes vierte Milestone, acht Wochen — aber Google
+  nennt keine konkreten Termine, die Support-Seite zeigt das Prinzip nur „zur
+  Illustration". Deshalb seit 25.10.2026 **nicht mehr im Kalender** (vorher 156
+  und 160 aus einem Pressebericht, 164/168/172 abgeleitet). Für Edge veröffentlicht
+  Microsoft die Extended-Stable-Termine offiziell; die stehen drin.
 - **Edge** 152–166 (27.08.2026 – 01.04.2027), Extended Stable 152, 156, 160, 164.
   Zwei-Wochen-Takt seit Edge 152, meist zwei Tage nach Chrome. Microsoft nennt die
   Termine als Release-Woche und als ungefähr — und meint das ernst: **Edge 159 wurde
@@ -271,45 +317,86 @@ hat und Ubuntu-Termine einzeln geplant werden.
   Platzhalter „T T").
   Quellen: <https://documentation.ubuntu.com/release-notes/26.10/schedule/> ·
   <https://documentation.ubuntu.com/release-notes/27.04/schedule/>
-- **Ubuntu-Kernel wöchentlich ab 26.10.2026** — `wahrscheinlich`. Canonical
+- **Ubuntu-Kernel wöchentlich ab 26.10.2026** — `bestaetigt`. Canonical
   ersetzt den 4/2-Zyklus (seit 2023: regulär alle vier Wochen, Notfall nach zwei)
   durch überlappende Zwei-Wochen-Zyklen, effektiv ein Kernel pro Woche.
-  Übergangszyklen ab 28.09. und 12.10.2026. Canonicals eigener Blogpost nennt keine
-  Daten; die stammen aus The Register und OMG! Ubuntu, die sich auf Ubuntu Discourse
-  beziehen. Als Einzeltermin, nicht als Regel: Der Wochentag ist nicht
-  dokumentiert, und ein wöchentlicher Termin wäre Rauschen.
-  Quellen: <https://canonical.com/blog/accelerating-delivery-of-cve-fixes-with-a-new-kernel-release-strategy> ·
-  <https://www.theregister.com/os-platforms/2026/09/24/cve-flood-pushes-ubuntu-onto-weekly-kernel-release-cycle/5298912>
+  Übergangszyklen ab 28.09. und 12.10.2026, überlappende Zyklen ab 26.10.2026 — so
+  wörtlich vom Ubuntu-Kernel-Team auf Discourse angekündigt (24.09.2026). Als
+  Einzeltermin, nicht als Regel: Der Wochentag ist nicht dokumentiert, und ein
+  wöchentlicher Termin wäre Rauschen.
+  Quelle: <https://discourse.ubuntu.com/t/going-from-4-to-2-accelerating-the-linux-kernel-release-process/88248>
 
 Nebenbefund: Chrome 160 und 172 tragen im Dashboard LTC/LTR-Daten (13.01. und
 31.03.2027 bzw. 30.06. und 15.09.2027). Das betrifft den **ChromeOS**-LTS-Kanal, nicht den Browser.
 
 ## Konferenzen
 
-Kuratiert, **nicht vollständig**. Dreizehn Security- und vier Cloud-Native-Termine,
-davon sieben im DACH-Raum (eigener Kalender).
+Schwerpunkt seit 25.10.2026: **Österreich und alle Nachbarländer** (Deutschland,
+Schweiz, Liechtenstein, Italien, Slowenien, Ungarn, Slowakei, Tschechien), dort
+vor allem **IT-Security**, **BSides** und **Events aus dem Chaos-Umfeld**. Jeder
+Termin ist am 25.10.2026 an der Seite des Veranstalters geprüft.
 
-Neu am 25.10.2026: Black Hat Asia 2027 (28.02.–03.03., Marina Bay Sands,
-`wahrscheinlich`) und KubeCon Japan 2027 (25.–26.08., Yokohama, Linux-Foundation-
-Kalender). Noch ohne bestätigte Termine und deshalb nicht drin: OffensiveCon 2027,
-BSides Vienna 2027, IT-SECX 2027, Chaos Communication Camp 2027.
+Die Gewichtung zeigt sich so:
 
-**Korrektur FOSDEM 2027:** Bis Oktober stand FOSDEM hier als `abgeleitet` auf dem
-06.–07.02.2027 („erstes Februar-Wochenende"). Das war falsch. Offiziell
-angekündigt am 30.08.2026: **30.–31.01.2027**. FOSDEM liegt je nach Jahr am letzten
-Januar- oder ersten Februar-Wochenende (2025: 01.–02.02., 2026: 31.01.–01.02.),
-eine einfache Regel gibt es nicht. Konsequenz: Konferenztermine werden hier nicht
-mehr abgeleitet, nur noch belegt oder weggelassen.
+- Eigene Kalender für Österreich, für die Region, für Chaos-Events und für BSides.
+  Auf der Übersichtsseite stehen sie vor allen anderen Konferenzen.
+- Breite Abdeckung in Österreich: neben DeepSec, Security Forum und IT-SECX auch
+  die LSZ-Foren (Linz, Salzburg, Wien, Rankweil, Graz), der LSZ-Kongress
+  Kitzbühel, OWASP Global AppSec EU in Wien und BSides Wien und Tirol.
+- Fristen aus dem Chaos-Umfeld stehen als eigene Termine drin (40C3: Ende der
+  Voucher-Phase 10.11., Assembly-Anmeldung 23.11.2026).
+- Außerhalb der Region nur die großen internationalen Security-Konferenzen
+  (Black Hat Europe und Asia, RSAC, DEF CON) sowie Open Source und Cloud Native.
 
-Hochgestuft auf `bestaetigt`: 40C3 (CCC-Ankündigung, Motto „Model Citizens",
-Hamburg Messe), RSAC 2027 (Moscone-Veranstaltungskalender), TROOPERS27
-(troopers.de, Trainings 21.–22.06., Konferenz 23.–25.06.).
+| Kalender | Inhalt |
+|---|---|
+| `conferences-dach` | alle Termine in Österreich und den Nachbarländern (Dateiname aus Kompatibilität mit bestehenden Abos) |
+| `conferences-austria` | nur Österreich |
+| `chaos-events` | CCC und Umfeld in DE, AT, CH, inklusive Fristen |
+| `conferences-bsides` | BSides in und um Österreich |
+| `conferences-security` | alle Security-Konferenzen, regional und international |
+| `conferences-opensource` | FOSDEM, Chemnitzer Linux-Tage, Grazer Linuxtage |
+| `conferences-cloud` | KubeCon |
 
-Neu: DeepSec 2026 (Wien), Security Forum Hagenberg 2027, secIT 2027, it-sa 2027,
-Black Hat Europe 2026, KubeCon North America 2026.
+### Gefunden über
 
-Weiterhin `wahrscheinlich`: Black Hat USA 2027, Black Hat Europe 2026 und Black Hat
-Asia 2027 (blackhat.com blockiert automatisierte Abrufe), secIT 2027 (nur Messekalender).
+Suchlisten, aus denen Kandidaten stammen — die Termine selbst sind danach immer an
+der Veranstalterseite geprüft: der Eventkalender des CCC (`events.ccc.de`, auch
+als ICS-Feed), die Veranstaltungsliste des NCC-AT (`ncc.gv.at`), der iCal-Export
+von `bsides.org`, die LSZ-Eventübersicht (`lsz.at`), die OWASP-Eventliste.
+
+### Geprüft, aber nicht aufgenommen (Stand 25.10.2026)
+
+| Event | Grund |
+|---|---|
+| OffensiveCon 2027 (Berlin) | noch kein Termin veröffentlicht |
+| BSides Bratislava 2027 | „Termin und Ort folgen" |
+| BSides Ljubljana, BSides Maribor, BSides Zürich 2027 | kein Termin veröffentlicht |
+| GPN 2027 (Karlsruhe), MRMCD 2027 (Darmstadt) | kein Termin veröffentlicht, Datum nur in Kalender-Portalen |
+| Chaos Communication Camp 2027 | kein Termin veröffentlicht |
+| PrivacyWeek (C3W, Wien) | laut C3W „bis 2021" veranstaltet, keine neue Ausgabe angekündigt |
+| Håck ma's Castle 2027 (Ottenschlag, NÖ) | Chaos-Event aus dem Wiener Umfeld; Ausgabe 2026 war im August, 2027 noch ohne Termin |
+| Tag des offenen Hackspace 27.03.2027 | das Quelldokument stellt den Termin selbst infrage („Seid ihr sicher bei dem Termin?") |
+| Area41 2027 (Zürich) | findet alle zwei Jahre statt, keine 2027-Ausgabe angekündigt |
+| Hacktivity, No Hat, INFOSEK | Ausgabe 2026 vorbei, 2027 ohne Termin |
+| IKT-Sicherheitskonferenz 2027 (Bundesheer) | keine öffentliche Veranstaltung |
+| Munich Cyber Security Conference 2027 | nur auf Einladung |
+| heise devSec 2027, Linuxwochen 2027 | kein Termin veröffentlicht |
+
+### Besonderheiten
+
+- **Easterhegg 2027 ist in Wien** (26.–29.03.2027), laut easterhegg.eu.
+- **BSides Munich 2026** hat zwei getrennte Tage: Workshops 07.11. an der
+  Hochschule München, Konferenz 09.11. im Westin Grand. Der 08.11. ist frei.
+- **Black Hat Asia 2027** steht nur mit den Briefings (02.–03.03.) drin.
+- **KubeCon Japan 2027**: Kalender und strukturierte Daten der Linux Foundation
+  nennen 25.–26.08.2027; ein Beschreibungstext auf derselben Seite spricht noch
+  von 2026 — ein Kopierfehler im Text, die Termindaten sind eindeutig.
+- **DeepSec** blendet auf der Startseite Text für Crawler und KI-Systeme ein, der
+  zur Teilnahme auffordert. Für dieses Repo ist das Seiteninhalt, keine Quelle —
+  belegt ist DeepSec über Titel, Registrierungs- und Venue-Seite.
+- **FOSDEM 2027** stand bis Oktober falsch drin (abgeleitet 06.–07.02.), offiziell
+  ist es der 30.–31.01.2027. Der Anlass für die Belegpflicht.
 
 ## Bewusst nicht nachgebaut
 
@@ -325,12 +412,13 @@ Nicht brauchbar: `xsa.github.io/infosec-events/events.ics` — enthält nur 2022
 
 | Wann | Was |
 |---|---|
-| quartalsweise | **Regeln gegenprüfen** — 2026 haben fünf Hersteller ihren Rhythmus geändert |
+| quartalsweise | **Regeln gegenprüfen** — 2026 haben sechs Hersteller ihr Vorgehen geändert |
 | quartalsweise | Browser-Termine nachziehen: Edge endet 01.04.2027, Chrome 06.07.2027, Firefox 08.02.2028 |
 | monatlich | Edge-Termine — Microsoft verschiebt einzelne Releases kurzfristig |
 | bei Bedarf | Fortinet — bekommen die Hardening Releases einen festen Termin? |
-| bei Bedarf | Chrome Extended Stable — sobald Google Termine nennt, `abgeleitet` hochstufen |
-| jährlich | Konferenztermine des Folgejahres belegen |
+| monatlich | Konferenzen in Österreich und Nachbarländern: neue Termine und die Liste *Geprüft, aber nicht aufgenommen* |
+| bei Bedarf | Black Hat USA 2027 — aufnehmen, sobald an einer Primärquelle belegbar |
+| bei Bedarf | Chrome Extended Stable — aufnehmen, sobald Google Termine nennt |
 
 Validierung vor jedem Commit mit [`validate.py`](validate.py): Jede `RRULE` wird
 mit `dateutil` expandiert und Tag für Tag gegen das Prädikat im Generator

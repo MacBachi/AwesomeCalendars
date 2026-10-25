@@ -24,9 +24,10 @@ DESCRIPTION:Monatlicher Security-Update-Release von Microsoft (Windows\, Of
  alle neustartpflichtigen Updates und installiert sie zusammen mit diesem R
  elease — ein Neustart im Monat\, und zwar hier.\nRegel: zweiter Dienstag
   jedes Monats.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsäch
- lichen Termine decken sich mit der Regel)\nQuelle: https://msrc.microsoft.
- com/update-guide/releaseNote/
-URL:https://msrc.microsoft.com/update-guide/releaseNote/
+ lichen Termine decken sich mit der Regel)\nQuelle: https://learn.microsoft
+ .com/en-us/windows/deployment/update/release-cycle
+URL:https://learn.microsoft.com/en-us/windows/deployment/update/release-cyc
+ le
 CATEGORIES:Patchday\,Microsoft
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -149,15 +150,16 @@ DTEND;VALUE=DATE:20260617
 RRULE:FREQ=YEARLY;BYMONTH=2,3,5,6,8,9,11,12;BYDAY=3TU
 SUMMARY:Oracle Critical Security Patch Update (CSPU)
 DESCRIPTION:Seit Mai 2026 liefert Oracle in den acht Monaten ohne CPU einen
-  monatlichen Critical Security Patch Update.\nRegel: dritter Dienstag in d
- en Nicht-CPU-Monaten. Bestätigt durch Juni (16.06.)\, August (18.08.) und
-  September 2026 (15.09.)\; die nächsten beiden hat Oracle für den 17.11.
-  und 15.12.2026 angekündigt. Einmalige Ausnahme war der Auftakt am 28.05.
- 2026.\nJava SE: Oracle zieht auch Java in den Monatsrhythmus. Bestätigt i
- st ein Java-Update am 18.08.2026\, angekündigt ist der 17.11.2026\; für 
- 2027 plant Oracle mehrere monatliche Java-Updates.\n\nKonfidenz: bestätig
- t (Primärquelle\, oder die tatsächlichen Termine decken sich mit der Reg
- el)\nQuelle: https://www.oracle.com/security-alerts/
+  monatlichen Critical Security Patch Update.\nRegel: dritter Dienstag im F
+ ebruar\, März\, Mai\, Juni\, August\, September\, November und Dezember 
+ — so steht es wörtlich auf Oracles Security-Alerts-Seite\, mit den näc
+ hsten Terminen 17.11. und 15.12.2026\, 16.02. und 16.03.2027. Einmalige Au
+ snahme war der Auftakt am 28.05.2026.\nJava SE: Oracle zieht auch Java in 
+ den Monatsrhythmus. Bestätigt ist ein Java-Update am 18.08.2026\, angekü
+ ndigt ist der 17.11.2026\; für 2027 plant Oracle mehrere monatliche Java-
+ Updates.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen
+  Termine decken sich mit der Regel)\nQuelle: https://www.oracle.com/securi
+ ty-alerts/
 URL:https://www.oracle.com/security-alerts/
 CATEGORIES:Patchday\,Oracle
 TRANSP:TRANSPARENT
@@ -385,11 +387,12 @@ RRULE:FREQ=MONTHLY;BYDAY=2TU
 SUMMARY:Ivanti Security Advisories
 DESCRIPTION:Ivanti veröffentlicht planmäßige Security-Updates (u. a. Con
  nect Secure\, Policy Secure\, EPMM\, Endpoint Manager) am Microsoft Patch 
- Tuesday.\nKritische\, aktiv ausgenutzte Lücken kommen außer der Reihe.\n
- Regel: zweiter Dienstag jedes Monats.\n\nKonfidenz: wahrscheinlich (Sekund
- ärquelle\, nicht am Hersteller verifiziert)\nQuelle: https://www.ivanti.c
- om/blog/september-2026-security-update
-URL:https://www.ivanti.com/blog/september-2026-security-update
+ Tuesday — so schreibt es Ivanti selbst in jedem monatlichen Security-Upd
+ ate-Post.\nKritische\, aktiv ausgenutzte Lücken kommen außer der Reihe.\
+ nRegel: zweiter Dienstag jedes Monats.\n\nKonfidenz: bestätigt (Primärqu
+ elle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle:
+  https://www.ivanti.com/blog/july-2026-security-update
+URL:https://www.ivanti.com/blog/july-2026-security-update
 CATEGORIES:Patchday\,Ivanti
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -408,12 +411,13 @@ RRULE:FREQ=MONTHLY;BYDAY=2TU
 SUMMARY:Siemens ProductCERT Advisories
 DESCRIPTION:Siemens veröffentlicht Security Advisories für Industrie- und
   Automatisierungsprodukte gebündelt am zweiten Dienstag\, dem sogenannten
-  ICS Patch Tuesday.\nRegel: zweiter Dienstag jedes Monats.\n\nKonfidenz: w
- ahrscheinlich (Sekundärquelle\, nicht am Hersteller verifiziert)\nQuelle:
-  https://www.securityweek.com/ics-patch-tuesday-security-advisories-releas
- ed-by-siemens-schneider-cisa-others/
-URL:https://www.securityweek.com/ics-patch-tuesday-security-advisories-rele
- ased-by-siemens-schneider-cisa-others/
+  ICS Patch Tuesday.\nBelegt aus Siemens' eigenem Advisory-Feed: 2026 ersch
+ ienen in jedem Monat Erstveröffentlichungen am zweiten Dienstag\, 72 von 
+ 81 insgesamt\; die übrigen neun kamen außer der Reihe.\nRegel: zweiter D
+ ienstag jedes Monats.\n\nKonfidenz: bestätigt (Primärquelle\, oder die t
+ atsächlichen Termine decken sich mit der Regel)\nQuelle: https://cert-por
+ tal.siemens.com/productcert/json/advisories.json
+URL:https://cert-portal.siemens.com/productcert/json/advisories.json
 CATEGORIES:Patchday\,Siemens
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -432,9 +436,13 @@ RRULE:FREQ=MONTHLY;BYDAY=2TU
 SUMMARY:Schneider Electric Security Notifications
 DESCRIPTION:Schneider Electric veröffentlicht Security Notifications einma
  l im Monat am zweiten Dienstag\, damit Kunden Patches einplanen können.\n
- Regel: zweiter Dienstag jedes Monats.\n\nKonfidenz: bestätigt (Primärque
- lle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: 
- https://www.se.com/ww/en/work/support/cybersecurity/vulnerability-policy/
+ Belegt über Schneiders Dokumentserver: Die Advisory-Nummern kodieren den 
+ Veröffentlichungstag (SEVD-Jahr-Tag-Nr.). Für alle zehn zweiten Dienstag
+ e Januar bis Oktober 2026 existiert ein Advisory\, für die Mittwoche dana
+ ch keines.\nRegel: zweiter Dienstag jedes Monats.\n\nKonfidenz: bestätigt
+  (Primärquelle\, oder die tatsächlichen Termine decken sich mit der Rege
+ l)\nQuelle: https://www.se.com/ww/en/work/support/cybersecurity/vulnerabil
+ ity-policy/
 URL:https://www.se.com/ww/en/work/support/cybersecurity/vulnerability-polic
  y/
 CATEGORIES:Patchday\,Schneider Electric
@@ -662,9 +670,11 @@ DTEND;VALUE=DATE:20260909
 SUMMARY:Chrome 153 Stable
 DESCRIPTION:Google Chrome 153 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -728,9 +738,11 @@ DTEND;VALUE=DATE:20260923
 SUMMARY:Chrome 154 Stable
 DESCRIPTION:Google Chrome 154 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -794,9 +806,11 @@ DTEND;VALUE=DATE:20261007
 SUMMARY:Chrome 155 Stable
 DESCRIPTION:Google Chrome 155 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -882,9 +896,11 @@ DTEND;VALUE=DATE:20261021
 SUMMARY:Chrome 156 Stable
 DESCRIPTION:Google Chrome 156 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -892,31 +908,6 @@ CATEGORIES:Release\,Browser\,Chrome
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Chrome 156 Stable
-TRIGGER:-PT14H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:everything-chrome-156-extended-stable-20261020@awesomecalendars
-DTSTAMP:20261025T000000Z
-DTSTART;VALUE=DATE:20261020
-DTEND;VALUE=DATE:20261021
-SUMMARY:Chrome 156 → Extended Stable
-DESCRIPTION:Chrome 156 wird Extended Stable und bleibt dort acht Wochen. De
- r Kanal ist für verwaltete Windows- und macOS-Umgebungen gedacht und wird
-  per Policy aktiviert. Er ist von der Umstellung auf zwei Wochen nicht bet
- roffen und springt jeweils um vier Milestones.\nGoogle selbst veröffentli
- cht keine Extended-Stable-Termine\; 156 und 160 sind berichtet\, die folge
- nden sind aus dem Muster abgeleitet. Microsoft bestätigt für Edge offizi
- ell dasselbe Muster (152\, 156\, 160\, 164).\n\nKonfidenz: wahrscheinlich 
- (Sekundärquelle\, nicht am Hersteller verifiziert)\nQuelle: https://suppo
- rt.google.com/chrome/a/answer/16942104
-URL:https://support.google.com/chrome/a/answer/16942104
-TRANSP:TRANSPARENT
-STATUS:TENTATIVE
-CATEGORIES:Release\,Browser\,Chrome\,Enterprise
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Chrome 156 → Extended Stable
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
@@ -976,18 +967,19 @@ SUMMARY:Ubuntu-Kernel: ab jetzt wöchentliche Releases
 DESCRIPTION:Canonical ersetzt den bisherigen 4/2-Rhythmus (alle vier Wochen
   ein reguläres Kernel-Update\, Notfall-Updates nach zwei Wochen) durch ü
  berlappende Zwei-Wochen-Zyklen. Effektiv erscheint ab hier jede Woche ein 
- neuer Kernel. Übergangszyklen starteten am 28.09. und 12.10.2026.\nGrund 
- ist die CVE-Flut im Kernel\, nach Canonical stark durch KI-gestützte Fehl
- ersuche getrieben: Linux 7.2 behob über 1.500 CVEs\, frühere Versionen r
- und 500.\nWer Kernel-Updates manuell einspielt\, braucht damit ein wöchen
- tliches Wartungsfenster oder Livepatch.\n\nKonfidenz: wahrscheinlich (Seku
- ndärquelle\, nicht am Hersteller verifiziert)\nQuelle: https://canonical.
- com/blog/accelerating-delivery-of-cve-fixes-with-a-new-kernel-release-stra
- tegy
-URL:https://canonical.com/blog/accelerating-delivery-of-cve-fixes-with-a-ne
- w-kernel-release-strategy
+ neuer Kernel. Übergangszyklen starteten am 28.09. und 12.10.2026 — so a
+ ngekündigt vom Ubuntu-Kernel-Team auf Discourse.\nGrund ist die CVE-Flut 
+ im Kernel\, nach Canonical stark durch KI-gestützte Fehlersuche getrieben
+ : Linux 7.2 behob über 1.500 CVEs\, frühere Versionen rund 500.\nWer Ker
+ nel-Updates manuell einspielt\, braucht damit ein wöchentliches Wartungsf
+ enster oder Livepatch.\n\nKonfidenz: bestätigt (Primärquelle\, oder die 
+ tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://discour
+ se.ubuntu.com/t/going-from-4-to-2-accelerating-the-linux-kernel-release-pr
+ ocess/88248
+URL:https://discourse.ubuntu.com/t/going-from-4-to-2-accelerating-the-linux
+ -kernel-release-process/88248
 TRANSP:TRANSPARENT
-STATUS:TENTATIVE
+STATUS:CONFIRMED
 CATEGORIES:Release\,Linux\,Ubuntu\,Kernel
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -1024,9 +1016,11 @@ DTEND;VALUE=DATE:20261104
 SUMMARY:Chrome 157 Stable
 DESCRIPTION:Google Chrome 157 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1090,9 +1084,11 @@ DTEND;VALUE=DATE:20261118
 SUMMARY:Chrome 158 Stable
 DESCRIPTION:Google Chrome 158 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1156,9 +1152,11 @@ DTEND;VALUE=DATE:20261209
 SUMMARY:Chrome 159 Stable
 DESCRIPTION:Google Chrome 159 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1222,9 +1220,11 @@ DTEND;VALUE=DATE:20270106
 SUMMARY:Chrome 160 Stable
 DESCRIPTION:Google Chrome 160 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1232,31 +1232,6 @@ CATEGORIES:Release\,Browser\,Chrome
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Chrome 160 Stable
-TRIGGER:-PT14H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:everything-chrome-160-extended-stable-20270105@awesomecalendars
-DTSTAMP:20261025T000000Z
-DTSTART;VALUE=DATE:20270105
-DTEND;VALUE=DATE:20270106
-SUMMARY:Chrome 160 → Extended Stable
-DESCRIPTION:Chrome 160 wird Extended Stable und bleibt dort acht Wochen. De
- r Kanal ist für verwaltete Windows- und macOS-Umgebungen gedacht und wird
-  per Policy aktiviert. Er ist von der Umstellung auf zwei Wochen nicht bet
- roffen und springt jeweils um vier Milestones.\nGoogle selbst veröffentli
- cht keine Extended-Stable-Termine\; 156 und 160 sind berichtet\, die folge
- nden sind aus dem Muster abgeleitet. Microsoft bestätigt für Edge offizi
- ell dasselbe Muster (152\, 156\, 160\, 164).\n\nKonfidenz: wahrscheinlich 
- (Sekundärquelle\, nicht am Hersteller verifiziert)\nQuelle: https://suppo
- rt.google.com/chrome/a/answer/16942104
-URL:https://support.google.com/chrome/a/answer/16942104
-TRANSP:TRANSPARENT
-STATUS:TENTATIVE
-CATEGORIES:Release\,Browser\,Chrome\,Enterprise
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Chrome 160 → Extended Stable
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
@@ -1335,9 +1310,11 @@ DTEND;VALUE=DATE:20270120
 SUMMARY:Chrome 161 Stable
 DESCRIPTION:Google Chrome 161 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1401,9 +1378,11 @@ DTEND;VALUE=DATE:20270203
 SUMMARY:Chrome 162 Stable
 DESCRIPTION:Google Chrome 162 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1467,9 +1446,11 @@ DTEND;VALUE=DATE:20270217
 SUMMARY:Chrome 163 Stable
 DESCRIPTION:Google Chrome 163 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1533,9 +1514,11 @@ DTEND;VALUE=DATE:20270303
 SUMMARY:Chrome 164 Stable
 DESCRIPTION:Google Chrome 164 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1543,31 +1526,6 @@ CATEGORIES:Release\,Browser\,Chrome
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Chrome 164 Stable
-TRIGGER:-PT14H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:everything-chrome-164-extended-stable-20270302@awesomecalendars
-DTSTAMP:20261025T000000Z
-DTSTART;VALUE=DATE:20270302
-DTEND;VALUE=DATE:20270303
-SUMMARY:Chrome 164 → Extended Stable
-DESCRIPTION:Chrome 164 wird Extended Stable und bleibt dort acht Wochen. De
- r Kanal ist für verwaltete Windows- und macOS-Umgebungen gedacht und wird
-  per Policy aktiviert. Er ist von der Umstellung auf zwei Wochen nicht bet
- roffen und springt jeweils um vier Milestones.\nGoogle selbst veröffentli
- cht keine Extended-Stable-Termine\; 156 und 160 sind berichtet\, die folge
- nden sind aus dem Muster abgeleitet. Microsoft bestätigt für Edge offizi
- ell dasselbe Muster (152\, 156\, 160\, 164).\n\nKonfidenz: abgeleitet (aus
-  dem Muster geschlossen\, nicht offiziell angekündigt)\nQuelle: https://s
- upport.google.com/chrome/a/answer/16942104
-URL:https://support.google.com/chrome/a/answer/16942104
-TRANSP:TRANSPARENT
-STATUS:TENTATIVE
-CATEGORIES:Release\,Browser\,Chrome\,Enterprise
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Chrome 164 → Extended Stable
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
@@ -1646,9 +1604,11 @@ DTEND;VALUE=DATE:20270317
 SUMMARY:Chrome 165 Stable
 DESCRIPTION:Google Chrome 165 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1692,11 +1652,12 @@ SUMMARY:Firefox 168
 DESCRIPTION:Mozilla Firefox 168 Release.\nSeit Firefox 155 (01.09.2026) im 
  Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
  net. Sicherheits-Zwischenreleases kommen zusätzlich.\nMit diesem Release 
- erscheint laut Mozilla-Kalender das letzte Update für ESR 115 (115.53) 
- — die Linie\, die als letzte noch Windows 7\, 8 und 8.1 sowie ältere ma
- cOS-Versionen unterstützt.\n\nKonfidenz: bestätigt (Primärquelle\, oder
-  die tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://wh
- attrainisitnow.com/calendar/
+ führt der Mozilla-Kalender das letzte derzeit geplante Update für ESR 11
+ 5 (115.53) — die Linie\, die als letzte noch Windows 7\, 8 und 8.1 sowie
+  ältere macOS-Versionen unterstützt. Mozilla hat ESR 115 schon mehrfach 
+ verlängert.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
+ chen Termine decken sich mit der Regel)\nQuelle: https://whattrainisitnow.
+ com/calendar/
 URL:https://whattrainisitnow.com/calendar/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1715,9 +1676,11 @@ DTEND;VALUE=DATE:20270331
 SUMMARY:Chrome 166 Stable
 DESCRIPTION:Google Chrome 166 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1781,9 +1744,11 @@ DTEND;VALUE=DATE:20270414
 SUMMARY:Chrome 167 Stable
 DESCRIPTION:Google Chrome 167 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1845,9 +1810,11 @@ DTEND;VALUE=DATE:20270428
 SUMMARY:Chrome 168 Stable
 DESCRIPTION:Google Chrome 168 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1855,31 +1822,6 @@ CATEGORIES:Release\,Browser\,Chrome
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Chrome 168 Stable
-TRIGGER:-PT14H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:everything-chrome-168-extended-stable-20270427@awesomecalendars
-DTSTAMP:20261025T000000Z
-DTSTART;VALUE=DATE:20270427
-DTEND;VALUE=DATE:20270428
-SUMMARY:Chrome 168 → Extended Stable
-DESCRIPTION:Chrome 168 wird Extended Stable und bleibt dort acht Wochen. De
- r Kanal ist für verwaltete Windows- und macOS-Umgebungen gedacht und wird
-  per Policy aktiviert. Er ist von der Umstellung auf zwei Wochen nicht bet
- roffen und springt jeweils um vier Milestones.\nGoogle selbst veröffentli
- cht keine Extended-Stable-Termine\; 156 und 160 sind berichtet\, die folge
- nden sind aus dem Muster abgeleitet. Microsoft bestätigt für Edge offizi
- ell dasselbe Muster (152\, 156\, 160\, 164).\n\nKonfidenz: abgeleitet (aus
-  dem Muster geschlossen\, nicht offiziell angekündigt)\nQuelle: https://s
- upport.google.com/chrome/a/answer/16942104
-URL:https://support.google.com/chrome/a/answer/16942104
-TRANSP:TRANSPARENT
-STATUS:TENTATIVE
-CATEGORIES:Release\,Browser\,Chrome\,Enterprise
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Chrome 168 → Extended Stable
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
@@ -1912,9 +1854,11 @@ DTEND;VALUE=DATE:20270512
 SUMMARY:Chrome 169 Stable
 DESCRIPTION:Google Chrome 169 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1954,9 +1898,11 @@ DTEND;VALUE=DATE:20270526
 SUMMARY:Chrome 170 Stable
 DESCRIPTION:Google Chrome 170 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1996,9 +1942,11 @@ DTEND;VALUE=DATE:20270609
 SUMMARY:Chrome 171 Stable
 DESCRIPTION:Google Chrome 171 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -2038,9 +1986,11 @@ DTEND;VALUE=DATE:20270623
 SUMMARY:Chrome 172 Stable
 DESCRIPTION:Google Chrome 172 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -2048,31 +1998,6 @@ CATEGORIES:Release\,Browser\,Chrome
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Chrome 172 Stable
-TRIGGER:-PT14H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:everything-chrome-172-extended-stable-20270622@awesomecalendars
-DTSTAMP:20261025T000000Z
-DTSTART;VALUE=DATE:20270622
-DTEND;VALUE=DATE:20270623
-SUMMARY:Chrome 172 → Extended Stable
-DESCRIPTION:Chrome 172 wird Extended Stable und bleibt dort acht Wochen. De
- r Kanal ist für verwaltete Windows- und macOS-Umgebungen gedacht und wird
-  per Policy aktiviert. Er ist von der Umstellung auf zwei Wochen nicht bet
- roffen und springt jeweils um vier Milestones.\nGoogle selbst veröffentli
- cht keine Extended-Stable-Termine\; 156 und 160 sind berichtet\, die folge
- nden sind aus dem Muster abgeleitet. Microsoft bestätigt für Edge offizi
- ell dasselbe Muster (152\, 156\, 160\, 164).\n\nKonfidenz: abgeleitet (aus
-  dem Muster geschlossen\, nicht offiziell angekündigt)\nQuelle: https://s
- upport.google.com/chrome/a/answer/16942104
-URL:https://support.google.com/chrome/a/answer/16942104
-TRANSP:TRANSPARENT
-STATUS:TENTATIVE
-CATEGORIES:Release\,Browser\,Chrome\,Enterprise
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Chrome 172 → Extended Stable
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
@@ -2108,9 +2033,11 @@ DTEND;VALUE=DATE:20270707
 SUMMARY:Chrome 173 Stable
 DESCRIPTION:Google Chrome 173 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -2214,10 +2141,10 @@ SUMMARY:Firefox 180
 DESCRIPTION:Mozilla Firefox 180 Release.\nSeit Firefox 155 (01.09.2026) im 
  Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
  net. Sicherheits-Zwischenreleases kommen zusätzlich.\nMit diesem Release 
- erscheint laut Mozilla-Kalender das letzte Update für ESR 153 (153.27). D
- anach ist ESR 175 die einzige ESR-Linie.\n\nKonfidenz: bestätigt (Primär
- quelle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuell
- e: https://whattrainisitnow.com/calendar/
+ führt der Mozilla-Kalender das letzte derzeit geplante Update für ESR 15
+ 3 (153.27). Danach steht nur noch ESR 175 im Kalender.\n\nKonfidenz: best
+ ätigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit de
+ r Regel)\nQuelle: https://whattrainisitnow.com/calendar/
 URL:https://whattrainisitnow.com/calendar/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -2446,16 +2373,210 @@ DTEND;VALUE=DATE:20261030
 SUMMARY:it-sa Expo & Congress 2026
 DESCRIPTION:Größte IT-Security-Fachmesse im deutschsprachigen Raum.\n\nKo
  nfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine decke
- n sich mit der Regel)\nQuelle: https://www.itsa365.de/en/it-sa-expo-congre
- ss/exhibition-info
-URL:https://www.itsa365.de/en/it-sa-expo-congress/exhibition-info
+ n sich mit der Regel)\nQuelle: https://www.itsa365.de/de-de/it-sa-expo-con
+ gress\nGeprüft am 25.10.2026
+URL:https://www.itsa365.de/de-de/it-sa-expo-congress
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 LOCATION:Messezentrum Nürnberg\, Deutschland
-CATEGORIES:Konferenz\,Security\,DACH
+CATEGORIES:Konferenz\,Security\,Deutschland
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:it-sa Expo & Congress 2026
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-dhcp26-die-heilbronner-chaos-party-20261030@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261102
+SUMMARY:DHCP26 — Die Heilbronner Chaos Party
+DESCRIPTION:Chaos-Event des CFHN in Heilbronn.\n\nKonfidenz: bestätigt (Pr
+ imärquelle\, oder die tatsächlichen Termine decken sich mit der Regel)\n
+ Quelle: https://dhcp.cfhn.it/\nGeprüft am 25.10.2026
+URL:https://dhcp.cfhn.it/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Hochschule Heilbronn\, Max-Planck-Straße 39\, 74081 Heilbronn
+CATEGORIES:Konferenz\,Chaos\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:DHCP26 — Die Heilbronner Chaos Party
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-fiffkon42-20261030@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261102
+SUMMARY:FIfFKon42
+DESCRIPTION:Jahreskonferenz des Forums InformatikerInnen für Frieden und g
+ esellschaftliche Verantwortung\, Motto „Keine Panik! Resilienz in der Po
+ lykrise“. Steht im Eventkalender des CCC.\n\nKonfidenz: bestätigt (Prim
+ ärquelle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQu
+ elle: https://www.fiffkon.de/\nGeprüft am 25.10.2026
+URL:https://www.fiffkon.de/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Theater im Delphi\, Berlin
+CATEGORIES:Konferenz\,Chaos\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:FIfFKon42
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-black-alps-2026-20261105@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261107
+SUMMARY:Black Alps 2026
+DESCRIPTION:Schweizer Security-Konferenz mit Talks und Side Events.\n\nKonf
+ idenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine decken 
+ sich mit der Regel)\nQuelle: https://blackalps.ch/ba-26\nGeprüft am 25.10
+ .2026
+URL:https://blackalps.ch/ba-26
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:La Marive\, Yverdon-les-Bains\, Schweiz
+CATEGORIES:Konferenz\,Security\,Schweiz
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Black Alps 2026
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-bsides-munich-2026-workshops-20261107@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:BSides Munich 2026: Workshops
+DESCRIPTION:Workshop-Tag der 10. BSides Munich. Der Konferenztag folgt am 0
+ 9.11.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Te
+ rmine decken sich mit der Regel)\nQuelle: https://2026.bsidesmunich.org/\n
+ Geprüft am 25.10.2026
+URL:https://2026.bsidesmunich.org/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Hochschule München\, Lothstraße 64\, 80335 München
+CATEGORIES:Konferenz\,Security\,BSides\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BSides Munich 2026: Workshops
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-bsides-munich-2026-konferenz-20261109@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:BSides Munich 2026: Konferenz
+DESCRIPTION:Konferenztag der 10. BSides Munich. Workshops am 07.11.\n\nKonf
+ idenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine decken 
+ sich mit der Regel)\nQuelle: https://2026.bsidesmunich.org/\nGeprüft am 2
+ 5.10.2026
+URL:https://2026.bsidesmunich.org/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:The Westin Grand Munich\, München
+CATEGORIES:Konferenz\,Security\,BSides\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BSides Munich 2026: Konferenz
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-kubecon-cloudnativecon-north-america-2026-20261109@awesomeca
+ lendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261113
+SUMMARY:KubeCon + CloudNativeCon North America 2026
+DESCRIPTION:Flaggschiff-Konferenz der CNCF für Nordamerika. Co-located Eve
+ nts am 09.11.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächl
+ ichen Termine decken sich mit der Regel)\nQuelle: https://events.linuxfoun
+ dation.org/kubecon-cloudnativecon-north-america/\nGeprüft am 25.10.2026
+URL:https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america
+ /
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Salt Palace Convention Center\, Salt Lake City\, USA
+CATEGORIES:Konferenz\,Cloud Native\,Kubernetes
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:KubeCon + CloudNativeCon North America 2026
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-40c3-voucher-phase-endet-spaetestens-20261110@awesomecalenda
+ rs
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:40C3: Voucher-Phase endet (spätestens)
+DESCRIPTION:Die Voucher-Phase des 40C3-Vorverkaufs läuft seit 23.10.2026\,
+  10:00 Uhr\, und endet spätestens am 10.11.2026 um 23:00 Uhr — früher\
+ , sobald das Kontingent aufgebraucht ist. Danach folgt der offene Verkauf.
+ \n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine
+  decken sich mit der Regel)\nQuelle: https://events.ccc.de/2026/10/19/40c3
+ -presale-modus-operandi/\nGeprüft am 25.10.2026
+URL:https://events.ccc.de/2026/10/19/40c3-presale-modus-operandi/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Frist\,Chaos\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:40C3: Voucher-Phase endet (spätestens)
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-lsz-cyber-crime-forum-linz-20261110@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:LSZ Cyber Crime Forum Linz
+DESCRIPTION:Regionales Forum zu IT-Security und Cyber Crime für Verantwort
+ liche aus Unternehmen.\n\nKonfidenz: bestätigt (Primärquelle\, oder die 
+ tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://lsz.at/
+ cyber-crime-linz\nGeprüft am 25.10.2026
+URL:https://lsz.at/cyber-crime-linz
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Courtyard by Marriott\, Linz\, Österreich
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LSZ Cyber Crime Forum Linz
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-qubit-conference-slovakia-2026-20261111@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261113
+SUMMARY:Qubit Conference Slovakia 2026
+DESCRIPTION:Cybersecurity-Konferenz der Qubit-Reihe.\n\nKonfidenz: bestäti
+ gt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der Re
+ gel)\nQuelle: https://qubitconference.com/en/conferences/slovakia\nGeprüf
+ t am 25.10.2026
+URL:https://qubitconference.com/en/conferences/slovakia
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Hotel Ski & Wellness Residence Družba\, Demänovská Dolina\, Slo
+ wakei
+CATEGORIES:Konferenz\,Security\,Slowakei
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Qubit Conference Slovakia 2026
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
@@ -2465,18 +2586,169 @@ DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20261121
 SUMMARY:DeepSec 2026
-DESCRIPTION:DeepSec In-Depth Security Conference in Wien\, technisch und he
- rstellerneutral. Trainings am 17. und 18.11.\, Konferenz am 19. und 20.11.
- \n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine
-  decken sich mit der Regel)\nQuelle: https://deepsec.net/
-URL:https://deepsec.net/
+DESCRIPTION:DeepSec In-Depth Security Conference\, technisch und hersteller
+ neutral. Trainings am 17. und 18.11.\, Konferenz am 19. und 20.11.\n\nKonf
+ idenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine decken 
+ sich mit der Regel)\nQuelle: https://deepsec.net/register.html\nGeprüft a
+ m 25.10.2026
+URL:https://deepsec.net/register.html
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
-LOCATION:Renaissance Hotel\, Wien\, Österreich
-CATEGORIES:Konferenz\,Security\,DACH
+LOCATION:Renaissance Wien Hotel\, Linke Wienzeile/Ullmannstraße 71\, 1150 
+ Wien
+CATEGORIES:Konferenz\,Security\,Österreich
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:DeepSec 2026
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-ocg-nisg-2026-umsetzung-fuer-betroffene-20261118@awesomecale
+ ndars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:OCG: NISG 2026 – Umsetzung für Betroffene
+DESCRIPTION:Expertenpanel der Österreichischen Computer Gesellschaft zur U
+ msetzung des NIS-2-Gesetzes\, ab 16:00 Uhr\, mit Fragerunde und Networking
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://www.ocg.at/veranstaltungen/n
+ isg-2026-umsetzung-fuer-betroffene\nGeprüft am 25.10.2026
+URL:https://www.ocg.at/veranstaltungen/nisg-2026-umsetzung-fuer-betroffene
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:OCG\, Wollzeile 1\, 1010 Wien
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:OCG: NISG 2026 – Umsetzung für Betroffene
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-jetzt15-geekend-20261120@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261123
+SUMMARY:#jetzt15 Geekend
+DESCRIPTION:Wochenende von chaos.jetzt für Menschen zwischen 18 und 25.\n\
+ nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine de
+ cken sich mit der Regel)\nQuelle: https://chaos.jetzt/15\nGeprüft am 25.1
+ 0.2026
+URL:https://chaos.jetzt/15
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:CCC Frankfurt am Main\, Hohenstaufenstraße 8\, 60327 Frankfurt
+CATEGORIES:Konferenz\,Chaos\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:#jetzt15 Geekend
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-nook-2026-nights-of-open-knowledge-20261120@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261122
+SUMMARY:NooK 2026 — Nights of Open Knowledge
+DESCRIPTION:Community-Konferenz mit Vorträgen\, Workshops und Ständen.\n\
+ nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine de
+ cken sich mit der Regel)\nQuelle: https://events.ccc.de/2026/07/24/nook/\n
+ Geprüft am 25.10.2026
+URL:https://events.ccc.de/2026/07/24/nook/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Audimax\, Universität zu Lübeck
+CATEGORIES:Konferenz\,Chaos\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:NooK 2026 — Nights of Open Knowledge
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-hackinbo-2026-20261121@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:HackInBo 2026
+DESCRIPTION:Italienische Security-Konferenz mit Talks und Labs.\n\nKonfiden
+ z: bestätigt (Primärquelle\, oder die tatsächlichen Termine decken sich
+  mit der Regel)\nQuelle: https://www.hackinbo.it/\nGeprüft am 25.10.2026
+URL:https://www.hackinbo.it/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Bologna\, Italien
+CATEGORIES:Konferenz\,Security\,Italien
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:HackInBo 2026
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-40c3-anmeldeschluss-fuer-assemblies-20261123@awesomecalendar
+ s
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:40C3: Anmeldeschluss für Assemblies
+DESCRIPTION:Assemblies müssen bis 23.11.2026\, 23:42 Uhr MEZ\, im Hub regi
+ striert sein. Faustregel des CCC: je größer\, desto früher.\n\nKonfiden
+ z: bestätigt (Primärquelle\, oder die tatsächlichen Termine decken sich
+  mit der Regel)\nQuelle: https://events.ccc.de/2026/10/18/40c3-assemblies/
+ \nGeprüft am 25.10.2026
+URL:https://events.ccc.de/2026/10/18/40c3-assemblies/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Frist\,Chaos\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:40C3: Anmeldeschluss für Assemblies
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-lsz-cyber-crime-forum-salzburg-20261124@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:LSZ Cyber Crime Forum Salzburg
+DESCRIPTION:Regionales Forum zu IT-Security und Cyber Crime für Verantwort
+ liche aus Unternehmen.\n\nKonfidenz: bestätigt (Primärquelle\, oder die 
+ tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://lsz.at/
+ forum/cyber-crime-salzburg\nGeprüft am 25.10.2026
+URL:https://lsz.at/forum/cyber-crime-salzburg
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Kavalierhaus Klessheim\, Salzburg\, Österreich
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LSZ Cyber Crime Forum Salzburg
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-lsz-cyber-crime-forum-muenchen-20261202@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:LSZ Cyber Crime Forum München
+DESCRIPTION:Regionales Forum zu IT-Security und Cyber Crime für Verantwort
+ liche aus Unternehmen.\n\nKonfidenz: bestätigt (Primärquelle\, oder die 
+ tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://lsz.at/
+ forum/cyber-crime-muenchen\nGeprüft am 25.10.2026
+URL:https://lsz.at/forum/cyber-crime-muenchen
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:NH Collection München Bavaria\, München
+CATEGORIES:Konferenz\,Security\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LSZ Cyber Crime Forum München
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
@@ -2486,14 +2758,16 @@ DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20261207
 DTEND;VALUE=DATE:20261211
 SUMMARY:Black Hat Europe 2026
-DESCRIPTION:Trainings ab 07.12.\, Briefings\, Arsenal und Business Hall am 
- 09. und 10.12.\nblackhat.com war beim automatisierten Abruf nicht erreichb
- ar (403) — Termin stammt aus übereinstimmenden Sekundärquellen.\n\nKon
- fidenz: wahrscheinlich (Sekundärquelle\, nicht am Hersteller verifiziert)
- \nQuelle: https://blackhat.com/europe/
-URL:https://blackhat.com/europe/
+DESCRIPTION:Trainings ab 07.12.\, Business Hall 08.–10.12.\, Briefings am
+  09. und 10.12. Belegt durch die Pressemitteilung von Black Hat vom 22.10.
+ 2026.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Te
+ rmine decken sich mit der Regel)\nQuelle: https://finance.yahoo.com/techno
+ logy/articles/black-hat-europe-returns-excel-070000355.html\nGeprüft am 2
+ 5.10.2026
+URL:https://finance.yahoo.com/technology/articles/black-hat-europe-returns-
+ excel-070000355.html
 TRANSP:TRANSPARENT
-STATUS:TENTATIVE
+STATUS:CONFIRMED
 LOCATION:ExCeL London\, Großbritannien
 CATEGORIES:Konferenz\,Security
 BEGIN:VALARM
@@ -2508,19 +2782,39 @@ DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20261227
 DTEND;VALUE=DATE:20261231
 SUMMARY:40C3 — Chaos Communication Congress
-DESCRIPTION:40. Chaos Communication Congress\, Motto „Model Citizens“. 
- Zum Jubiläum erstmals in den Hallen der Hamburg Messe statt im CCH.\nEinr
- eichungsschluss für Beiträge: 09.10.2026.\n\nKonfidenz: bestätigt (Prim
- ärquelle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQu
- elle: https://www.ccc.de/en/updates/2026/40c3-model-citizens
-URL:https://www.ccc.de/en/updates/2026/40c3-model-citizens
+DESCRIPTION:40. Chaos Communication Congress\, Motto „Model Citizens“.\
+ n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine 
+ decken sich mit der Regel)\nQuelle: https://events.ccc.de/congress/2026/\n
+ Geprüft am 25.10.2026
+URL:https://events.ccc.de/congress/2026/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
-LOCATION:Hamburg Messe\, Deutschland
-CATEGORIES:Konferenz\,Security\,DACH
+LOCATION:Hamburg Messe\, Messeplatz 1\, 20357 Hamburg
+CATEGORIES:Konferenz\,Chaos\,Security\,Deutschland
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:40C3 — Chaos Communication Congress
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-it-defense-2027-20270127@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270127
+DTEND;VALUE=DATE:20270130
+SUMMARY:IT-Defense 2027
+DESCRIPTION:IT-Sicherheitskongress von cirosec mit internationalen Referent
+ en\, 24. Ausgabe.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tats
+ ächlichen Termine decken sich mit der Regel)\nQuelle: https://it-defense.
+ de/it-defense-2027/it-defense/\nGeprüft am 25.10.2026
+URL:https://it-defense.de/it-defense-2027/it-defense/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Frankfurt am Main\, Deutschland
+CATEGORIES:Konferenz\,Security\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:IT-Defense 2027
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
@@ -2533,7 +2827,7 @@ SUMMARY:FOSDEM 2027
 DESCRIPTION:Free and Open Source Software Developers' European Meeting. Ein
  tritt frei\, keine Registrierung.\n\nKonfidenz: bestätigt (Primärquelle\
  , oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: http
- s://fosdem.org/2027/news/fosdem-2027-dates/
+ s://fosdem.org/2027/news/fosdem-2027-dates/\nGeprüft am 25.10.2026
 URL:https://fosdem.org/2027/news/fosdem-2027-dates/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -2546,24 +2840,118 @@ TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:everything-black-hat-asia-2027-20270228@awesomecalendars
+UID:everything-insomni-hack-2027-20270201@awesomecalendars
 DTSTAMP:20261025T000000Z
-DTSTART;VALUE=DATE:20270228
-DTEND;VALUE=DATE:20270304
-SUMMARY:Black Hat Asia 2027
-DESCRIPTION:Trainings am 28.02. und 01.03.\, Briefings am 02. und 03.03.\nb
- lackhat.com war beim automatisierten Abruf nicht erreichbar (403) — Term
- in stammt aus übereinstimmenden Sekundärquellen.\n\nKonfidenz: wahrschei
- nlich (Sekundärquelle\, nicht am Hersteller verifiziert)\nQuelle: https:/
- /blackhat.com/asia/
-URL:https://blackhat.com/asia/
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270206
+SUMMARY:Insomni'hack 2027
+DESCRIPTION:Schweizer Security-Konferenz mit Workshops\, Talks und CTF. Die
+  Talks finden am 04. und 05.02. statt.\n\nKonfidenz: bestätigt (Primärqu
+ elle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle:
+  https://www.insomnihack.ch/\nGeprüft am 25.10.2026
+URL:https://www.insomnihack.ch/
 TRANSP:TRANSPARENT
-STATUS:TENTATIVE
+STATUS:CONFIRMED
+LOCATION:SwissTech Convention Center\, Route Louis-Favre 2\, 1024 Ecublens 
+ (Lausanne)
+CATEGORIES:Konferenz\,Security\,Schweiz
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Insomni'hack 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-34-dfn-konferenz-sicherheit-in-vernetzten-systemen-20270223@
+ awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270223
+DTEND;VALUE=DATE:20270225
+SUMMARY:34. DFN-Konferenz „Sicherheit in vernetzten Systemen“
+DESCRIPTION:Sicherheitskonferenz des DFN-CERT im Auftrag des DFN-Vereins. 2
+ 3.02. ab 12:30 bis 24.02. 13:00 Uhr.\n\nKonfidenz: bestätigt (Primärquel
+ le\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: h
+ ttps://www.dfn-cert.de/informationen/veranstaltungen/34-dfn-konferenz-sich
+ erheit-in-vernetzten-systemen-anmeldung-offen/\nGeprüft am 25.10.2026
+URL:https://www.dfn-cert.de/informationen/veranstaltungen/34-dfn-konferenz-
+ sicherheit-in-vernetzten-systemen-anmeldung-offen/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Grand Elysée Hotel\, Rothenbaumchaussee 10\, 20148 Hamburg
+CATEGORIES:Konferenz\,Security\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:34. DFN-Konferenz „Sicherheit in vernetzten Systemen“
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-bsides-tirol-2027-20270225@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270225
+DTEND;VALUE=DATE:20270226
+SUMMARY:BSides Tirol 2027
+DESCRIPTION:Community-Konferenz für Cybersecurity in den Alpen: offensive 
+ und defensive Security\, Forschung und Praxis\, dazu ein Art-Programm. Ein
+ tritt frei\, Anmeldung nötig. Call for Papers bis 15.11.2026.\n\nKonfiden
+ z: bestätigt (Primärquelle\, oder die tatsächlichen Termine decken sich
+  mit der Regel)\nQuelle: https://www.bsides.tirol/\nGeprüft am 25.10.2026
+URL:https://www.bsides.tirol/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Innsbruck\, Österreich
+CATEGORIES:Konferenz\,Security\,BSides\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BSides Tirol 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-black-hat-asia-2027-briefings-20270302@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270302
+DTEND;VALUE=DATE:20270304
+SUMMARY:Black Hat Asia 2027: Briefings
+DESCRIPTION:Die Briefings\, belegt durch Black Hats offizielles Call-for-Pa
+ pers-Dokument. Davor finden Trainings statt\; deren Daten ließen sich nic
+ ht an einer Primärquelle prüfen und stehen deshalb nicht im Kalender.\n\
+ nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine de
+ cken sich mit der Regel)\nQuelle: https://i.blackhat.com/asia-27/BHAS27-Ca
+ ll%20for%20Briefings-Preparation-Doc.pdf\nGeprüft am 25.10.2026
+URL:https://i.blackhat.com/asia-27/BHAS27-Call%20for%20Briefings-Preparatio
+ n-Doc.pdf
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
 LOCATION:Marina Bay Sands\, Singapur
 CATEGORIES:Konferenz\,Security
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Black Hat Asia 2027
+DESCRIPTION:Black Hat Asia 2027: Briefings
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-winterkongress-2027-der-digitalen-gesellschaft-20270305@awes
+ omecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270305
+DTEND;VALUE=DATE:20270307
+SUMMARY:Winterkongress 2027 der Digitalen Gesellschaft
+DESCRIPTION:10. Winterkongress der Schweizer Digitalen Gesellschaft zu Info
+ rmationstechnologie\, Digitalisierung und ihren Auswirkungen auf die Gesel
+ lschaft. Beginn Freitagabend.\n\nKonfidenz: bestätigt (Primärquelle\, od
+ er die tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://
+ www.digitale-gesellschaft.ch/event/winterkongress-2027/\nGeprüft am 25.10
+ .2026
+URL:https://www.digitale-gesellschaft.ch/event/winterkongress-2027/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Rote Fabrik\, Seestrasse 395\, 8038 Zürich
+CATEGORIES:Konferenz\,Chaos\,Schweiz
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Winterkongress 2027 der Digitalen Gesellschaft
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
@@ -2574,14 +2962,15 @@ DTSTART;VALUE=DATE:20270309
 DTEND;VALUE=DATE:20270312
 SUMMARY:secIT by heise 2027
 DESCRIPTION:IT-Security-Konferenz und Fachausstellung von heise. 09.03. Wor
- kshops\, 10. und 11.03. Konferenz und Ausstellung.\n\nKonfidenz: wahrschei
- nlich (Sekundärquelle\, nicht am Hersteller verifiziert)\nQuelle: https:/
- /secit-heise.de/
+ kshops\, 10. und 11.03. Konferenz und Ausstellung.\n\nKonfidenz: bestätig
+ t (Primärquelle\, oder die tatsächlichen Termine decken sich mit der Reg
+ el)\nQuelle: https://secit-heise.de/\nGeprüft am 25.10.2026
 URL:https://secit-heise.de/
 TRANSP:TRANSPARENT
-STATUS:TENTATIVE
-LOCATION:Hannover Congress Centrum\, Deutschland
-CATEGORIES:Konferenz\,Security\,DACH
+STATUS:CONFIRMED
+LOCATION:Hannover Congress Centrum\, Theodor-Heuss-Platz 1–3\, 30175 Hann
+ over
+CATEGORIES:Konferenz\,Security\,Deutschland
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:secIT by heise 2027
@@ -2589,153 +2978,23 @@ TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:everything-rsac-conference-2027-20270405@awesomecalendars
+UID:everything-lsz-cyber-crime-forum-wien-20270311@awesomecalendars
 DTSTAMP:20261025T000000Z
-DTSTART;VALUE=DATE:20270405
-DTEND;VALUE=DATE:20270409
-SUMMARY:RSAC Conference 2027
-DESCRIPTION:Größte kommerzielle Cybersecurity-Konferenz weltweit.\n\nKonf
- idenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine decken 
- sich mit der Regel)\nQuelle: https://www.moscone.com/events/rsac-2027-conf
- erence
-URL:https://www.moscone.com/events/rsac-2027-conference
+DTSTART;VALUE=DATE:20270311
+DTEND;VALUE=DATE:20270312
+SUMMARY:LSZ Cyber Crime Forum Wien
+DESCRIPTION:Regionales Forum zu IT-Security und Cyber Crime für Verantwort
+ liche aus Unternehmen.\n\nKonfidenz: bestätigt (Primärquelle\, oder die 
+ tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://lsz.at/
+ forum/cyber-crime-wien\nGeprüft am 25.10.2026
+URL:https://lsz.at/forum/cyber-crime-wien
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
-LOCATION:Moscone Center\, San Francisco\, USA
-CATEGORIES:Konferenz\,Security
+LOCATION:Wien\, Österreich (Ort noch nicht bekannt gegeben)
+CATEGORIES:Konferenz\,Security\,Österreich
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:RSAC Conference 2027
-TRIGGER:-PT14H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:everything-security-forum-hagenberg-2027-20270519@awesomecalendars
-DTSTAMP:20261025T000000Z
-DTSTART;VALUE=DATE:20270519
-DTEND;VALUE=DATE:20270521
-SUMMARY:Security Forum Hagenberg 2027
-DESCRIPTION:Etablierte österreichische Fachkonferenz für Informationssich
- erheit\, organisiert von Studierenden der FH Oberösterreich.\n\nKonfidenz
- : bestätigt (Primärquelle\, oder die tatsächlichen Termine decken sich 
- mit der Regel)\nQuelle: https://www.securityforum.at/
-URL:https://www.securityforum.at/
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-LOCATION:FH Oberösterreich\, Campus Hagenberg\, Österreich
-CATEGORIES:Konferenz\,Security\,DACH
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Security Forum Hagenberg 2027
-TRIGGER:-PT14H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:everything-troopers-2027-20270621@awesomecalendars
-DTSTAMP:20261025T000000Z
-DTSTART;VALUE=DATE:20270621
-DTEND;VALUE=DATE:20270626
-SUMMARY:TROOPERS 2027
-DESCRIPTION:Technische IT-Security-Konferenz von ERNW. Trainings am 21. und
-  22.06.\, Konferenz vom 23. bis 25.06.\n\nKonfidenz: bestätigt (Primärqu
- elle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle:
-  https://troopers.de/
-URL:https://troopers.de/
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-LOCATION:Heidelberg\, Deutschland
-CATEGORIES:Konferenz\,Security\,DACH
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:TROOPERS 2027
-TRIGGER:-PT14H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:everything-black-hat-usa-2027-20270731@awesomecalendars
-DTSTAMP:20261025T000000Z
-DTSTART;VALUE=DATE:20270731
-DTEND;VALUE=DATE:20270806
-SUMMARY:Black Hat USA 2027
-DESCRIPTION:Trainings und Briefings. Die Briefings bilden traditionell die 
- letzten beiden Tage.\nblackhat.com war beim automatisierten Abruf nicht er
- reichbar (403) — Termin stammt aus übereinstimmenden Sekundärquellen.\
- n\nKonfidenz: wahrscheinlich (Sekundärquelle\, nicht am Hersteller verifi
- ziert)\nQuelle: https://blackhat.com/upcoming.html
-URL:https://blackhat.com/upcoming.html
-TRANSP:TRANSPARENT
-STATUS:TENTATIVE
-LOCATION:Mandalay Bay Convention Center\, Las Vegas\, USA
-CATEGORIES:Konferenz\,Security
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Black Hat USA 2027
-TRIGGER:-PT14H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:everything-def-con-35-20270805@awesomecalendars
-DTSTAMP:20261025T000000Z
-DTSTART;VALUE=DATE:20270805
-DTEND;VALUE=DATE:20270809
-SUMMARY:DEF CON 35
-DESCRIPTION:Direkt im Anschluss an die Black Hat USA Briefings.\n\nKonfiden
- z: bestätigt (Primärquelle\, oder die tatsächlichen Termine decken sich
-  mit der Regel)\nQuelle: https://defcon.org/
-URL:https://defcon.org/
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-LOCATION:Las Vegas Convention Center West Hall\, Las Vegas\, USA
-CATEGORIES:Konferenz\,Security
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:DEF CON 35
-TRIGGER:-PT14H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:everything-it-sa-expo-congress-2027-20271005@awesomecalendars
-DTSTAMP:20261025T000000Z
-DTSTART;VALUE=DATE:20271005
-DTEND;VALUE=DATE:20271008
-SUMMARY:it-sa Expo & Congress 2027
-DESCRIPTION:Größte IT-Security-Fachmesse im deutschsprachigen Raum.\n\nKo
- nfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine decke
- n sich mit der Regel)\nQuelle: https://www.pressebox.de/events/nuernbergme
- sse-gmbh/it-sa-2027/eventid/62575
-URL:https://www.pressebox.de/events/nuernbergmesse-gmbh/it-sa-2027/eventid/
- 62575
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-LOCATION:Messezentrum Nürnberg\, Deutschland
-CATEGORIES:Konferenz\,Security\,DACH
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:it-sa Expo & Congress 2027
-TRIGGER:-PT14H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:everything-kubecon-cloudnativecon-north-america-2026-20261109@awesomeca
- lendars
-DTSTAMP:20261025T000000Z
-DTSTART;VALUE=DATE:20261109
-DTEND;VALUE=DATE:20261113
-SUMMARY:KubeCon + CloudNativeCon North America 2026
-DESCRIPTION:Flaggschiff-Konferenz der CNCF für Nordamerika. Co-located Eve
- nts am 09.11.\, darunter ArgoCon\, BackstageCon und CiliumCon.\n\nKonfiden
- z: bestätigt (Primärquelle\, oder die tatsächlichen Termine decken sich
-  mit der Regel)\nQuelle: https://events.linuxfoundation.org/kubecon-cloudn
- ativecon-north-america/
-URL:https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america
- /
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-LOCATION:Salt Palace Convention Center\, Salt Lake City\, USA
-CATEGORIES:Konferenz\,Cloud Native\,Kubernetes
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:KubeCon + CloudNativeCon North America 2026
+DESCRIPTION:LSZ Cyber Crime Forum Wien
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
@@ -2748,7 +3007,7 @@ SUMMARY:KubeCon + CloudNativeCon Europe 2027
 DESCRIPTION:Flaggschiff-Konferenz der CNCF für Europa.\n\nKonfidenz: best
  ätigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit de
  r Regel)\nQuelle: https://events.linuxfoundation.org/kubecon-cloudnativeco
- n-europe-2027/
+ n-europe-2027/\nGeprüft am 25.10.2026
 URL:https://events.linuxfoundation.org/kubecon-cloudnativecon-europe-2027/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -2761,6 +3020,375 @@ TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:everything-lsz-cybercrime-forum-stuttgart-20270317@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270317
+DTEND;VALUE=DATE:20270318
+SUMMARY:LSZ Cybercrime Forum Stuttgart
+DESCRIPTION:Regionales Forum zu IT-Security und Cyber Crime für Verantwort
+ liche aus Unternehmen.\n\nKonfidenz: bestätigt (Primärquelle\, oder die 
+ tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://lsz.at/
+ cybercrime-stuttgart\nGeprüft am 25.10.2026
+URL:https://lsz.at/cybercrime-stuttgart
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Memox Stuttgart Schlossplatz\, Stuttgart
+CATEGORIES:Konferenz\,Security\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LSZ Cybercrime Forum Stuttgart
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-chemnitzer-linux-tage-2027-20270320@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270322
+SUMMARY:Chemnitzer Linux-Tage 2027
+DESCRIPTION:Große Community-Konferenz zu Linux und Open Source. Steht im E
+ ventkalender des CCC.\n\nKonfidenz: bestätigt (Primärquelle\, oder die t
+ atsächlichen Termine decken sich mit der Regel)\nQuelle: https://chemnitz
+ er.linux-tage.de/2027\nGeprüft am 25.10.2026
+URL:https://chemnitzer.linux-tage.de/2027
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:TU Chemnitz\, Reichenhainer Straße 90\, 09126 Chemnitz
+CATEGORIES:Konferenz\,Open Source\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chemnitzer Linux-Tage 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-easterhegg-2027-20270326@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270326
+DTEND;VALUE=DATE:20270330
+SUMMARY:Easterhegg 2027
+DESCRIPTION:Das Oster-Treffen des CCC — Easterhegg #24 findet in Wien sta
+ tt.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Term
+ ine decken sich mit der Regel)\nQuelle: https://www.easterhegg.eu/\nGeprü
+ ft am 25.10.2026
+URL:https://www.easterhegg.eu/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Wien\, Österreich
+CATEGORIES:Konferenz\,Chaos\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Easterhegg 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-grazer-linuxtage-2027-20270402@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270402
+DTEND;VALUE=DATE:20270404
+SUMMARY:Grazer Linuxtage 2027
+DESCRIPTION:Größte freie Open-Source-Konferenz Österreichs. Teilnahme ko
+ stenlos und ohne Anmeldung.\n\nKonfidenz: bestätigt (Primärquelle\, oder
+  die tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://ww
+ w.linuxtage.at/de/\nGeprüft am 25.10.2026
+URL:https://www.linuxtage.at/de/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:TU Graz\, Campus Inffeldgasse\, Graz
+CATEGORIES:Konferenz\,Open Source\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Grazer Linuxtage 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-rsac-conference-2027-20270405@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270405
+DTEND;VALUE=DATE:20270409
+SUMMARY:RSAC Conference 2027
+DESCRIPTION:Größte kommerzielle Cybersecurity-Konferenz weltweit. Termin 
+ aus der Abschluss-Pressemitteilung der RSAC 2026.\n\nKonfidenz: bestätigt
+  (Primärquelle\, oder die tatsächlichen Termine decken sich mit der Rege
+ l)\nQuelle: https://www.prnewswire.com/news-releases/rsac-conference-close
+ s-35th-annual-flagship-event-backed-by-the-power-of-community-302726865.ht
+ ml\nGeprüft am 25.10.2026
+URL:https://www.prnewswire.com/news-releases/rsac-conference-closes-35th-an
+ nual-flagship-event-backed-by-the-power-of-community-302726865.html
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Moscone Center\, San Francisco\, USA
+CATEGORIES:Konferenz\,Security
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:RSAC Conference 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-bsides-prague-2027-20270407@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270407
+DTEND;VALUE=DATE:20270409
+SUMMARY:BSides Prague 2027
+DESCRIPTION:Community-organisierte Security-Konferenz\, Konferenzsprache En
+ glisch. Call for Papers bis 31.12.2026.\n\nKonfidenz: bestätigt (Primärq
+ uelle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle
+ : https://www.bsidesprg.cz/\nGeprüft am 25.10.2026
+URL:https://www.bsidesprg.cz/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Národní dům na Vinohradech\, Náměstí Míru 820/9\, Prag
+CATEGORIES:Konferenz\,Security\,BSides\,Tschechien
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BSides Prague 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-prague-cyber-security-conference-2027-20270413@awesomecalend
+ ars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270413
+DTEND;VALUE=DATE:20270415
+SUMMARY:Prague Cyber Security Conference 2027
+DESCRIPTION:Internationale Konferenz der tschechischen Cybersicherheitsbeh
+ örde NÚKIB.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächl
+ ichen Termine decken sich mit der Regel)\nQuelle: https://www.praguecyber.
+ com/\nGeprüft am 25.10.2026
+URL:https://www.praguecyber.com/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Tschechische Nationalbank\, Prag
+CATEGORIES:Konferenz\,Security\,Tschechien
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Prague Cyber Security Conference 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-lsz-security-risk-management-kongress-2027-20270419@awesomec
+ alendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270419
+DTEND;VALUE=DATE:20270422
+SUMMARY:LSZ Security & Risk Management Kongress 2027
+DESCRIPTION:Zweitägiger Kongress zu IT-Security und Risk Management am 20.
+  und 21.04.\, am 19.04. Anreise mit Pre-Night-Dinner. Zielgruppe CISOs\, S
+ ecurity-Verantwortliche\, Risk & Compliance.\n\nKonfidenz: bestätigt (Pri
+ märquelle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQ
+ uelle: https://lsz.at/kongress/it-security-risk-management-kitzbuehel\nGep
+ rüft am 25.10.2026
+URL:https://lsz.at/kongress/it-security-risk-management-kitzbuehel
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:K3 KitzKongress\, Kitzbühel\, Österreich
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LSZ Security & Risk Management Kongress 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-bsides-budapest-2027-20270513@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270513
+DTEND;VALUE=DATE:20270514
+SUMMARY:BSides Budapest 2027
+DESCRIPTION:Eintägige Community-Konferenz. Bisher als „Save the Date“ 
+ angekündigt\, Programm folgt.\n\nKonfidenz: bestätigt (Primärquelle\, o
+ der die tatsächlichen Termine decken sich mit der Regel)\nQuelle: https:/
+ /bsidesbud.com/\nGeprüft am 25.10.2026
+URL:https://bsidesbud.com/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Budapest\, Ungarn
+CATEGORIES:Konferenz\,Security\,BSides\,Ungarn
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BSides Budapest 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-qubit-conference-prague-2027-20270517@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270517
+DTEND;VALUE=DATE:20270520
+SUMMARY:Qubit Conference Prague 2027
+DESCRIPTION:Cybersecurity-Konferenz der Qubit-Reihe.\n\nKonfidenz: bestäti
+ gt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der Re
+ gel)\nQuelle: https://qubitconference.com/en/conferences/prague\nGeprüft 
+ am 25.10.2026
+URL:https://qubitconference.com/en/conferences/prague
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Prag\, Tschechien
+CATEGORIES:Konferenz\,Security\,Tschechien
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Qubit Conference Prague 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-security-forum-hagenberg-2027-20270519@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270519
+DTEND;VALUE=DATE:20270521
+SUMMARY:Security Forum Hagenberg 2027
+DESCRIPTION:Etablierte österreichische Fachkonferenz für Informationssich
+ erheit\, organisiert von Studierenden der FH Oberösterreich.\n\nKonfidenz
+ : bestätigt (Primärquelle\, oder die tatsächlichen Termine decken sich 
+ mit der Regel)\nQuelle: https://www.securityforum.at/\nGeprüft am 25.10.2
+ 026
+URL:https://www.securityforum.at/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:FH Oberösterreich\, Campus Hagenberg\, Softwarepark 11\, 4232 Hag
+ enberg
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Security Forum Hagenberg 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-is2-2027-information-security-summit-20270525@awesomecalenda
+ rs
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270525
+DTEND;VALUE=DATE:20270527
+SUMMARY:IS2 2027 – Information Security Summit
+DESCRIPTION:28. Information Security Summit\, Motto „Resilience under Pre
+ ssure“.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächliche
+ n Termine decken sich mit der Regel)\nQuelle: https://is2.cz/en/\nGeprüft
+  am 25.10.2026
+URL:https://is2.cz/en/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Prag\, Tschechien
+CATEGORIES:Konferenz\,Security\,Tschechien
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:IS2 2027 – Information Security Summit
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-lsz-cyber-crime-forum-west-20270602@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270602
+DTEND;VALUE=DATE:20270603
+SUMMARY:LSZ Cyber Crime Forum West
+DESCRIPTION:Regionales Forum zu IT-Security und Cyber Crime für Verantwort
+ liche aus Unternehmen in Westösterreich.\n\nKonfidenz: bestätigt (Primä
+ rquelle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuel
+ le: https://lsz.at/summit/it-security-cyber-crime-west-rankweil\nGeprüft 
+ am 25.10.2026
+URL:https://lsz.at/summit/it-security-cyber-crime-west-rankweil
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Firmament\, Rankweil\, Österreich
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LSZ Cyber Crime Forum West
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-owasp-global-appsec-eu-2027-20270621@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270621
+DTEND;VALUE=DATE:20270626
+SUMMARY:OWASP Global AppSec EU 2027
+DESCRIPTION:Europäische Hauptkonferenz der OWASP Foundation zu Application
+  Security. Laut OWASP finden auch die Ausgaben 2026 und 2028 in Wien statt
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://owasp.github.io/events/\nGep
+ rüft am 25.10.2026
+URL:https://owasp.github.io/events/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Wien\, Österreich
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:OWASP Global AppSec EU 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-troopers-2027-20270621@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270621
+DTEND;VALUE=DATE:20270626
+SUMMARY:TROOPERS 2027
+DESCRIPTION:Technische IT-Security-Konferenz von ERNW. Trainings am 21. und
+  22.06.\, Konferenz vom 23. bis 25.06.\n\nKonfidenz: bestätigt (Primärqu
+ elle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle:
+  https://troopers.de/\nGeprüft am 25.10.2026
+URL:https://troopers.de/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Heidelberg\, Deutschland
+CATEGORIES:Konferenz\,Security\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:TROOPERS 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-bsides-vienna-2027-20270626@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270626
+DTEND;VALUE=DATE:20270627
+SUMMARY:BSides Vienna 2027
+DESCRIPTION:Community-organisierte Security-Konferenz mit Talks\, Workshops
+  und viel „Hallway Track“. Eintritt frei\, Tickets über tickets.bside
+ svienna.at.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlic
+ hen Termine decken sich mit der Regel)\nQuelle: https://bsidesvienna.at/\n
+ Geprüft am 25.10.2026
+URL:https://bsidesvienna.at/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Urania Dachsaal\, Uraniastraße 1\, 1010 Wien
+CATEGORIES:Konferenz\,Security\,BSides\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BSides Vienna 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-def-con-35-20270805@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270805
+DTEND;VALUE=DATE:20270809
+SUMMARY:DEF CON 35
+DESCRIPTION:Hacker-Konferenz in Las Vegas.\n\nKonfidenz: bestätigt (Primä
+ rquelle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuel
+ le: https://defcon.org/\nGeprüft am 25.10.2026
+URL:https://defcon.org/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Las Vegas Convention Center West Hall\, Las Vegas\, USA
+CATEGORIES:Konferenz\,Security
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:DEF CON 35
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:everything-kubecon-cloudnativecon-japan-2027-20270825@awesomecalendars
 DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20270825
@@ -2768,8 +3396,9 @@ DTEND;VALUE=DATE:20270827
 SUMMARY:KubeCon + CloudNativeCon Japan 2027
 DESCRIPTION:Regionale CNCF-Konferenz für Japan.\n\nKonfidenz: bestätigt (
  Primärquelle\, oder die tatsächlichen Termine decken sich mit der Regel)
- \nQuelle: https://events.linuxfoundation.org/kubecon-cloudnativecon-japan/
-URL:https://events.linuxfoundation.org/kubecon-cloudnativecon-japan/
+ \nQuelle: https://events.linuxfoundation.org/about/calendar/\nGeprüft am 
+ 25.10.2026
+URL:https://events.linuxfoundation.org/about/calendar/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 LOCATION:Yokohama\, Japan
@@ -2777,6 +3406,89 @@ CATEGORIES:Konferenz\,Cloud Native\,Kubernetes
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:KubeCon + CloudNativeCon Japan 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-lsz-cyber-crime-forum-graz-20270915@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270915
+DTEND;VALUE=DATE:20270916
+SUMMARY:LSZ Cyber Crime Forum Graz
+DESCRIPTION:Regionales Forum zu IT-Security und Cyber Crime für Verantwort
+ liche aus Unternehmen.\n\nKonfidenz: bestätigt (Primärquelle\, oder die 
+ tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://lsz.at/
+ forum/cyber-crime-graz\nGeprüft am 25.10.2026
+URL:https://lsz.at/forum/cyber-crime-graz
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Graz\, Österreich (Ort noch nicht bekannt gegeben)
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LSZ Cyber Crime Forum Graz
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-datenspuren-2027-20270917@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270917
+DTEND;VALUE=DATE:20270920
+SUMMARY:Datenspuren 2027
+DESCRIPTION:Symposium des Chaos Computer Club Dresden.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://datenspuren.de/2027/\nGeprüft am 25.10.2026
+URL:https://datenspuren.de/2027/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Zentralwerk\, Riesaer Straße 32\, 01127 Dresden
+CATEGORIES:Konferenz\,Chaos\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Datenspuren 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-lsz-it-security-herbst-2027-20270921@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270921
+DTEND;VALUE=DATE:20270922
+SUMMARY:LSZ IT Security Herbst 2027
+DESCRIPTION:Eintägige IT-Security-Konferenz in Wien.\n\nKonfidenz: bestät
+ igt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der R
+ egel)\nQuelle: https://lsz.at/konferenz/it-security-herbst-wien\nGeprüft 
+ am 25.10.2026
+URL:https://lsz.at/konferenz/it-security-herbst-wien
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Wien\, Österreich (Ort noch nicht bekannt gegeben)
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LSZ IT Security Herbst 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:everything-it-secx-2027-20271015@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20271015
+DTEND;VALUE=DATE:20271016
+SUMMARY:IT-SECX 2027
+DESCRIPTION:IT Security Community Exchange der USTP — 20. Ausgabe. 14:00 
+ bis 22:00 Uhr.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsäch
+ lichen Termine decken sich mit der Regel)\nQuelle: https://itsecx.ustp.at/
+ \nGeprüft am 25.10.2026
+URL:https://itsecx.ustp.at/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Campus St. Pölten\, Österreich
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:IT-SECX 2027
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
@@ -2789,10 +3501,9 @@ DTEND;VALUE=DATE:20271112
 SUMMARY:KubeCon + CloudNativeCon North America 2027
 DESCRIPTION:Flaggschiff-Konferenz der CNCF für Nordamerika.\n\nKonfidenz: 
  bestätigt (Primärquelle\, oder die tatsächlichen Termine decken sich mi
- t der Regel)\nQuelle: https://events.linuxfoundation.org/kubecon-cloudnati
- vecon-north-america/
-URL:https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america
- /
+ t der Regel)\nQuelle: https://events.linuxfoundation.org/about/calendar/\n
+ Geprüft am 25.10.2026
+URL:https://events.linuxfoundation.org/about/calendar/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 LOCATION:New Orleans\, Louisiana\, USA

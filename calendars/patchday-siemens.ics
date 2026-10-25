@@ -16,12 +16,13 @@ RRULE:FREQ=MONTHLY;BYDAY=2TU
 SUMMARY:Siemens ProductCERT Advisories
 DESCRIPTION:Siemens veröffentlicht Security Advisories für Industrie- und
   Automatisierungsprodukte gebündelt am zweiten Dienstag\, dem sogenannten
-  ICS Patch Tuesday.\nRegel: zweiter Dienstag jedes Monats.\n\nKonfidenz: w
- ahrscheinlich (Sekundärquelle\, nicht am Hersteller verifiziert)\nQuelle:
-  https://www.securityweek.com/ics-patch-tuesday-security-advisories-releas
- ed-by-siemens-schneider-cisa-others/
-URL:https://www.securityweek.com/ics-patch-tuesday-security-advisories-rele
- ased-by-siemens-schneider-cisa-others/
+  ICS Patch Tuesday.\nBelegt aus Siemens' eigenem Advisory-Feed: 2026 ersch
+ ienen in jedem Monat Erstveröffentlichungen am zweiten Dienstag\, 72 von 
+ 81 insgesamt\; die übrigen neun kamen außer der Reihe.\nRegel: zweiter D
+ ienstag jedes Monats.\n\nKonfidenz: bestätigt (Primärquelle\, oder die t
+ atsächlichen Termine decken sich mit der Regel)\nQuelle: https://cert-por
+ tal.siemens.com/productcert/json/advisories.json
+URL:https://cert-portal.siemens.com/productcert/json/advisories.json
 CATEGORIES:Patchday\,Siemens
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED

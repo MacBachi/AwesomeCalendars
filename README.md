@@ -49,15 +49,29 @@ patchen Fortinet, Ivanti, Cisco, Adobe und andere außer der Reihe.
 | Datei | Inhalt | Reicht bis |
 |---|---|---|
 | [`releases-software.ics`](calendars/releases-software.ics) | Browser und Ubuntu zusammen | Feb 2028 |
-| [`releases-browser.ics`](calendars/releases-browser.ics) | Chrome 152–173, Edge 152–166, Firefox 154–190, Extended Stable und Firefox-ESR-Wechsel | Feb 2028 |
+| [`releases-browser.ics`](calendars/releases-browser.ics) | Chrome 152–173, Edge 152–166 mit Extended Stable, Firefox 154–190 mit ESR-Wechseln | Feb 2028 |
 | [`releases-ubuntu.ics`](calendars/releases-ubuntu.ics) | 26.10, wöchentliche Kernel ab 26.10.2026, 27.04 | Apr 2027 |
 
-### Konferenzen
+### Konferenzen · Österreich & Nachbarländer
+
+Schwerpunkt: IT-Security, BSides und Chaos-Events in Österreich und allen
+Nachbarländern. **Jeder Termin ist an der Seite des Veranstalters geprüft**,
+nichts ist abgeleitet — Details und die Liste bewusst nicht aufgenommener Events
+in [CONTEXT.md](CONTEXT.md#konferenzen).
 
 | Datei | Inhalt |
 |---|---|
-| [`conferences-security.ics`](calendars/conferences-security.ics) | 13 Security-Konferenzen bis Oktober 2027 |
-| [`conferences-dach.ics`](calendars/conferences-dach.ics) | it-sa, DeepSec Wien, 40C3, secIT, Security Forum Hagenberg, TROOPERS |
+| [`conferences-dach.ics`](calendars/conferences-dach.ics) | alle Termine in Österreich, Deutschland, Schweiz, Italien, Ungarn, Slowakei, Tschechien |
+| [`conferences-austria.ics`](calendars/conferences-austria.ics) | nur Österreich: DeepSec, Security Forum, IT-SECX, OWASP AppSec EU, BSides Wien und Tirol, LSZ-Foren, Easterhegg, Grazer Linuxtage |
+| [`chaos-events.ics`](calendars/chaos-events.ics) | 40C3, Easterhegg 2027 in Wien, Datenspuren, Winterkongress, CCC-Umfeld — mit Fristen wie 40C3-Vorverkauf |
+| [`conferences-bsides.ics`](calendars/conferences-bsides.ics) | BSides Wien, Tirol, München, Prag, Budapest |
+
+### Konferenzen · weitere
+
+| Datei | Inhalt |
+|---|---|
+| [`conferences-security.ics`](calendars/conferences-security.ics) | alle Security-Konferenzen, regional und international |
+| [`conferences-opensource.ics`](calendars/conferences-opensource.ics) | FOSDEM, Chemnitzer Linux-Tage, Grazer Linuxtage |
 | [`conferences-cloud.ics`](calendars/conferences-cloud.ics) | KubeCon North America 2026 · Europe, Japan und North America 2027 |
 
 ### Alles in einem

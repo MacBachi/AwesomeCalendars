@@ -3,8 +3,10 @@ VERSION:2.0
 PRODID:-//AwesomeCalendars//Patchdays, Releases & Conferences//DE
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:Konferenzen · DACH
-X-WR-CALDESC:Security-Konferenzen in Deutschland und Österreich.
+X-WR-CALNAME:Konferenzen · Österreich & Nachbarländer
+X-WR-CALDESC:IT-Security-Konferenzen\, BSides\, Chaos-Events und Open-Sourc
+ e-Konferenzen in Österreich und allen Nachbarländern. Jeder Termin an de
+ r Quelle des Veranstalters geprüft.
 REFRESH-INTERVAL;VALUE=DURATION:P7D
 X-PUBLISHED-TTL:P7D
 BEGIN:VEVENT
@@ -15,16 +17,189 @@ DTEND;VALUE=DATE:20261030
 SUMMARY:it-sa Expo & Congress 2026
 DESCRIPTION:Größte IT-Security-Fachmesse im deutschsprachigen Raum.\n\nKo
  nfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine decke
- n sich mit der Regel)\nQuelle: https://www.itsa365.de/en/it-sa-expo-congre
- ss/exhibition-info
-URL:https://www.itsa365.de/en/it-sa-expo-congress/exhibition-info
+ n sich mit der Regel)\nQuelle: https://www.itsa365.de/de-de/it-sa-expo-con
+ gress\nGeprüft am 25.10.2026
+URL:https://www.itsa365.de/de-de/it-sa-expo-congress
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 LOCATION:Messezentrum Nürnberg\, Deutschland
-CATEGORIES:Konferenz\,Security\,DACH
+CATEGORIES:Konferenz\,Security\,Deutschland
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:it-sa Expo & Congress 2026
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-dhcp26-die-heilbronner-chaos-party-20261030@awesomecal
+ endars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261102
+SUMMARY:DHCP26 — Die Heilbronner Chaos Party
+DESCRIPTION:Chaos-Event des CFHN in Heilbronn.\n\nKonfidenz: bestätigt (Pr
+ imärquelle\, oder die tatsächlichen Termine decken sich mit der Regel)\n
+ Quelle: https://dhcp.cfhn.it/\nGeprüft am 25.10.2026
+URL:https://dhcp.cfhn.it/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Hochschule Heilbronn\, Max-Planck-Straße 39\, 74081 Heilbronn
+CATEGORIES:Konferenz\,Chaos\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:DHCP26 — Die Heilbronner Chaos Party
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-fiffkon42-20261030@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261102
+SUMMARY:FIfFKon42
+DESCRIPTION:Jahreskonferenz des Forums InformatikerInnen für Frieden und g
+ esellschaftliche Verantwortung\, Motto „Keine Panik! Resilienz in der Po
+ lykrise“. Steht im Eventkalender des CCC.\n\nKonfidenz: bestätigt (Prim
+ ärquelle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQu
+ elle: https://www.fiffkon.de/\nGeprüft am 25.10.2026
+URL:https://www.fiffkon.de/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Theater im Delphi\, Berlin
+CATEGORIES:Konferenz\,Chaos\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:FIfFKon42
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-black-alps-2026-20261105@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261107
+SUMMARY:Black Alps 2026
+DESCRIPTION:Schweizer Security-Konferenz mit Talks und Side Events.\n\nKonf
+ idenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine decken 
+ sich mit der Regel)\nQuelle: https://blackalps.ch/ba-26\nGeprüft am 25.10
+ .2026
+URL:https://blackalps.ch/ba-26
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:La Marive\, Yverdon-les-Bains\, Schweiz
+CATEGORIES:Konferenz\,Security\,Schweiz
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Black Alps 2026
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-bsides-munich-2026-workshops-20261107@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:BSides Munich 2026: Workshops
+DESCRIPTION:Workshop-Tag der 10. BSides Munich. Der Konferenztag folgt am 0
+ 9.11.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Te
+ rmine decken sich mit der Regel)\nQuelle: https://2026.bsidesmunich.org/\n
+ Geprüft am 25.10.2026
+URL:https://2026.bsidesmunich.org/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Hochschule München\, Lothstraße 64\, 80335 München
+CATEGORIES:Konferenz\,Security\,BSides\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BSides Munich 2026: Workshops
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-bsides-munich-2026-konferenz-20261109@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:BSides Munich 2026: Konferenz
+DESCRIPTION:Konferenztag der 10. BSides Munich. Workshops am 07.11.\n\nKonf
+ idenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine decken 
+ sich mit der Regel)\nQuelle: https://2026.bsidesmunich.org/\nGeprüft am 2
+ 5.10.2026
+URL:https://2026.bsidesmunich.org/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:The Westin Grand Munich\, München
+CATEGORIES:Konferenz\,Security\,BSides\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BSides Munich 2026: Konferenz
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-40c3-voucher-phase-endet-spaetestens-20261110@awesomec
+ alendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:40C3: Voucher-Phase endet (spätestens)
+DESCRIPTION:Die Voucher-Phase des 40C3-Vorverkaufs läuft seit 23.10.2026\,
+  10:00 Uhr\, und endet spätestens am 10.11.2026 um 23:00 Uhr — früher\
+ , sobald das Kontingent aufgebraucht ist. Danach folgt der offene Verkauf.
+ \n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine
+  decken sich mit der Regel)\nQuelle: https://events.ccc.de/2026/10/19/40c3
+ -presale-modus-operandi/\nGeprüft am 25.10.2026
+URL:https://events.ccc.de/2026/10/19/40c3-presale-modus-operandi/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Frist\,Chaos\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:40C3: Voucher-Phase endet (spätestens)
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-lsz-cyber-crime-forum-linz-20261110@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:LSZ Cyber Crime Forum Linz
+DESCRIPTION:Regionales Forum zu IT-Security und Cyber Crime für Verantwort
+ liche aus Unternehmen.\n\nKonfidenz: bestätigt (Primärquelle\, oder die 
+ tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://lsz.at/
+ cyber-crime-linz\nGeprüft am 25.10.2026
+URL:https://lsz.at/cyber-crime-linz
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Courtyard by Marriott\, Linz\, Österreich
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LSZ Cyber Crime Forum Linz
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-qubit-conference-slovakia-2026-20261111@awesomecalenda
+ rs
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261113
+SUMMARY:Qubit Conference Slovakia 2026
+DESCRIPTION:Cybersecurity-Konferenz der Qubit-Reihe.\n\nKonfidenz: bestäti
+ gt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der Re
+ gel)\nQuelle: https://qubitconference.com/en/conferences/slovakia\nGeprüf
+ t am 25.10.2026
+URL:https://qubitconference.com/en/conferences/slovakia
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Hotel Ski & Wellness Residence Družba\, Demänovská Dolina\, Slo
+ wakei
+CATEGORIES:Konferenz\,Security\,Slowakei
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Qubit Conference Slovakia 2026
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
@@ -34,18 +209,172 @@ DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20261121
 SUMMARY:DeepSec 2026
-DESCRIPTION:DeepSec In-Depth Security Conference in Wien\, technisch und he
- rstellerneutral. Trainings am 17. und 18.11.\, Konferenz am 19. und 20.11.
- \n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine
-  decken sich mit der Regel)\nQuelle: https://deepsec.net/
-URL:https://deepsec.net/
+DESCRIPTION:DeepSec In-Depth Security Conference\, technisch und hersteller
+ neutral. Trainings am 17. und 18.11.\, Konferenz am 19. und 20.11.\n\nKonf
+ idenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine decken 
+ sich mit der Regel)\nQuelle: https://deepsec.net/register.html\nGeprüft a
+ m 25.10.2026
+URL:https://deepsec.net/register.html
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
-LOCATION:Renaissance Hotel\, Wien\, Österreich
-CATEGORIES:Konferenz\,Security\,DACH
+LOCATION:Renaissance Wien Hotel\, Linke Wienzeile/Ullmannstraße 71\, 1150 
+ Wien
+CATEGORIES:Konferenz\,Security\,Österreich
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:DeepSec 2026
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-ocg-nisg-2026-umsetzung-fuer-betroffene-20261118@aweso
+ mecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:OCG: NISG 2026 – Umsetzung für Betroffene
+DESCRIPTION:Expertenpanel der Österreichischen Computer Gesellschaft zur U
+ msetzung des NIS-2-Gesetzes\, ab 16:00 Uhr\, mit Fragerunde und Networking
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://www.ocg.at/veranstaltungen/n
+ isg-2026-umsetzung-fuer-betroffene\nGeprüft am 25.10.2026
+URL:https://www.ocg.at/veranstaltungen/nisg-2026-umsetzung-fuer-betroffene
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:OCG\, Wollzeile 1\, 1010 Wien
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:OCG: NISG 2026 – Umsetzung für Betroffene
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-jetzt15-geekend-20261120@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261123
+SUMMARY:#jetzt15 Geekend
+DESCRIPTION:Wochenende von chaos.jetzt für Menschen zwischen 18 und 25.\n\
+ nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine de
+ cken sich mit der Regel)\nQuelle: https://chaos.jetzt/15\nGeprüft am 25.1
+ 0.2026
+URL:https://chaos.jetzt/15
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:CCC Frankfurt am Main\, Hohenstaufenstraße 8\, 60327 Frankfurt
+CATEGORIES:Konferenz\,Chaos\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:#jetzt15 Geekend
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-nook-2026-nights-of-open-knowledge-20261120@awesomecal
+ endars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261122
+SUMMARY:NooK 2026 — Nights of Open Knowledge
+DESCRIPTION:Community-Konferenz mit Vorträgen\, Workshops und Ständen.\n\
+ nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine de
+ cken sich mit der Regel)\nQuelle: https://events.ccc.de/2026/07/24/nook/\n
+ Geprüft am 25.10.2026
+URL:https://events.ccc.de/2026/07/24/nook/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Audimax\, Universität zu Lübeck
+CATEGORIES:Konferenz\,Chaos\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:NooK 2026 — Nights of Open Knowledge
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-hackinbo-2026-20261121@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:HackInBo 2026
+DESCRIPTION:Italienische Security-Konferenz mit Talks und Labs.\n\nKonfiden
+ z: bestätigt (Primärquelle\, oder die tatsächlichen Termine decken sich
+  mit der Regel)\nQuelle: https://www.hackinbo.it/\nGeprüft am 25.10.2026
+URL:https://www.hackinbo.it/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Bologna\, Italien
+CATEGORIES:Konferenz\,Security\,Italien
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:HackInBo 2026
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-40c3-anmeldeschluss-fuer-assemblies-20261123@awesomeca
+ lendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:40C3: Anmeldeschluss für Assemblies
+DESCRIPTION:Assemblies müssen bis 23.11.2026\, 23:42 Uhr MEZ\, im Hub regi
+ striert sein. Faustregel des CCC: je größer\, desto früher.\n\nKonfiden
+ z: bestätigt (Primärquelle\, oder die tatsächlichen Termine decken sich
+  mit der Regel)\nQuelle: https://events.ccc.de/2026/10/18/40c3-assemblies/
+ \nGeprüft am 25.10.2026
+URL:https://events.ccc.de/2026/10/18/40c3-assemblies/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Frist\,Chaos\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:40C3: Anmeldeschluss für Assemblies
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-lsz-cyber-crime-forum-salzburg-20261124@awesomecalenda
+ rs
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:LSZ Cyber Crime Forum Salzburg
+DESCRIPTION:Regionales Forum zu IT-Security und Cyber Crime für Verantwort
+ liche aus Unternehmen.\n\nKonfidenz: bestätigt (Primärquelle\, oder die 
+ tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://lsz.at/
+ forum/cyber-crime-salzburg\nGeprüft am 25.10.2026
+URL:https://lsz.at/forum/cyber-crime-salzburg
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Kavalierhaus Klessheim\, Salzburg\, Österreich
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LSZ Cyber Crime Forum Salzburg
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-lsz-cyber-crime-forum-muenchen-20261202@awesomecalenda
+ rs
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:LSZ Cyber Crime Forum München
+DESCRIPTION:Regionales Forum zu IT-Security und Cyber Crime für Verantwort
+ liche aus Unternehmen.\n\nKonfidenz: bestätigt (Primärquelle\, oder die 
+ tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://lsz.at/
+ forum/cyber-crime-muenchen\nGeprüft am 25.10.2026
+URL:https://lsz.at/forum/cyber-crime-muenchen
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:NH Collection München Bavaria\, München
+CATEGORIES:Konferenz\,Security\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LSZ Cyber Crime Forum München
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
@@ -56,19 +385,131 @@ DTSTAMP:20261025T000000Z
 DTSTART;VALUE=DATE:20261227
 DTEND;VALUE=DATE:20261231
 SUMMARY:40C3 — Chaos Communication Congress
-DESCRIPTION:40. Chaos Communication Congress\, Motto „Model Citizens“. 
- Zum Jubiläum erstmals in den Hallen der Hamburg Messe statt im CCH.\nEinr
- eichungsschluss für Beiträge: 09.10.2026.\n\nKonfidenz: bestätigt (Prim
- ärquelle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQu
- elle: https://www.ccc.de/en/updates/2026/40c3-model-citizens
-URL:https://www.ccc.de/en/updates/2026/40c3-model-citizens
+DESCRIPTION:40. Chaos Communication Congress\, Motto „Model Citizens“.\
+ n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine 
+ decken sich mit der Regel)\nQuelle: https://events.ccc.de/congress/2026/\n
+ Geprüft am 25.10.2026
+URL:https://events.ccc.de/congress/2026/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
-LOCATION:Hamburg Messe\, Deutschland
-CATEGORIES:Konferenz\,Security\,DACH
+LOCATION:Hamburg Messe\, Messeplatz 1\, 20357 Hamburg
+CATEGORIES:Konferenz\,Chaos\,Security\,Deutschland
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:40C3 — Chaos Communication Congress
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-it-defense-2027-20270127@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270127
+DTEND;VALUE=DATE:20270130
+SUMMARY:IT-Defense 2027
+DESCRIPTION:IT-Sicherheitskongress von cirosec mit internationalen Referent
+ en\, 24. Ausgabe.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tats
+ ächlichen Termine decken sich mit der Regel)\nQuelle: https://it-defense.
+ de/it-defense-2027/it-defense/\nGeprüft am 25.10.2026
+URL:https://it-defense.de/it-defense-2027/it-defense/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Frankfurt am Main\, Deutschland
+CATEGORIES:Konferenz\,Security\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:IT-Defense 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-insomni-hack-2027-20270201@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270206
+SUMMARY:Insomni'hack 2027
+DESCRIPTION:Schweizer Security-Konferenz mit Workshops\, Talks und CTF. Die
+  Talks finden am 04. und 05.02. statt.\n\nKonfidenz: bestätigt (Primärqu
+ elle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle:
+  https://www.insomnihack.ch/\nGeprüft am 25.10.2026
+URL:https://www.insomnihack.ch/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:SwissTech Convention Center\, Route Louis-Favre 2\, 1024 Ecublens 
+ (Lausanne)
+CATEGORIES:Konferenz\,Security\,Schweiz
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Insomni'hack 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-34-dfn-konferenz-sicherheit-in-vernetzten-systemen-202
+ 70223@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270223
+DTEND;VALUE=DATE:20270225
+SUMMARY:34. DFN-Konferenz „Sicherheit in vernetzten Systemen“
+DESCRIPTION:Sicherheitskonferenz des DFN-CERT im Auftrag des DFN-Vereins. 2
+ 3.02. ab 12:30 bis 24.02. 13:00 Uhr.\n\nKonfidenz: bestätigt (Primärquel
+ le\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: h
+ ttps://www.dfn-cert.de/informationen/veranstaltungen/34-dfn-konferenz-sich
+ erheit-in-vernetzten-systemen-anmeldung-offen/\nGeprüft am 25.10.2026
+URL:https://www.dfn-cert.de/informationen/veranstaltungen/34-dfn-konferenz-
+ sicherheit-in-vernetzten-systemen-anmeldung-offen/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Grand Elysée Hotel\, Rothenbaumchaussee 10\, 20148 Hamburg
+CATEGORIES:Konferenz\,Security\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:34. DFN-Konferenz „Sicherheit in vernetzten Systemen“
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-bsides-tirol-2027-20270225@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270225
+DTEND;VALUE=DATE:20270226
+SUMMARY:BSides Tirol 2027
+DESCRIPTION:Community-Konferenz für Cybersecurity in den Alpen: offensive 
+ und defensive Security\, Forschung und Praxis\, dazu ein Art-Programm. Ein
+ tritt frei\, Anmeldung nötig. Call for Papers bis 15.11.2026.\n\nKonfiden
+ z: bestätigt (Primärquelle\, oder die tatsächlichen Termine decken sich
+  mit der Regel)\nQuelle: https://www.bsides.tirol/\nGeprüft am 25.10.2026
+URL:https://www.bsides.tirol/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Innsbruck\, Österreich
+CATEGORIES:Konferenz\,Security\,BSides\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BSides Tirol 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-winterkongress-2027-der-digitalen-gesellschaft-2027030
+ 5@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270305
+DTEND;VALUE=DATE:20270307
+SUMMARY:Winterkongress 2027 der Digitalen Gesellschaft
+DESCRIPTION:10. Winterkongress der Schweizer Digitalen Gesellschaft zu Info
+ rmationstechnologie\, Digitalisierung und ihren Auswirkungen auf die Gesel
+ lschaft. Beginn Freitagabend.\n\nKonfidenz: bestätigt (Primärquelle\, od
+ er die tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://
+ www.digitale-gesellschaft.ch/event/winterkongress-2027/\nGeprüft am 25.10
+ .2026
+URL:https://www.digitale-gesellschaft.ch/event/winterkongress-2027/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Rote Fabrik\, Seestrasse 395\, 8038 Zürich
+CATEGORIES:Konferenz\,Chaos\,Schweiz
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Winterkongress 2027 der Digitalen Gesellschaft
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
@@ -79,17 +520,233 @@ DTSTART;VALUE=DATE:20270309
 DTEND;VALUE=DATE:20270312
 SUMMARY:secIT by heise 2027
 DESCRIPTION:IT-Security-Konferenz und Fachausstellung von heise. 09.03. Wor
- kshops\, 10. und 11.03. Konferenz und Ausstellung.\n\nKonfidenz: wahrschei
- nlich (Sekundärquelle\, nicht am Hersteller verifiziert)\nQuelle: https:/
- /secit-heise.de/
+ kshops\, 10. und 11.03. Konferenz und Ausstellung.\n\nKonfidenz: bestätig
+ t (Primärquelle\, oder die tatsächlichen Termine decken sich mit der Reg
+ el)\nQuelle: https://secit-heise.de/\nGeprüft am 25.10.2026
 URL:https://secit-heise.de/
 TRANSP:TRANSPARENT
-STATUS:TENTATIVE
-LOCATION:Hannover Congress Centrum\, Deutschland
-CATEGORIES:Konferenz\,Security\,DACH
+STATUS:CONFIRMED
+LOCATION:Hannover Congress Centrum\, Theodor-Heuss-Platz 1–3\, 30175 Hann
+ over
+CATEGORIES:Konferenz\,Security\,Deutschland
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:secIT by heise 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-lsz-cyber-crime-forum-wien-20270311@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270311
+DTEND;VALUE=DATE:20270312
+SUMMARY:LSZ Cyber Crime Forum Wien
+DESCRIPTION:Regionales Forum zu IT-Security und Cyber Crime für Verantwort
+ liche aus Unternehmen.\n\nKonfidenz: bestätigt (Primärquelle\, oder die 
+ tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://lsz.at/
+ forum/cyber-crime-wien\nGeprüft am 25.10.2026
+URL:https://lsz.at/forum/cyber-crime-wien
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Wien\, Österreich (Ort noch nicht bekannt gegeben)
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LSZ Cyber Crime Forum Wien
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-lsz-cybercrime-forum-stuttgart-20270317@awesomecalenda
+ rs
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270317
+DTEND;VALUE=DATE:20270318
+SUMMARY:LSZ Cybercrime Forum Stuttgart
+DESCRIPTION:Regionales Forum zu IT-Security und Cyber Crime für Verantwort
+ liche aus Unternehmen.\n\nKonfidenz: bestätigt (Primärquelle\, oder die 
+ tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://lsz.at/
+ cybercrime-stuttgart\nGeprüft am 25.10.2026
+URL:https://lsz.at/cybercrime-stuttgart
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Memox Stuttgart Schlossplatz\, Stuttgart
+CATEGORIES:Konferenz\,Security\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LSZ Cybercrime Forum Stuttgart
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-chemnitzer-linux-tage-2027-20270320@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270322
+SUMMARY:Chemnitzer Linux-Tage 2027
+DESCRIPTION:Große Community-Konferenz zu Linux und Open Source. Steht im E
+ ventkalender des CCC.\n\nKonfidenz: bestätigt (Primärquelle\, oder die t
+ atsächlichen Termine decken sich mit der Regel)\nQuelle: https://chemnitz
+ er.linux-tage.de/2027\nGeprüft am 25.10.2026
+URL:https://chemnitzer.linux-tage.de/2027
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:TU Chemnitz\, Reichenhainer Straße 90\, 09126 Chemnitz
+CATEGORIES:Konferenz\,Open Source\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chemnitzer Linux-Tage 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-easterhegg-2027-20270326@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270326
+DTEND;VALUE=DATE:20270330
+SUMMARY:Easterhegg 2027
+DESCRIPTION:Das Oster-Treffen des CCC — Easterhegg #24 findet in Wien sta
+ tt.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Term
+ ine decken sich mit der Regel)\nQuelle: https://www.easterhegg.eu/\nGeprü
+ ft am 25.10.2026
+URL:https://www.easterhegg.eu/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Wien\, Österreich
+CATEGORIES:Konferenz\,Chaos\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Easterhegg 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-grazer-linuxtage-2027-20270402@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270402
+DTEND;VALUE=DATE:20270404
+SUMMARY:Grazer Linuxtage 2027
+DESCRIPTION:Größte freie Open-Source-Konferenz Österreichs. Teilnahme ko
+ stenlos und ohne Anmeldung.\n\nKonfidenz: bestätigt (Primärquelle\, oder
+  die tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://ww
+ w.linuxtage.at/de/\nGeprüft am 25.10.2026
+URL:https://www.linuxtage.at/de/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:TU Graz\, Campus Inffeldgasse\, Graz
+CATEGORIES:Konferenz\,Open Source\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Grazer Linuxtage 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-bsides-prague-2027-20270407@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270407
+DTEND;VALUE=DATE:20270409
+SUMMARY:BSides Prague 2027
+DESCRIPTION:Community-organisierte Security-Konferenz\, Konferenzsprache En
+ glisch. Call for Papers bis 31.12.2026.\n\nKonfidenz: bestätigt (Primärq
+ uelle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle
+ : https://www.bsidesprg.cz/\nGeprüft am 25.10.2026
+URL:https://www.bsidesprg.cz/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Národní dům na Vinohradech\, Náměstí Míru 820/9\, Prag
+CATEGORIES:Konferenz\,Security\,BSides\,Tschechien
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BSides Prague 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-prague-cyber-security-conference-2027-20270413@awesome
+ calendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270413
+DTEND;VALUE=DATE:20270415
+SUMMARY:Prague Cyber Security Conference 2027
+DESCRIPTION:Internationale Konferenz der tschechischen Cybersicherheitsbeh
+ örde NÚKIB.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächl
+ ichen Termine decken sich mit der Regel)\nQuelle: https://www.praguecyber.
+ com/\nGeprüft am 25.10.2026
+URL:https://www.praguecyber.com/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Tschechische Nationalbank\, Prag
+CATEGORIES:Konferenz\,Security\,Tschechien
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Prague Cyber Security Conference 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-lsz-security-risk-management-kongress-2027-20270419@aw
+ esomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270419
+DTEND;VALUE=DATE:20270422
+SUMMARY:LSZ Security & Risk Management Kongress 2027
+DESCRIPTION:Zweitägiger Kongress zu IT-Security und Risk Management am 20.
+  und 21.04.\, am 19.04. Anreise mit Pre-Night-Dinner. Zielgruppe CISOs\, S
+ ecurity-Verantwortliche\, Risk & Compliance.\n\nKonfidenz: bestätigt (Pri
+ märquelle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQ
+ uelle: https://lsz.at/kongress/it-security-risk-management-kitzbuehel\nGep
+ rüft am 25.10.2026
+URL:https://lsz.at/kongress/it-security-risk-management-kitzbuehel
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:K3 KitzKongress\, Kitzbühel\, Österreich
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LSZ Security & Risk Management Kongress 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-bsides-budapest-2027-20270513@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270513
+DTEND;VALUE=DATE:20270514
+SUMMARY:BSides Budapest 2027
+DESCRIPTION:Eintägige Community-Konferenz. Bisher als „Save the Date“ 
+ angekündigt\, Programm folgt.\n\nKonfidenz: bestätigt (Primärquelle\, o
+ der die tatsächlichen Termine decken sich mit der Regel)\nQuelle: https:/
+ /bsidesbud.com/\nGeprüft am 25.10.2026
+URL:https://bsidesbud.com/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Budapest\, Ungarn
+CATEGORIES:Konferenz\,Security\,BSides\,Ungarn
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BSides Budapest 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-qubit-conference-prague-2027-20270517@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270517
+DTEND;VALUE=DATE:20270520
+SUMMARY:Qubit Conference Prague 2027
+DESCRIPTION:Cybersecurity-Konferenz der Qubit-Reihe.\n\nKonfidenz: bestäti
+ gt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der Re
+ gel)\nQuelle: https://qubitconference.com/en/conferences/prague\nGeprüft 
+ am 25.10.2026
+URL:https://qubitconference.com/en/conferences/prague
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Prag\, Tschechien
+CATEGORIES:Konferenz\,Security\,Tschechien
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Qubit Conference Prague 2027
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
@@ -103,15 +760,83 @@ SUMMARY:Security Forum Hagenberg 2027
 DESCRIPTION:Etablierte österreichische Fachkonferenz für Informationssich
  erheit\, organisiert von Studierenden der FH Oberösterreich.\n\nKonfidenz
  : bestätigt (Primärquelle\, oder die tatsächlichen Termine decken sich 
- mit der Regel)\nQuelle: https://www.securityforum.at/
+ mit der Regel)\nQuelle: https://www.securityforum.at/\nGeprüft am 25.10.2
+ 026
 URL:https://www.securityforum.at/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
-LOCATION:FH Oberösterreich\, Campus Hagenberg\, Österreich
-CATEGORIES:Konferenz\,Security\,DACH
+LOCATION:FH Oberösterreich\, Campus Hagenberg\, Softwarepark 11\, 4232 Hag
+ enberg
+CATEGORIES:Konferenz\,Security\,Österreich
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Security Forum Hagenberg 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-is2-2027-information-security-summit-20270525@awesomec
+ alendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270525
+DTEND;VALUE=DATE:20270527
+SUMMARY:IS2 2027 – Information Security Summit
+DESCRIPTION:28. Information Security Summit\, Motto „Resilience under Pre
+ ssure“.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächliche
+ n Termine decken sich mit der Regel)\nQuelle: https://is2.cz/en/\nGeprüft
+  am 25.10.2026
+URL:https://is2.cz/en/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Prag\, Tschechien
+CATEGORIES:Konferenz\,Security\,Tschechien
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:IS2 2027 – Information Security Summit
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-lsz-cyber-crime-forum-west-20270602@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270602
+DTEND;VALUE=DATE:20270603
+SUMMARY:LSZ Cyber Crime Forum West
+DESCRIPTION:Regionales Forum zu IT-Security und Cyber Crime für Verantwort
+ liche aus Unternehmen in Westösterreich.\n\nKonfidenz: bestätigt (Primä
+ rquelle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuel
+ le: https://lsz.at/summit/it-security-cyber-crime-west-rankweil\nGeprüft 
+ am 25.10.2026
+URL:https://lsz.at/summit/it-security-cyber-crime-west-rankweil
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Firmament\, Rankweil\, Österreich
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LSZ Cyber Crime Forum West
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-owasp-global-appsec-eu-2027-20270621@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270621
+DTEND;VALUE=DATE:20270626
+SUMMARY:OWASP Global AppSec EU 2027
+DESCRIPTION:Europäische Hauptkonferenz der OWASP Foundation zu Application
+  Security. Laut OWASP finden auch die Ausgaben 2026 und 2028 in Wien statt
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://owasp.github.io/events/\nGep
+ rüft am 25.10.2026
+URL:https://owasp.github.io/events/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Wien\, Österreich
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:OWASP Global AppSec EU 2027
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
@@ -124,12 +849,12 @@ SUMMARY:TROOPERS 2027
 DESCRIPTION:Technische IT-Security-Konferenz von ERNW. Trainings am 21. und
   22.06.\, Konferenz vom 23. bis 25.06.\n\nKonfidenz: bestätigt (Primärqu
  elle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle:
-  https://troopers.de/
+  https://troopers.de/\nGeprüft am 25.10.2026
 URL:https://troopers.de/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 LOCATION:Heidelberg\, Deutschland
-CATEGORIES:Konferenz\,Security\,DACH
+CATEGORIES:Konferenz\,Security\,Deutschland
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:TROOPERS 2027
@@ -137,24 +862,107 @@ TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:conferences-dach-it-sa-expo-congress-2027-20271005@awesomecalendars
+UID:conferences-dach-bsides-vienna-2027-20270626@awesomecalendars
 DTSTAMP:20261025T000000Z
-DTSTART;VALUE=DATE:20271005
-DTEND;VALUE=DATE:20271008
-SUMMARY:it-sa Expo & Congress 2027
-DESCRIPTION:Größte IT-Security-Fachmesse im deutschsprachigen Raum.\n\nKo
- nfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine decke
- n sich mit der Regel)\nQuelle: https://www.pressebox.de/events/nuernbergme
- sse-gmbh/it-sa-2027/eventid/62575
-URL:https://www.pressebox.de/events/nuernbergmesse-gmbh/it-sa-2027/eventid/
- 62575
+DTSTART;VALUE=DATE:20270626
+DTEND;VALUE=DATE:20270627
+SUMMARY:BSides Vienna 2027
+DESCRIPTION:Community-organisierte Security-Konferenz mit Talks\, Workshops
+  und viel „Hallway Track“. Eintritt frei\, Tickets über tickets.bside
+ svienna.at.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlic
+ hen Termine decken sich mit der Regel)\nQuelle: https://bsidesvienna.at/\n
+ Geprüft am 25.10.2026
+URL:https://bsidesvienna.at/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
-LOCATION:Messezentrum Nürnberg\, Deutschland
-CATEGORIES:Konferenz\,Security\,DACH
+LOCATION:Urania Dachsaal\, Uraniastraße 1\, 1010 Wien
+CATEGORIES:Konferenz\,Security\,BSides\,Österreich
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:it-sa Expo & Congress 2027
+DESCRIPTION:BSides Vienna 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-lsz-cyber-crime-forum-graz-20270915@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270915
+DTEND;VALUE=DATE:20270916
+SUMMARY:LSZ Cyber Crime Forum Graz
+DESCRIPTION:Regionales Forum zu IT-Security und Cyber Crime für Verantwort
+ liche aus Unternehmen.\n\nKonfidenz: bestätigt (Primärquelle\, oder die 
+ tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://lsz.at/
+ forum/cyber-crime-graz\nGeprüft am 25.10.2026
+URL:https://lsz.at/forum/cyber-crime-graz
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Graz\, Österreich (Ort noch nicht bekannt gegeben)
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LSZ Cyber Crime Forum Graz
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-datenspuren-2027-20270917@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270917
+DTEND;VALUE=DATE:20270920
+SUMMARY:Datenspuren 2027
+DESCRIPTION:Symposium des Chaos Computer Club Dresden.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://datenspuren.de/2027/\nGeprüft am 25.10.2026
+URL:https://datenspuren.de/2027/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Zentralwerk\, Riesaer Straße 32\, 01127 Dresden
+CATEGORIES:Konferenz\,Chaos\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Datenspuren 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-lsz-it-security-herbst-2027-20270921@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270921
+DTEND;VALUE=DATE:20270922
+SUMMARY:LSZ IT Security Herbst 2027
+DESCRIPTION:Eintägige IT-Security-Konferenz in Wien.\n\nKonfidenz: bestät
+ igt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der R
+ egel)\nQuelle: https://lsz.at/konferenz/it-security-herbst-wien\nGeprüft 
+ am 25.10.2026
+URL:https://lsz.at/konferenz/it-security-herbst-wien
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Wien\, Österreich (Ort noch nicht bekannt gegeben)
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LSZ IT Security Herbst 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-dach-it-secx-2027-20271015@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20271015
+DTEND;VALUE=DATE:20271016
+SUMMARY:IT-SECX 2027
+DESCRIPTION:IT Security Community Exchange der USTP — 20. Ausgabe. 14:00 
+ bis 22:00 Uhr.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsäch
+ lichen Termine decken sich mit der Regel)\nQuelle: https://itsecx.ustp.at/
+ \nGeprüft am 25.10.2026
+URL:https://itsecx.ustp.at/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Campus St. Pölten\, Österreich
+CATEGORIES:Konferenz\,Security\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:IT-SECX 2027
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT

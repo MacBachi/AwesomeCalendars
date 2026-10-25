@@ -17,9 +17,13 @@ RRULE:FREQ=MONTHLY;BYDAY=2TU
 SUMMARY:Schneider Electric Security Notifications
 DESCRIPTION:Schneider Electric veröffentlicht Security Notifications einma
  l im Monat am zweiten Dienstag\, damit Kunden Patches einplanen können.\n
- Regel: zweiter Dienstag jedes Monats.\n\nKonfidenz: bestätigt (Primärque
- lle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: 
- https://www.se.com/ww/en/work/support/cybersecurity/vulnerability-policy/
+ Belegt über Schneiders Dokumentserver: Die Advisory-Nummern kodieren den 
+ Veröffentlichungstag (SEVD-Jahr-Tag-Nr.). Für alle zehn zweiten Dienstag
+ e Januar bis Oktober 2026 existiert ein Advisory\, für die Mittwoche dana
+ ch keines.\nRegel: zweiter Dienstag jedes Monats.\n\nKonfidenz: bestätigt
+  (Primärquelle\, oder die tatsächlichen Termine decken sich mit der Rege
+ l)\nQuelle: https://www.se.com/ww/en/work/support/cybersecurity/vulnerabil
+ ity-policy/
 URL:https://www.se.com/ww/en/work/support/cybersecurity/vulnerability-polic
  y/
 CATEGORIES:Patchday\,Schneider Electric

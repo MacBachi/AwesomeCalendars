@@ -16,11 +16,12 @@ RRULE:FREQ=MONTHLY;BYDAY=2TU
 SUMMARY:Ivanti Security Advisories
 DESCRIPTION:Ivanti veröffentlicht planmäßige Security-Updates (u. a. Con
  nect Secure\, Policy Secure\, EPMM\, Endpoint Manager) am Microsoft Patch 
- Tuesday.\nKritische\, aktiv ausgenutzte Lücken kommen außer der Reihe.\n
- Regel: zweiter Dienstag jedes Monats.\n\nKonfidenz: wahrscheinlich (Sekund
- ärquelle\, nicht am Hersteller verifiziert)\nQuelle: https://www.ivanti.c
- om/blog/september-2026-security-update
-URL:https://www.ivanti.com/blog/september-2026-security-update
+ Tuesday — so schreibt es Ivanti selbst in jedem monatlichen Security-Upd
+ ate-Post.\nKritische\, aktiv ausgenutzte Lücken kommen außer der Reihe.\
+ nRegel: zweiter Dienstag jedes Monats.\n\nKonfidenz: bestätigt (Primärqu
+ elle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle:
+  https://www.ivanti.com/blog/july-2026-security-update
+URL:https://www.ivanti.com/blog/july-2026-security-update
 CATEGORIES:Patchday\,Ivanti
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED

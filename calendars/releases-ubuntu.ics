@@ -39,18 +39,19 @@ SUMMARY:Ubuntu-Kernel: ab jetzt wöchentliche Releases
 DESCRIPTION:Canonical ersetzt den bisherigen 4/2-Rhythmus (alle vier Wochen
   ein reguläres Kernel-Update\, Notfall-Updates nach zwei Wochen) durch ü
  berlappende Zwei-Wochen-Zyklen. Effektiv erscheint ab hier jede Woche ein 
- neuer Kernel. Übergangszyklen starteten am 28.09. und 12.10.2026.\nGrund 
- ist die CVE-Flut im Kernel\, nach Canonical stark durch KI-gestützte Fehl
- ersuche getrieben: Linux 7.2 behob über 1.500 CVEs\, frühere Versionen r
- und 500.\nWer Kernel-Updates manuell einspielt\, braucht damit ein wöchen
- tliches Wartungsfenster oder Livepatch.\n\nKonfidenz: wahrscheinlich (Seku
- ndärquelle\, nicht am Hersteller verifiziert)\nQuelle: https://canonical.
- com/blog/accelerating-delivery-of-cve-fixes-with-a-new-kernel-release-stra
- tegy
-URL:https://canonical.com/blog/accelerating-delivery-of-cve-fixes-with-a-ne
- w-kernel-release-strategy
+ neuer Kernel. Übergangszyklen starteten am 28.09. und 12.10.2026 — so a
+ ngekündigt vom Ubuntu-Kernel-Team auf Discourse.\nGrund ist die CVE-Flut 
+ im Kernel\, nach Canonical stark durch KI-gestützte Fehlersuche getrieben
+ : Linux 7.2 behob über 1.500 CVEs\, frühere Versionen rund 500.\nWer Ker
+ nel-Updates manuell einspielt\, braucht damit ein wöchentliches Wartungsf
+ enster oder Livepatch.\n\nKonfidenz: bestätigt (Primärquelle\, oder die 
+ tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://discour
+ se.ubuntu.com/t/going-from-4-to-2-accelerating-the-linux-kernel-release-pr
+ ocess/88248
+URL:https://discourse.ubuntu.com/t/going-from-4-to-2-accelerating-the-linux
+ -kernel-release-process/88248
 TRANSP:TRANSPARENT
-STATUS:TENTATIVE
+STATUS:CONFIRMED
 CATEGORIES:Release\,Linux\,Ubuntu\,Kernel
 BEGIN:VALARM
 ACTION:DISPLAY

@@ -193,6 +193,8 @@ class Dated:
     location: str = ""
     categories: list[str] = field(default_factory=list)
     vendor: str = ""                # gesetzt = landet auch im Patchday-Kalender des Herstellers
+    country: str = ""               # ISO-3166-Code, steuert die Regionalkalender
+    checked: dt.date | None = None  # wann der Termin an der Quelle geprüft wurde
 
 
 @dataclass
@@ -217,8 +219,12 @@ CONFIDENCE_LABEL = {
 # Serialisierung
 # --------------------------------------------------------------------------- #
 
-def build_description(base: str, url: str, confidence: str) -> str:
-    return "\n".join([base, "", CONFIDENCE_LABEL[confidence], f"Quelle: {url}"])
+def build_description(base: str, url: str, confidence: str,
+                      checked: dt.date | None = None) -> str:
+    lines = [base, "", CONFIDENCE_LABEL[confidence], f"Quelle: {url}"]
+    if checked:
+        lines.append(f"Geprüft am {checked:%d.%m.%Y}")
+    return "\n".join(lines)
 
 
 def alarm_lines(summary: str) -> list[str]:
@@ -262,7 +268,7 @@ def render_dated(ev: Dated, cal_slug: str, alarms: bool) -> list[str]:
         f"DTSTART;VALUE=DATE:{ics_date(ev.start)}",
         f"DTEND;VALUE=DATE:{ics_date(ev.end + dt.timedelta(days=1))}",
         f"SUMMARY:{escape(ev.summary)}",
-        f"DESCRIPTION:{escape(build_description(ev.description, ev.url, ev.confidence))}",
+        f"DESCRIPTION:{escape(build_description(ev.description, ev.url, ev.confidence, ev.checked))}",
         f"URL:{ev.url}",
         "TRANSP:TRANSPARENT",
         f"STATUS:{'CONFIRMED' if ev.confidence == 'bestaetigt' else 'TENTATIVE'}",
@@ -349,7 +355,7 @@ PATCHDAYS = [
             "zwar hier.\n"
             "Regel: zweiter Dienstag jedes Monats."
         ),
-        url="https://msrc.microsoft.com/update-guide/releaseNote/",
+        url="https://learn.microsoft.com/en-us/windows/deployment/update/release-cycle",
         confidence="bestaetigt",
     ),
     Recurring(
@@ -430,10 +436,10 @@ PATCHDAYS = [
         description=(
             "Seit Mai 2026 liefert Oracle in den acht Monaten ohne CPU einen "
             "monatlichen Critical Security Patch Update.\n"
-            "Regel: dritter Dienstag in den Nicht-CPU-Monaten. Bestätigt durch Juni "
-            "(16.06.), August (18.08.) und September 2026 (15.09.); die nächsten "
-            "beiden hat Oracle für den 17.11. und 15.12.2026 angekündigt. Einmalige "
-            "Ausnahme war der Auftakt am 28.05.2026.\n"
+            "Regel: dritter Dienstag im Februar, März, Mai, Juni, August, September, "
+            "November und Dezember — so steht es wörtlich auf Oracles "
+            "Security-Alerts-Seite, mit den nächsten Terminen 17.11. und 15.12.2026, "
+            "16.02. und 16.03.2027. Einmalige Ausnahme war der Auftakt am 28.05.2026.\n"
             "Java SE: Oracle zieht auch Java in den Monatsrhythmus. Bestätigt ist ein "
             "Java-Update am 18.08.2026, angekündigt ist der 17.11.2026; für 2027 plant "
             "Oracle mehrere monatliche Java-Updates."
@@ -584,12 +590,13 @@ PATCHDAYS = [
         rule=nth_weekdays((2, "TU")),
         description=(
             "Ivanti veröffentlicht planmäßige Security-Updates (u. a. Connect Secure, "
-            "Policy Secure, EPMM, Endpoint Manager) am Microsoft Patch Tuesday.\n"
+            "Policy Secure, EPMM, Endpoint Manager) am Microsoft Patch Tuesday — so "
+            "schreibt es Ivanti selbst in jedem monatlichen Security-Update-Post.\n"
             "Kritische, aktiv ausgenutzte Lücken kommen außer der Reihe.\n"
             "Regel: zweiter Dienstag jedes Monats."
         ),
-        url="https://www.ivanti.com/blog/september-2026-security-update",
-        confidence="wahrscheinlich",
+        url="https://www.ivanti.com/blog/july-2026-security-update",
+        confidence="bestaetigt",
     ),
 
     # --- Industrie / OT ----------------------------------------------------
@@ -601,10 +608,13 @@ PATCHDAYS = [
             "Siemens veröffentlicht Security Advisories für Industrie- und "
             "Automatisierungsprodukte gebündelt am zweiten Dienstag, dem "
             "sogenannten ICS Patch Tuesday.\n"
+            "Belegt aus Siemens' eigenem Advisory-Feed: 2026 erschienen in jedem "
+            "Monat Erstveröffentlichungen am zweiten Dienstag, 72 von 81 insgesamt; "
+            "die übrigen neun kamen außer der Reihe.\n"
             "Regel: zweiter Dienstag jedes Monats."
         ),
-        url="https://www.securityweek.com/ics-patch-tuesday-security-advisories-released-by-siemens-schneider-cisa-others/",
-        confidence="wahrscheinlich",
+        url="https://cert-portal.siemens.com/productcert/json/advisories.json",
+        confidence="bestaetigt",
     ),
     Recurring(
         vendor="schneider",
@@ -613,6 +623,10 @@ PATCHDAYS = [
         description=(
             "Schneider Electric veröffentlicht Security Notifications einmal im Monat "
             "am zweiten Dienstag, damit Kunden Patches einplanen können.\n"
+            "Belegt über Schneiders Dokumentserver: Die Advisory-Nummern kodieren den "
+            "Veröffentlichungstag (SEVD-Jahr-Tag-Nr.). Für alle zehn zweiten Dienstage "
+            "Januar bis Oktober 2026 existiert ein Advisory, für die Mittwoche danach "
+            "keines.\n"
             "Regel: zweiter Dienstag jedes Monats."
         ),
         url="https://www.se.com/ww/en/work/support/cybersecurity/vulnerability-policy/",
@@ -706,11 +720,6 @@ CHROME_STABLE = {
     172: dt.date(2027, 6, 22), 173: dt.date(2027, 7, 6),
 }
 
-# Jedes vierte Milestone wird Extended Stable und bleibt acht Wochen.
-# 156 und 160 sind für Chrome berichtet, die späteren folgen aus dem Muster.
-CHROME_EXTENDED = {156: "wahrscheinlich", 160: "wahrscheinlich",
-                   164: "abgeleitet", 168: "abgeleitet", 172: "abgeleitet"}
-
 # Microsoft nennt Release-Wochen; das Datum ist der Donnerstag der Woche bzw. der
 # tatsächliche Release-Tag.
 EDGE_STABLE = {
@@ -749,14 +758,15 @@ FIREFOX_RELEASES = {
 
 # Was im Mozilla-Kalender an ESR-Wechseln ablesbar ist.
 FIREFOX_ESR_NOTES = {
-    168: "Mit diesem Release erscheint laut Mozilla-Kalender das letzte Update für "
-         "ESR 115 (115.53) — die Linie, die als letzte noch Windows 7, 8 und 8.1 "
-         "sowie ältere macOS-Versionen unterstützt.",
+    168: "Mit diesem Release führt der Mozilla-Kalender das letzte derzeit geplante "
+         "Update für ESR 115 (115.53) — die Linie, die als letzte noch Windows 7, "
+         "8 und 8.1 sowie ältere macOS-Versionen unterstützt. Mozilla hat ESR 115 "
+         "schon mehrfach verlängert.",
     175: "Neue ESR-Basis: Zusammen mit Firefox 175 erscheint ESR 175.0. Bis "
          "September 2027 laufen ESR 153 und ESR 175 parallel — Zeit für den "
          "Umstieg in verwalteten Umgebungen.",
-    180: "Mit diesem Release erscheint laut Mozilla-Kalender das letzte Update für "
-         "ESR 153 (153.27). Danach ist ESR 175 die einzige ESR-Linie.",
+    180: "Mit diesem Release führt der Mozilla-Kalender das letzte derzeit geplante "
+         "Update für ESR 153 (153.27). Danach steht nur noch ESR 175 im Kalender.",
 }
 
 
@@ -771,7 +781,9 @@ def browser_events() -> list[Dated]:
         note = ""
         if milestone >= 153:
             note = ("\nSeit Chrome 153 (08.09.2026) gilt der Zwei-Wochen-Takt auf allen "
-                    "Plattformen inklusive Android und iOS.")
+                    "Plattformen inklusive Android und iOS. Der Extended-Stable-Kanal "
+                    "bleibt bei acht Wochen; konkrete Termine dafür veröffentlicht "
+                    "Google nicht, deshalb stehen sie hier nicht.")
         events.append(Dated(
             summary=f"Chrome {milestone} Stable",
             start=day, end=day,
@@ -779,26 +791,6 @@ def browser_events() -> list[Dated]:
             url="https://chromiumdash.appspot.com/schedule",
             confidence="bestaetigt",
             categories=["Release", "Browser", "Chrome"],
-        ))
-
-    for milestone, confidence in CHROME_EXTENDED.items():
-        day = CHROME_STABLE[milestone]
-        events.append(Dated(
-            summary=f"Chrome {milestone} → Extended Stable",
-            start=day, end=day,
-            description=(
-                f"Chrome {milestone} wird Extended Stable und bleibt dort acht Wochen. "
-                "Der Kanal ist für verwaltete Windows- und macOS-Umgebungen gedacht "
-                "und wird per Policy aktiviert. Er ist von der Umstellung auf zwei "
-                "Wochen nicht betroffen und springt jeweils um vier Milestones.\n"
-                "Google selbst veröffentlicht keine Extended-Stable-Termine; 156 und "
-                "160 sind berichtet, die folgenden sind aus dem Muster abgeleitet. "
-                "Microsoft bestätigt für Edge offiziell dasselbe Muster (152, 156, "
-                "160, 164)."
-            ),
-            url="https://support.google.com/chrome/a/answer/16942104",
-            confidence=confidence,
-            categories=["Release", "Browser", "Chrome", "Enterprise"],
         ))
 
     for version, day in EDGE_STABLE.items():
@@ -875,15 +867,15 @@ def ubuntu_events() -> list[Dated]:
                 "reguläres Kernel-Update, Notfall-Updates nach zwei Wochen) durch "
                 "überlappende Zwei-Wochen-Zyklen. Effektiv erscheint ab hier jede "
                 "Woche ein neuer Kernel. Übergangszyklen starteten am 28.09. und "
-                "12.10.2026.\n"
+                "12.10.2026 — so angekündigt vom Ubuntu-Kernel-Team auf Discourse.\n"
                 "Grund ist die CVE-Flut im Kernel, nach Canonical stark durch "
                 "KI-gestützte Fehlersuche getrieben: Linux 7.2 behob über 1.500 CVEs, "
                 "frühere Versionen rund 500.\n"
                 "Wer Kernel-Updates manuell einspielt, braucht damit ein wöchentliches "
                 "Wartungsfenster oder Livepatch."
             ),
-            url="https://canonical.com/blog/accelerating-delivery-of-cve-fixes-with-a-new-kernel-release-strategy",
-            confidence="wahrscheinlich",
+            url="https://discourse.ubuntu.com/t/going-from-4-to-2-accelerating-the-linux-kernel-release-process/88248",
+            confidence="bestaetigt",
             categories=["Release", "Linux", "Ubuntu", "Kernel"],
         ),
         Dated(
@@ -903,204 +895,350 @@ def ubuntu_events() -> list[Dated]:
 
 
 # --------------------------------------------------------------------------- #
-# Daten — Konferenzen (datumsbasiert, kuratiert)
+# Daten — Konferenzen und Community-Events (datumsbasiert, kuratiert)
+#
+# Regel: Jeder Termin ist an der Seite des Veranstalters geprüft (oder an seiner
+# Pressemitteilung). Abgeleitete oder nur in Aggregatoren gefundene Termine stehen
+# hier nicht. `checked` ist der Tag dieser Prüfung.
 # --------------------------------------------------------------------------- #
 
+CHECKED = dt.date(2026, 10, 25)
+
+# Österreich und alle Nachbarländer.
+REGION = {
+    "AT": "Österreich", "DE": "Deutschland", "CH": "Schweiz", "LI": "Liechtenstein",
+    "IT": "Italien", "SI": "Slowenien", "HU": "Ungarn", "SK": "Slowakei",
+    "CZ": "Tschechien",
+}
+
+
+def conf(summary: str, start: dt.date, end: dt.date, country: str, location: str,
+         description: str, url: str, *tags: str, confidence: str = "bestaetigt") -> Dated:
+    land = REGION.get(country)
+    categories = ["Konferenz", *tags] + ([land] if land else [])
+    return Dated(summary=summary, start=start, end=end, location=location,
+                 description=description, url=url, confidence=confidence,
+                 categories=categories, country=country, checked=CHECKED)
+
+
+D = dt.date
+
 SECURITY_CONFERENCES = [
+    # --- Österreich ---------------------------------------------------------
+    conf("LSZ Cyber Crime Forum Linz", D(2026, 11, 10), D(2026, 11, 10), "AT",
+         "Courtyard by Marriott, Linz, Österreich",
+         "Regionales Forum zu IT-Security und Cyber Crime für Verantwortliche aus "
+         "Unternehmen.",
+         "https://lsz.at/cyber-crime-linz", "Security"),
+    conf("DeepSec 2026", D(2026, 11, 17), D(2026, 11, 20), "AT",
+         "Renaissance Wien Hotel, Linke Wienzeile/Ullmannstraße 71, 1150 Wien",
+         "DeepSec In-Depth Security Conference, technisch und herstellerneutral. "
+         "Trainings am 17. und 18.11., Konferenz am 19. und 20.11.",
+         "https://deepsec.net/register.html", "Security"),
+    conf("OCG: NISG 2026 – Umsetzung für Betroffene", D(2026, 11, 18), D(2026, 11, 18), "AT",
+         "OCG, Wollzeile 1, 1010 Wien",
+         "Expertenpanel der Österreichischen Computer Gesellschaft zur Umsetzung des "
+         "NIS-2-Gesetzes, ab 16:00 Uhr, mit Fragerunde und Networking.",
+         "https://www.ocg.at/veranstaltungen/nisg-2026-umsetzung-fuer-betroffene", "Security"),
+    conf("LSZ Cyber Crime Forum Salzburg", D(2026, 11, 24), D(2026, 11, 24), "AT",
+         "Kavalierhaus Klessheim, Salzburg, Österreich",
+         "Regionales Forum zu IT-Security und Cyber Crime für Verantwortliche aus "
+         "Unternehmen.",
+         "https://lsz.at/forum/cyber-crime-salzburg", "Security"),
+    conf("BSides Tirol 2027", D(2027, 2, 25), D(2027, 2, 25), "AT",
+         "Innsbruck, Österreich",
+         "Community-Konferenz für Cybersecurity in den Alpen: offensive und "
+         "defensive Security, Forschung und Praxis, dazu ein Art-Programm. "
+         "Eintritt frei, Anmeldung nötig. Call for Papers bis 15.11.2026.",
+         "https://www.bsides.tirol/", "Security", "BSides"),
+    conf("LSZ Cyber Crime Forum Wien", D(2027, 3, 11), D(2027, 3, 11), "AT",
+         "Wien, Österreich (Ort noch nicht bekannt gegeben)",
+         "Regionales Forum zu IT-Security und Cyber Crime für Verantwortliche aus "
+         "Unternehmen.",
+         "https://lsz.at/forum/cyber-crime-wien", "Security"),
+    conf("LSZ Security & Risk Management Kongress 2027", D(2027, 4, 19), D(2027, 4, 21), "AT",
+         "K3 KitzKongress, Kitzbühel, Österreich",
+         "Zweitägiger Kongress zu IT-Security und Risk Management am 20. und 21.04., "
+         "am 19.04. Anreise mit Pre-Night-Dinner. Zielgruppe CISOs, "
+         "Security-Verantwortliche, Risk & Compliance.",
+         "https://lsz.at/kongress/it-security-risk-management-kitzbuehel", "Security"),
+    conf("Security Forum Hagenberg 2027", D(2027, 5, 19), D(2027, 5, 20), "AT",
+         "FH Oberösterreich, Campus Hagenberg, Softwarepark 11, 4232 Hagenberg",
+         "Etablierte österreichische Fachkonferenz für Informationssicherheit, "
+         "organisiert von Studierenden der FH Oberösterreich.",
+         "https://www.securityforum.at/", "Security"),
+    conf("LSZ Cyber Crime Forum West", D(2027, 6, 2), D(2027, 6, 2), "AT",
+         "Firmament, Rankweil, Österreich",
+         "Regionales Forum zu IT-Security und Cyber Crime für Verantwortliche aus "
+         "Unternehmen in Westösterreich.",
+         "https://lsz.at/summit/it-security-cyber-crime-west-rankweil", "Security"),
+    conf("OWASP Global AppSec EU 2027", D(2027, 6, 21), D(2027, 6, 25), "AT",
+         "Wien, Österreich",
+         "Europäische Hauptkonferenz der OWASP Foundation zu Application Security. "
+         "Laut OWASP finden auch die Ausgaben 2026 und 2028 in Wien statt.",
+         "https://owasp.github.io/events/", "Security"),
+    conf("BSides Vienna 2027", D(2027, 6, 26), D(2027, 6, 26), "AT",
+         "Urania Dachsaal, Uraniastraße 1, 1010 Wien",
+         "Community-organisierte Security-Konferenz mit Talks, Workshops und viel "
+         "„Hallway Track“. Eintritt frei, Tickets über tickets.bsidesvienna.at.",
+         "https://bsidesvienna.at/", "Security", "BSides"),
+    conf("LSZ Cyber Crime Forum Graz", D(2027, 9, 15), D(2027, 9, 15), "AT",
+         "Graz, Österreich (Ort noch nicht bekannt gegeben)",
+         "Regionales Forum zu IT-Security und Cyber Crime für Verantwortliche aus "
+         "Unternehmen.",
+         "https://lsz.at/forum/cyber-crime-graz", "Security"),
+    conf("LSZ IT Security Herbst 2027", D(2027, 9, 21), D(2027, 9, 21), "AT",
+         "Wien, Österreich (Ort noch nicht bekannt gegeben)",
+         "Eintägige IT-Security-Konferenz in Wien.",
+         "https://lsz.at/konferenz/it-security-herbst-wien", "Security"),
+    conf("IT-SECX 2027", D(2027, 10, 15), D(2027, 10, 15), "AT",
+         "Campus St. Pölten, Österreich",
+         "IT Security Community Exchange der USTP — 20. Ausgabe. 14:00 bis 22:00 Uhr.",
+         "https://itsecx.ustp.at/", "Security"),
+
+    # --- Deutschland --------------------------------------------------------
+    conf("it-sa Expo & Congress 2026", D(2026, 10, 27), D(2026, 10, 29), "DE",
+         "Messezentrum Nürnberg, Deutschland",
+         "Größte IT-Security-Fachmesse im deutschsprachigen Raum.",
+         "https://www.itsa365.de/de-de/it-sa-expo-congress", "Security"),
+    conf("BSides Munich 2026: Workshops", D(2026, 11, 7), D(2026, 11, 7), "DE",
+         "Hochschule München, Lothstraße 64, 80335 München",
+         "Workshop-Tag der 10. BSides Munich. Der Konferenztag folgt am 09.11.",
+         "https://2026.bsidesmunich.org/", "Security", "BSides"),
+    conf("BSides Munich 2026: Konferenz", D(2026, 11, 9), D(2026, 11, 9), "DE",
+         "The Westin Grand Munich, München",
+         "Konferenztag der 10. BSides Munich. Workshops am 07.11.",
+         "https://2026.bsidesmunich.org/", "Security", "BSides"),
+    conf("LSZ Cyber Crime Forum München", D(2026, 12, 2), D(2026, 12, 2), "DE",
+         "NH Collection München Bavaria, München",
+         "Regionales Forum zu IT-Security und Cyber Crime für Verantwortliche aus "
+         "Unternehmen.",
+         "https://lsz.at/forum/cyber-crime-muenchen", "Security"),
+    conf("IT-Defense 2027", D(2027, 1, 27), D(2027, 1, 29), "DE",
+         "Frankfurt am Main, Deutschland",
+         "IT-Sicherheitskongress von cirosec mit internationalen Referenten, 24. "
+         "Ausgabe.",
+         "https://it-defense.de/it-defense-2027/it-defense/", "Security"),
+    conf("34. DFN-Konferenz „Sicherheit in vernetzten Systemen“", D(2027, 2, 23), D(2027, 2, 24), "DE",
+         "Grand Elysée Hotel, Rothenbaumchaussee 10, 20148 Hamburg",
+         "Sicherheitskonferenz des DFN-CERT im Auftrag des DFN-Vereins. 23.02. ab "
+         "12:30 bis 24.02. 13:00 Uhr.",
+         "https://www.dfn-cert.de/informationen/veranstaltungen/34-dfn-konferenz-sicherheit-in-vernetzten-systemen-anmeldung-offen/",
+         "Security"),
+    conf("secIT by heise 2027", D(2027, 3, 9), D(2027, 3, 11), "DE",
+         "Hannover Congress Centrum, Theodor-Heuss-Platz 1–3, 30175 Hannover",
+         "IT-Security-Konferenz und Fachausstellung von heise. 09.03. Workshops, "
+         "10. und 11.03. Konferenz und Ausstellung.",
+         "https://secit-heise.de/", "Security"),
+    conf("LSZ Cybercrime Forum Stuttgart", D(2027, 3, 17), D(2027, 3, 17), "DE",
+         "Memox Stuttgart Schlossplatz, Stuttgart",
+         "Regionales Forum zu IT-Security und Cyber Crime für Verantwortliche aus "
+         "Unternehmen.",
+         "https://lsz.at/cybercrime-stuttgart", "Security"),
+    conf("TROOPERS 2027", D(2027, 6, 21), D(2027, 6, 25), "DE",
+         "Heidelberg, Deutschland",
+         "Technische IT-Security-Konferenz von ERNW. Trainings am 21. und 22.06., "
+         "Konferenz vom 23. bis 25.06.",
+         "https://troopers.de/", "Security"),
+
+    # --- Schweiz ------------------------------------------------------------
+    conf("Black Alps 2026", D(2026, 11, 5), D(2026, 11, 6), "CH",
+         "La Marive, Yverdon-les-Bains, Schweiz",
+         "Schweizer Security-Konferenz mit Talks und Side Events.",
+         "https://blackalps.ch/ba-26", "Security"),
+    conf("Insomni'hack 2027", D(2027, 2, 1), D(2027, 2, 5), "CH",
+         "SwissTech Convention Center, Route Louis-Favre 2, 1024 Ecublens (Lausanne)",
+         "Schweizer Security-Konferenz mit Workshops, Talks und CTF. Die Talks "
+         "finden am 04. und 05.02. statt.",
+         "https://www.insomnihack.ch/", "Security"),
+
+    # --- Italien ------------------------------------------------------------
+    conf("HackInBo 2026", D(2026, 11, 21), D(2026, 11, 21), "IT",
+         "Bologna, Italien",
+         "Italienische Security-Konferenz mit Talks und Labs.",
+         "https://www.hackinbo.it/", "Security"),
+
+    # --- Tschechien ---------------------------------------------------------
+    conf("BSides Prague 2027", D(2027, 4, 7), D(2027, 4, 8), "CZ",
+         "Národní dům na Vinohradech, Náměstí Míru 820/9, Prag",
+         "Community-organisierte Security-Konferenz, Konferenzsprache Englisch. "
+         "Call for Papers bis 31.12.2026.",
+         "https://www.bsidesprg.cz/", "Security", "BSides"),
+    conf("Prague Cyber Security Conference 2027", D(2027, 4, 13), D(2027, 4, 14), "CZ",
+         "Tschechische Nationalbank, Prag",
+         "Internationale Konferenz der tschechischen Cybersicherheitsbehörde NÚKIB.",
+         "https://www.praguecyber.com/", "Security"),
+    conf("Qubit Conference Prague 2027", D(2027, 5, 17), D(2027, 5, 19), "CZ",
+         "Prag, Tschechien",
+         "Cybersecurity-Konferenz der Qubit-Reihe.",
+         "https://qubitconference.com/en/conferences/prague", "Security"),
+    conf("IS2 2027 – Information Security Summit", D(2027, 5, 25), D(2027, 5, 26), "CZ",
+         "Prag, Tschechien",
+         "28. Information Security Summit, Motto „Resilience under Pressure“.",
+         "https://is2.cz/en/", "Security"),
+
+    # --- Slowakei -----------------------------------------------------------
+    conf("Qubit Conference Slovakia 2026", D(2026, 11, 11), D(2026, 11, 12), "SK",
+         "Hotel Ski & Wellness Residence Družba, Demänovská Dolina, Slowakei",
+         "Cybersecurity-Konferenz der Qubit-Reihe.",
+         "https://qubitconference.com/en/conferences/slovakia", "Security"),
+
+    # --- Ungarn -------------------------------------------------------------
+    conf("BSides Budapest 2027", D(2027, 5, 13), D(2027, 5, 13), "HU",
+         "Budapest, Ungarn",
+         "Eintägige Community-Konferenz. Bisher als „Save the Date“ angekündigt, "
+         "Programm folgt.",
+         "https://bsidesbud.com/", "Security", "BSides"),
+
+    # --- International ------------------------------------------------------
+    conf("Black Hat Europe 2026", D(2026, 12, 7), D(2026, 12, 10), "GB",
+         "ExCeL London, Großbritannien",
+         "Trainings ab 07.12., Business Hall 08.–10.12., Briefings am 09. und 10.12. "
+         "Belegt durch die Pressemitteilung von Black Hat vom 22.10.2026.",
+         "https://finance.yahoo.com/technology/articles/black-hat-europe-returns-excel-070000355.html",
+         "Security"),
+    conf("Black Hat Asia 2027: Briefings", D(2027, 3, 2), D(2027, 3, 3), "SG",
+         "Marina Bay Sands, Singapur",
+         "Die Briefings, belegt durch Black Hats offizielles Call-for-Papers-Dokument. "
+         "Davor finden Trainings statt; deren Daten ließen sich nicht an einer "
+         "Primärquelle prüfen und stehen deshalb nicht im Kalender.",
+         "https://i.blackhat.com/asia-27/BHAS27-Call%20for%20Briefings-Preparation-Doc.pdf",
+         "Security"),
+    conf("RSAC Conference 2027", D(2027, 4, 5), D(2027, 4, 8), "US",
+         "Moscone Center, San Francisco, USA",
+         "Größte kommerzielle Cybersecurity-Konferenz weltweit. Termin aus der "
+         "Abschluss-Pressemitteilung der RSAC 2026.",
+         "https://www.prnewswire.com/news-releases/rsac-conference-closes-35th-annual-flagship-event-backed-by-the-power-of-community-302726865.html",
+         "Security"),
+    conf("DEF CON 35", D(2027, 8, 5), D(2027, 8, 8), "US",
+         "Las Vegas Convention Center West Hall, Las Vegas, USA",
+         "Hacker-Konferenz in Las Vegas.",
+         "https://defcon.org/", "Security"),
+]
+
+# Chaos Computer Club und direktes Umfeld (CCC-Erfas, Chaostreffs, CCC-Kalender).
+CHAOS_EVENTS = [
+    conf("DHCP26 — Die Heilbronner Chaos Party", D(2026, 10, 30), D(2026, 11, 1), "DE",
+         "Hochschule Heilbronn, Max-Planck-Straße 39, 74081 Heilbronn",
+         "Chaos-Event des CFHN in Heilbronn.",
+         "https://dhcp.cfhn.it/", "Chaos"),
+    conf("FIfFKon42", D(2026, 10, 30), D(2026, 11, 1), "DE",
+         "Theater im Delphi, Berlin",
+         "Jahreskonferenz des Forums InformatikerInnen für Frieden und "
+         "gesellschaftliche Verantwortung, Motto „Keine Panik! Resilienz in der "
+         "Polykrise“. Steht im Eventkalender des CCC.",
+         "https://www.fiffkon.de/", "Chaos"),
+    conf("NooK 2026 — Nights of Open Knowledge", D(2026, 11, 20), D(2026, 11, 21), "DE",
+         "Audimax, Universität zu Lübeck",
+         "Community-Konferenz mit Vorträgen, Workshops und Ständen.",
+         "https://events.ccc.de/2026/07/24/nook/", "Chaos"),
+    conf("#jetzt15 Geekend", D(2026, 11, 20), D(2026, 11, 22), "DE",
+         "CCC Frankfurt am Main, Hohenstaufenstraße 8, 60327 Frankfurt",
+         "Wochenende von chaos.jetzt für Menschen zwischen 18 und 25.",
+         "https://chaos.jetzt/15", "Chaos"),
+    conf("40C3 — Chaos Communication Congress", D(2026, 12, 27), D(2026, 12, 30), "DE",
+         "Hamburg Messe, Messeplatz 1, 20357 Hamburg",
+         "40. Chaos Communication Congress, Motto „Model Citizens“.",
+         "https://events.ccc.de/congress/2026/", "Chaos", "Security"),
+    conf("Winterkongress 2027 der Digitalen Gesellschaft", D(2027, 3, 5), D(2027, 3, 6), "CH",
+         "Rote Fabrik, Seestrasse 395, 8038 Zürich",
+         "10. Winterkongress der Schweizer Digitalen Gesellschaft zu "
+         "Informationstechnologie, Digitalisierung und ihren Auswirkungen auf die "
+         "Gesellschaft. Beginn Freitagabend.",
+         "https://www.digitale-gesellschaft.ch/event/winterkongress-2027/", "Chaos"),
+    conf("Easterhegg 2027", D(2027, 3, 26), D(2027, 3, 29), "AT",
+         "Wien, Österreich",
+         "Das Oster-Treffen des CCC — Easterhegg #24 findet in Wien statt.",
+         "https://www.easterhegg.eu/", "Chaos"),
+    conf("Datenspuren 2027", D(2027, 9, 17), D(2027, 9, 19), "DE",
+         "Zentralwerk, Riesaer Straße 32, 01127 Dresden",
+         "Symposium des Chaos Computer Club Dresden.",
+         "https://datenspuren.de/2027/", "Chaos"),
+]
+
+# Fristen, die man für Chaos-Events nicht verpassen sollte.
+CHAOS_DEADLINES = [
     Dated(
-        summary="it-sa Expo & Congress 2026",
-        start=dt.date(2026, 10, 27), end=dt.date(2026, 10, 29),
-        location="Messezentrum Nürnberg, Deutschland",
-        description="Größte IT-Security-Fachmesse im deutschsprachigen Raum.",
-        url="https://www.itsa365.de/en/it-sa-expo-congress/exhibition-info",
-        confidence="bestaetigt",
-        categories=["Konferenz", "Security", "DACH"],
-    ),
-    Dated(
-        summary="DeepSec 2026",
-        start=dt.date(2026, 11, 17), end=dt.date(2026, 11, 20),
-        location="Renaissance Hotel, Wien, Österreich",
+        summary="40C3: Voucher-Phase endet (spätestens)",
+        start=D(2026, 11, 10), end=D(2026, 11, 10),
         description=(
-            "DeepSec In-Depth Security Conference in Wien, technisch und "
-            "herstellerneutral. Trainings am 17. und 18.11., Konferenz am 19. und "
-            "20.11."
+            "Die Voucher-Phase des 40C3-Vorverkaufs läuft seit 23.10.2026, 10:00 Uhr, "
+            "und endet spätestens am 10.11.2026 um 23:00 Uhr — früher, sobald das "
+            "Kontingent aufgebraucht ist. Danach folgt der offene Verkauf."
         ),
-        url="https://deepsec.net/",
+        url="https://events.ccc.de/2026/10/19/40c3-presale-modus-operandi/",
         confidence="bestaetigt",
-        categories=["Konferenz", "Security", "DACH"],
+        categories=["Frist", "Chaos", "Deutschland"],
+        country="DE", checked=CHECKED,
     ),
     Dated(
-        summary="Black Hat Europe 2026",
-        start=dt.date(2026, 12, 7), end=dt.date(2026, 12, 10),
-        location="ExCeL London, Großbritannien",
+        summary="40C3: Anmeldeschluss für Assemblies",
+        start=D(2026, 11, 23), end=D(2026, 11, 23),
         description=(
-            "Trainings ab 07.12., Briefings, Arsenal und Business Hall am "
-            "09. und 10.12.\n"
-            "blackhat.com war beim automatisierten Abruf nicht erreichbar (403) — "
-            "Termin stammt aus übereinstimmenden Sekundärquellen."
+            "Assemblies müssen bis 23.11.2026, 23:42 Uhr MEZ, im Hub registriert sein. "
+            "Faustregel des CCC: je größer, desto früher."
         ),
-        url="https://blackhat.com/europe/",
-        confidence="wahrscheinlich",
-        categories=["Konferenz", "Security"],
-    ),
-    Dated(
-        summary="40C3 — Chaos Communication Congress",
-        start=dt.date(2026, 12, 27), end=dt.date(2026, 12, 30),
-        location="Hamburg Messe, Deutschland",
-        description=(
-            "40. Chaos Communication Congress, Motto „Model Citizens“. Zum Jubiläum "
-            "erstmals in den Hallen der Hamburg Messe statt im CCH.\n"
-            "Einreichungsschluss für Beiträge: 09.10.2026."
-        ),
-        url="https://www.ccc.de/en/updates/2026/40c3-model-citizens",
+        url="https://events.ccc.de/2026/10/18/40c3-assemblies/",
         confidence="bestaetigt",
-        categories=["Konferenz", "Security", "DACH"],
+        categories=["Frist", "Chaos", "Deutschland"],
+        country="DE", checked=CHECKED,
     ),
-    Dated(
-        summary="FOSDEM 2027",
-        start=dt.date(2027, 1, 30), end=dt.date(2027, 1, 31),
-        location="ULB Solbosch, Brüssel, Belgien",
-        description=(
-            "Free and Open Source Software Developers' European Meeting. "
-            "Eintritt frei, keine Registrierung."
-        ),
-        url="https://fosdem.org/2027/news/fosdem-2027-dates/",
-        confidence="bestaetigt",
-        categories=["Konferenz", "Open Source"],
-    ),
-    Dated(
-        summary="Black Hat Asia 2027",
-        start=dt.date(2027, 2, 28), end=dt.date(2027, 3, 3),
-        location="Marina Bay Sands, Singapur",
-        description=(
-            "Trainings am 28.02. und 01.03., Briefings am 02. und 03.03.\n"
-            "blackhat.com war beim automatisierten Abruf nicht erreichbar (403) — "
-            "Termin stammt aus übereinstimmenden Sekundärquellen."
-        ),
-        url="https://blackhat.com/asia/",
-        confidence="wahrscheinlich",
-        categories=["Konferenz", "Security"],
-    ),
-    Dated(
-        summary="secIT by heise 2027",
-        start=dt.date(2027, 3, 9), end=dt.date(2027, 3, 11),
-        location="Hannover Congress Centrum, Deutschland",
-        description=(
-            "IT-Security-Konferenz und Fachausstellung von heise. 09.03. Workshops, "
-            "10. und 11.03. Konferenz und Ausstellung."
-        ),
-        url="https://secit-heise.de/",
-        confidence="wahrscheinlich",
-        categories=["Konferenz", "Security", "DACH"],
-    ),
-    Dated(
-        summary="RSAC Conference 2027",
-        start=dt.date(2027, 4, 5), end=dt.date(2027, 4, 8),
-        location="Moscone Center, San Francisco, USA",
-        description="Größte kommerzielle Cybersecurity-Konferenz weltweit.",
-        url="https://www.moscone.com/events/rsac-2027-conference",
-        confidence="bestaetigt",
-        categories=["Konferenz", "Security"],
-    ),
-    Dated(
-        summary="Security Forum Hagenberg 2027",
-        start=dt.date(2027, 5, 19), end=dt.date(2027, 5, 20),
-        location="FH Oberösterreich, Campus Hagenberg, Österreich",
-        description=(
-            "Etablierte österreichische Fachkonferenz für Informationssicherheit, "
-            "organisiert von Studierenden der FH Oberösterreich."
-        ),
-        url="https://www.securityforum.at/",
-        confidence="bestaetigt",
-        categories=["Konferenz", "Security", "DACH"],
-    ),
-    Dated(
-        summary="TROOPERS 2027",
-        start=dt.date(2027, 6, 21), end=dt.date(2027, 6, 25),
-        location="Heidelberg, Deutschland",
-        description=(
-            "Technische IT-Security-Konferenz von ERNW. Trainings am 21. und 22.06., "
-            "Konferenz vom 23. bis 25.06."
-        ),
-        url="https://troopers.de/",
-        confidence="bestaetigt",
-        categories=["Konferenz", "Security", "DACH"],
-    ),
-    Dated(
-        summary="Black Hat USA 2027",
-        start=dt.date(2027, 7, 31), end=dt.date(2027, 8, 5),
-        location="Mandalay Bay Convention Center, Las Vegas, USA",
-        description=(
-            "Trainings und Briefings. Die Briefings bilden traditionell die "
-            "letzten beiden Tage.\n"
-            "blackhat.com war beim automatisierten Abruf nicht erreichbar (403) — "
-            "Termin stammt aus übereinstimmenden Sekundärquellen."
-        ),
-        url="https://blackhat.com/upcoming.html",
-        confidence="wahrscheinlich",
-        categories=["Konferenz", "Security"],
-    ),
-    Dated(
-        summary="DEF CON 35",
-        start=dt.date(2027, 8, 5), end=dt.date(2027, 8, 8),
-        location="Las Vegas Convention Center West Hall, Las Vegas, USA",
-        description="Direkt im Anschluss an die Black Hat USA Briefings.",
-        url="https://defcon.org/",
-        confidence="bestaetigt",
-        categories=["Konferenz", "Security"],
-    ),
-    Dated(
-        summary="it-sa Expo & Congress 2027",
-        start=dt.date(2027, 10, 5), end=dt.date(2027, 10, 7),
-        location="Messezentrum Nürnberg, Deutschland",
-        description="Größte IT-Security-Fachmesse im deutschsprachigen Raum.",
-        url="https://www.pressebox.de/events/nuernbergmesse-gmbh/it-sa-2027/eventid/62575",
-        confidence="bestaetigt",
-        categories=["Konferenz", "Security", "DACH"],
-    ),
+]
+
+OPEN_SOURCE_EVENTS = [
+    conf("FOSDEM 2027", D(2027, 1, 30), D(2027, 1, 31), "BE",
+         "ULB Solbosch, Brüssel, Belgien",
+         "Free and Open Source Software Developers' European Meeting. Eintritt frei, "
+         "keine Registrierung.",
+         "https://fosdem.org/2027/news/fosdem-2027-dates/", "Open Source"),
+    conf("Chemnitzer Linux-Tage 2027", D(2027, 3, 20), D(2027, 3, 21), "DE",
+         "TU Chemnitz, Reichenhainer Straße 90, 09126 Chemnitz",
+         "Große Community-Konferenz zu Linux und Open Source. Steht im "
+         "Eventkalender des CCC.",
+         "https://chemnitzer.linux-tage.de/2027", "Open Source"),
+    conf("Grazer Linuxtage 2027", D(2027, 4, 2), D(2027, 4, 3), "AT",
+         "TU Graz, Campus Inffeldgasse, Graz",
+         "Größte freie Open-Source-Konferenz Österreichs. Teilnahme kostenlos und "
+         "ohne Anmeldung.",
+         "https://www.linuxtage.at/de/", "Open Source"),
 ]
 
 CLOUD_CONFERENCES = [
-    Dated(
-        summary="KubeCon + CloudNativeCon North America 2026",
-        start=dt.date(2026, 11, 9), end=dt.date(2026, 11, 12),
-        location="Salt Palace Convention Center, Salt Lake City, USA",
-        description=(
-            "Flaggschiff-Konferenz der CNCF für Nordamerika. Co-located Events am "
-            "09.11., darunter ArgoCon, BackstageCon und CiliumCon."
-        ),
-        url="https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/",
-        confidence="bestaetigt",
-        categories=["Konferenz", "Cloud Native", "Kubernetes"],
-    ),
-    Dated(
-        summary="KubeCon + CloudNativeCon Europe 2027",
-        start=dt.date(2027, 3, 15), end=dt.date(2027, 3, 18),
-        location="Barcelona, Spanien",
-        description="Flaggschiff-Konferenz der CNCF für Europa.",
-        url="https://events.linuxfoundation.org/kubecon-cloudnativecon-europe-2027/",
-        confidence="bestaetigt",
-        categories=["Konferenz", "Cloud Native", "Kubernetes"],
-    ),
-    Dated(
-        summary="KubeCon + CloudNativeCon Japan 2027",
-        start=dt.date(2027, 8, 25), end=dt.date(2027, 8, 26),
-        location="Yokohama, Japan",
-        description="Regionale CNCF-Konferenz für Japan.",
-        url="https://events.linuxfoundation.org/kubecon-cloudnativecon-japan/",
-        confidence="bestaetigt",
-        categories=["Konferenz", "Cloud Native", "Kubernetes"],
-    ),
-    Dated(
-        summary="KubeCon + CloudNativeCon North America 2027",
-        start=dt.date(2027, 11, 8), end=dt.date(2027, 11, 11),
-        location="New Orleans, Louisiana, USA",
-        description="Flaggschiff-Konferenz der CNCF für Nordamerika.",
-        url="https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/",
-        confidence="bestaetigt",
-        categories=["Konferenz", "Cloud Native", "Kubernetes"],
-    ),
+    conf("KubeCon + CloudNativeCon North America 2026", D(2026, 11, 9), D(2026, 11, 12), "US",
+         "Salt Palace Convention Center, Salt Lake City, USA",
+         "Flaggschiff-Konferenz der CNCF für Nordamerika. Co-located Events am 09.11.",
+         "https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/",
+         "Cloud Native", "Kubernetes"),
+    conf("KubeCon + CloudNativeCon Europe 2027", D(2027, 3, 15), D(2027, 3, 18), "ES",
+         "Barcelona, Spanien",
+         "Flaggschiff-Konferenz der CNCF für Europa.",
+         "https://events.linuxfoundation.org/kubecon-cloudnativecon-europe-2027/",
+         "Cloud Native", "Kubernetes"),
+    conf("KubeCon + CloudNativeCon Japan 2027", D(2027, 8, 25), D(2027, 8, 26), "JP",
+         "Yokohama, Japan",
+         "Regionale CNCF-Konferenz für Japan.",
+         "https://events.linuxfoundation.org/about/calendar/",
+         "Cloud Native", "Kubernetes"),
+    conf("KubeCon + CloudNativeCon North America 2027", D(2027, 11, 8), D(2027, 11, 11), "US",
+         "New Orleans, Louisiana, USA",
+         "Flaggschiff-Konferenz der CNCF für Nordamerika.",
+         "https://events.linuxfoundation.org/about/calendar/",
+         "Cloud Native", "Kubernetes"),
 ]
+
+del D
+
+
+def by_date(events: list[Dated]) -> list[Dated]:
+    return sorted(events, key=lambda e: (e.start, e.summary))
+
+
+ALL_EVENTS = by_date(SECURITY_CONFERENCES + CHAOS_EVENTS + CHAOS_DEADLINES
+                     + OPEN_SOURCE_EVENTS + CLOUD_CONFERENCES)
+REGIONAL_EVENTS = [e for e in ALL_EVENTS if e.country in REGION]
+AUSTRIA_EVENTS = [e for e in ALL_EVENTS if e.country == "AT"]
+CHAOS_CALENDAR = by_date(CHAOS_EVENTS + CHAOS_DEADLINES)
+BSIDES_EVENTS = [e for e in ALL_EVENTS if "BSides" in e.categories]
 
 
 # --------------------------------------------------------------------------- #
@@ -1110,7 +1248,8 @@ CLOUD_CONFERENCES = [
 GROUP_BUNDLES = "Patchdays · Sammelkalender"
 GROUP_VENDORS = "Patchdays · einzelne Hersteller"
 GROUP_RELEASES = "Software-Releases"
-GROUP_CONFERENCES = "Konferenzen"
+GROUP_REGION = "Konferenzen · Österreich & Nachbarländer"
+GROUP_CONFERENCES = "Konferenzen · weitere"
 GROUP_ALL = "Alles in einem"
 
 
@@ -1186,7 +1325,7 @@ def build_catalog() -> list[Calendar]:
         events=browsers,
         group=GROUP_RELEASES,
         meta=(f"Chrome {_span(CHROME_STABLE)} · Edge {_span(EDGE_STABLE)} · "
-              f"Firefox {_span(FIREFOX_RELEASES)} · Extended Stable und ESR"),
+              f"Firefox {_span(FIREFOX_RELEASES)} · Edge Extended Stable · Firefox ESR"),
     ))
     calendars.append(Calendar(
         slug="releases-ubuntu",
@@ -1197,32 +1336,81 @@ def build_catalog() -> list[Calendar]:
         meta="26.10 · wöchentliche Kernel ab 26.10.2026 · 27.04",
     ))
 
+    def countries(events: list[Dated]) -> str:
+        return " · ".join(REGION[c] for c in REGION if any(e.country == c for e in events))
+
+    # Die regionalen Kalender stehen bewusst vor den übrigen Konferenzen.
+    calendars.append(Calendar(
+        slug="conferences-dach",
+        name="Konferenzen · Österreich & Nachbarländer",
+        description=(
+            "IT-Security-Konferenzen, BSides, Chaos-Events und Open-Source-Konferenzen "
+            "in Österreich und allen Nachbarländern. Jeder Termin an der Quelle "
+            "des Veranstalters geprüft."
+        ),
+        events=REGIONAL_EVENTS,
+        group=GROUP_REGION,
+        meta=f"{len(REGIONAL_EVENTS)} Termine · {countries(REGIONAL_EVENTS)}",
+    ))
+    calendars.append(Calendar(
+        slug="conferences-austria",
+        name="Konferenzen · Österreich",
+        description="Alle Konferenzen und Chaos-Events in Österreich.",
+        events=AUSTRIA_EVENTS,
+        group=GROUP_REGION,
+        meta=(f"{len(AUSTRIA_EVENTS)} Termine · Wien, Linz, Salzburg, Graz, Innsbruck, "
+              "Kitzbühel, Hagenberg, Rankweil, St. Pölten"),
+    ))
+    calendars.append(Calendar(
+        slug="chaos-events",
+        name="Chaos-Events · CCC & Umfeld",
+        description=(
+            "Chaos Communication Congress, Easterhegg, Datenspuren und weitere Events "
+            "aus dem CCC-Umfeld in Deutschland, Österreich und der Schweiz — "
+            "inklusive Fristen wie Vorverkauf und Assembly-Anmeldung."
+        ),
+        events=CHAOS_CALENDAR,
+        group=GROUP_REGION,
+        meta="40C3 · Easterhegg 2027 in Wien · Datenspuren · Winterkongress · Fristen",
+    ))
+    calendars.append(Calendar(
+        slug="conferences-bsides",
+        name="BSides · Österreich & Nachbarländer",
+        description="Community-organisierte BSides-Konferenzen in und um Österreich.",
+        events=BSIDES_EVENTS,
+        group=GROUP_REGION,
+        meta="Wien · Tirol · München · Prag · Budapest",
+    ))
+
+    security_all = by_date(SECURITY_CONFERENCES
+                           + [e for e in CHAOS_EVENTS if "Security" in e.categories])
     calendars.append(Calendar(
         slug="conferences-security",
         name="Konferenzen · IT-Security",
         description=(
-            "Kuratierte Auswahl großer Security-Konferenzen. Kein Anspruch auf "
-            "Vollständigkeit — jeder Termin trägt Quelle und Konfidenz."
+            "Alle IT-Security-Konferenzen dieses Repos, regional und international. "
+            "Kein Anspruch auf Vollständigkeit — jeder Termin trägt Quelle und "
+            "Prüfdatum."
         ),
-        events=SECURITY_CONFERENCES,
+        events=security_all,
         group=GROUP_CONFERENCES,
-        meta=(f"{len(SECURITY_CONFERENCES)} Termine bis "
-              f"{max(e.end for e in SECURITY_CONFERENCES):%m/%Y}"),
+        meta=(f"{len(security_all)} Termine, davon "
+              f"{sum(e.country in REGION for e in security_all)} in Österreich und den "
+              "Nachbarländern"),
     ))
-    dach = [e for e in SECURITY_CONFERENCES if "DACH" in e.categories]
     calendars.append(Calendar(
-        slug="conferences-dach",
-        name="Konferenzen · DACH",
-        description="Security-Konferenzen in Deutschland und Österreich.",
-        events=dach,
+        slug="conferences-opensource",
+        name="Konferenzen · Open Source",
+        description="Große Community-Konferenzen zu Linux und Open Source.",
+        events=by_date(OPEN_SOURCE_EVENTS),
         group=GROUP_CONFERENCES,
-        meta="it-sa · DeepSec Wien · 40C3 · secIT · Security Forum Hagenberg · TROOPERS",
+        meta="Grazer Linuxtage · Chemnitzer Linux-Tage · FOSDEM",
     ))
     calendars.append(Calendar(
         slug="conferences-cloud",
         name="Konferenzen · Cloud Native",
         description="Kuratierte Auswahl großer Cloud-Native- und Kubernetes-Konferenzen.",
-        events=CLOUD_CONFERENCES,
+        events=by_date(CLOUD_CONFERENCES),
         group=GROUP_CONFERENCES,
         meta="KubeCon North America 2026 · Europe, Japan und North America 2027",
     ))
@@ -1230,8 +1418,7 @@ def build_catalog() -> list[Calendar]:
     everything = [
         *vendor_events(list(VENDORS), overview_only=False),
         *sorted(browsers + ubuntu, key=lambda e: (e.start, e.summary)),
-        *SECURITY_CONFERENCES,
-        *CLOUD_CONFERENCES,
+        *ALL_EVENTS,
     ]
     calendars.append(Calendar(
         slug="everything",

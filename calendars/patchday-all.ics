@@ -25,9 +25,10 @@ DESCRIPTION:Monatlicher Security-Update-Release von Microsoft (Windows\, Of
  alle neustartpflichtigen Updates und installiert sie zusammen mit diesem R
  elease — ein Neustart im Monat\, und zwar hier.\nRegel: zweiter Dienstag
   jedes Monats.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsäch
- lichen Termine decken sich mit der Regel)\nQuelle: https://msrc.microsoft.
- com/update-guide/releaseNote/
-URL:https://msrc.microsoft.com/update-guide/releaseNote/
+ lichen Termine decken sich mit der Regel)\nQuelle: https://learn.microsoft
+ .com/en-us/windows/deployment/update/release-cycle
+URL:https://learn.microsoft.com/en-us/windows/deployment/update/release-cyc
+ le
 CATEGORIES:Patchday\,Microsoft
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -123,15 +124,16 @@ DTEND;VALUE=DATE:20260617
 RRULE:FREQ=YEARLY;BYMONTH=2,3,5,6,8,9,11,12;BYDAY=3TU
 SUMMARY:Oracle Critical Security Patch Update (CSPU)
 DESCRIPTION:Seit Mai 2026 liefert Oracle in den acht Monaten ohne CPU einen
-  monatlichen Critical Security Patch Update.\nRegel: dritter Dienstag in d
- en Nicht-CPU-Monaten. Bestätigt durch Juni (16.06.)\, August (18.08.) und
-  September 2026 (15.09.)\; die nächsten beiden hat Oracle für den 17.11.
-  und 15.12.2026 angekündigt. Einmalige Ausnahme war der Auftakt am 28.05.
- 2026.\nJava SE: Oracle zieht auch Java in den Monatsrhythmus. Bestätigt i
- st ein Java-Update am 18.08.2026\, angekündigt ist der 17.11.2026\; für 
- 2027 plant Oracle mehrere monatliche Java-Updates.\n\nKonfidenz: bestätig
- t (Primärquelle\, oder die tatsächlichen Termine decken sich mit der Reg
- el)\nQuelle: https://www.oracle.com/security-alerts/
+  monatlichen Critical Security Patch Update.\nRegel: dritter Dienstag im F
+ ebruar\, März\, Mai\, Juni\, August\, September\, November und Dezember 
+ — so steht es wörtlich auf Oracles Security-Alerts-Seite\, mit den näc
+ hsten Terminen 17.11. und 15.12.2026\, 16.02. und 16.03.2027. Einmalige Au
+ snahme war der Auftakt am 28.05.2026.\nJava SE: Oracle zieht auch Java in 
+ den Monatsrhythmus. Bestätigt ist ein Java-Update am 18.08.2026\, angekü
+ ndigt ist der 17.11.2026\; für 2027 plant Oracle mehrere monatliche Java-
+ Updates.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen
+  Termine decken sich mit der Regel)\nQuelle: https://www.oracle.com/securi
+ ty-alerts/
 URL:https://www.oracle.com/security-alerts/
 CATEGORIES:Patchday\,Oracle
 TRANSP:TRANSPARENT
@@ -336,11 +338,12 @@ RRULE:FREQ=MONTHLY;BYDAY=2TU
 SUMMARY:Ivanti Security Advisories
 DESCRIPTION:Ivanti veröffentlicht planmäßige Security-Updates (u. a. Con
  nect Secure\, Policy Secure\, EPMM\, Endpoint Manager) am Microsoft Patch 
- Tuesday.\nKritische\, aktiv ausgenutzte Lücken kommen außer der Reihe.\n
- Regel: zweiter Dienstag jedes Monats.\n\nKonfidenz: wahrscheinlich (Sekund
- ärquelle\, nicht am Hersteller verifiziert)\nQuelle: https://www.ivanti.c
- om/blog/september-2026-security-update
-URL:https://www.ivanti.com/blog/september-2026-security-update
+ Tuesday — so schreibt es Ivanti selbst in jedem monatlichen Security-Upd
+ ate-Post.\nKritische\, aktiv ausgenutzte Lücken kommen außer der Reihe.\
+ nRegel: zweiter Dienstag jedes Monats.\n\nKonfidenz: bestätigt (Primärqu
+ elle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle:
+  https://www.ivanti.com/blog/july-2026-security-update
+URL:https://www.ivanti.com/blog/july-2026-security-update
 CATEGORIES:Patchday\,Ivanti
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -359,12 +362,13 @@ RRULE:FREQ=MONTHLY;BYDAY=2TU
 SUMMARY:Siemens ProductCERT Advisories
 DESCRIPTION:Siemens veröffentlicht Security Advisories für Industrie- und
   Automatisierungsprodukte gebündelt am zweiten Dienstag\, dem sogenannten
-  ICS Patch Tuesday.\nRegel: zweiter Dienstag jedes Monats.\n\nKonfidenz: w
- ahrscheinlich (Sekundärquelle\, nicht am Hersteller verifiziert)\nQuelle:
-  https://www.securityweek.com/ics-patch-tuesday-security-advisories-releas
- ed-by-siemens-schneider-cisa-others/
-URL:https://www.securityweek.com/ics-patch-tuesday-security-advisories-rele
- ased-by-siemens-schneider-cisa-others/
+  ICS Patch Tuesday.\nBelegt aus Siemens' eigenem Advisory-Feed: 2026 ersch
+ ienen in jedem Monat Erstveröffentlichungen am zweiten Dienstag\, 72 von 
+ 81 insgesamt\; die übrigen neun kamen außer der Reihe.\nRegel: zweiter D
+ ienstag jedes Monats.\n\nKonfidenz: bestätigt (Primärquelle\, oder die t
+ atsächlichen Termine decken sich mit der Regel)\nQuelle: https://cert-por
+ tal.siemens.com/productcert/json/advisories.json
+URL:https://cert-portal.siemens.com/productcert/json/advisories.json
 CATEGORIES:Patchday\,Siemens
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -383,9 +387,13 @@ RRULE:FREQ=MONTHLY;BYDAY=2TU
 SUMMARY:Schneider Electric Security Notifications
 DESCRIPTION:Schneider Electric veröffentlicht Security Notifications einma
  l im Monat am zweiten Dienstag\, damit Kunden Patches einplanen können.\n
- Regel: zweiter Dienstag jedes Monats.\n\nKonfidenz: bestätigt (Primärque
- lle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle: 
- https://www.se.com/ww/en/work/support/cybersecurity/vulnerability-policy/
+ Belegt über Schneiders Dokumentserver: Die Advisory-Nummern kodieren den 
+ Veröffentlichungstag (SEVD-Jahr-Tag-Nr.). Für alle zehn zweiten Dienstag
+ e Januar bis Oktober 2026 existiert ein Advisory\, für die Mittwoche dana
+ ch keines.\nRegel: zweiter Dienstag jedes Monats.\n\nKonfidenz: bestätigt
+  (Primärquelle\, oder die tatsächlichen Termine decken sich mit der Rege
+ l)\nQuelle: https://www.se.com/ww/en/work/support/cybersecurity/vulnerabil
+ ity-policy/
 URL:https://www.se.com/ww/en/work/support/cybersecurity/vulnerability-polic
  y/
 CATEGORIES:Patchday\,Schneider Electric

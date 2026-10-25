@@ -125,14 +125,14 @@
       "name": "Software-Releases",
       "meta": "Browser und Ubuntu zusammen",
       "group": "Software-Releases",
-      "events": 86
+      "events": 81
     },
     {
       "file": "releases-browser.ics",
       "name": "Releases · Browser",
-      "meta": "Chrome 152–173 · Edge 152–166 · Firefox 154–190 · Extended Stable und ESR",
+      "meta": "Chrome 152–173 · Edge 152–166 · Firefox 154–190 · Edge Extended Stable · Firefox ESR",
       "group": "Software-Releases",
-      "events": 83
+      "events": 78
     },
     {
       "file": "releases-ubuntu.ics",
@@ -142,32 +142,60 @@
       "events": 3
     },
     {
-      "file": "conferences-security.ics",
-      "name": "Konferenzen · IT-Security",
-      "meta": "13 Termine bis 10/2027",
-      "group": "Konferenzen",
-      "events": 13
+      "file": "conferences-dach.ics",
+      "name": "Konferenzen · Österreich & Nachbarländer",
+      "meta": "44 Termine · Österreich · Deutschland · Schweiz · Italien · Ungarn · Slowakei · Tschechien",
+      "group": "Konferenzen · Österreich & Nachbarländer",
+      "events": 44
     },
     {
-      "file": "conferences-dach.ics",
-      "name": "Konferenzen · DACH",
-      "meta": "it-sa · DeepSec Wien · 40C3 · secIT · Security Forum Hagenberg · TROOPERS",
-      "group": "Konferenzen",
-      "events": 7
+      "file": "conferences-austria.ics",
+      "name": "Konferenzen · Österreich",
+      "meta": "16 Termine · Wien, Linz, Salzburg, Graz, Innsbruck, Kitzbühel, Hagenberg, Rankweil, St. Pölten",
+      "group": "Konferenzen · Österreich & Nachbarländer",
+      "events": 16
+    },
+    {
+      "file": "chaos-events.ics",
+      "name": "Chaos-Events · CCC & Umfeld",
+      "meta": "40C3 · Easterhegg 2027 in Wien · Datenspuren · Winterkongress · Fristen",
+      "group": "Konferenzen · Österreich & Nachbarländer",
+      "events": 10
+    },
+    {
+      "file": "conferences-bsides.ics",
+      "name": "BSides · Österreich & Nachbarländer",
+      "meta": "Wien · Tirol · München · Prag · Budapest",
+      "group": "Konferenzen · Österreich & Nachbarländer",
+      "events": 6
+    },
+    {
+      "file": "conferences-security.ics",
+      "name": "Konferenzen · IT-Security",
+      "meta": "37 Termine, davon 33 in Österreich und den Nachbarländern",
+      "group": "Konferenzen · weitere",
+      "events": 37
+    },
+    {
+      "file": "conferences-opensource.ics",
+      "name": "Konferenzen · Open Source",
+      "meta": "Grazer Linuxtage · Chemnitzer Linux-Tage · FOSDEM",
+      "group": "Konferenzen · weitere",
+      "events": 3
     },
     {
       "file": "conferences-cloud.ics",
       "name": "Konferenzen · Cloud Native",
       "meta": "KubeCon North America 2026 · Europe, Japan und North America 2027",
-      "group": "Konferenzen",
+      "group": "Konferenzen · weitere",
       "events": 4
     },
     {
       "file": "everything.ics",
       "name": "AwesomeCalendars · alles",
-      "meta": "124 Einträge — Patchdays, Releases und Konferenzen",
+      "meta": "155 Einträge — Patchdays, Releases und Konferenzen",
       "group": "Alles in einem",
-      "events": 124
+      "events": 155
     }
   ]
 }

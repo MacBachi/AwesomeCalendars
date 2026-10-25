@@ -121,9 +121,11 @@ DTEND;VALUE=DATE:20260909
 SUMMARY:Chrome 153 Stable
 DESCRIPTION:Google Chrome 153 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -187,9 +189,11 @@ DTEND;VALUE=DATE:20260923
 SUMMARY:Chrome 154 Stable
 DESCRIPTION:Google Chrome 154 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -253,9 +257,11 @@ DTEND;VALUE=DATE:20261007
 SUMMARY:Chrome 155 Stable
 DESCRIPTION:Google Chrome 155 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -341,9 +347,11 @@ DTEND;VALUE=DATE:20261021
 SUMMARY:Chrome 156 Stable
 DESCRIPTION:Google Chrome 156 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -351,31 +359,6 @@ CATEGORIES:Release\,Browser\,Chrome
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Chrome 156 Stable
-TRIGGER:-PT14H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:releases-software-chrome-156-extended-stable-20261020@awesomecalendars
-DTSTAMP:20261025T000000Z
-DTSTART;VALUE=DATE:20261020
-DTEND;VALUE=DATE:20261021
-SUMMARY:Chrome 156 → Extended Stable
-DESCRIPTION:Chrome 156 wird Extended Stable und bleibt dort acht Wochen. De
- r Kanal ist für verwaltete Windows- und macOS-Umgebungen gedacht und wird
-  per Policy aktiviert. Er ist von der Umstellung auf zwei Wochen nicht bet
- roffen und springt jeweils um vier Milestones.\nGoogle selbst veröffentli
- cht keine Extended-Stable-Termine\; 156 und 160 sind berichtet\, die folge
- nden sind aus dem Muster abgeleitet. Microsoft bestätigt für Edge offizi
- ell dasselbe Muster (152\, 156\, 160\, 164).\n\nKonfidenz: wahrscheinlich 
- (Sekundärquelle\, nicht am Hersteller verifiziert)\nQuelle: https://suppo
- rt.google.com/chrome/a/answer/16942104
-URL:https://support.google.com/chrome/a/answer/16942104
-TRANSP:TRANSPARENT
-STATUS:TENTATIVE
-CATEGORIES:Release\,Browser\,Chrome\,Enterprise
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Chrome 156 → Extended Stable
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
@@ -435,18 +418,19 @@ SUMMARY:Ubuntu-Kernel: ab jetzt wöchentliche Releases
 DESCRIPTION:Canonical ersetzt den bisherigen 4/2-Rhythmus (alle vier Wochen
   ein reguläres Kernel-Update\, Notfall-Updates nach zwei Wochen) durch ü
  berlappende Zwei-Wochen-Zyklen. Effektiv erscheint ab hier jede Woche ein 
- neuer Kernel. Übergangszyklen starteten am 28.09. und 12.10.2026.\nGrund 
- ist die CVE-Flut im Kernel\, nach Canonical stark durch KI-gestützte Fehl
- ersuche getrieben: Linux 7.2 behob über 1.500 CVEs\, frühere Versionen r
- und 500.\nWer Kernel-Updates manuell einspielt\, braucht damit ein wöchen
- tliches Wartungsfenster oder Livepatch.\n\nKonfidenz: wahrscheinlich (Seku
- ndärquelle\, nicht am Hersteller verifiziert)\nQuelle: https://canonical.
- com/blog/accelerating-delivery-of-cve-fixes-with-a-new-kernel-release-stra
- tegy
-URL:https://canonical.com/blog/accelerating-delivery-of-cve-fixes-with-a-ne
- w-kernel-release-strategy
+ neuer Kernel. Übergangszyklen starteten am 28.09. und 12.10.2026 — so a
+ ngekündigt vom Ubuntu-Kernel-Team auf Discourse.\nGrund ist die CVE-Flut 
+ im Kernel\, nach Canonical stark durch KI-gestützte Fehlersuche getrieben
+ : Linux 7.2 behob über 1.500 CVEs\, frühere Versionen rund 500.\nWer Ker
+ nel-Updates manuell einspielt\, braucht damit ein wöchentliches Wartungsf
+ enster oder Livepatch.\n\nKonfidenz: bestätigt (Primärquelle\, oder die 
+ tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://discour
+ se.ubuntu.com/t/going-from-4-to-2-accelerating-the-linux-kernel-release-pr
+ ocess/88248
+URL:https://discourse.ubuntu.com/t/going-from-4-to-2-accelerating-the-linux
+ -kernel-release-process/88248
 TRANSP:TRANSPARENT
-STATUS:TENTATIVE
+STATUS:CONFIRMED
 CATEGORIES:Release\,Linux\,Ubuntu\,Kernel
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -483,9 +467,11 @@ DTEND;VALUE=DATE:20261104
 SUMMARY:Chrome 157 Stable
 DESCRIPTION:Google Chrome 157 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -549,9 +535,11 @@ DTEND;VALUE=DATE:20261118
 SUMMARY:Chrome 158 Stable
 DESCRIPTION:Google Chrome 158 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -615,9 +603,11 @@ DTEND;VALUE=DATE:20261209
 SUMMARY:Chrome 159 Stable
 DESCRIPTION:Google Chrome 159 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -681,9 +671,11 @@ DTEND;VALUE=DATE:20270106
 SUMMARY:Chrome 160 Stable
 DESCRIPTION:Google Chrome 160 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -691,31 +683,6 @@ CATEGORIES:Release\,Browser\,Chrome
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Chrome 160 Stable
-TRIGGER:-PT14H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:releases-software-chrome-160-extended-stable-20270105@awesomecalendars
-DTSTAMP:20261025T000000Z
-DTSTART;VALUE=DATE:20270105
-DTEND;VALUE=DATE:20270106
-SUMMARY:Chrome 160 → Extended Stable
-DESCRIPTION:Chrome 160 wird Extended Stable und bleibt dort acht Wochen. De
- r Kanal ist für verwaltete Windows- und macOS-Umgebungen gedacht und wird
-  per Policy aktiviert. Er ist von der Umstellung auf zwei Wochen nicht bet
- roffen und springt jeweils um vier Milestones.\nGoogle selbst veröffentli
- cht keine Extended-Stable-Termine\; 156 und 160 sind berichtet\, die folge
- nden sind aus dem Muster abgeleitet. Microsoft bestätigt für Edge offizi
- ell dasselbe Muster (152\, 156\, 160\, 164).\n\nKonfidenz: wahrscheinlich 
- (Sekundärquelle\, nicht am Hersteller verifiziert)\nQuelle: https://suppo
- rt.google.com/chrome/a/answer/16942104
-URL:https://support.google.com/chrome/a/answer/16942104
-TRANSP:TRANSPARENT
-STATUS:TENTATIVE
-CATEGORIES:Release\,Browser\,Chrome\,Enterprise
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Chrome 160 → Extended Stable
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
@@ -794,9 +761,11 @@ DTEND;VALUE=DATE:20270120
 SUMMARY:Chrome 161 Stable
 DESCRIPTION:Google Chrome 161 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -860,9 +829,11 @@ DTEND;VALUE=DATE:20270203
 SUMMARY:Chrome 162 Stable
 DESCRIPTION:Google Chrome 162 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -926,9 +897,11 @@ DTEND;VALUE=DATE:20270217
 SUMMARY:Chrome 163 Stable
 DESCRIPTION:Google Chrome 163 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -992,9 +965,11 @@ DTEND;VALUE=DATE:20270303
 SUMMARY:Chrome 164 Stable
 DESCRIPTION:Google Chrome 164 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1002,31 +977,6 @@ CATEGORIES:Release\,Browser\,Chrome
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Chrome 164 Stable
-TRIGGER:-PT14H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:releases-software-chrome-164-extended-stable-20270302@awesomecalendars
-DTSTAMP:20261025T000000Z
-DTSTART;VALUE=DATE:20270302
-DTEND;VALUE=DATE:20270303
-SUMMARY:Chrome 164 → Extended Stable
-DESCRIPTION:Chrome 164 wird Extended Stable und bleibt dort acht Wochen. De
- r Kanal ist für verwaltete Windows- und macOS-Umgebungen gedacht und wird
-  per Policy aktiviert. Er ist von der Umstellung auf zwei Wochen nicht bet
- roffen und springt jeweils um vier Milestones.\nGoogle selbst veröffentli
- cht keine Extended-Stable-Termine\; 156 und 160 sind berichtet\, die folge
- nden sind aus dem Muster abgeleitet. Microsoft bestätigt für Edge offizi
- ell dasselbe Muster (152\, 156\, 160\, 164).\n\nKonfidenz: abgeleitet (aus
-  dem Muster geschlossen\, nicht offiziell angekündigt)\nQuelle: https://s
- upport.google.com/chrome/a/answer/16942104
-URL:https://support.google.com/chrome/a/answer/16942104
-TRANSP:TRANSPARENT
-STATUS:TENTATIVE
-CATEGORIES:Release\,Browser\,Chrome\,Enterprise
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Chrome 164 → Extended Stable
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
@@ -1105,9 +1055,11 @@ DTEND;VALUE=DATE:20270317
 SUMMARY:Chrome 165 Stable
 DESCRIPTION:Google Chrome 165 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1151,11 +1103,12 @@ SUMMARY:Firefox 168
 DESCRIPTION:Mozilla Firefox 168 Release.\nSeit Firefox 155 (01.09.2026) im 
  Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
  net. Sicherheits-Zwischenreleases kommen zusätzlich.\nMit diesem Release 
- erscheint laut Mozilla-Kalender das letzte Update für ESR 115 (115.53) 
- — die Linie\, die als letzte noch Windows 7\, 8 und 8.1 sowie ältere ma
- cOS-Versionen unterstützt.\n\nKonfidenz: bestätigt (Primärquelle\, oder
-  die tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://wh
- attrainisitnow.com/calendar/
+ führt der Mozilla-Kalender das letzte derzeit geplante Update für ESR 11
+ 5 (115.53) — die Linie\, die als letzte noch Windows 7\, 8 und 8.1 sowie
+  ältere macOS-Versionen unterstützt. Mozilla hat ESR 115 schon mehrfach 
+ verlängert.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
+ chen Termine decken sich mit der Regel)\nQuelle: https://whattrainisitnow.
+ com/calendar/
 URL:https://whattrainisitnow.com/calendar/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1174,9 +1127,11 @@ DTEND;VALUE=DATE:20270331
 SUMMARY:Chrome 166 Stable
 DESCRIPTION:Google Chrome 166 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1240,9 +1195,11 @@ DTEND;VALUE=DATE:20270414
 SUMMARY:Chrome 167 Stable
 DESCRIPTION:Google Chrome 167 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1304,9 +1261,11 @@ DTEND;VALUE=DATE:20270428
 SUMMARY:Chrome 168 Stable
 DESCRIPTION:Google Chrome 168 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1314,31 +1273,6 @@ CATEGORIES:Release\,Browser\,Chrome
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Chrome 168 Stable
-TRIGGER:-PT14H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:releases-software-chrome-168-extended-stable-20270427@awesomecalendars
-DTSTAMP:20261025T000000Z
-DTSTART;VALUE=DATE:20270427
-DTEND;VALUE=DATE:20270428
-SUMMARY:Chrome 168 → Extended Stable
-DESCRIPTION:Chrome 168 wird Extended Stable und bleibt dort acht Wochen. De
- r Kanal ist für verwaltete Windows- und macOS-Umgebungen gedacht und wird
-  per Policy aktiviert. Er ist von der Umstellung auf zwei Wochen nicht bet
- roffen und springt jeweils um vier Milestones.\nGoogle selbst veröffentli
- cht keine Extended-Stable-Termine\; 156 und 160 sind berichtet\, die folge
- nden sind aus dem Muster abgeleitet. Microsoft bestätigt für Edge offizi
- ell dasselbe Muster (152\, 156\, 160\, 164).\n\nKonfidenz: abgeleitet (aus
-  dem Muster geschlossen\, nicht offiziell angekündigt)\nQuelle: https://s
- upport.google.com/chrome/a/answer/16942104
-URL:https://support.google.com/chrome/a/answer/16942104
-TRANSP:TRANSPARENT
-STATUS:TENTATIVE
-CATEGORIES:Release\,Browser\,Chrome\,Enterprise
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Chrome 168 → Extended Stable
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
@@ -1371,9 +1305,11 @@ DTEND;VALUE=DATE:20270512
 SUMMARY:Chrome 169 Stable
 DESCRIPTION:Google Chrome 169 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1413,9 +1349,11 @@ DTEND;VALUE=DATE:20270526
 SUMMARY:Chrome 170 Stable
 DESCRIPTION:Google Chrome 170 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1455,9 +1393,11 @@ DTEND;VALUE=DATE:20270609
 SUMMARY:Chrome 171 Stable
 DESCRIPTION:Google Chrome 171 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1497,9 +1437,11 @@ DTEND;VALUE=DATE:20270623
 SUMMARY:Chrome 172 Stable
 DESCRIPTION:Google Chrome 172 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1507,31 +1449,6 @@ CATEGORIES:Release\,Browser\,Chrome
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Chrome 172 Stable
-TRIGGER:-PT14H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:releases-software-chrome-172-extended-stable-20270622@awesomecalendars
-DTSTAMP:20261025T000000Z
-DTSTART;VALUE=DATE:20270622
-DTEND;VALUE=DATE:20270623
-SUMMARY:Chrome 172 → Extended Stable
-DESCRIPTION:Chrome 172 wird Extended Stable und bleibt dort acht Wochen. De
- r Kanal ist für verwaltete Windows- und macOS-Umgebungen gedacht und wird
-  per Policy aktiviert. Er ist von der Umstellung auf zwei Wochen nicht bet
- roffen und springt jeweils um vier Milestones.\nGoogle selbst veröffentli
- cht keine Extended-Stable-Termine\; 156 und 160 sind berichtet\, die folge
- nden sind aus dem Muster abgeleitet. Microsoft bestätigt für Edge offizi
- ell dasselbe Muster (152\, 156\, 160\, 164).\n\nKonfidenz: abgeleitet (aus
-  dem Muster geschlossen\, nicht offiziell angekündigt)\nQuelle: https://s
- upport.google.com/chrome/a/answer/16942104
-URL:https://support.google.com/chrome/a/answer/16942104
-TRANSP:TRANSPARENT
-STATUS:TENTATIVE
-CATEGORIES:Release\,Browser\,Chrome\,Enterprise
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Chrome 172 → Extended Stable
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
@@ -1567,9 +1484,11 @@ DTEND;VALUE=DATE:20270707
 SUMMARY:Chrome 173 Stable
 DESCRIPTION:Google Chrome 173 erreicht den Stable-Kanal.\nSeit Chrome 153 (
  08.09.2026) gilt der Zwei-Wochen-Takt auf allen Plattformen inklusive Andr
- oid und iOS.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächli
- chen Termine decken sich mit der Regel)\nQuelle: https://chromiumdash.apps
- pot.com/schedule
+ oid und iOS. Der Extended-Stable-Kanal bleibt bei acht Wochen\; konkrete T
+ ermine dafür veröffentlicht Google nicht\, deshalb stehen sie hier nicht
+ .\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termin
+ e decken sich mit der Regel)\nQuelle: https://chromiumdash.appspot.com/sch
+ edule
 URL:https://chromiumdash.appspot.com/schedule
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1673,10 +1592,10 @@ SUMMARY:Firefox 180
 DESCRIPTION:Mozilla Firefox 180 Release.\nSeit Firefox 155 (01.09.2026) im 
  Zwei-Wochen-Takt\, von Mozilla bei der Ankündigung als Experiment bezeich
  net. Sicherheits-Zwischenreleases kommen zusätzlich.\nMit diesem Release 
- erscheint laut Mozilla-Kalender das letzte Update für ESR 153 (153.27). D
- anach ist ESR 175 die einzige ESR-Linie.\n\nKonfidenz: bestätigt (Primär
- quelle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuell
- e: https://whattrainisitnow.com/calendar/
+ führt der Mozilla-Kalender das letzte derzeit geplante Update für ESR 15
+ 3 (153.27). Danach steht nur noch ESR 175 im Kalender.\n\nKonfidenz: best
+ ätigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit de
+ r Regel)\nQuelle: https://whattrainisitnow.com/calendar/
 URL:https://whattrainisitnow.com/calendar/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED

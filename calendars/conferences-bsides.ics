@@ -1,0 +1,141 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AwesomeCalendars//Patchdays, Releases & Conferences//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:BSides · Österreich & Nachbarländer
+X-WR-CALDESC:Community-organisierte BSides-Konferenzen in und um Österreic
+ h.
+REFRESH-INTERVAL;VALUE=DURATION:P7D
+X-PUBLISHED-TTL:P7D
+BEGIN:VEVENT
+UID:conferences-bsides-bsides-munich-2026-workshops-20261107@awesomecalenda
+ rs
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:BSides Munich 2026: Workshops
+DESCRIPTION:Workshop-Tag der 10. BSides Munich. Der Konferenztag folgt am 0
+ 9.11.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Te
+ rmine decken sich mit der Regel)\nQuelle: https://2026.bsidesmunich.org/\n
+ Geprüft am 25.10.2026
+URL:https://2026.bsidesmunich.org/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Hochschule München\, Lothstraße 64\, 80335 München
+CATEGORIES:Konferenz\,Security\,BSides\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BSides Munich 2026: Workshops
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-bsides-bsides-munich-2026-konferenz-20261109@awesomecalenda
+ rs
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:BSides Munich 2026: Konferenz
+DESCRIPTION:Konferenztag der 10. BSides Munich. Workshops am 07.11.\n\nKonf
+ idenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine decken 
+ sich mit der Regel)\nQuelle: https://2026.bsidesmunich.org/\nGeprüft am 2
+ 5.10.2026
+URL:https://2026.bsidesmunich.org/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:The Westin Grand Munich\, München
+CATEGORIES:Konferenz\,Security\,BSides\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BSides Munich 2026: Konferenz
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-bsides-bsides-tirol-2027-20270225@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270225
+DTEND;VALUE=DATE:20270226
+SUMMARY:BSides Tirol 2027
+DESCRIPTION:Community-Konferenz für Cybersecurity in den Alpen: offensive 
+ und defensive Security\, Forschung und Praxis\, dazu ein Art-Programm. Ein
+ tritt frei\, Anmeldung nötig. Call for Papers bis 15.11.2026.\n\nKonfiden
+ z: bestätigt (Primärquelle\, oder die tatsächlichen Termine decken sich
+  mit der Regel)\nQuelle: https://www.bsides.tirol/\nGeprüft am 25.10.2026
+URL:https://www.bsides.tirol/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Innsbruck\, Österreich
+CATEGORIES:Konferenz\,Security\,BSides\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BSides Tirol 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-bsides-bsides-prague-2027-20270407@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270407
+DTEND;VALUE=DATE:20270409
+SUMMARY:BSides Prague 2027
+DESCRIPTION:Community-organisierte Security-Konferenz\, Konferenzsprache En
+ glisch. Call for Papers bis 31.12.2026.\n\nKonfidenz: bestätigt (Primärq
+ uelle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQuelle
+ : https://www.bsidesprg.cz/\nGeprüft am 25.10.2026
+URL:https://www.bsidesprg.cz/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Národní dům na Vinohradech\, Náměstí Míru 820/9\, Prag
+CATEGORIES:Konferenz\,Security\,BSides\,Tschechien
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BSides Prague 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-bsides-bsides-budapest-2027-20270513@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270513
+DTEND;VALUE=DATE:20270514
+SUMMARY:BSides Budapest 2027
+DESCRIPTION:Eintägige Community-Konferenz. Bisher als „Save the Date“ 
+ angekündigt\, Programm folgt.\n\nKonfidenz: bestätigt (Primärquelle\, o
+ der die tatsächlichen Termine decken sich mit der Regel)\nQuelle: https:/
+ /bsidesbud.com/\nGeprüft am 25.10.2026
+URL:https://bsidesbud.com/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Budapest\, Ungarn
+CATEGORIES:Konferenz\,Security\,BSides\,Ungarn
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BSides Budapest 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:conferences-bsides-bsides-vienna-2027-20270626@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270626
+DTEND;VALUE=DATE:20270627
+SUMMARY:BSides Vienna 2027
+DESCRIPTION:Community-organisierte Security-Konferenz mit Talks\, Workshops
+  und viel „Hallway Track“. Eintritt frei\, Tickets über tickets.bside
+ svienna.at.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlic
+ hen Termine decken sich mit der Regel)\nQuelle: https://bsidesvienna.at/\n
+ Geprüft am 25.10.2026
+URL:https://bsidesvienna.at/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Urania Dachsaal\, Uraniastraße 1\, 1010 Wien
+CATEGORIES:Konferenz\,Security\,BSides\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BSides Vienna 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

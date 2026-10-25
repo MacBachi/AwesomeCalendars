@@ -23,9 +23,10 @@ DESCRIPTION:Monatlicher Security-Update-Release von Microsoft (Windows\, Of
  alle neustartpflichtigen Updates und installiert sie zusammen mit diesem R
  elease — ein Neustart im Monat\, und zwar hier.\nRegel: zweiter Dienstag
   jedes Monats.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsäch
- lichen Termine decken sich mit der Regel)\nQuelle: https://msrc.microsoft.
- com/update-guide/releaseNote/
-URL:https://msrc.microsoft.com/update-guide/releaseNote/
+ lichen Termine decken sich mit der Regel)\nQuelle: https://learn.microsoft
+ .com/en-us/windows/deployment/update/release-cycle
+URL:https://learn.microsoft.com/en-us/windows/deployment/update/release-cyc
+ le
 CATEGORIES:Patchday\,Microsoft
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED

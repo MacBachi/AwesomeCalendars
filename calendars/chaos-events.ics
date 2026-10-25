@@ -1,0 +1,230 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AwesomeCalendars//Patchdays, Releases & Conferences//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Chaos-Events · CCC & Umfeld
+X-WR-CALDESC:Chaos Communication Congress\, Easterhegg\, Datenspuren und we
+ itere Events aus dem CCC-Umfeld in Deutschland\, Österreich und der Schwe
+ iz — inklusive Fristen wie Vorverkauf und Assembly-Anmeldung.
+REFRESH-INTERVAL;VALUE=DURATION:P7D
+X-PUBLISHED-TTL:P7D
+BEGIN:VEVENT
+UID:chaos-events-dhcp26-die-heilbronner-chaos-party-20261030@awesomecalenda
+ rs
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261102
+SUMMARY:DHCP26 — Die Heilbronner Chaos Party
+DESCRIPTION:Chaos-Event des CFHN in Heilbronn.\n\nKonfidenz: bestätigt (Pr
+ imärquelle\, oder die tatsächlichen Termine decken sich mit der Regel)\n
+ Quelle: https://dhcp.cfhn.it/\nGeprüft am 25.10.2026
+URL:https://dhcp.cfhn.it/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Hochschule Heilbronn\, Max-Planck-Straße 39\, 74081 Heilbronn
+CATEGORIES:Konferenz\,Chaos\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:DHCP26 — Die Heilbronner Chaos Party
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chaos-events-fiffkon42-20261030@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261102
+SUMMARY:FIfFKon42
+DESCRIPTION:Jahreskonferenz des Forums InformatikerInnen für Frieden und g
+ esellschaftliche Verantwortung\, Motto „Keine Panik! Resilienz in der Po
+ lykrise“. Steht im Eventkalender des CCC.\n\nKonfidenz: bestätigt (Prim
+ ärquelle\, oder die tatsächlichen Termine decken sich mit der Regel)\nQu
+ elle: https://www.fiffkon.de/\nGeprüft am 25.10.2026
+URL:https://www.fiffkon.de/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Theater im Delphi\, Berlin
+CATEGORIES:Konferenz\,Chaos\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:FIfFKon42
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chaos-events-40c3-voucher-phase-endet-spaetestens-20261110@awesomecalen
+ dars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:40C3: Voucher-Phase endet (spätestens)
+DESCRIPTION:Die Voucher-Phase des 40C3-Vorverkaufs läuft seit 23.10.2026\,
+  10:00 Uhr\, und endet spätestens am 10.11.2026 um 23:00 Uhr — früher\
+ , sobald das Kontingent aufgebraucht ist. Danach folgt der offene Verkauf.
+ \n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine
+  decken sich mit der Regel)\nQuelle: https://events.ccc.de/2026/10/19/40c3
+ -presale-modus-operandi/\nGeprüft am 25.10.2026
+URL:https://events.ccc.de/2026/10/19/40c3-presale-modus-operandi/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Frist\,Chaos\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:40C3: Voucher-Phase endet (spätestens)
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chaos-events-jetzt15-geekend-20261120@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261123
+SUMMARY:#jetzt15 Geekend
+DESCRIPTION:Wochenende von chaos.jetzt für Menschen zwischen 18 und 25.\n\
+ nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine de
+ cken sich mit der Regel)\nQuelle: https://chaos.jetzt/15\nGeprüft am 25.1
+ 0.2026
+URL:https://chaos.jetzt/15
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:CCC Frankfurt am Main\, Hohenstaufenstraße 8\, 60327 Frankfurt
+CATEGORIES:Konferenz\,Chaos\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:#jetzt15 Geekend
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chaos-events-nook-2026-nights-of-open-knowledge-20261120@awesomecalenda
+ rs
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261122
+SUMMARY:NooK 2026 — Nights of Open Knowledge
+DESCRIPTION:Community-Konferenz mit Vorträgen\, Workshops und Ständen.\n\
+ nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine de
+ cken sich mit der Regel)\nQuelle: https://events.ccc.de/2026/07/24/nook/\n
+ Geprüft am 25.10.2026
+URL:https://events.ccc.de/2026/07/24/nook/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Audimax\, Universität zu Lübeck
+CATEGORIES:Konferenz\,Chaos\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:NooK 2026 — Nights of Open Knowledge
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chaos-events-40c3-anmeldeschluss-fuer-assemblies-20261123@awesomecalend
+ ars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:40C3: Anmeldeschluss für Assemblies
+DESCRIPTION:Assemblies müssen bis 23.11.2026\, 23:42 Uhr MEZ\, im Hub regi
+ striert sein. Faustregel des CCC: je größer\, desto früher.\n\nKonfiden
+ z: bestätigt (Primärquelle\, oder die tatsächlichen Termine decken sich
+  mit der Regel)\nQuelle: https://events.ccc.de/2026/10/18/40c3-assemblies/
+ \nGeprüft am 25.10.2026
+URL:https://events.ccc.de/2026/10/18/40c3-assemblies/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+CATEGORIES:Frist\,Chaos\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:40C3: Anmeldeschluss für Assemblies
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chaos-events-40c3-chaos-communication-congress-20261227@awesomecalendar
+ s
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261227
+DTEND;VALUE=DATE:20261231
+SUMMARY:40C3 — Chaos Communication Congress
+DESCRIPTION:40. Chaos Communication Congress\, Motto „Model Citizens“.\
+ n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Termine 
+ decken sich mit der Regel)\nQuelle: https://events.ccc.de/congress/2026/\n
+ Geprüft am 25.10.2026
+URL:https://events.ccc.de/congress/2026/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Hamburg Messe\, Messeplatz 1\, 20357 Hamburg
+CATEGORIES:Konferenz\,Chaos\,Security\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:40C3 — Chaos Communication Congress
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chaos-events-winterkongress-2027-der-digitalen-gesellschaft-20270305@aw
+ esomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270305
+DTEND;VALUE=DATE:20270307
+SUMMARY:Winterkongress 2027 der Digitalen Gesellschaft
+DESCRIPTION:10. Winterkongress der Schweizer Digitalen Gesellschaft zu Info
+ rmationstechnologie\, Digitalisierung und ihren Auswirkungen auf die Gesel
+ lschaft. Beginn Freitagabend.\n\nKonfidenz: bestätigt (Primärquelle\, od
+ er die tatsächlichen Termine decken sich mit der Regel)\nQuelle: https://
+ www.digitale-gesellschaft.ch/event/winterkongress-2027/\nGeprüft am 25.10
+ .2026
+URL:https://www.digitale-gesellschaft.ch/event/winterkongress-2027/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Rote Fabrik\, Seestrasse 395\, 8038 Zürich
+CATEGORIES:Konferenz\,Chaos\,Schweiz
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Winterkongress 2027 der Digitalen Gesellschaft
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chaos-events-easterhegg-2027-20270326@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270326
+DTEND;VALUE=DATE:20270330
+SUMMARY:Easterhegg 2027
+DESCRIPTION:Das Oster-Treffen des CCC — Easterhegg #24 findet in Wien sta
+ tt.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächlichen Term
+ ine decken sich mit der Regel)\nQuelle: https://www.easterhegg.eu/\nGeprü
+ ft am 25.10.2026
+URL:https://www.easterhegg.eu/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Wien\, Österreich
+CATEGORIES:Konferenz\,Chaos\,Österreich
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Easterhegg 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chaos-events-datenspuren-2027-20270917@awesomecalendars
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20270917
+DTEND;VALUE=DATE:20270920
+SUMMARY:Datenspuren 2027
+DESCRIPTION:Symposium des Chaos Computer Club Dresden.\n\nKonfidenz: bestä
+ tigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit der 
+ Regel)\nQuelle: https://datenspuren.de/2027/\nGeprüft am 25.10.2026
+URL:https://datenspuren.de/2027/
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+LOCATION:Zentralwerk\, Riesaer Straße 32\, 01127 Dresden
+CATEGORIES:Konferenz\,Chaos\,Deutschland
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Datenspuren 2027
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

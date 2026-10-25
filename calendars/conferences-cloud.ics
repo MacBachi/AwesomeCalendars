@@ -16,10 +16,9 @@ DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261113
 SUMMARY:KubeCon + CloudNativeCon North America 2026
 DESCRIPTION:Flaggschiff-Konferenz der CNCF für Nordamerika. Co-located Eve
- nts am 09.11.\, darunter ArgoCon\, BackstageCon und CiliumCon.\n\nKonfiden
- z: bestätigt (Primärquelle\, oder die tatsächlichen Termine decken sich
-  mit der Regel)\nQuelle: https://events.linuxfoundation.org/kubecon-cloudn
- ativecon-north-america/
+ nts am 09.11.\n\nKonfidenz: bestätigt (Primärquelle\, oder die tatsächl
+ ichen Termine decken sich mit der Regel)\nQuelle: https://events.linuxfoun
+ dation.org/kubecon-cloudnativecon-north-america/\nGeprüft am 25.10.2026
 URL:https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america
  /
 TRANSP:TRANSPARENT
@@ -42,7 +41,7 @@ SUMMARY:KubeCon + CloudNativeCon Europe 2027
 DESCRIPTION:Flaggschiff-Konferenz der CNCF für Europa.\n\nKonfidenz: best
  ätigt (Primärquelle\, oder die tatsächlichen Termine decken sich mit de
  r Regel)\nQuelle: https://events.linuxfoundation.org/kubecon-cloudnativeco
- n-europe-2027/
+ n-europe-2027/\nGeprüft am 25.10.2026
 URL:https://events.linuxfoundation.org/kubecon-cloudnativecon-europe-2027/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -63,8 +62,9 @@ DTEND;VALUE=DATE:20270827
 SUMMARY:KubeCon + CloudNativeCon Japan 2027
 DESCRIPTION:Regionale CNCF-Konferenz für Japan.\n\nKonfidenz: bestätigt (
  Primärquelle\, oder die tatsächlichen Termine decken sich mit der Regel)
- \nQuelle: https://events.linuxfoundation.org/kubecon-cloudnativecon-japan/
-URL:https://events.linuxfoundation.org/kubecon-cloudnativecon-japan/
+ \nQuelle: https://events.linuxfoundation.org/about/calendar/\nGeprüft am 
+ 25.10.2026
+URL:https://events.linuxfoundation.org/about/calendar/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 LOCATION:Yokohama\, Japan
@@ -84,10 +84,9 @@ DTEND;VALUE=DATE:20271112
 SUMMARY:KubeCon + CloudNativeCon North America 2027
 DESCRIPTION:Flaggschiff-Konferenz der CNCF für Nordamerika.\n\nKonfidenz: 
  bestätigt (Primärquelle\, oder die tatsächlichen Termine decken sich mi
- t der Regel)\nQuelle: https://events.linuxfoundation.org/kubecon-cloudnati
- vecon-north-america/
-URL:https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america
- /
+ t der Regel)\nQuelle: https://events.linuxfoundation.org/about/calendar/\n
+ Geprüft am 25.10.2026
+URL:https://events.linuxfoundation.org/about/calendar/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 LOCATION:New Orleans\, Louisiana\, USA

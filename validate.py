@@ -6,7 +6,9 @@ Prüft die generierten Kalender, bevor sie veröffentlicht werden.
   2. Semantik      jede RRULE (expandiert mit dateutil) liefert Tag für Tag dieselben
                    Termine wie das Prädikat im Generator, 2026–2031
   3. Ist-Termine   Stichproben gegen die in CONTEXT.md belegten Veröffentlichungen
-  4. Abos          die ursprünglich veröffentlichten Abo-URLs existieren weiter
+  4. Belegpflicht   kein abgeleiteter Termin; jeder Konferenztermin trägt Quelle
+                   und Prüfdatum; gestrichene Termine kommen nicht zurück
+  5. Abos          die veröffentlichten Abo-URLs existieren weiter
 
 Braucht python-dateutil und icalendar (nur hier, nicht im Generator):
 
@@ -87,6 +89,13 @@ rule_checks = [
     ("Oracle Critical Security Patch Update (CSPU)", D(2026, 9, 15), True, "CSPU Sep"),
     ("Oracle Critical Security Patch Update (CSPU)", D(2026, 11, 17), True, "angekündigt"),
     ("Oracle Critical Security Patch Update (CSPU)", D(2026, 12, 15), True, "angekündigt"),
+    ("Oracle Critical Security Patch Update (CSPU)", D(2027, 2, 16), True, "Oracle-Seite"),
+    ("Oracle Critical Security Patch Update (CSPU)", D(2027, 3, 16), True, "Oracle-Seite"),
+    ("Oracle Critical Patch Update (CPU)", D(2027, 7, 20), True, "Oracle-Seite"),
+    ("Oracle Critical Patch Update (CPU)", D(2027, 10, 19), True, "Oracle-Seite"),
+    ("Schneider Electric Security Notifications", D(2026, 1, 13), True, "SEVD-2026-013"),
+    ("Schneider Electric Security Notifications", D(2026, 10, 13), True, "SEVD-2026-286"),
+    ("Siemens ProductCERT Advisories", D(2026, 5, 12), True, "Siemens-Feed"),
     ("Cisco Security Advisories", D(2026, 8, 5), True, "IOS XE, SD-WAN"),
     ("Cisco Security Advisories", D(2026, 9, 2), True, "IOS XR"),
     ("Cisco Security Advisories", D(2026, 9, 16), True, "ASA/FMC/FTD"),
@@ -120,8 +129,7 @@ for date, want, why in [(D(2026, 9, 8), True, "Di nach Labor Day 2026"),
     if occurs("Android Security Bulletin (Quartal, groß)", date, ANDROID_SEPT) != want:
         problems.append(f"Regel: Android September {date} soll {want} sein ({why})")
 
-dated = (g.browser_events() + g.ubuntu_events() + g.PATCHDAY_ONE_OFFS
-         + g.SECURITY_CONFERENCES + g.CLOUD_CONFERENCES)
+dated = g.browser_events() + g.ubuntu_events() + g.PATCHDAY_ONE_OFFS + g.ALL_EVENTS
 dated_checks = [
     ("Edge 159 Stable", D(2026, 12, 10)),
     ("Edge 164 → Extended Stable", D(2027, 3, 4)),
@@ -131,8 +139,26 @@ dated_checks = [
     ("Ubuntu 26.10 „Stonking Stingray“ Release", D(2026, 10, 15)),
     ("Fortinet: Advisories zum Security Hardening Release", D(2026, 11, 10)),
     ("FOSDEM 2027", D(2027, 1, 30)),
-    ("Black Hat Asia 2027", D(2027, 2, 28)),
+    ("Black Hat Asia 2027: Briefings", D(2027, 3, 2)),
     ("KubeCon + CloudNativeCon Japan 2027", D(2027, 8, 25)),
+    # Österreich und Nachbarländer, Chaos, BSides (geprüft 25.10.2026)
+    ("DeepSec 2026", D(2026, 11, 17)),
+    ("BSides Tirol 2027", D(2027, 2, 25)),
+    ("Easterhegg 2027", D(2027, 3, 26)),
+    ("Grazer Linuxtage 2027", D(2027, 4, 2)),
+    ("LSZ Security & Risk Management Kongress 2027", D(2027, 4, 19)),
+    ("OWASP Global AppSec EU 2027", D(2027, 6, 21)),
+    ("BSides Vienna 2027", D(2027, 6, 26)),
+    ("IT-SECX 2027", D(2027, 10, 15)),
+    ("BSides Munich 2026: Konferenz", D(2026, 11, 9)),
+    ("BSides Prague 2027", D(2027, 4, 7)),
+    ("BSides Budapest 2027", D(2027, 5, 13)),
+    ("40C3 — Chaos Communication Congress", D(2026, 12, 27)),
+    ("40C3: Voucher-Phase endet (spätestens)", D(2026, 11, 10)),
+    ("Datenspuren 2027", D(2027, 9, 17)),
+    ("Winterkongress 2027 der Digitalen Gesellschaft", D(2027, 3, 5)),
+    ("Insomni'hack 2027", D(2027, 2, 1)),
+    ("Black Hat Europe 2026", D(2026, 12, 7)),
 ]
 for summary, date in dated_checks:
     if not any(e.summary == summary and e.start == date for e in dated):
@@ -140,10 +166,32 @@ for summary, date in dated_checks:
 print(f"Ist-Termine: {len(rule_checks) + 3} Regel- und {len(dated_checks)} Datums-Stichproben")
 
 
-# 4. Abos -------------------------------------------------------------------
+# 4. Belegpflicht ---------------------------------------------------------
+everything = list(g.PATCHDAYS) + dated
+derived = [e.summary for e in everything if e.confidence == "abgeleitet"]
+problems += [f"abgeleiteter Termin: {name}" for name in derived]
+for e in g.ALL_EVENTS:
+    if not e.checked:
+        problems.append(f"ohne Prüfdatum: {e.summary}")
+    if not e.url.startswith("https://"):
+        problems.append(f"ohne Quelle: {e.summary}")
+    if e.end < e.start:
+        problems.append(f"Ende vor Beginn: {e.summary}")
+REMOVED = ["Black Hat USA 2027", "it-sa Expo & Congress 2027", "Extended Stable"]
+for e in dated:
+    if any(r in e.summary for r in REMOVED) and not e.summary.startswith("Edge"):
+        problems.append(f"gestrichener Termin wieder da: {e.summary}")
+wahrscheinlich = sum(e.confidence == "wahrscheinlich" for e in everything)
+print(f"Belegpflicht: {len(everything)} Einträge, {len(derived)} abgeleitet, "
+      f"{wahrscheinlich} nur wahrscheinlich")
+
+# 5. Abos -------------------------------------------------------------------
 ORIGINAL_FEEDS = ["patchday-microsoft", "patchday-adobe", "patchday-sap", "patchday-oracle",
                   "patchday-android", "patchday-cisco", "patchday-all", "releases-software",
-                  "conferences-security", "conferences-cloud", "everything"]
+                  "conferences-security", "conferences-cloud", "everything",
+                  # seit 25.10.2026 veröffentlicht
+                  "conferences-dach", "releases-browser", "releases-ubuntu",
+                  "patchday-netzwerk", "patchday-ot", "patchday-fortinet"]
 missing = [s for s in ORIGINAL_FEEDS if not (ROOT / f"{s}.ics").exists()]
 problems += [f"Abo-URL fehlt: {s}.ics" for s in missing]
 print(f"Abos: {len(ORIGINAL_FEEDS) - len(missing)}/{len(ORIGINAL_FEEDS)} ursprüngliche URLs vorhanden")
